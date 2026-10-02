@@ -5,36 +5,62 @@
       "id": "main",
       "name": "Main menu",
       "items": [
-        { "id": "home", "label": "Home", "type": "page", "ref": "home" },
         { "id": "inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        {
-          "id": "about",
-          "label": "About",
-          "type": "url",
-          "url": "/about",
-          "children": [
-            { "id": "about-team", "label": "Our team", "type": "url", "url": "/about#team" },
-            { "id": "about-history", "label": "History", "type": "url", "url": "/about#history" }
-          ]
-        },
-        { "id": "contact", "label": "Contact", "type": "url", "url": "/contact" }
+        { "id": "financing", "label": "Financing", "type": "page", "ref": "financing" },
+        { "id": "leasing", "label": "Leasing", "type": "page", "ref": "leasing" },
+        { "id": "parts", "label": "Parts", "type": "inventory", "ref": "parts" },
+        { "id": "service", "label": "Service", "type": "page", "ref": "service" },
+        { "id": "about", "label": "About", "type": "page", "ref": "about" }
+      ]
+    },
+    {
+      "id": "utility",
+      "name": "Utility bar",
+      "items": [
+        { "id": "u-signup", "label": "news & specials sign-up", "type": "page", "ref": "news-signup" },
+        { "id": "u-phone", "label": "(201) 866-5570", "type": "url", "url": "tel:+12018665570" }
       ]
     },
     {
       "id": "footer",
-      "name": "Footer menu",
+      "name": "Footer — Quick links",
       "items": [
-        { "id": "f-inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        { "id": "f-about", "label": "About", "type": "url", "url": "/about" },
-        { "id": "f-contact", "label": "Contact", "type": "url", "url": "/contact" }
+        { "id": "f-new", "label": "New Inventory", "type": "inventory", "ref": "inventory?condition=new" },
+        { "id": "f-used", "label": "Pre-Owned Inventory", "type": "inventory", "ref": "inventory?condition=used" },
+        { "id": "f-financing", "label": "Financing", "type": "page", "ref": "financing" },
+        { "id": "f-leasing", "label": "Leasing", "type": "page", "ref": "leasing" },
+        { "id": "f-parts", "label": "Parts", "type": "inventory", "ref": "parts" },
+        { "id": "f-service", "label": "Service", "type": "page", "ref": "service" }
+      ]
+    },
+    {
+      "id": "brands",
+      "name": "Footer — Brands",
+      "items": [
+        { "id": "b-volvo", "label": "Volvo", "type": "inventory", "ref": "search?q=Volvo" },
+        { "id": "b-western-star", "label": "Western Star", "type": "inventory", "ref": "search?q=Western+Star" },
+        { "id": "b-autocar", "label": "Autocar", "type": "inventory", "ref": "search?q=Autocar" },
+        { "id": "b-byd", "label": "BYD", "type": "inventory", "ref": "search?q=BYD" },
+        { "id": "b-motiv", "label": "Motiv", "type": "inventory", "ref": "search?q=Motiv" }
+      ]
+    },
+    {
+      "id": "contact",
+      "name": "Footer — Contact",
+      "items": [
+        { "id": "c-street", "label": "290 Secaucus Road", "type": "label" },
+        { "id": "c-city", "label": "Secaucus, NJ 07094", "type": "label" },
+        { "id": "c-phone", "label": "(201) 866-5570", "type": "url", "url": "tel:+12018665570" },
+        { "id": "c-email", "label": "sales@hudsoncountymotors.com", "type": "url", "url": "mailto:sales@hudsoncountymotors.com" }
       ]
     },
     {
       "id": "legal",
       "name": "Legal",
       "items": [
-        { "id": "privacy", "label": "Privacy", "type": "url", "url": "/privacy" },
-        { "id": "terms", "label": "Terms", "type": "url", "url": "/terms" }
+        { "id": "accessibility", "label": "Accessibility", "type": "url", "url": "/accessibility" },
+        { "id": "terms", "label": "Terms & Conditions", "type": "url", "url": "/terms" },
+        { "id": "privacy", "label": "Privacy", "type": "url", "url": "/privacy" }
       ]
     }
   ]

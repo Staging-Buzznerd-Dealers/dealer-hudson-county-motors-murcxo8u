@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "page-head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-header",
+        "values": {
+          "eyebrow": "Hudson Truck Leasing, LLC",
+          "heading": "Lease it. Rent it. Keep it working.",
+          "intro": "No down payment, 100% deductible payments, more working capital and predictable transportation costs — packages built around your operation."
+        }
+      }
+    },
+    {
+      "id": "request",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "request-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "request-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "request-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Request a lease or rental",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "request-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us what you need to move and for how long, and we will put a package together around your operation."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "request-form",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "request-form-block",
+                  "type": "form",
+                  "props": {
+                    "formId": "rental-request"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

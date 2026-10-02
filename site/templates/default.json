@@ -2,45 +2,104 @@
   "version": 2,
   "id": "default",
   "name": "Site template",
-  "conditions": [{ "type": "entireSite", "ref": null }],
+  "conditions": [
+    {
+      "type": "entireSite",
+      "ref": null
+    }
+  ],
+  "css": "/* Header: navy bar, logo left, nav + quote button right. */\n[data-bz-node=\"header\"] { background: var(--accent); color: var(--hcm-nav-link); padding-block: 16px; }\n[data-bz-node=\"header-row\"] { align-items: center; }\n[data-bz-node=\"logo\"] .bz-logo__img { height: clamp(36px, 5vw, 54px); }\n[data-bz-node=\"header-nav\"], [data-bz-node=\"header-cta\"] { display: flex; justify-content: flex-end; }\n[data-bz-node=\"main-nav\"] .bz-menu-wrap { justify-content: flex-end; }\n[data-bz-node=\"main-nav\"] .bz-nav { gap: clamp(12px, 2vw, 30px); }\n[data-bz-node=\"main-nav\"] .bz-navitem > a { font: 600 clamp(14px, 1.6vw, 17px)/1.2 var(--font-heading); letter-spacing: .06em; text-transform: uppercase; color: var(--hcm-nav-link); }\n[data-bz-node=\"main-nav\"] .bz-navitem > a:hover, [data-bz-node=\"main-nav\"] .bz-navitem > a[aria-current=\"page\"] { color: #fff; }\n[data-bz-node=\"main-nav\"] .bz-menu-toggle { width: 44px; height: 44px; align-items: center; justify-content: center; color: #fff; border: 1.5px solid rgb(255 255 255 / 50%); }\n[data-bz-node=\"main-nav\"] .bz-menu-toggle span { width: 20px; }\n[data-bz-node=\"header-button\"] .bz-btns { margin: 0; flex-wrap: nowrap; }\n[data-bz-node=\"header-button\"] .bz-btn { background: #fff; border-color: #fff; color: var(--accent); font-size: clamp(14px, 1.6vw, 17px); font-weight: 600; padding: 11px 26px; white-space: nowrap; }\n[data-bz-node=\"header-button\"] .bz-btn:hover { background: var(--hcm-nav-link); border-color: var(--hcm-nav-link); color: var(--accent); }\n/* The design collapses the nav at 860px rather than the platform's 1100px. */\n@media (min-width: 861px) and (max-width: 1100px) {\n  [data-bz-node=\"main-nav\"] .bz-menu-toggle { display: none; }\n  [data-bz-node=\"main-nav\"] .bz-menu-wrap > .bz-menu { display: flex; }\n  [data-bz-node=\"header-row\"] { display: flex; gap: 16px; }\n  [data-bz-node=\"header-brand\"], [data-bz-node=\"header-cta\"] { flex: none; }\n  [data-bz-node=\"header-nav\"] { flex: 1 1 auto; }\n  [data-bz-node=\"header-button\"] .bz-btn { padding: 11px 18px; }\n}\n@media (max-width: 860px) {\n  [data-bz-node=\"header\"] > .bz-container { position: relative; }\n  [data-bz-node=\"header-row\"] { display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 12px; }\n  [data-bz-node=\"header-brand\"] { flex: 1 1 auto; }\n  [data-bz-node=\"header-nav\"], [data-bz-node=\"header-cta\"] { flex: none; position: static; }\n  [data-bz-node=\"header-nav\"] { order: 3; }\n  [data-bz-node=\"main-nav\"], [data-bz-node=\"main-nav\"] .bz-menu-wrap { position: static; }\n  [data-bz-node=\"header-button\"] .bz-btn { padding: 10px 16px; font-size: 14px; }\n  [data-bz-node=\"main-nav\"] .bz-menu-wrap[data-open] > .bz-menu { z-index: 20; background: var(--accent); border-top: 1px solid rgb(255 255 255 / 12%); border-bottom: 0; padding: 8px var(--container-pad-tablet) 20px; }\n  [data-bz-node=\"main-nav\"] .bz-menu-wrap[data-open] .bz-nav { align-items: stretch; gap: 0; }\n  [data-bz-node=\"main-nav\"] .bz-menu-wrap[data-open] .bz-navitem > a { display: block; font-size: 18px; padding: 14px 0; border-bottom: 1px solid rgb(255 255 255 / 8%); }\n}\n@media (max-width: 640px) {\n  [data-bz-node=\"main-nav\"] .bz-menu-wrap[data-open] > .bz-menu { padding-inline: var(--container-pad-mobile); }\n}\n\n/* Footer bottom bar */\n[data-bz-node=\"footer-bar\"] { background: var(--ink-dark); color: var(--hcm-on-navy-3); font-size: 12px; padding-block: 16px; }\n[data-bz-node=\"footer-bar-row\"] { align-items: center; row-gap: 8px; }\n[data-bz-node=\"footer-bar\"] .bz-block p { margin: 0; font-size: 12px; line-height: 1.5; }\n[data-bz-node=\"footer-copy\"] { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; }\n[data-bz-node=\"footer-copy\"] > .bz-block { margin: 0; }\n[data-bz-node=\"legal-nav\"] .bz-nav { gap: 0; }\n[data-bz-node=\"legal-nav\"] .bz-navitem::before { content: \"·\"; padding-inline: 6px; }\n[data-bz-node=\"legal-nav\"] .bz-navitem > a { font: 400 12px/1.5 var(--font-body); padding: 0; color: var(--hcm-on-navy-3); }\n[data-bz-node=\"legal-nav\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-node=\"footer-powered\"] p { text-align: right; }\n@media (max-width: 640px) { [data-bz-node=\"footer-powered\"] p { text-align: left; } }",
   "nodes": [
+    {
+      "id": "utility-bar",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "utility-bar",
+        "values": {}
+      }
+    },
     {
       "id": "header",
       "type": "section",
-      "props": { "width": "boxed", "paddingY": 3, "background": "card" },
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "accent"
+      },
       "children": [
         {
           "id": "header-row",
           "type": "row",
-          "props": { "gap": 5, "align": "center", "stackOn": "mobile" },
+          "props": {
+            "gap": 5,
+            "align": "center",
+            "stackOn": "never"
+          },
           "children": [
             {
               "id": "header-brand",
               "type": "column",
-              "props": { "span": 3, "align": "center" },
-              "children": [{ "id": "logo", "type": "logo", "props": { "url": "/", "height": 34 } }]
+              "props": {
+                "span": 3,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "logo",
+                  "type": "logo",
+                  "props": {
+                    "url": "/",
+                    "height": 54,
+                    "image": {
+                      "src": "/hcm-logo-white.png",
+                      "alt": "Hudson County Motors",
+                      "width": 180,
+                      "height": 71
+                    }
+                  }
+                }
+              ]
             },
             {
               "id": "header-nav",
               "type": "column",
-              "props": { "span": 6, "align": "center" },
+              "props": {
+                "span": 7,
+                "align": "center"
+              },
               "children": [
                 {
                   "id": "main-nav",
                   "type": "menu",
-                  "props": { "menuId": "main", "layout": "horizontal", "align": "center", "collapseOnMobile": true }
+                  "props": {
+                    "menuId": "main",
+                    "layout": "horizontal",
+                    "align": "end",
+                    "collapseOnMobile": true,
+                    "depth": 1
+                  }
                 }
               ]
             },
             {
               "id": "header-cta",
               "type": "column",
-              "props": { "span": 3, "align": "center" },
+              "props": {
+                "span": 2,
+                "align": "center"
+              },
               "children": [
                 {
                   "id": "header-button",
                   "type": "buttons",
-                  "props": { "items": [{ "ctaId": "browse-inventory" }], "align": "left" }
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-quote"
+                      }
+                    ],
+                    "align": "left"
+                  }
                 }
               ]
             }
@@ -48,37 +107,80 @@
         }
       ]
     },
-    { "id": "content", "type": "contentArea", "props": { "label": "Page content" } },
     {
-      "id": "footer",
+      "id": "content",
+      "type": "contentArea",
+      "props": {
+        "label": "Page content"
+      }
+    },
+    {
+      "id": "site-footer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-footer",
+        "values": {}
+      }
+    },
+    {
+      "id": "footer-bar",
       "type": "section",
-      "props": { "width": "boxed", "paddingY": 7, "background": "ink" },
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "ink"
+      },
       "children": [
         {
-          "id": "footer-row",
+          "id": "footer-bar-row",
           "type": "row",
-          "props": { "gap": 6, "align": "start" },
+          "props": {
+            "gap": 4,
+            "align": "center",
+            "stackOn": "mobile"
+          },
           "children": [
             {
-              "id": "footer-brand",
+              "id": "footer-copy",
               "type": "column",
-              "props": { "span": 4 },
-              "children": [{ "id": "footer-logo", "type": "logo", "props": { "url": "/", "height": 28 } }]
-            },
-            {
-              "id": "footer-links",
-              "type": "column",
-              "props": { "span": 4 },
+              "props": {
+                "span": 8
+              },
               "children": [
-                { "id": "footer-nav", "type": "menu", "props": { "menuId": "footer", "layout": "vertical" } }
+                {
+                  "id": "footer-copyright",
+                  "type": "text",
+                  "props": {
+                    "text": "© Hudson County Motors",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "legal-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "legal",
+                    "layout": "horizontal",
+                    "depth": 1
+                  }
+                }
               ]
             },
             {
-              "id": "footer-legal",
+              "id": "footer-powered",
               "type": "column",
-              "props": { "span": 4 },
+              "props": {
+                "span": 4
+              },
               "children": [
-                { "id": "legal-nav", "type": "menu", "props": { "menuId": "legal", "layout": "vertical" } }
+                {
+                  "id": "footer-powered-by",
+                  "type": "text",
+                  "props": {
+                    "text": "Powered by Buzznerd Trucks",
+                    "width": "full"
+                  }
+                }
               ]
             }
           ]

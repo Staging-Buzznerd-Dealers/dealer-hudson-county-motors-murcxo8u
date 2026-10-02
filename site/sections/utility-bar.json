@@ -1,0 +1,93 @@
+{
+  "version": 2,
+  "id": "utility-bar",
+  "name": "Utility bar",
+  "css": "[data-bz-section=\"utility-bar\"] { background: var(--ink-dark); color: var(--hcm-on-navy); font-size: clamp(11px, 1.6vw, 13px); font-weight: 500; }\n[data-bz-section=\"utility-bar\"] .bz-row { align-items: center; row-gap: 8px; }\n[data-bz-section=\"utility-bar\"] .bz-block p { margin: 0; font-size: inherit; line-height: 1.15; }\n[data-bz-node=\"utility-left\"] { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }\n[data-bz-node=\"utility-left\"] > .bz-block { margin: 0; }\n[data-bz-section=\"utility-bar\"] .bz-menu { justify-content: flex-end; }\n[data-bz-section=\"utility-bar\"] .bz-nav { gap: 8px 24px; }\n[data-bz-section=\"utility-bar\"] .bz-navitem > a { font-family: var(--font-body); font-weight: 500; line-height: 1.15; font-size: inherit; padding: 0; color: var(--hcm-on-navy); }\n[data-bz-section=\"utility-bar\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-section=\"utility-bar\"] .bz-navitem > a[href^=\"tel:\"] { color: #fff; font-weight: 700; }\n@media (max-width: 640px) { [data-bz-section=\"utility-bar\"] .bz-menu { justify-content: flex-start; } }",
+  "props": [
+    {
+      "key": "address",
+      "type": "text",
+      "label": "Address line",
+      "default": "290 Secaucus Road, Secaucus, NJ 07094"
+    },
+    {
+      "key": "hours",
+      "type": "text",
+      "label": "Hours line",
+      "default": "Mon – Fri from 6AM"
+    },
+    {
+      "key": "menuId",
+      "type": "text",
+      "label": "Links menu (right side)",
+      "default": "utility"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "utility",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "utility-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "center",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "utility-left",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "utility-address",
+                  "type": "text",
+                  "props": {
+                    "text": "{{address}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "utility-hours",
+                  "type": "text",
+                  "props": {
+                    "text": "{{hours}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "utility-right",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "utility-links",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "{{menuId}}",
+                    "layout": "horizontal",
+                    "align": "end",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

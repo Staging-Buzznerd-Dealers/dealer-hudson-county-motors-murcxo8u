@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "page-head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-header",
+        "values": {
+          "eyebrow": "Service",
+          "heading": "Service that keeps downtime near zero",
+          "intro": "OEM-trained technicians for the brands we sell, minutes from the NY metro."
+        }
+      }
+    },
+    {
+      "id": "book",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "book-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "book-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "book-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule service",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "book-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Pick a day and tell us about the truck. A service advisor will confirm your appointment."
+                  }
+                },
+                {
+                  "id": "book-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "shop-parts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "book-form",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "book-form-block",
+                  "type": "form",
+                  "props": {
+                    "formId": "schedule-visit"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "department-contacts",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "department-contacts",
+        "values": {
+          "rooftops": {
+            "source": "locations",
+            "config": {}
+          }
+        }
+      }
+    }
+  ]
+}

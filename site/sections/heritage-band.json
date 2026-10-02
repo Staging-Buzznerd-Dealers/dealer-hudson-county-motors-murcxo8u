@@ -1,0 +1,169 @@
+{
+  "version": 2,
+  "id": "heritage-band",
+  "name": "Heritage band",
+  "css": "[data-bz-node=\"heritage\"] { background: var(--ink); color: var(--hcm-on-navy); margin-top: var(--hcm-section-gap); }\n[data-bz-node=\"heritage-row\"] { gap: 0; }\n[data-bz-node=\"heritage-copy\"] { display: flex; flex-direction: column; justify-content: center; padding: clamp(40px, 7vw, 64px) 0 clamp(40px, 7vw, 64px) var(--hcm-gutter); }\n[data-bz-node=\"heritage-h\"] .bz-eyebrow { color: var(--hcm-on-navy-2); }\n[data-bz-node=\"heritage-h\"] .bz-eyebrow::before { background: #fff; }\n[data-bz-node=\"heritage-h\"] h2 { font-size: clamp(30px, 5vw, 52px); line-height: 1; color: #fff; margin-bottom: 18px; }\n[data-bz-node=\"heritage-body\"] p { font-size: 16px; line-height: 1.65; color: var(--hcm-on-navy); max-width: 520px; }\n[data-bz-node=\"heritage-body\"] { margin-bottom: 28px; }\n[data-bz-node=\"heritage-stats\"] { display: flex; flex-wrap: wrap; gap: 36px; }\n[data-bz-node=\"heritage-stats\"] > .bz-col { flex: none; width: auto; }\n[data-bz-node=\"heritage-stats\"] .bz-block p { margin: 0; }\n[data-bz-node^=\"heritage-stat-value\"] p { font: 700 44px/1.1 var(--font-heading); color: #fff; }\n[data-bz-node^=\"heritage-stat-label\"] p { font-size: 13px; line-height: 1.4; color: var(--hcm-on-navy-2); }\n@media (max-width: 640px) { [data-bz-node=\"heritage-copy\"] { padding-left: 0; } }\n[data-bz-node=\"heritage-media\"] { min-height: 300px; }",
+  "props": [
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Photo",
+      "default": {
+        "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/10/1.webp",
+        "alt": "Hudson County Motors dealership"
+      }
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Family-owned since 1945"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Four generations. One standard."
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Body",
+      "default": "More than 70 years serving the trucking industry as a full-service franchised dealer — committed to superior vehicles, an unbeatable parts selection, and service that keeps downtime near zero."
+    },
+    {
+      "key": "stats",
+      "type": "list",
+      "label": "Stats",
+      "fields": [
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Figure"
+        },
+        {
+          "key": "label",
+          "type": "text",
+          "label": "What it counts"
+        }
+      ],
+      "default": [
+        {
+          "value": "1945",
+          "label": "Established"
+        },
+        {
+          "value": "5",
+          "label": "Truck brands"
+        },
+        {
+          "value": "6AM",
+          "label": "Parts counter opens"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "heritage",
+      "type": "section",
+      "props": {
+        "width": "bleed-left",
+        "background": "ink",
+        "paddingY": 0,
+        "anchor": "about"
+      },
+      "children": [
+        {
+          "id": "heritage-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "heritage-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "heritage-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "heritage-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "heritage-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "{{eyebrow}}",
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "heritage-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}"
+                  }
+                },
+                {
+                  "id": "heritage-stats",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "heritage-stat",
+                      "type": "column",
+                      "props": {
+                        "span": 4,
+                        "repeat": "stats"
+                      },
+                      "children": [
+                        {
+                          "id": "heritage-stat-value",
+                          "type": "text",
+                          "props": {
+                            "text": "{{value}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "heritage-stat-label",
+                          "type": "text",
+                          "props": {
+                            "text": "{{label}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "version": 2,
+  "id": "site-footer",
+  "name": "Site footer",
+  "css": "[data-bz-node=\"footer\"] { background: var(--accent); color: var(--hcm-on-navy-2); padding-block: clamp(28px, 5vw, 48px); }\n[data-bz-node=\"footer-logo\"] .bz-logo__img { height: 52px; margin-bottom: 16px; }\n[data-bz-node=\"footer-about\"] p { font-size: 13px; line-height: 1.6; color: var(--hcm-on-navy-2); max-width: 300px; }\n[data-bz-node=\"footer\"] .bz-block h4 { margin: 0 0 14px; font: 700 16px/1.2 var(--font-heading); letter-spacing: .1em; text-transform: uppercase; color: #fff; }\n[data-bz-node=\"footer\"] .bz-menu--vertical .bz-nav { gap: 9px; }\n[data-bz-node=\"footer\"] .bz-navitem > a, [data-bz-node=\"footer\"] .bz-navlabel { font: 400 14px/1.4 var(--font-body); padding: 0; color: var(--hcm-on-navy-2); }\n[data-bz-node=\"footer\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-node=\"footer-cols-row\"] { display: flex; flex-wrap: wrap; gap: 40px; justify-content: flex-end; }\n[data-bz-node=\"footer-cols-row\"] > .bz-col { flex: 0 1 auto; min-width: 140px; }\n@media (max-width: 1100px) { [data-bz-node=\"footer-cols-row\"] { justify-content: flex-start; } }",
+  "props": [
+    {
+      "key": "logo",
+      "type": "image",
+      "label": "Logo",
+      "default": {
+        "src": "/hcm-logo-white.png",
+        "alt": "Hudson County Motors",
+        "width": 180,
+        "height": 71
+      }
+    },
+    {
+      "key": "tagline",
+      "type": "textarea",
+      "label": "About line",
+      "default": "A heavy truck dealership in Secaucus, NJ with a parts store, rentals, service and financing."
+    },
+    {
+      "key": "linkColumns",
+      "type": "list",
+      "label": "Link columns",
+      "fields": [
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "menuId",
+          "type": "text",
+          "label": "Menu (from the Menus screen)"
+        }
+      ],
+      "default": [
+        {
+          "heading": "Quick links",
+          "menuId": "footer"
+        },
+        {
+          "heading": "Brands",
+          "menuId": "brands"
+        },
+        {
+          "heading": "Contact",
+          "menuId": "contact"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "footer",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "accent"
+      },
+      "children": [
+        {
+          "id": "footer-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "footer-brand",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "footer-logo",
+                  "type": "logo",
+                  "props": {
+                    "url": "/",
+                    "height": 52,
+                    "image": "{{logo}}"
+                  }
+                },
+                {
+                  "id": "footer-about",
+                  "type": "text",
+                  "props": {
+                    "text": "{{tagline}}"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer-cols",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "footer-cols-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 6,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "footer-col",
+                      "type": "column",
+                      "props": {
+                        "span": 4,
+                        "repeat": "linkColumns"
+                      },
+                      "children": [
+                        {
+                          "id": "footer-col-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{heading}}",
+                            "headingLevel": 4
+                          }
+                        },
+                        {
+                          "id": "footer-col-nav",
+                          "type": "menu",
+                          "props": {
+                            "menuId": "{{menuId}}",
+                            "layout": "vertical",
+                            "depth": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "page-head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-header",
+        "values": {
+          "eyebrow": "Family-owned since 1945",
+          "heading": "About Hudson County Motors",
+          "intro": "A heavy truck dealership in Secaucus, NJ with a parts store, rentals, service and financing."
+        }
+      }
+    },
+    {
+      "id": "heritage-band",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "heritage-band",
+        "values": {}
+      }
+    },
+    {
+      "id": "department-contacts",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "department-contacts",
+        "values": {
+          "rooftops": {
+            "source": "locations",
+            "config": {}
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,14 +1,14 @@
 {
   "$schema": "./dealer.config.schema.json",
   "contractVersion": "5.0.0",
-  "name": "BuzzNerd Dealer",
-  "shortName": "BuzzNerd",
+  "name": "Hudson County Motors",
+  "shortName": "Hudson County Motors",
   "channelToken": "hudson-county-motors-murcxo8u",
   "domain": "dealer-hudson-county-motors-murcxo8u.vercel.app",
   "url": "https://dealer-hudson-county-motors-murcxo8u.vercel.app",
   "storefrontOrigin": "https://hudson-county-motors.ai4dealerships.com",
   "storefrontPrefix": "store",
-  "logo": "/logo.svg",
+  "logo": "/hcm-logo-navy.png",
   "favicon": "/favicon.svg",
   "analytics": {
     "loaderUrl": null,
@@ -16,28 +16,26 @@
   },
   "business": {
     "type": "AutoDealer",
-    "legalName": "BuzzNerd Trucks LLC",
-    "phone": "+1-800-555-0100",
-    "email": "sales@example.com",
-    "streetAddress": "1234 Highway Dr",
-    "addressLocality": "Salt Lake City",
-    "addressRegion": "UT",
-    "postalCode": "84101",
+    "legalName": "Hudson County Motors",
+    "phone": "+1-201-866-5570",
+    "email": "sales@hudsoncountymotors.com",
+    "streetAddress": "290 Secaucus Road",
+    "addressLocality": "Secaucus",
+    "addressRegion": "NJ",
+    "postalCode": "07094",
     "addressCountry": "US",
-    "latitude": 40.7608,
-    "longitude": -111.891,
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "openingHours": [
-      "Mo-Fr 08:00-18:00",
-      "Sa 09:00-16:00"
+      "Mo-Fr 06:00-18:00",
+      "Sa 07:00-15:00"
     ]
   },
   "seo": {
-    "defaultTitle": "BuzzNerd Dealer | Trucks, Parts & Service",
-    "titleTemplate": "%s | BuzzNerd Dealer",
-    "defaultDescription": "New and used trucks, expert service, genuine parts, financing and leasing from a dealer you can trust.",
-    "ogImage": "/og-default.jpg",
+    "defaultTitle": "Hudson County Motors — Heavy Truck Dealer in Secaucus, NJ",
+    "titleTemplate": "%s | Hudson County Motors",
+    "defaultDescription": "New and pre-owned trucks from Volvo, Western Star, Autocar, BYD and Motiv, plus parts, service, financing and leasing in Secaucus, NJ — minutes from the NY metro.",
+    "ogImage": "/hcm-logo-navy.png",
     "locale": "en_US",
-    "themeColor": "#111c3a"
+    "themeColor": "#184786"
   }
 }

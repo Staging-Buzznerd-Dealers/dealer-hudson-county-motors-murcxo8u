@@ -1,0 +1,89 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "page-head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-header",
+        "values": {
+          "eyebrow": "Financing",
+          "heading": "Truck financing",
+          "intro": "Financing for new and pre-owned trucks from Volvo, Western Star, Autocar, BYD and Motiv. Tell us about the truck and your operation and our team will come back with options."
+        }
+      }
+    },
+    {
+      "id": "apply",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "apply-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "apply-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "apply-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Start your application",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "apply-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Share a few details and the sales team will be in touch. Prefer to talk it through? Call <a href=\"tel:+12018665088\">(201) 866-5088</a>."
+                  }
+                },
+                {
+                  "id": "apply-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "browse-inventory"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "apply-form",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "apply-form-block",
+                  "type": "form",
+                  "props": {
+                    "formId": "financing"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
