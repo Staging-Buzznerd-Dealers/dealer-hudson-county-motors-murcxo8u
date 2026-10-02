@@ -1,0 +1,202 @@
+{
+  "version": 2,
+  "id": "department-contacts",
+  "name": "Department contacts",
+  "css": "[data-bz-section=\"department-contacts\"] { padding-block: var(--hcm-section-gap); }\n[data-bz-node=\"dept-h\"] h2 { font-size: clamp(26px, 4vw, 38px); margin: 0; }\n[data-bz-node^=\"dept-intro\"] .bz-text p { font-size: 15px; color: var(--muted); margin: 6px 0 24px; }\n[data-bz-node^=\"dept-cards\"] { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--hcm-grid-gap); }\n[data-bz-node^=\"dept-cards\"] > .bz-col { grid-column: auto; background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius-card); padding: 26px; display: flex; flex-direction: column; }\n[data-bz-node^=\"dept-name\"] h3 { font-size: 26px; margin: 0 0 14px; }\n[data-bz-node^=\"dept-hours\"] p { font-size: 14px; line-height: 1.6; margin: 0; }\n[data-bz-node^=\"dept-phone\"] { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }\n[data-bz-node^=\"dept-phone\"] p, [data-bz-node^=\"dept-email\"] p { font-size: 14px; margin: 0; }\n[data-bz-node^=\"dept-phone\"] a { font-weight: 700; color: var(--accent); }\n[data-bz-node^=\"dept-email\"] { margin-top: 6px; }\n[data-bz-node^=\"dept-email\"] a { color: var(--hcm-body); }\n[data-bz-node^=\"dept-phone\"] a:hover, [data-bz-node^=\"dept-email\"] a:hover { color: var(--accent-dark); }",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Talk to a department"
+    },
+    {
+      "key": "rooftops",
+      "type": "list",
+      "label": "Rooftop",
+      "fields": [
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "Postal code"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Main line"
+        },
+        {
+          "key": "departmentRows",
+          "type": "list",
+          "label": "Departments",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "key": "hours",
+              "type": "text",
+              "label": "Hours"
+            },
+            {
+              "key": "phone",
+              "type": "text",
+              "label": "Phone"
+            },
+            {
+              "key": "phoneUrl",
+              "type": "url",
+              "label": "Phone link"
+            },
+            {
+              "key": "email",
+              "type": "text",
+              "label": "Email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location (Admin slug, optional)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "dept",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "anchor": "contact"
+      },
+      "children": [
+        {
+          "id": "dept-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "dept-headcol",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "dept-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dept-rooftop",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "repeat": "rooftops"
+          },
+          "children": [
+            {
+              "id": "dept-rooftop-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "dept-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}} · Main line {{phone}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "dept-cards",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "dept-card",
+                      "type": "column",
+                      "props": {
+                        "span": 4,
+                        "repeat": "departmentRows"
+                      },
+                      "children": [
+                        {
+                          "id": "dept-name",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{name}}",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "dept-hours",
+                          "type": "text",
+                          "props": {
+                            "text": "{{hours}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "dept-phone",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "dept-email",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"mailto:{{email}}\">{{email}}</a>",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

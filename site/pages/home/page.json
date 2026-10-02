@@ -1,106 +1,400 @@
 {
-  "version": 1,
-  "blocks": [
+  "version": 2,
+  "nodes": [
     {
       "id": "hero",
-      "type": "hero",
+      "type": "section",
       "props": {
-        "headingLevel": 1,
-        "eyebrow": "Trucks · Parts · Service",
-        "headline": "Your trusted partner on the road.",
-        "subhead": "New and used trucks, expert service, and genuine parts — all from one dealer you can rely on.",
-        "showSearch": true,
-        "ctas": [{ "ctaId": "browse-inventory" }, { "ctaId": "request-quote", "style": "secondary" }]
-      }
+        "width": "bleed-right",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "Secaucus, NJ · Since 1945",
+                    "text": "The Northeast’s heavy truck headquarters",
+                    "headingLevel": 1
+                  }
+                },
+                {
+                  "id": "hero-text",
+                  "type": "text",
+                  "props": {
+                    "text": "New and pre-owned trucks from Volvo, Western Star, Autocar, BYD and Motiv — plus parts, service, financing and leasing, minutes from the NY metro."
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "browse-inventory"
+                      },
+                      {
+                        "ctaId": "book-service"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "hero-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/11/WS_57X_72HR_49X_Dump_47X_Mixer_new-image-for-website-landing-page-1024x683.jpg",
+                      "alt": "Western Star lineup at Hudson County Motors",
+                      "width": 1024,
+                      "height": 683
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "search-box",
+          "type": "widget",
+          "props": {
+            "widget": "inventory-search",
+            "config": {
+              "heading": "Inventory search",
+              "placeholder": "Search by make, model, type or stock # — e.g. \"Volvo VNL sleeper\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "brands",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "brand-strip",
+          "type": "logoStrip",
+          "props": {
+            "logos": [
+              {
+                "name": "Volvo",
+                "image": {
+                  "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/06/hudsoncountymotors-brand-volvo.webp",
+                  "alt": "Volvo"
+                },
+                "url": "/store/search?q=Volvo"
+              },
+              {
+                "name": "Western Star",
+                "image": {
+                  "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/06/hudsoncountymotors-brand-western-star-trucks.webp",
+                  "alt": "Western Star"
+                },
+                "url": "/store/search?q=Western+Star"
+              },
+              {
+                "name": "Autocar",
+                "image": {
+                  "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/06/hudsoncountymotors-brand-autocar.webp",
+                  "alt": "Autocar"
+                },
+                "url": "/store/search?q=Autocar"
+              },
+              {
+                "name": "BYD",
+                "image": {
+                  "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/06/hudsoncountymotors-brand-byd.webp",
+                  "alt": "BYD"
+                },
+                "url": "/store/search?q=BYD"
+              },
+              {
+                "name": "Motiv",
+                "image": {
+                  "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/06/Motiv-Delivers-Logo-Grey-200x88-1.webp",
+                  "alt": "Motiv Power Systems"
+                },
+                "url": "/store/search?q=Motiv"
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "quick",
-      "type": "iconGrid",
+      "type": "section",
       "props": {
-        "heading": "How can we help?",
-        "items": [
-          {
-            "label": "In-stock inventory",
-            "desc": "New and used trucks and trailers, priced and ready to move.",
-            "url": "/store"
-          },
-          {
-            "label": "Parts counter",
-            "desc": "OEM and aftermarket parts, shipped or ready at the counter.",
-            "url": "/store"
-          },
-          {
-            "label": "Service & repair",
-            "desc": "Factory-trained technicians for inspections, warranty and repair.",
-            "url": "/contact"
-          },
-          {
-            "label": "Financing",
-            "desc": "Flexible terms for owner-operators, with fast pre-approval.",
-            "url": "/contact"
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "quick-tiles",
+          "type": "categoryGrid",
+          "props": {
+            "heading": "What do you need today?",
+            "items": [
+              {
+                "label": "New Trucks",
+                "meta": "Volvo, Western Star & more",
+                "url": "/store/inventory?condition=new",
+                "image": {
+                  "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/11/WS_57X_72HR_49X_Dump_47X_Mixer_new-image-for-website-landing-page-1024x683.jpg",
+                  "alt": "Western Star trucks on the lot"
+                }
+              },
+              {
+                "label": "Pre-Owned",
+                "meta": "Inspected & road-ready",
+                "url": "/store/inventory?condition=used",
+                "image": {
+                  "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/10/3-1024x308.webp",
+                  "alt": "Pre-owned trucks at Hudson County Motors"
+                }
+              },
+              {
+                "label": "Parts",
+                "meta": "Online superstore · NJ/NY/CT",
+                "url": "/store/parts",
+                "image": {
+                  "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/10/1.webp",
+                  "alt": "Hudson County Motors parts and service building"
+                }
+              },
+              {
+                "label": "Service",
+                "meta": "OEM-trained technicians",
+                "url": "/service",
+                "image": {
+                  "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/10/1.webp",
+                  "alt": "Hudson County Motors service bays"
+                }
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "id": "featured",
-      "type": "widget",
+      "type": "section",
       "props": {
-        "widget": "inventory-carousel",
-        "config": { "heading": "Featured inventory", "limit": 4 }
-      }
-    },
-    {
-      "id": "band",
-      "type": "statBand",
-      "props": {
-        "heading": "Keeping your fleet on the road",
-        "body": "Every unit we sell is inspected in our own shop. When you buy from us you get a direct line to the people who worked on it.",
-        "ctas": [{ "ctaId": "about-us" }],
-        "stats": [
-          { "value": "39", "label": "Years in business" },
-          { "value": "12k+", "label": "Units delivered" },
-          { "value": "4", "label": "Sales & service centers" },
-          { "value": "48hr", "label": "Avg. parts turnaround" }
-        ]
-      }
-    },
-    {
-      "id": "locations",
-      "type": "widget",
-      "props": {
-        "widget": "locations-map",
-        "config": { "heading": "Find a location", "showMap": true }
-      }
-    },
-    {
-      "id": "contact-row",
-      "type": "row",
-      "props": {
-        "align": "start",
-        "columns": [
-          [
+        "width": "boxed",
+        "paddingY": 0,
+        "anchor": "inventory"
+      },
+      "children": [
+        {
+          "id": "featured-head",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "align": "end",
+            "stackOn": "never"
+          },
+          "children": [
             {
-              "id": "contact-copy",
-              "type": "heading",
-              "props": { "text": "Talk to someone who knows the equipment", "headingLevel": 2 }
+              "id": "featured-title",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "featured-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Featured inventory",
+                    "headingLevel": 2
+                  }
+                }
+              ]
             },
             {
-              "id": "contact-text",
-              "type": "text",
+              "id": "featured-link",
+              "type": "column",
               "props": {
-                "text": "Tell us what the job needs and we will spec it, price it and tell you honestly what is in stock.\n\nPrefer the phone? <a href=\"tel:+15551234567\">Call us</a> during business hours."
-              }
-            }
-          ],
-          [
-            {
-              "id": "contact-form",
-              "type": "form",
-              "props": { "formId": "request-info" }
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "featured-all",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "view-all-inventory"
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ]
-        ]
+        },
+        {
+          "id": "featured-list",
+          "type": "widget",
+          "props": {
+            "widget": "inventory-carousel",
+            "config": {
+              "limit": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "heritage-band",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "heritage-band",
+        "values": {}
+      }
+    },
+    {
+      "id": "leasing-promo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "promo-split",
+        "values": {}
+      }
+    },
+    {
+      "id": "reviews",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "reviews-head",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "align": "end",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "reviews-title",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "reviews-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Word from the road",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            },
+            {
+              "id": "reviews-source",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "reviews-rating",
+                  "type": "text",
+                  "props": {
+                    "text": "★★★★★ Google reviews",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "reviews-list",
+          "type": "testimonials",
+          "props": {
+            "items": [
+              {
+                "quote": "Phil in the Parts Department went above and beyond to help us find the parts we needed to get our truck back on the road. Excellent customer service and fast shipping.",
+                "name": "Joseph Kuykendall",
+                "role": "Local Guide",
+                "rating": 5
+              },
+              {
+                "quote": "Moe, one of the Volvo techs, helps me by getting me in and out and makes the process easier for me. Great guy and knowledgeable.",
+                "name": "Duby Bello",
+                "role": "Service customer",
+                "rating": 5
+              },
+              {
+                "quote": "I come into Hudson for parts and service on my trucks frequently and I can’t see myself going anywhere else for my work. 5-star facility.",
+                "name": "Samer Hablawi",
+                "role": "Fleet owner",
+                "rating": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "department-contacts",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "department-contacts",
+        "values": {
+          "rooftops": {
+            "source": "locations",
+            "config": {}
+          }
+        }
       }
     }
   ]

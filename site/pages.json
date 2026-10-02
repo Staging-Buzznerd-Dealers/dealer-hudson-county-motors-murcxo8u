@@ -2,7 +2,7 @@
   {
     "slug": "home",
     "title": "Home",
-    "description": "New and used trucks, service and parts from a dealer you can trust.",
+    "description": "New and pre-owned trucks from Volvo, Western Star, Autocar, BYD and Motiv, plus parts, service, financing and leasing in Secaucus, NJ.",
     "path": "/",
     "out": "index.html",
     "dir": "home",
@@ -24,6 +24,96 @@
     "title": "test",
     "path": "/test",
     "out": "test/index.html",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "financing",
+    "dir": "financing",
+    "title": "Financing",
+    "description": "Truck financing for new and pre-owned Volvo, Western Star, Autocar, BYD and Motiv trucks at Hudson County Motors in Secaucus, NJ.",
+    "path": "/financing",
+    "out": "financing/index.html",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "leasing",
+    "dir": "leasing",
+    "title": "Leasing & Rental",
+    "description": "Truck leasing and rental from Hudson Truck Leasing, LLC — no down payment, deductible payments and predictable costs.",
+    "path": "/leasing",
+    "out": "leasing/index.html",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "service",
+    "dir": "service",
+    "title": "Service",
+    "description": "Heavy truck service from OEM-trained technicians at Hudson County Motors in Secaucus, NJ.",
+    "path": "/service",
+    "out": "service/index.html",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "about",
+    "dir": "about",
+    "title": "About",
+    "description": "Family-owned since 1945: four generations serving the trucking industry from Secaucus, NJ.",
+    "path": "/about",
+    "out": "about/index.html",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "news-signup",
+    "dir": "news-signup",
+    "title": "News & Specials Sign-up",
+    "description": "Sign up for news, new arrivals and specials from Hudson County Motors.",
+    "path": "/news-signup",
+    "out": "news-signup/index.html",
     "status": "published",
     "seo": {
       "ogImage": null,
