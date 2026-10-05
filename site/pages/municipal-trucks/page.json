@@ -1,0 +1,128 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Inventory",
+          "heading": "Municipal Trucks",
+          "ctaLabel": "Contact Us Today!",
+          "ctaUrl": "/contact-us",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/09/WS_57X_72HR_49X_Dump_47X_Mixer_new-image-for-website-landing-page-scaled-1-1024x683.webp",
+            "alt": "Municipal Trucks"
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "none",
+          "heading": "Power Up Your Municipality with Hudson County Motors",
+          "body": "Municipal trucks for sale play a vital role in keeping communities safe and functioning efficiently. With a robust selection of high-performance trucks designed to tackle the most challenging jobs, from waste removal and road maintenance to winter operations and beyond, our offerings ensure reliability and efficiency. Located in Secaucus, NJ, we proudly serve New Jersey, New York, and beyond, continuing a legacy of exceptional customer service with new and used municipal trucks for sale."
+        }
+      }
+    },
+    {
+      "id": "truck-offerings",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "card",
+          "heading": "Our Municipal Truck Offerings",
+          "cards": [
+            {
+              "num": "01",
+              "title": "Dump Trucks",
+              "text": "Municipal dump trucks are perfect for hauling gravel, asphalt, soil, and snow. Their high load capacities and robust performance are essential for maintaining communities. Municipal dump trucks for sale are available in various configurations to handle any job site, from inner-city construction to large-scale excavation projects."
+            },
+            {
+              "num": "02",
+              "title": "Day Cab Trucks",
+              "text": "We have new, used day cab trucks from top brands like Volvo and Western Star. Their durability and efficiency make them ideal for various municipal tasks. Their maneuverable design allows for easy navigation through tight streets and urban environments."
+            },
+            {
+              "num": "03",
+              "title": "Sleeper Trucks",
+              "text": "Designed for long-haul tasks, these heavy-duty models provide comfort and reliability. They maximize fuel efficiency, ensuring budgets go further. They are perfect for transporting materials and equipment across long distances for regional projects."
+            },
+            {
+              "num": "04",
+              "title": "Deck Trucks",
+              "text": "It is for transporting construction materials or equipment, offering ample hauling capacity and customization options. The flatbed design can have toolboxes, winches, and other accessories to meet specific needs."
+            },
+            {
+              "num": "05",
+              "title": "Plow Trucks",
+              "text": "If you’re looking for new municipal plow trucks for sale, our versatile trucks are designed for snow and ice removal, ensuring roads are safe and clear. Many plow trucks offer features like automatic blade adjustments and heated windshields for improved efficiency and operator comfort during winter operations."
+            },
+            {
+              "num": "06",
+              "title": "Garbage Trucks",
+              "text": "Essential for efficient waste management, designed to carry heavy loads while maintaining agility. Modern garbage trucks have automated loading arms and noise reduction features for a cleaner and quieter operation."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "advantage",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "accent",
+          "heading": "Discover the Hudson County Motors Advantage",
+          "cards": [
+            {
+              "num": "",
+              "title": "Expert Partner, Not Just a Dealer",
+              "text": "Our knowledgeable sales staff understands municipalities and their requirements. We work closely with clients to recommend the perfect truck for the job, whether a heavy-duty dump truck for construction or a maneuverable street sweeper for road maintenance. Moreover, we also offer used municipal trucks for sale in excellent conditions for various municipality needs."
+            },
+            {
+              "num": "",
+              "title": "Flexible Financing Solutions",
+              "text": "Our in-house finance department offers a variety of financing options, including engine overhaul financing, to help maintain existing fleets. Whether financing a Volvo, Western Star, BYD Electric Truck, or Autocar truck, we have the expertise to find the best plan. We aim to ensure new truck orders are seamlessly integrated with minimal downtime."
+            },
+            {
+              "num": "",
+              "title": "One-Stop Shop for Truck Parts",
+              "text": "Hudson County Motors offers a comprehensive selection of heavy truck parts and accessories from top brands like Alliance, CAT, Cummins, and Volvo. With same-day delivery service in the NY/NJ/CT area and a convenient store location in Secaucus, NJ, getting needed parts has always been challenging."
+            },
+            {
+              "num": "",
+              "title": "Minimize Downtime with Prompt Truck Services",
+              "text": "Our state-of-the-art service department with ASE-certified technicians handles any repair or maintenance need quickly and efficiently. An extensive parts inventory ensures minimal downtime, while 24/7 emergency road service provides peace of mind."
+            },
+            {
+              "num": "",
+              "title": "Future-Proof Your Fleet with Electric Truck Options",
+              "text": "As New Jersey’s first certified Volvo EV dealer, we lead in electric truck technology. Our selection of BYD electric refuse trucks, and Volvo VNR electric trucks helps municipalities reduce emissions, save on fuel costs, and operate quieter, cleaner fleets."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "contact-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-card",
+        "values": {
+          "heading": "Ready to Power Up Your Municipality? Contact Us Today!",
+          "bodyRight": "Don’t let outdated or unreliable trucks slow operations. Contact a Hudson County Motors representative today for a free consultation and quote. We’ll help find the perfect municipal truck for sale to power up the community."
+        }
+      }
+    }
+  ]
+}

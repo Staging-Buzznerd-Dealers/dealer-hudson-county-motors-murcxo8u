@@ -1,0 +1,409 @@
+{
+  "version": 2,
+  "id": "media-band",
+  "name": "Content — photo beside text",
+  "css": "[data-bz-node=\"hcm-text\"] { display: flex; flex-direction: column; gap: 16px; }\n[data-bz-node=\"hcm-text\"] > .bz-row { margin: 0; }\n[data-bz-node^=\"hcm-photo\"] { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }\n[data-bz-node^=\"hcm-photo\"] > .bz-block:not(:has(img)) { display: none; }\n[data-bz-node^=\"hcm-photo\"]:not(:has(img)) { display: none; }\n[data-bz-node^=\"hcm-photo\"] img { width: 100%; height: auto; border-radius: var(--radius-card); }\n[data-bz-node^=\"hcm-photo\"]:has(> .bz-block:nth-child(2) img) img { aspect-ratio: 3 / 4; object-fit: cover; height: 100%; }\n@media (max-width: 900px) { [data-bz-node=\"hcm-photo-l\"] { order: 2; } }",
+  "props": [
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "none",
+          "label": "Page (light grey)"
+        },
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "accent",
+          "label": "Blue band"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "key": "photoLeft",
+      "type": "image",
+      "label": "Photo (left side)",
+      "default": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "key": "photoLeft2",
+      "type": "image",
+      "label": "Second photo (left side)",
+      "default": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "key": "photoRight",
+      "type": "image",
+      "label": "Photo (right side)",
+      "default": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "key": "photoRight2",
+      "type": "image",
+      "label": "Second photo (right side)",
+      "default": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Section label",
+      "default": ""
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Text",
+      "default": ""
+    },
+    {
+      "key": "infoTitle",
+      "type": "text",
+      "label": "Info card — heading",
+      "default": ""
+    },
+    {
+      "key": "infoText",
+      "type": "textarea",
+      "label": "Info card — text",
+      "default": ""
+    },
+    {
+      "key": "infoCtaLabel",
+      "type": "text",
+      "label": "Info card — button",
+      "default": ""
+    },
+    {
+      "key": "infoCtaUrl",
+      "type": "url",
+      "label": "Info card — button link",
+      "default": ""
+    },
+    {
+      "key": "infoCta2Label",
+      "type": "text",
+      "label": "Info card — second button",
+      "default": ""
+    },
+    {
+      "key": "infoCta2Url",
+      "type": "url",
+      "label": "Info card — second button link",
+      "default": ""
+    },
+    {
+      "key": "callouts",
+      "type": "list",
+      "label": "Link cards",
+      "fields": [
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Text"
+        },
+        {
+          "key": "ctaLabel",
+          "type": "text",
+          "label": "Button"
+        },
+        {
+          "key": "ctaUrl",
+          "type": "url",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "key": "note",
+      "type": "textarea",
+      "label": "Closing line",
+      "default": ""
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link",
+      "default": ""
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "{{background}}",
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "hcm-mediarow",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hcm-photo-l",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "hcm-img-l",
+                  "type": "image",
+                  "props": {
+                    "image": "{{photoLeft}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hcm-img-l2",
+                  "type": "image",
+                  "props": {
+                    "image": "{{photoLeft2}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hcm-text",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "hcm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "hcm-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hcm-inforow",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "mobile"
+                  },
+                  "children": [
+                    {
+                      "id": "hcm-info",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "hcm-info-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{infoTitle}}",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "hcm-info-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{infoText}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "hcm-info-b",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{infoCtaLabel}}",
+                                "url": "{{infoCtaUrl}}",
+                                "style": "primary"
+                              },
+                              {
+                                "label": "{{infoCta2Label}}",
+                                "url": "{{infoCta2Url}}",
+                                "style": "secondary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "hcm-callrow",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "stackOn": "mobile"
+                  },
+                  "children": [
+                    {
+                      "id": "hcmcall",
+                      "type": "column",
+                      "props": {
+                        "span": 6,
+                        "repeat": "callouts"
+                      },
+                      "children": [
+                        {
+                          "id": "hcm-calltext",
+                          "type": "text",
+                          "props": {
+                            "text": "{{text}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "hcm-callbtn",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{ctaLabel}}",
+                                "url": "{{ctaUrl}}",
+                                "style": "primary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "hcm-foot",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "stackOn": "mobile",
+                    "align": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "hcm-foot-n",
+                      "type": "column",
+                      "props": {
+                        "span": 8
+                      },
+                      "children": [
+                        {
+                          "id": "hcm-note",
+                          "type": "text",
+                          "props": {
+                            "text": "{{note}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "hcm-foot-c",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "hcm-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{ctaLabel}}",
+                                "url": "{{ctaUrl}}",
+                                "style": "primary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "hcm-photo-r",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "hcm-img-r",
+                  "type": "image",
+                  "props": {
+                    "image": "{{photoRight}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hcm-img-r2",
+                  "type": "image",
+                  "props": {
+                    "image": "{{photoRight2}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

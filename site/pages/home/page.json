@@ -210,7 +210,7 @@
               {
                 "label": "Service",
                 "meta": "OEM-trained technicians",
-                "url": "/service",
+                "url": "/commercial-truck-repair-service",
                 "image": {
                   "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/10/1.webp",
                   "alt": "Hudson County Motors service bays"
@@ -396,6 +396,7 @@
       "props": {
         "sectionId": "department-contacts",
         "values": {
+          "heading": "Talk to a department",
           "rooftops": {
             "source": "locations",
             "config": {}

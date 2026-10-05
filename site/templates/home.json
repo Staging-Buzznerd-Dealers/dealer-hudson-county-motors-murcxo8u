@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "id": "default",
-  "name": "Site template",
+  "id": "home",
+  "name": "Homepage template",
   "conditions": [
     {
-      "type": "entireSite",
-      "ref": null
+      "type": "page",
+      "ref": "home"
     }
   ],
   "css": "",
@@ -15,10 +15,7 @@
       "type": "sharedSection",
       "props": {
         "sectionId": "utility-bar",
-        "values": {
-          "hours": "<a href=\"mailto:sales@hudsoncountymotors.com\">sales@hudsoncountymotors.com</a>",
-          "menuId": "utility-inner"
-        }
+        "values": {}
       }
     },
     {
@@ -41,7 +38,23 @@
       "type": "sharedSection",
       "props": {
         "sectionId": "site-footer",
-        "values": {}
+        "values": {
+          "tagline": "A heavy truck dealership in Secaucus, NJ with a parts store, rentals, service and financing.",
+          "linkColumns": [
+            {
+              "heading": "Quick links",
+              "menuId": "home-quick"
+            },
+            {
+              "heading": "Brands",
+              "menuId": "home-brands"
+            },
+            {
+              "heading": "Contact",
+              "menuId": "contact"
+            }
+          ]
+        }
       }
     }
   ]

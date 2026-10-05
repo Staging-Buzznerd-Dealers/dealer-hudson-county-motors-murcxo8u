@@ -2,7 +2,7 @@
   "version": 2,
   "id": "site-footer",
   "name": "Site footer",
-  "css": "[data-bz-node=\"footer\"] { background: var(--accent); color: var(--hcm-on-navy-2); padding-block: clamp(28px, 5vw, 48px); }\n[data-bz-node=\"footer-logo\"] .bz-logo__img { height: 52px; margin-bottom: 16px; }\n[data-bz-node=\"footer-about\"] p { font-size: 13px; line-height: 1.6; color: var(--hcm-on-navy-2); max-width: 300px; }\n[data-bz-node=\"footer\"] .bz-block h4 { margin: 0 0 14px; font: 700 16px/1.2 var(--font-heading); letter-spacing: .1em; text-transform: uppercase; color: #fff; }\n[data-bz-node=\"footer\"] .bz-menu--vertical .bz-nav { gap: 9px; }\n[data-bz-node=\"footer\"] .bz-navitem > a, [data-bz-node=\"footer\"] .bz-navlabel { font: 400 14px/1.4 var(--font-body); padding: 0; color: var(--hcm-on-navy-2); }\n[data-bz-node=\"footer\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-node=\"footer-cols-row\"] { display: flex; flex-wrap: wrap; gap: 40px; justify-content: flex-end; }\n[data-bz-node=\"footer-cols-row\"] > .bz-col { flex: 0 1 auto; min-width: 140px; }\n@media (max-width: 1100px) { [data-bz-node=\"footer-cols-row\"] { justify-content: flex-start; } }",
+  "css": "[data-bz-node=\"footer\"] { background: var(--accent); color: var(--hcm-on-navy-2); padding-block: clamp(28px, 5vw, 48px); }\n[data-bz-node=\"footer-logo\"] .bz-logo__img { height: 52px; margin-bottom: 16px; }\n[data-bz-node=\"footer-about\"] p { font-size: 13px; line-height: 1.6; color: var(--hcm-on-navy-2); max-width: 300px; }\n[data-bz-node=\"footer\"] .bz-block h4 { margin: 0 0 14px; font: 700 16px/1.2 var(--font-heading); letter-spacing: .1em; text-transform: uppercase; color: #fff; }\n[data-bz-node=\"footer\"] .bz-menu--vertical .bz-nav { gap: 9px; }\n[data-bz-node=\"footer\"] .bz-navitem > a, [data-bz-node=\"footer\"] .bz-navlabel { font: 400 14px/1.4 var(--font-body); padding: 0; color: var(--hcm-on-navy-2); }\n[data-bz-node=\"footer\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-node=\"footer-cols-row\"] { display: flex; flex-wrap: wrap; gap: 40px; justify-content: flex-end; }\n[data-bz-node=\"footer-cols-row\"] > .bz-col { flex: 0 1 auto; min-width: 140px; }\n@media (max-width: 1100px) { [data-bz-node=\"footer-cols-row\"] { justify-content: flex-start; } }\n[data-bz-node=\"footer-bar\"] { background: var(--ink-dark); color: var(--hcm-on-navy-3); font-size: 12px; padding-block: 16px; }\n[data-bz-node=\"footer-bar-row\"] { align-items: center; row-gap: 8px; }\n[data-bz-node=\"footer-bar\"] .bz-block p { margin: 0; font-size: 12px; line-height: 1.5; }\n[data-bz-node=\"footer-copy\"] { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; }\n[data-bz-node=\"footer-copy\"] > .bz-block { margin: 0; }\n[data-bz-node=\"legal-nav\"] .bz-nav { gap: 0; }\n[data-bz-node=\"legal-nav\"] .bz-navitem::before { content: \"·\"; padding-inline: 6px; }\n[data-bz-node=\"legal-nav\"] .bz-navitem > a { font: 400 12px/1.5 var(--font-body); padding: 0; color: var(--hcm-on-navy-3); }\n[data-bz-node=\"legal-nav\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-node=\"footer-powered\"] p { text-align: right; }\n@media (max-width: 640px) { [data-bz-node=\"footer-powered\"] p { text-align: left; } }\n[data-bz-node=\"footer-about\"]:not(:has(p)) { display: none; }",
   "props": [
     {
       "key": "logo",
@@ -19,7 +19,7 @@
       "key": "tagline",
       "type": "textarea",
       "label": "About line",
-      "default": "A heavy truck dealership in Secaucus, NJ with a parts store, rentals, service and financing."
+      "default": ""
     },
     {
       "key": "linkColumns",
@@ -39,7 +39,7 @@
       ],
       "default": [
         {
-          "heading": "Quick links",
+          "heading": "Quick Links",
           "menuId": "footer"
         },
         {
@@ -47,8 +47,8 @@
           "menuId": "brands"
         },
         {
-          "heading": "Contact",
-          "menuId": "contact"
+          "heading": "Dealerships",
+          "menuId": "dealerships"
         }
       ]
     }
@@ -140,6 +140,71 @@
                       ]
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer-bar",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "footer-bar-row",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "align": "center",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "footer-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "footer-copyright",
+                  "type": "text",
+                  "props": {
+                    "text": "© Hudson County Motors",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "legal-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "legal",
+                    "layout": "horizontal",
+                    "depth": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer-powered",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "footer-powered-by",
+                  "type": "text",
+                  "props": {
+                    "text": "Powered by Buzznerd Trucks",
+                    "width": "full"
+                  }
                 }
               ]
             }

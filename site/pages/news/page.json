@@ -1,0 +1,257 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "title",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-title",
+        "values": {
+          "eyebrow": "About Us",
+          "heading": "News"
+        }
+      }
+    },
+    {
+      "id": "featured",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-cards",
+        "values": {
+          "layout": "wide",
+          "cardSpan": 12,
+          "posts": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/12/1-official-TFT-Logo-.png.png",
+                "alt": "Toys for Tots"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "December 6, 2024",
+              "title": "Hudson County Motors Joins Forces with Toys for Tots to Spread Holiday Cheer",
+              "excerpt": "[Jersey City, NJ] – [December 2, 2024] – Hudson County Motors is proud to announce its partnership with Toys for Tots this holiday season to",
+              "author": "",
+              "url": "https://www.hudsoncountymotors.com/hudson-county-motors-joins-forces-with-toys-for-tots-to-spread-holiday-cheer/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "news",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-cards",
+        "values": {
+          "heading": "News",
+          "posts": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/10/DSC_0379.jpg",
+                "alt": "Hudson County Motors Announces Arrival of the All-New Volvo VNL 860: A Game-Changer for the Future of Heavy-Duty Trucking"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "October 18, 2024",
+              "title": "Hudson County Motors Announces Arrival of the All-New Volvo VNL 860: A Game-Changer for the Future of Heavy-Duty Trucking",
+              "excerpt": "Secaucus, NJ, 10/3/24 — Hudson County Motors is excited to announce the arrival of the all-new Volvo VNL 860, now available at our dealership. This",
+              "author": "",
+              "url": "https://www.hudsoncountymotors.com/hudson-county-motors-announces-arrival-of-the-all-new-volvo-vnl-860-a-game-changer-for-the-future-of-heavy-duty-truckingnj-funding-strengthens-investment-climate-change-clean-energy-2023/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/07/363331775_764342589029351_5632226579091956303_n.jpg",
+                "alt": "NJ Funding Strengthens Investment Climate Change Clean Energy 2023"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "July 27, 2023",
+              "title": "NJ Funding Strengthens Investment Climate Change Clean Energy 2023",
+              "excerpt": "NEW GRANTS FOR ELECTRIC TRUCKS AVAILABLE IN NJ Solutions for municipalities for a cleaner, greener New Jersey! Continuing its commitment to mitigate climate change and",
+              "author": "",
+              "url": "https://www.hudsoncountymotors.com/nj-strengthens-investment-climate-change-clean-energy-2023/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/05/collage-1024x683.jpg",
+                "alt": "Hudson County Motors Hosts Bring Your Child to Work Day"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "May 2, 2023",
+              "title": "Hudson County Motors Hosts Bring Your Child to Work Day",
+              "excerpt": "Last week we hosted our annual Bring Your Child to Work Day, and oh boy was it a blast! We opened the doors to our",
+              "author": "",
+              "url": "https://www.hudsoncountymotors.com/hudson-county-motors-hosts-bring-your-child-to-work-day-accolades/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/01/Screenshot-2023-02-06-at-9.25.53-PM.png",
+                "alt": "Great Prices Blower Motor – Air Cylinder – Water Pump"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "January 30, 2023",
+              "title": "Great Prices Blower Motor – Air Cylinder – Water Pump",
+              "excerpt": "Volvo Truck Parts and More When it comes to keeping your rig on the road and running smoothly, you want quality parts at a fair",
+              "author": "",
+              "url": "https://www.hudsoncountymotors.com/great-prices-blower-motor-air-cylinder-water-pump/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/11/volvolights-hudson-county-motors-vnr-edited-3.jpg",
+                "alt": "Hudson County Motors Becomes First Volvo Trucks Certified EV Dealer in New Jersey"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "November 8, 2022",
+              "title": "Hudson County Motors Becomes First Volvo Trucks Certified EV Dealer in New Jersey",
+              "excerpt": "Volvo Trucks North America dealer Hudson County Motors recently became the first Volvo Trucks Certified Electric Vehicle (EV) Dealer in New Jersey — servicing the",
+              "author": "",
+              "url": "https://www.hudsoncountymotors.com/udson-county-motors-becomes-first-volvo-trucks-certified-ev-dealer-in-new-jersey/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "press-release",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-cards",
+        "values": {
+          "background": "accent",
+          "layout": "row",
+          "cardSpan": 12,
+          "heading": "Press Release",
+          "posts": [
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "Press Release",
+              "catKey": "press release",
+              "date": "November 19, 2024",
+              "title": "Motiv Electric Trucks and Hudson County Motors Bring Clean, Electric Transportation to Woodbridge, New Jersey",
+              "excerpt": "Zero-tailpipe emission shuttle buses will be used to transport senior citizens for shopping, dining and other lifestyle activities ATLANTIC CITY, N.J. (November 20, 2024) Motiv",
+              "author": "",
+              "url": "https://www.hudsoncountymotors.com/motiv-electric-trucks-and-hudson-county-motors-bring-clean-electric-transportation-to-woodbridge-new-jersey/"
+            },
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "Press Release",
+              "catKey": "press release",
+              "date": "October 16, 2024",
+              "title": "IMPORTANT CARB/ACT CHANGES COMING TO NEW JERSEY",
+              "excerpt": "Starting January 1, 2025, New Jersey will move forward with the implementation of the California Air Resources Board (CARB) Advanced Clean Truck Rule (ACT). This",
+              "author": "",
+              "url": "https://www.hudsoncountymotors.com/important-carb-act-changes-coming-to-new-jersey/"
+            },
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "Press Release",
+              "catKey": "press release",
+              "date": "May 14, 2024",
+              "title": "Join Us For the 2nd Annual Christopher R. Friedauer Memorial Truck Show",
+              "excerpt": "The Hudson County Motors family is gearing up for the 2nd Annual Christopher R. Friedauer Memorial Truck Show and we would like to see you",
+              "author": "",
+              "url": "https://www.hudsoncountymotors.com/join-us-for-the-2nd-annual-christopher-r-friedauer-memorial-truck-show/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mid-america-truck-show",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "photo-grid",
+        "values": {
+          "heading": "Mid America Truck Show 2025",
+          "photos": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/04/thumbnail_IMG_0043-1.jpg",
+                "alt": "Mid America Truck Show 2025"
+              },
+              "span": 3,
+              "url": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/04/thumbnail_IMG_0045.jpg",
+                "alt": "Mid America Truck Show 2025"
+              },
+              "span": 3,
+              "url": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/04/thumbnail_IMG_0046.jpg",
+                "alt": "Mid America Truck Show 2025"
+              },
+              "span": 3,
+              "url": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/04/thumbnail_IMG_0049.jpg",
+                "alt": "Mid America Truck Show 2025"
+              },
+              "span": 3,
+              "url": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/04/thumbnail_IMG_0056-1.jpg",
+                "alt": "Mid America Truck Show 2025"
+              },
+              "span": 3,
+              "url": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/04/thumbnail_IMG_0058-1.jpg",
+                "alt": "Mid America Truck Show 2025"
+              },
+              "span": 3,
+              "url": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/04/thumbnail_IMG_0066.jpg",
+                "alt": "Mid America Truck Show 2025"
+              },
+              "span": 3,
+              "url": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/04/thumbnail_IMG_0076.jpg",
+                "alt": "Mid America Truck Show 2025"
+              },
+              "span": 3,
+              "url": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/04/thumbnail_IMG_0114.jpg",
+                "alt": "Mid America Truck Show 2025"
+              },
+              "span": 3,
+              "url": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

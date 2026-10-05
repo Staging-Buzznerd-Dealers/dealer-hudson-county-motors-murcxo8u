@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "title",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-title",
+        "values": {
+          "heading": "Contact Us"
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-form",
+        "values": {}
+      }
+    }
+  ]
+}

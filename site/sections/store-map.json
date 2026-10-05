@@ -1,0 +1,211 @@
+{
+  "version": 2,
+  "id": "store-map",
+  "name": "Store map and main numbers",
+  "css": "[data-bz-node=\"sm-card\"] { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); overflow: hidden; }\n[data-bz-node=\"sm-copy\"] { background: var(--accent); color: var(--hcm-on-navy); padding: clamp(28px, 4vw, 48px); display: flex; flex-direction: column; gap: 14px; }\n[data-bz-node=\"sm-copy\"] > * { margin: 0; }\n[data-bz-node=\"sm-copy\"] .bz-block h2 { color: #fff; }\n[data-bz-node^=\"sm-name\"] p { font: 600 15px/1.2 var(--font-heading); letter-spacing: .14em; text-transform: uppercase; color: var(--hcm-on-navy-2); margin: 0 0 8px; }\n[data-bz-node^=\"sm-addr\"] p { margin: 0 0 14px; }\n[data-bz-node^=\"sm-addr\"] a { font: 700 18px/1.3 var(--font-heading); color: #fff; text-decoration: underline; text-underline-offset: 3px; }\n:is([data-bz-node^=\"sm-phone\"], [data-bz-node=\"sm-toll\"], [data-bz-node=\"sm-fax\"]) p { display: flex; justify-content: space-between; gap: 16px; margin: 0; padding: 10px 0; border-top: 1px solid rgb(255 255 255 / 15%); font-size: 15px; color: var(--hcm-on-navy-2); }\n:is([data-bz-node^=\"sm-phone\"], [data-bz-node=\"sm-toll\"], [data-bz-node=\"sm-fax\"]) :is(a, span) { font-weight: 700; color: #fff; text-decoration: none; }\n:is([data-bz-node^=\"sm-phone\"], [data-bz-node=\"sm-toll\"], [data-bz-node=\"sm-fax\"]) p:has(:is(a, span):empty) { display: none; }\n[data-bz-node=\"contact-mapcol\"] { min-height: 360px; display: flex; }\n[data-bz-node=\"contact-map\"], [data-bz-node=\"contact-map\"] .bz-widget { flex: 1; display: flex; flex-direction: column; margin: 0; }\n[data-bz-node=\"contact-map\"] .bz-map { flex: 1; min-height: 360px; background: var(--hcm-tint); }\n[data-bz-node=\"contact-map\"] .bz-loclist, [data-bz-node=\"contact-map\"] .bz-widget__empty { display: none; }\n@media (max-width: 900px) { [data-bz-node=\"sm-card\"] > .bz-col { grid-column: 1 / -1; } }",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Store Map"
+    },
+    {
+      "key": "rooftops",
+      "type": "list",
+      "label": "Rooftop",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "Postal code"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        }
+      ]
+    },
+    {
+      "key": "tollFree",
+      "type": "text",
+      "label": "Toll-free number (as shown)",
+      "default": ""
+    },
+    {
+      "key": "tollFreeUrl",
+      "type": "url",
+      "label": "Toll-free link (tel:…)",
+      "default": ""
+    },
+    {
+      "key": "fax",
+      "type": "text",
+      "label": "Fax number",
+      "default": ""
+    },
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location (Admin slug, optional)",
+      "default": ""
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "sm-card",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "sm-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "hcm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "sm-roof",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "mobile",
+                    "repeat": "rooftops"
+                  },
+                  "children": [
+                    {
+                      "id": "sm-roof-c",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "sm-name",
+                          "type": "text",
+                          "props": {
+                            "text": "{{name}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "sm-addr",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"{{mapUrl}}\">{{streetAddress}}</a>",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "sm-phone",
+                          "type": "text",
+                          "props": {
+                            "text": "Phone <a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "sm-toll",
+                  "type": "text",
+                  "props": {
+                    "text": "Toll Free <a href=\"{{tollFreeUrl}}\">{{tollFree}}</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sm-fax",
+                  "type": "text",
+                  "props": {
+                    "text": "Fax <span>{{fax}}</span>",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "contact-mapcol",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "contact-map",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "mapProvider": "google",
+                      "showMap": true
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

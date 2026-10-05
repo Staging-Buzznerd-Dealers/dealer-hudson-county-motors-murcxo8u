@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Service",
+          "heading": "Specialty Services",
+          "ctaLabel": "(201) 866-7666",
+          "ctaUrl": "tel:+12018667666",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/A0003464-72-DPI.jpg",
+            "alt": "Specialty Services"
+          }
+        }
+      }
+    },
+    {
+      "id": "emissions-inspection",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "none",
+          "intro": "Hudson County Motors is an authorized New Jersey Motor Vehicle diesel emissions inspection center. An emission inspection will take less than a half of an hour and can help identify issues that can trigger fines ranging from $500 to $1,300. Most inspections can be performed the same day. Please call the service department at <a href=\"tel:+12018667666\">(201) 866-7666</a> to schedule your appointment. At the appointment, you will be required to provide the following:",
+          "body": "Proof of insurance\n\nA current New Jersey registration card that is registered to the vehicle being inspected\n\nAffixed license tags registered to the vehicle being inspected"
+        }
+      }
+    }
+  ]
+}

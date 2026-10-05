@@ -2,7 +2,7 @@
   "version": 2,
   "id": "utility-bar",
   "name": "Utility bar",
-  "css": "[data-bz-section=\"utility-bar\"] { background: var(--ink-dark); color: var(--hcm-on-navy); font-size: clamp(11px, 1.6vw, 13px); font-weight: 500; }\n[data-bz-section=\"utility-bar\"] .bz-row { align-items: center; row-gap: 8px; }\n[data-bz-section=\"utility-bar\"] .bz-block p { margin: 0; font-size: inherit; line-height: 1.15; }\n[data-bz-node=\"utility-left\"] { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }\n[data-bz-node=\"utility-left\"] > .bz-block { margin: 0; }\n[data-bz-section=\"utility-bar\"] .bz-menu { justify-content: flex-end; }\n[data-bz-section=\"utility-bar\"] .bz-nav { gap: 8px 24px; }\n[data-bz-section=\"utility-bar\"] .bz-navitem > a { font-family: var(--font-body); font-weight: 500; line-height: 1.15; font-size: inherit; padding: 0; color: var(--hcm-on-navy); }\n[data-bz-section=\"utility-bar\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-section=\"utility-bar\"] .bz-navitem > a[href^=\"tel:\"] { color: #fff; font-weight: 700; }\n@media (max-width: 640px) { [data-bz-section=\"utility-bar\"] .bz-menu { justify-content: flex-start; } }",
+  "css": "[data-bz-section=\"utility-bar\"] { background: var(--ink-dark); color: var(--hcm-on-navy); font-size: clamp(11px, 1.6vw, 13px); font-weight: 500; }\n[data-bz-section=\"utility-bar\"] .bz-row { align-items: center; row-gap: 8px; }\n[data-bz-section=\"utility-bar\"] .bz-block p { margin: 0; font-size: inherit; line-height: 1.15; }\n[data-bz-node=\"utility-left\"] { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }\n[data-bz-node=\"utility-left\"] > .bz-block { margin: 0; }\n[data-bz-section=\"utility-bar\"] .bz-menu { justify-content: flex-end; }\n[data-bz-section=\"utility-bar\"] .bz-nav { gap: 8px 24px; }\n[data-bz-section=\"utility-bar\"] .bz-navitem > a { font-family: var(--font-body); font-weight: 500; line-height: 1.15; font-size: inherit; padding: 0; color: var(--hcm-on-navy); }\n[data-bz-section=\"utility-bar\"] .bz-navitem > a:hover, [data-bz-section=\"utility-bar\"] .bz-text a:hover { color: #fff; }\n[data-bz-section=\"utility-bar\"] .bz-text a { color: inherit; font-weight: 500; }\n[data-bz-section=\"utility-bar\"] .bz-navitem > a[href^=\"tel:\"] { color: #fff; font-weight: 700; }\n@media (max-width: 640px) { [data-bz-section=\"utility-bar\"] .bz-menu { justify-content: flex-start; } }",
   "props": [
     {
       "key": "address",
@@ -13,7 +13,7 @@
     {
       "key": "hours",
       "type": "text",
-      "label": "Hours line",
+      "label": "Second line (hours or email)",
       "default": "Mon – Fri from 6AM"
     },
     {

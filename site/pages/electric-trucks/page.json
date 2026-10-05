@@ -1,0 +1,215 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Inventory",
+          "heading": "Electric Commercial Trucks for Sale",
+          "body": "Certified EV Franchise Authority. Commercial Infrastructure Consulting. Factory-Trained Support.",
+          "ctaLabel": "Contact Hudson County Motors",
+          "ctaUrl": "/contact-us",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/VNR660_1.jpg",
+            "alt": "Volvo Trucks VNR 660 VNR+660_1"
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "body": "Navigating the transition to zero-emission commercial vehicles requires deep technical insight, intensive capital planning, and a clear understanding of regional operational realities. As the premier certified Volvo Trucks Electric Vehicle (EV) dealer in New Jersey, Hudson County Motors provides enterprise transport fleets and local municipalities with authorized vehicle procurement, specialized high-voltage diagnostics, and complex utility grid integration strategies. Operating from our advanced <strong>100,000 square-foot complex</strong> located in Secaucus, NJ, our heavy vehicle division balances the environmental benefits of electromobility with direct, candid assessments of total cost of ownership (TCO) parameters.",
+          "body2": "Our commercial vehicle specialists help fleet directors evaluate range constraints, utility grid parameters, battery cell life cycles, and true operational cost projections. Sourcing alternative fuel assets from an authorized multi-franchise dealer guarantees your transport network retains access to certified structural support. Our state-of-the-art complex bridges the gap between clean-diesel capabilities and zero-emission machinery, offering comprehensive fleet upfitting and infrastructure consulting to future-proof your logistics investments across the tri-state shipping corridors.",
+          "callouts": [
+            {
+              "text": "Review our corporate background, enterprise capital stability, and our multi-generational journey supporting regional infrastructure networks.",
+              "ctaLabel": "About Hudson County Motors",
+              "ctaUrl": "/about-hudson-county-motors-commercial-truck-dealership"
+            },
+            {
+              "text": "Review our preventative maintenance programs and advanced shop tooling engineered to support mixed-powertrain logistics networks.",
+              "ctaLabel": "Explore Fleet Maintenance Programs",
+              "ctaUrl": "/commercial-truck-repair-service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "platforms",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "card",
+          "heading": "Technical Evaluation of Available Zero-Emission Heavy-Duty Platforms",
+          "body": "The commercial electric vehicle landscape is heavily influenced by regional capital grant structures, real-time grid availability, and local infrastructure readiness. While market interest is highly driven by shifting legislative mandates in environmentally sensitive towns and major municipal operations, private fleet adoption remains constrained by high initial capital costs, lack of public incentives, and specific terminal charging limitations. At Hudson County Motors, we prevent the risk of unverified vehicle deployment by stocking field-verified heavy platforms built to manage intensive industrial duty cycles.\n\nOur fully supported zero-emission commercial portfolio features authorized heavy-duty equipment configurations designed to satisfy demanding metropolitan routing. For intensive regional transport and logistics, we supply the BYD-8TT Heavy-Duty Tractor, a fully electric Class 8 tandem-axle tractor engineered specifically for intermodal port drayage, local freight delivery, and high-duty transit runs. For short-haul staging yards, rail terminals, and marine cargo hubs, we provide the BYD-8Y Terminal Tractor, a specialized yard jockey optimized for continuous, zero-emission duty cycles.\n\nAdditionally, our inventory incorporates flexible Motiv-Workhorse configurations, delivering reliable all-electric chassis options built primarily for municipal transit buses and urban cargo box truck routes. If your operation requires immediate access to traditional long-haul sleepers or severe-duty internal combustion models to balance your current transit loops, our team maintains full access to a diverse new truck inventory and an thoroughly certified used truck inventory under the same roof.",
+          "photoRight": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/VNX300.jpg",
+            "alt": "Volvo Trucks VNX 300 VNX300"
+          },
+          "photoRight2": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/01/VNR300_3.jpg",
+            "alt": "Volvo Trucks VNR 300 VNR300_3"
+          }
+        }
+      }
+    },
+    {
+      "id": "high-voltage-service",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "accent",
+          "heading": "Advanced Service Infrastructure and High-Voltage Technical Competency",
+          "body": "Sustaining maximum fleet uptime for battery-electric vehicles demands advanced technical capabilities, insulated shop tooling, and precision electronic monitoring that go far beyond the scope of multi-brand independent repair garages. Our master service department features isolated vehicle safety zones and dedicated high-voltage diagnostic systems to execute deep electromobility overhauls safely. Our 26 on-site technicians undergo continuous factory training loops, allowing our team to complete complex battery balancing procedures, insulation resistance monitoring, thermal cooling circuit audits, and structural wiring harness repairs under strict OEM safety baselines.",
+          "body2": "Our integrated <strong>32-bay workspace</strong> simultaneously processes legacy clean-diesel repairs and next-generation high-voltage vehicle inspections under one roof, shielding your organization from logistical fragmentation. If an unexpected power management malfunction or complex software communication drop-out occurs, our certified mechanics leverage direct OEM technical support channels to flash controllers and deploy precise updates rapidly. We completely eliminate parts procurement latency by drawing components directly from our on-site parts warehouse, which maintains an outstanding <strong>90% first-pass parts fill ratio</strong> to keep vehicle dwell times minimized.",
+          "note": "Explore our massive on-site component warehouse, automated parts replenishment metrics, and local hot-shot delivery fleet dispatch channels.",
+          "ctaLabel": "View Truck Parts Department",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    },
+    {
+      "id": "analytical-breakdown",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Analytical Prose Breakdown: Financial Realities of Fleet Electrification",
+          "body": "To assist corporate accounting teams, CFOs, and fleet controllers in calculating capital returns, the following section outlines the structural cost profiles and infrastructure variables associated with commercial fleet electrification.",
+          "cards": [
+            {
+              "num": "01",
+              "title": "Capital Equipment Acquisition and Price Disparities",
+              "text": "Procuring medium- and heavy-duty battery-electric commercial trucks demands absorbing an initial capital expenditure that ranges considerably higher than a conventional clean-diesel equivalent. This substantial acquisition premium creates immediate cost friction on corporate balance sheets, requiring transport managers to carefully analyze available state voucher incentives, such as the New Jersey Zero-Emission Incentive Program (NJ-ZIP), to offset upfront costs. Without layering these critical public credits alongside federal clean-vehicle tax allowances, achieving immediate return on investment becomes a long-term capital challenge for standard freight carriers."
+            },
+            {
+              "num": "02",
+              "title": "Industrial Charging Infrastructure and Utility Grid Layouts",
+              "text": "A common deployment mistake made by fleet operators during early electrification planning is assuming a rigid 1:1 ratio of fast chargers to vehicles, which can over-spec facility electrical needs by up to 20%. Installing high-power DC fast charging equipment demands a severe power draw that frequently exceeds a standard terminal’s panel limit, requiring new substation transformers and extensive civil work. To prevent long interconnect project delays, fleet managers must launch baseline load audits with regional utility providers early, using automated charge-management software to shift charging to off-peak night hours and avoid costly peak daytime demand charges."
+            },
+            {
+              "num": "03",
+              "title": "Life Cycle Maintenance Profiles and Powertrain Dwell Timelines",
+              "text": "Shifting an operating footprint to zero-emission platforms structurally alters your service bay workflows by removing high-frequency diesel maintenance pain points like clogged EGR coolers, DPF filtration adjustments, and complex fluid changes. Electric drivetrains use significantly fewer moving parts, which lowers regular preventive maintenance overhead and minimizes unexpected engine breakdowns over the vehicle’s life cycle. However, these savings must be balanced against high-voltage battery degradation tracking and specific cooling system care, making authorized dealer support an absolute requirement for preserving asset longevity and protecting trade-in values."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "capital-and-incentives",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "card",
+          "heading": "Navigating Capital Allocations and State Sourcing Incentives",
+          "body": "Transitioning to electric transport represents a major capital investment that demands a thorough approach to infrastructure design and financial sourcing. Our commercial consulting specialists work directly with fleet buyers to perform comprehensive site assessments, analyze vehicle range configurations, and design matching depot charging grids. We coordinate directly with regional utility providers like PSE&G and JCP&L to evaluate real-world grid capacities, preventing common deployment mistakes while capturing available utility make-ready financial credits to offset civil engineering expenses.\n\nFurthermore, our credit and finance departments track evolving green-energy tax structures, municipal funding streams, and state-specific grant systems to make zero-emission fleet scaling as affordable as possible. We help your corporate underwriters coordinate with core capital leaders like Volvo Financial Services and Daimler Truck Financial Services to build tailored equipment financing packages, lease-purchase structures, or flexible TRAC lease terms that preserve your operational working capital. If you require absolute operational billing predictability, we can roll your alternative fuel equipment straight into a capital-efficient <a href=\"/leasing-2\">commercial truck leasing</a> agreement backed completely by our bumper-to-bumper full-service uptime protection.",
+          "photoLeft": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/400AF_3.jpg",
+            "alt": "Volvo Trucks VHD 400 AF 400AF_3"
+          }
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Technical Support Manuals & Regional Sourcing Programs",
+          "body": "Review our engineering resources, maintenance blueprints, and specialized fleet procurement catalogs:",
+          "cards": [
+            {
+              "num": "",
+              "title": "NJ Zero-Emission Grant Navigator & Regulatory Guide",
+              "text": "Examine local New Jersey compliance deadlines, clean-energy grant opportunities, and state smoke testing parameters."
+            },
+            {
+              "num": "",
+              "title": "Volvo VNL 860 Component Maintenance Matrix",
+              "text": "Review specifications, fluid schedules, and electronic diagnostic codes written for high-mileage line-haul networks."
+            },
+            {
+              "num": "",
+              "title": "Northeast Fleet Winterization Matrix",
+              "text": "Examine specialized tactics for protecting commercial electrical systems, checking cold cranking amps (CCA), and blocking undercarriage rust."
+            },
+            {
+              "num": "",
+              "title": "Commercial Charger Network Planning Blueprint",
+              "text": "Analyze technical requirements, electrical switchgear scaling workflows, and utility demand-charge mitigation guidelines written for terminal operators."
+            }
+          ],
+          "cardSpan": 3
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-map",
+        "values": {
+          "background": "none",
+          "heading": "Contact Our Electromobility Consulting Specialists",
+          "body": "If your municipality, corporate logistics operation, or port drayage enterprise requires an authorized electric truck quote or a facility power assessment, our team is prepared to assist.",
+          "note": "<strong>Contact our professionals today to verify model availability, request grant eligibility reviews, or establish a commercial charging infrastructure plan.</strong>",
+          "phone": "(201) 866-5570",
+          "phoneUrl": "tel:+12018665570",
+          "place": "Secaucus, NJ",
+          "ctaLabel": "Contact Hudson County Motors",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "background": "card",
+          "heading": "Expert FAQ Stack",
+          "faqs": [
+            {
+              "q": "What are the primary operational challenges during commercial electric vehicle adoption?",
+              "a": "Fleet directors typically prioritize three major variables: high initial vehicle capital costs, the extensive capital needed to install industrial charging hardware, and range reliability under variable cargo weights or extreme winter conditions."
+            },
+            {
+              "q": "How does Hudson County Motors assist with depot charging layout planning?",
+              "a": "When a fleet acquires an electric truck asset, our specialists perform site design audits and consult with local utilities to establish the necessary charging logistics, helping to avoid expensive power-up delays."
+            },
+            {
+              "q": "Which industrial sectors are showing the highest demand for electric vehicles?",
+              "a": "Currently, adoption demand is primarily led by public municipalities and state entities backed by legislative funding. Private transport interest remains limited unless supported by strong capital grant initiatives."
+            },
+            {
+              "q": "Are your vehicle technicians certified to handle electric commercial truck repairs?",
+              "a": "Yes. Our facility maintains factory-trained technicians backed by direct OEM technical support and specialized high-voltage diagnostic equipment to process battery balancing, electrical diagnostics, and motor maintenance safely."
+            },
+            {
+              "q": "What electric truck platforms are currently available for order at your dealership?",
+              "a": "Our supported electromobility lineup focuses on heavy-duty Class 8 operations, highlighting the BYD-8TT tandem-axle tractor and the BYD-8Y terminal yard tractor, alongside specialized Motiv-Workhorse all-electric bus and box truck options."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

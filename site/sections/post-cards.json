@@ -1,0 +1,196 @@
+{
+  "version": 2,
+  "id": "post-cards",
+  "name": "Post cards",
+  "css": "[data-bz-node=\"pc-grid\"] { gap: 14px; }\n[data-bz-node=\"band\"]:has(.pc--row) [data-bz-node=\"pc-grid\"] { gap: 0; border-top: 1px solid rgb(255 255 255 / 20%); }\n@media (max-width: 1100px) { [data-bz-node^=\"pcitem\"][style*=\"--bz-span:3\"], [data-bz-node^=\"pcitem\"][style*=\"--bz-span:4\"] { grid-column: span 6; } }\n@media (max-width: 640px) { [data-bz-node^=\"pcitem\"] { grid-column: 1 / -1 !important; } }",
+  "props": [
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "none",
+          "label": "Page (light grey)"
+        },
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "accent",
+          "label": "Blue band"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "layout",
+      "type": "select",
+      "label": "Card style",
+      "options": [
+        {
+          "value": "card",
+          "label": "Cards"
+        },
+        {
+          "value": "wide",
+          "label": "One wide feature"
+        },
+        {
+          "value": "row",
+          "label": "Rows (no image)"
+        }
+      ],
+      "default": "card"
+    },
+    {
+      "key": "cardSpan",
+      "type": "number",
+      "label": "Card width, in twelfths (4 = three per row, 3 = four, 12 = full)",
+      "default": 4
+    },
+    {
+      "key": "readMore",
+      "type": "text",
+      "label": "Read more label",
+      "default": "Read More »"
+    },
+    {
+      "key": "posts",
+      "type": "list",
+      "label": "Posts",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Image"
+        },
+        {
+          "key": "category",
+          "type": "text",
+          "label": "Category"
+        },
+        {
+          "key": "catKey",
+          "type": "text",
+          "label": "Category key (for the filter)"
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "excerpt",
+          "type": "textarea",
+          "label": "Excerpt"
+        },
+        {
+          "key": "author",
+          "type": "text",
+          "label": "Author"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "{{background}}",
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "hcm-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "hcm-headcol",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hcm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pc-grid",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "pcitem",
+              "type": "column",
+              "props": {
+                "span": "{{cardSpan}}",
+                "repeat": "posts"
+              },
+              "children": [
+                {
+                  "id": "pc-card",
+                  "type": "post-card",
+                  "props": {
+                    "image": "{{image}}",
+                    "category": "{{category}}",
+                    "catKey": "{{catKey}}",
+                    "date": "{{date}}",
+                    "title": "{{title}}",
+                    "excerpt": "{{excerpt}}",
+                    "author": "{{author}}",
+                    "url": "{{url}}",
+                    "layout": "{{layout}}",
+                    "readMore": "{{readMore}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -40,7 +40,7 @@
   {
     "id": "about-us",
     "label": "About us",
-    "url": "/about",
+    "url": "/about-hudson-county-motors-commercial-truck-dealership",
     "style": "link",
     "intent": "about",
     "newTab": false,
@@ -58,7 +58,7 @@
   {
     "id": "explore-leasing",
     "label": "Explore Leasing",
-    "url": "/leasing",
+    "url": "/leasing-2",
     "style": "primary",
     "intent": "leasing",
     "newTab": false,

@@ -1,0 +1,167 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "blog-index",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "blog-index",
+        "values": {
+          "eyebrow": "About Us",
+          "heading": "Blog",
+          "categories": [
+            {
+              "label": "All",
+              "value": ""
+            },
+            {
+              "label": "Blog",
+              "value": "blog"
+            },
+            {
+              "label": "Uncategorized",
+              "value": "uncategorized"
+            }
+          ],
+          "posts": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/09/spark-plugs-truck.jpg",
+                "alt": "Signs It’s Time to Replace Your Fleet’s Heavy Duty Trucks"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "",
+              "title": "Signs It’s Time to Replace Your Fleet’s Heavy Duty Trucks",
+              "excerpt": "",
+              "author": "webdev",
+              "url": "https://www.hudsoncountymotors.com/signs-its-time-to-replace-your-fleets-heavy-duty-trucks/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/05/IMG_2882-scaled.jpeg",
+                "alt": "New Commercial Truck Maintenance Schedules: What to Expect"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "",
+              "title": "New Commercial Truck Maintenance Schedules: What to Expect",
+              "excerpt": "",
+              "author": "webdev",
+              "url": "https://www.hudsoncountymotors.com/new-commercial-truck-maintenance-schedules-what-to-expect/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/top-5-pre-owned-volvo-trucks-for-long-haul-transportation-in-2024.jpg",
+                "alt": "Why Your Business Should Consider Buying a Fleet of Used Trucks"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "",
+              "title": "Why Your Business Should Consider Buying a Fleet of Used Trucks",
+              "excerpt": "",
+              "author": "webdev",
+              "url": "https://www.hudsoncountymotors.com/why-your-business-should-consider-buying-a-fleet-of-used-trucks/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/01/Blue-Volvo-HCM-store-banner-scaled.jpg",
+                "alt": "Understanding Truck Warranties When Buying from a Commercial Truck Dealer"
+              },
+              "category": "Uncategorized",
+              "catKey": "uncategorized",
+              "date": "",
+              "title": "Understanding Truck Warranties When Buying from a Commercial Truck Dealer",
+              "excerpt": "",
+              "author": "webdev",
+              "url": "https://www.hudsoncountymotors.com/understanding-truck-warranties-when-buying-from-a-commercial-truck-dealer/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/09/volvo-parts-scaled.jpg",
+                "alt": "The Importance of Genuine Parts for Your Volvo Truck’s Performance"
+              },
+              "category": "Uncategorized",
+              "catKey": "uncategorized",
+              "date": "",
+              "title": "The Importance of Genuine Parts for Your Volvo Truck’s Performance",
+              "excerpt": "",
+              "author": "webdev",
+              "url": "https://www.hudsoncountymotors.com/the-importance-of-genuine-parts-for-your-volvo-trucks-performance/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/12/what-to-inspect-before-purchasing-a-pre-owned-commercial-truck.jpg",
+                "alt": "Why Buying Certified Pre-Owned Trucks is Better for Fleet Expansion"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "",
+              "title": "Why Buying Certified Pre-Owned Trucks is Better for Fleet Expansion",
+              "excerpt": "",
+              "author": "webdev",
+              "url": "https://www.hudsoncountymotors.com/why-buying-certified-pre-owned-trucks-is-better-for-fleet-expansion/"
+            }
+          ],
+          "recentHeading": "Recent Posts",
+          "recent": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/09/spark-plugs-truck.jpg",
+                "alt": ""
+              },
+              "category": "Blog",
+              "title": "Signs It’s Time to Replace Your Fleet’s Heavy Duty Trucks",
+              "url": "https://www.hudsoncountymotors.com/signs-its-time-to-replace-your-fleets-heavy-duty-trucks/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/05/IMG_2882-scaled.jpeg",
+                "alt": ""
+              },
+              "category": "Blog",
+              "title": "New Commercial Truck Maintenance Schedules: What to Expect",
+              "url": "https://www.hudsoncountymotors.com/new-commercial-truck-maintenance-schedules-what-to-expect/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/top-5-pre-owned-volvo-trucks-for-long-haul-transportation-in-2024.jpg",
+                "alt": ""
+              },
+              "category": "Blog",
+              "title": "Why Your Business Should Consider Buying a Fleet of Used Trucks",
+              "url": "https://www.hudsoncountymotors.com/why-your-business-should-consider-buying-a-fleet-of-used-trucks/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/01/Blue-Volvo-HCM-store-banner-scaled.jpg",
+                "alt": ""
+              },
+              "category": "Uncategorized",
+              "title": "Understanding Truck Warranties When Buying from a Commercial Truck Dealer",
+              "url": "https://www.hudsoncountymotors.com/understanding-truck-warranties-when-buying-from-a-commercial-truck-dealer/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/09/volvo-parts-scaled.jpg",
+                "alt": ""
+              },
+              "category": "Uncategorized",
+              "title": "The Importance of Genuine Parts for Your Volvo Truck’s Performance",
+              "url": "https://www.hudsoncountymotors.com/the-importance-of-genuine-parts-for-your-volvo-trucks-performance/"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/12/what-to-inspect-before-purchasing-a-pre-owned-commercial-truck.jpg",
+                "alt": ""
+              },
+              "category": "Blog",
+              "title": "Why Buying Certified Pre-Owned Trucks is Better for Fleet Expansion",
+              "url": "https://www.hudsoncountymotors.com/why-buying-certified-pre-owned-trucks-is-better-for-fleet-expansion/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

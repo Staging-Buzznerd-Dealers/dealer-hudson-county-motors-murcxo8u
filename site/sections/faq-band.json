@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "id": "faq-band",
+  "name": "FAQ",
+  "css": "[data-bz-node=\"faq\"] .bz-faqs { border-top: 1px solid var(--line); }\n[data-bz-node=\"faq\"] .bz-faqs { display: block; }\n[data-bz-node=\"faq\"] .bz-faq { background: none; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 0; margin: 0; }\n[data-bz-node=\"faq\"] .bz-faq summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 0; cursor: pointer; font: 700 22px/1.2 var(--font-heading); color: var(--hcm-navy); }\n[data-bz-node=\"faq\"] .bz-faq summary::-webkit-details-marker { display: none; }\n[data-bz-node=\"faq\"] .bz-faq summary::after { content: \"+\"; flex: none; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-input); font: 700 20px/1 var(--font-heading); color: var(--accent); }\n[data-bz-node=\"faq\"] .bz-faq[open] summary::after { content: \"\\2212\"; }\n[data-bz-node=\"faq\"] .bz-faq summary:hover { color: var(--accent); }\n[data-bz-node=\"faq\"] .bz-faq__a { font-size: 17px; line-height: 1.65; color: var(--hcm-body); padding: 0 50px 22px 0; }\n[data-bz-node=\"faq\"] .bz-widget__h { display: none; }",
+  "js": "// One answer open at a time, and the first open on arrival, as the design has it.\n// Without this script every question starts closed and each opens on its own.\ndocument.querySelectorAll('[data-bz-section=\"faq-band\"] .bz-faqs').forEach(function (list, n) {\n  var items = list.querySelectorAll('details');\n  items.forEach(function (item, i) {\n    item.setAttribute('name', 'hcm-faq-' + n);\n    if (i === 0) item.open = true;\n    item.addEventListener('toggle', function () {\n      if (!item.open) return;\n      items.forEach(function (other) { if (other !== item) other.open = false; });\n    });\n  });\n});",
+  "props": [
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "none",
+          "label": "Page (light grey)"
+        },
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "accent",
+          "label": "Blue band"
+        }
+      ],
+      "default": "card"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Expert FAQ Stack"
+    },
+    {
+      "key": "faqs",
+      "type": "list",
+      "label": "Questions",
+      "fields": [
+        {
+          "key": "q",
+          "type": "text",
+          "label": "Question"
+        },
+        {
+          "key": "a",
+          "type": "textarea",
+          "label": "Answer"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "{{background}}",
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "faq-title",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "hcm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            },
+            {
+              "id": "faq-list",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "faq",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": "{{faqs}}"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
