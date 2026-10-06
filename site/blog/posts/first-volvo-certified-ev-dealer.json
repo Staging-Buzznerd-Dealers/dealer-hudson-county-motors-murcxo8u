@@ -1,0 +1,156 @@
+{
+  "version": 2,
+  "slug": "first-volvo-certified-ev-dealer",
+  "title": "Hudson County Motors Becomes First Volvo Trucks Certified EV Dealer in New Jersey",
+  "date": "2022-11-08",
+  "description": "Volvo Trucks North America dealer Hudson County Motors recently became the first Volvo Trucks Certified Electric Vehicle (EV) Dealer in New Jersey — servicing the greater New York area — after its…",
+  "coverImage": null,
+  "status": "published",
+  "category": "News",
+  "author": "webdev",
+  "css": ".rp__i[href$=\"/blog/posts/first-volvo-certified-ev-dealer\"] { display: none; }",
+  "nodes": [
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "article-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "article-main",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "article-meta",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/news\">← News</a>\n\nNews · 3 minutes read",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Volvo Trucks North America dealer Hudson County Motors recently became the first Volvo Trucks Certified Electric Vehicle (EV) Dealer in New Jersey — servicing the greater New York area — after its Secaucus location completed the robust sales and technician training program and necessary facility upgrades to support battery-electric Class 8 trucks. Hudson County Motors is in a prime location to support the drayage truck operators that haul freight between the Port Newark and Port Elizabeth marine terminals and warehouses throughout the region. Their decision to become a Volvo Trucks Certified EV Dealer was largely driven by significant customer interest in the Volvo VNR Electric model.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-2",
+                  "type": "text",
+                  "props": {
+                    "text": "“We look forward to partnering with our dealer Hudson County Motors to expand the commercial deployment of Volvo VNR Electrics in the Northeast as Volvo Trucks continues to develop its electromobility network across the nation,” said Peter Voorhoeve, president, Volvo Trucks North America. “Port drayage applications are where we started our electromobility journey with the Volvo LIGHTS project on the West Coast, and now we are building out the dealer support network necessary to deploy the Volvo VNR Electric, amongst its other applications, in drayage operations that service East Coast ports.”",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Earlier this year, Volvo Trucks announced the production of the enhanced Volvo VNR Electric model that features a range of up to 275 miles and a faster, state-of-the-art 250kW charging capability to minimize downtime. The next generation Volvo VNR Electric was designed to support food and beverage distribution, drayage, and pick-up and delivery routes in urban areas, such as the densely populated Tri-State region.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-4",
+                  "type": "text",
+                  "props": {
+                    "text": "“The next generation Volvo VNR Electric with the expanded range has been a game changer. The additional range makes the truck more appealing to a greater number of customers because they can now deliver their products all day without needing to charge,” said Tom DelGaudio, sales manager for Hudson County Motors. “Our fleet customers have a high level of confidence in the ability for the Volvo VNR Electric to meet the daily rigors of their freight transport operations, as Volvo Trucks has continued to enhance its battery-electric truck lineup based on lessons learned through early deployments and ongoing customer feedback.”",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Established in 1945, Hudson County Motors has dedicated more than 75 years to servicing the trucking industry. Ben Bellini, general manager of Hudson County Motors, worked hard to bring his vision to fruition for a new facility in 2019 with 33 service bays, and now the certification for electric trucks. “I’m very pleased with the relationship we have with Volvo Trucks, we are in the perfect location metro wise to support the increased growth of Volvo VNR Electric orders,” said Bellini. “The port is key for last mile delivery as trucks transport goods via local routes. It would be ideal for these fleets to transition from diesel trucks to electric trucks, as it would reduce the carbon footprint of port drayage and help make New Jersey a cleaner place to live.”",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-6",
+                  "type": "text",
+                  "props": {
+                    "text": "To learn more about Volvo Trucks North America and the Volvo VNR Electric, visit the company <a href=\"https://www.volvotrucks.us/trucks/vnr-electric/\">website</a>.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "i-7",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/11/volvolights-hudson-county-motors-vnr-edited-3.jpg",
+                      "alt": "volvolights-hudson-county-motors-vnr-edited-3"
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-8",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>CAPTION</strong>: Hudson County Motors in Secaucus, New Jersey recently became the first Volvo Trucks Certified Electric Vehicle Dealer in New Jersey, which will service the greater New York area, including drayage fleets that support the Port Newark and Port Elizabeth Marine Terminal.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-9",
+                  "type": "heading",
+                  "props": {
+                    "text": "Download Press Release Images <a href=\"https://press.volvotrucks.us/\">Here</a>",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "t-10",
+                  "type": "text",
+                  "props": {
+                    "text": "Volvo Trucks North America, headquartered in Greensboro, North Carolina, is one of the leading heavy-duty truck manufacturers in North America. Its Uptime Services commitment is delivered by a network of nearly 400 authorized dealers across North America and the 24/7 Volvo Trucks Uptime Center. Every Volvo truck is assembled in the Volvo Trucks New River Valley manufacturing facility in Dublin, Virginia, which meets the internationally recognized ISO 9001 standard for quality, 14001 standard for environmental care and holds a dual ISO 50001/Superior Energy Performance certification at the platinum level, indicating a sustained excellence in energy management. Volvo Trucks North America provides complete transport solutions for its customers, offering a full range of diesel, alternative-fuel and all-electric vehicles, and is part of the <a href=\"https://www.volvotrucks.com/\">Volvo Trucks global organization</a>.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-11",
+                  "type": "text",
+                  "props": {
+                    "text": "Volvo Trucks supplies complete transport solutions for discerning professional customers with its full range of medium- and heavy-duty trucks. Customer support is provided via a global network of dealers with 2,200 service points in about 130 countries. Volvo trucks are assembled in 13 countries across the globe. In 2021 approximately 123,000 Volvo trucks were delivered worldwide. Volvo Trucks is part of the <a href=\"https://www.volvogroup.com/\">Volvo Group</a>, one of the world’s leading manufacturers of trucks, buses, construction equipment and marine and industrial engines. The group also provides complete solutions for financing and service. Volvo Trucks’ work is based on the core values of quality, safety and environmental care.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "article-aside",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "more-news",
+                  "type": "more-news",
+                  "props": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

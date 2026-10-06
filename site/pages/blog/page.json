@@ -421,6 +421,71 @@
               "excerpt": "",
               "author": "webdev",
               "url": "/blog/posts/electric-trucks-reshaping-logistics"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/10/DSC_0379.jpg",
+                "alt": "Hudson County Motors Announces Arrival of the All-New Volvo VNL 860: A Game-Changer for the Future of Heavy-Duty Trucking"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "",
+              "title": "Hudson County Motors Announces Arrival of the All-New Volvo VNL 860: A Game-Changer for the Future of Heavy-Duty Trucking",
+              "excerpt": "",
+              "author": "Abhinandan Vashist",
+              "url": "/blog/posts/announces-arrival-volvo-vnl-860"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/07/363331775_764342589029351_5632226579091956303_n.jpg",
+                "alt": "NJ Funding Strengthens Investment Climate Change Clean Energy 2023"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "",
+              "title": "NJ Funding Strengthens Investment Climate Change Clean Energy 2023",
+              "excerpt": "",
+              "author": "Krylov Dennis",
+              "url": "/blog/posts/nj-funding-clean-energy-2023"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/05/collage-1024x683.jpg",
+                "alt": "Hudson County Motors Hosts Bring Your Child to Work Day"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "",
+              "title": "Hudson County Motors Hosts Bring Your Child to Work Day",
+              "excerpt": "",
+              "author": "Krylov Dennis",
+              "url": "/blog/posts/bring-your-child-to-work-day"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/01/Screenshot-2023-02-06-at-9.25.53-PM.png",
+                "alt": "Great Prices Blower Motor – Air Cylinder – Water Pump"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "",
+              "title": "Great Prices Blower Motor – Air Cylinder – Water Pump",
+              "excerpt": "",
+              "author": "Krylov Dennis",
+              "url": "/blog/posts/blower-motor-air-cylinder-water-pump"
+            },
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "",
+              "title": "Hudson County Motors Becomes First Volvo Trucks Certified EV Dealer in New Jersey",
+              "excerpt": "",
+              "author": "webdev",
+              "url": "/blog/posts/first-volvo-certified-ev-dealer"
             }
           ]
         }

@@ -1,0 +1,113 @@
+{
+  "version": 2,
+  "slug": "bring-your-child-to-work-day",
+  "title": "Hudson County Motors Hosts Bring Your Child to Work Day",
+  "date": "2023-05-02",
+  "description": "Last week we hosted our annual Bring Your Child to Work Day, and oh boy was it a blast! We opened the doors to our visitors with a warm intro with our General Manager, Ben Bellini.",
+  "coverImage": null,
+  "status": "published",
+  "category": "News",
+  "author": "Krylov Dennis",
+  "css": ".rp__i[href$=\"/blog/posts/bring-your-child-to-work-day\"] { display: none; }",
+  "nodes": [
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "article-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "article-main",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "article-meta",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/news\">← News</a>\n\nNews · Written by <strong>Krylov Dennis</strong> · Less than a minute",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Last week we hosted our annual Bring Your Child to Work Day, and oh boy was it a blast! We opened the doors to our visitors with a warm intro with our General Manager, Ben Bellini.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-2",
+                  "type": "text",
+                  "props": {
+                    "text": "The kids dove headfirst into learning about our trucking business and had an absolute blast meeting our team. From touring our parts warehouse to discovering the ins and outs of semi- trucks, fire trucks and electric trucks.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Our knowledgeable staff is passionate about trucks and loves nothing more than sharing their expertise and insights with curious visitors.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Our team managers from sales, parts, service, accounting, HR, and marketing gave our mini motorheads a talk and tour of what they do for a living.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-5",
+                  "type": "text",
+                  "props": {
+                    "text": "They came together to create some awesome truck-themed ads and, of course, the day wouldn’t be complete without pizza!",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-6",
+                  "type": "text",
+                  "props": {
+                    "text": "We hope everyone had a fantastic time, and we can’t wait to do it all again next year. Here’s to showcasing more of what we do every day here at Hudson County Motors!",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "article-aside",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "more-news",
+                  "type": "more-news",
+                  "props": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

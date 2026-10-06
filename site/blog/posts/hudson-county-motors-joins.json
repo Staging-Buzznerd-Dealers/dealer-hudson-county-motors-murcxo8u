@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "slug": "hudson-county-motors-joins",
   "title": "Hudson County Motors Joins Forces with Toys for Tots to Spread Holiday Cheer",
   "date": "2024-12-06",
@@ -7,6 +8,7 @@
   "status": "published",
   "category": "News",
   "author": "Sahil Sondhi",
+  "css": ".rp__i[href$=\"/blog/posts/hudson-county-motors-joins\"] { display: none; }",
   "nodes": [
     {
       "id": "article",
@@ -35,18 +37,7 @@
                   "id": "article-meta",
                   "type": "text",
                   "props": {
-                    "text": "<a href=\"/blog\">← Blog</a>\n\nNews · Written by <strong>Sahil Sondhi</strong> · 1 minute read",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "article-img",
-                  "type": "image",
-                  "props": {
-                    "image": {
-                      "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/12/1-official-TFT-Logo-.png.png",
-                      "alt": "Hudson County Motors Joins Forces with Toys for Tots to Spread Holiday Cheer"
-                    },
+                    "text": "<a href=\"/news\">← News</a>\n\nNews · Written by <strong>Sahil Sondhi</strong> · 1 minute read",
                     "width": "full"
                   }
                 },
@@ -73,18 +64,25 @@
                     "columns": 1,
                     "items": [
                       {
-                        "label": "Where:",
-                        "desc": "Donation boxes are conveniently located in the sales and parts departments at Hudson County Motors."
-                      },
-                      {
-                        "label": "When:",
-                        "desc": "Donations will be accepted through December 15th, 2024."
+                        "label": "Where: Donation boxes are conveniently located in the sales and parts departments at Hudson County Motors."
                       }
                     ]
                   }
                 },
                 {
-                  "id": "t-4",
+                  "id": "l-4",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "When: Donations will be accepted through December 15th, 2024."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "t-5",
                   "type": "text",
                   "props": {
                     "text": "“Partnering with Toys for Tots is a meaningful way to give back to the community and help brighten the holidays for children in need,” said Rachel O’Neill, Marketing Manager of Hudson County Motors. “We invite everyone to join us in spreading cheer and making a difference in the lives of local children.”<br>Toys for Tots has a long-standing tradition of ensuring that every child experiences the magic of the holidays. By contributing to the Hudson County Motors Toy Drive, you play a vital role in upholding this mission.<br>Together, let’s make this holiday season one to remember for every child in our community.",
@@ -92,7 +90,7 @@
                   }
                 },
                 {
-                  "id": "h-5",
+                  "id": "h-6",
                   "type": "heading",
                   "props": {
                     "text": "About Hudson County Motors:",
@@ -100,7 +98,7 @@
                   }
                 },
                 {
-                  "id": "t-6",
+                  "id": "t-7",
                   "type": "text",
                   "props": {
                     "text": "Hudson County Motors has been serving Secaucus, NJ with exceptional commercial vehicle solutions for over 70 years. Committed to community engagement, we strive to make a meaningful impact both on and off the road.",
@@ -108,7 +106,7 @@
                   }
                 },
                 {
-                  "id": "h-7",
+                  "id": "h-8",
                   "type": "heading",
                   "props": {
                     "text": "About Toys for Tots:",
@@ -116,7 +114,7 @@
                   }
                 },
                 {
-                  "id": "t-8",
+                  "id": "t-9",
                   "type": "text",
                   "props": {
                     "text": "Since 1947, Toys for Tots has been delivering hope and joy to millions of children across the United States. Operated by the U.S. Marine Corps Reserve, the program collects and distributes toys to less fortunate children, helping them experience the magic of the holiday season.",
@@ -124,7 +122,7 @@
                   }
                 },
                 {
-                  "id": "h-9",
+                  "id": "h-10",
                   "type": "heading",
                   "props": {
                     "text": "Contact",
@@ -132,7 +130,7 @@
                   }
                 },
                 {
-                  "id": "t-10",
+                  "id": "t-11",
                   "type": "text",
                   "props": {
                     "text": "RONeill@hudsoncountymotors.com<br>Hudson County Motors<br>201-866-5570<br>https://www.hudsoncountymotors.com",
@@ -140,7 +138,7 @@
                   }
                 },
                 {
-                  "id": "i-11",
+                  "id": "i-12",
                   "type": "image",
                   "props": {
                     "image": {
@@ -160,8 +158,8 @@
               },
               "children": [
                 {
-                  "id": "recent-posts",
-                  "type": "recent-posts",
+                  "id": "more-news",
+                  "type": "more-news",
                   "props": {}
                 }
               ]
@@ -170,6 +168,5 @@
         }
       ]
     }
-  ],
-  "version": 2
+  ]
 }
