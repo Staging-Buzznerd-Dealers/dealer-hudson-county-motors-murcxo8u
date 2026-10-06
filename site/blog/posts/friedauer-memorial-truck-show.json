@@ -1,0 +1,132 @@
+{
+  "version": 2,
+  "slug": "friedauer-memorial-truck-show",
+  "title": "Join Us For the 2nd Annual Christopher R. Friedauer Memorial Truck Show",
+  "date": "2024-05-14",
+  "description": "The Hudson County Motors family is gearing up for the 2nd Annual Christopher R. Friedauer Memorial Truck Show and we would like to see you there!",
+  "coverImage": null,
+  "status": "published",
+  "category": "Press Release",
+  "author": "Abigail",
+  "css": ".rp__i[href$=\"/blog/posts/friedauer-memorial-truck-show\"] { display: none; }",
+  "nodes": [
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "article-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "article-main",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "article-meta",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/press-releases\">← Press Releases</a>\n\nPress Release · Written by <strong>Abigail</strong> · Less than a minute",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The Hudson County Motors family is gearing up for the 2nd Annual Christopher R. Friedauer Memorial Truck Show and we would like to see you there!",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Organized by GEAR JAMMER Magazine and The Holmdel PBA #239, and sponsored by Elizabeth Truck Center, this event will feature entertainment from MAIL ORDER BRIDE, and a Big Rig Light Show at dusk. Truck enthusiasts are also invited to partake in the Judged Show & Shine competition. Mark your calendar and come together for a day of fun, appreciation, and celebration of the trucking community!",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-3",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Show a Truck: $30; Spectators: $20 per carload</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-4",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Bell Works, 101 Crawfords Corner Rd. Holmdel, N.J.</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-5",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>May 18, 2024 – Rain or shine!</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-6",
+                  "type": "text",
+                  "props": {
+                    "text": "Proceeds from the show will be donated to three worthy causes: The Ricky Silvani Foundation for suicide prevention, the Holmdel PBA #239 for their local charitable efforts, and The Christopher R. Friedauer Memorial Fund for Chris’ children.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "i-7",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/05/Gear-Jammer-NJ-Show-2024.png",
+                      "alt": "Gear Jammer NJ Show 2024"
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-8",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"https://www.facebook.com/events/1127792768356837\">learn more</a>",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "article-aside",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "more-press",
+                  "type": "more-press",
+                  "props": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

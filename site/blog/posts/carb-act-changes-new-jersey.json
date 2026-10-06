@@ -1,0 +1,137 @@
+{
+  "version": 2,
+  "slug": "carb-act-changes-new-jersey",
+  "title": "IMPORTANT CARB/ACT CHANGES COMING TO NEW JERSEY",
+  "date": "2024-10-16",
+  "description": "Starting January 1, 2025, New Jersey will move forward with the implementation of the California Air Resources Board (CARB) Advanced Clean Truck Rule (ACT). This regulation is intended to increase…",
+  "coverImage": null,
+  "status": "published",
+  "category": "Press Release",
+  "author": "Abhinandan Vashist",
+  "css": ".rp__i[href$=\"/blog/posts/carb-act-changes-new-jersey\"] { display: none; }",
+  "nodes": [
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "article-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "article-main",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "article-meta",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/press-releases\">← Press Releases</a>\n\nPress Release · Written by <strong>Abhinandan Vashist</strong> · 2 minutes read",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Starting January 1, 2025, New Jersey will move forward with the implementation of the California Air Resources Board (CARB) Advanced Clean Truck Rule (ACT). This regulation is intended to increase the transition to medium and heavy-duty Zero Emission Vehicles (ZEV) on a large scale within New Jersey. Currently, a battery electric truck is the only viable ZEV option, since other technologies like hydrogen are not fully developed. Manufacturers will be required to sell an increasing number of ZEVs as a percentage of total annual vehicle sales from 2025-2035.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Starting in 2025, manufacturers will require the dealer to sell and register one ZEV truck for every seven diesel trucks. This rule will significantly impact truck dealerships and fleets that operate in NJ. It will similarly impact other dealers and fleets that operate in CA and other states that have implemented the ACT rule including OR, MA, WA and NY.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-3",
+                  "type": "text",
+                  "props": {
+                    "text": "CARB ACT regulations are already wreaking havoc on the truck market in California and will similarly impact the truck market in New Jersey. Unfortunately, the electric infrastructure required to charge ZEV trucks is not readily available and will take years to build. Currently, the American Truck Dealers Association (ATD), NJ Coalition of Automotive Retailers (NJCAR), and the NJ Motor Truck Association (NJMTA) are lobbying the Murphy Administration and NJ Legislature to rescind or delay the implementation of the CARB ACT in New Jersey.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-4",
+                  "type": "text",
+                  "props": {
+                    "text": "In anticipation of these changes, Hudson County Motors has dedicated considerable time and effort into promoting truck electrification in NJ. As such, we are one of the foremost and most knowledgeable dealers of ZEVs nationwide. Over the past several years, HCM sold over 35 Class 6-8 ZEVs to private and municipal customers. Furthermore, our Dealership is EV Certified to provide charging and service for ZEV fleets. HCM understands the grant process to fund ZEVs and can assist with charging infrastructure requirement recommendations.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Despite the advances we have made, ZEVs will not be a viable solution for all industries. Currently, a ZEV is not a possible alternative for any truck operation that utilizes a PTO. Please understand that segments including tow trucks, dump trucks, refuse trucks, boom trucks, fire trucks and concrete mixers will be ineligible to purchase new trucks under the ACT regulation. In addition, ZEVs have a limited range, which will necessitate frequent stops for recharging.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-6",
+                  "type": "text",
+                  "props": {
+                    "text": "To learn more about the NJ ACT rule, please visit the NJ DEP Stop the Soot website at <a href=\"https://dep.nj.gov/stopthesoot/advanced-clean-trucks-rule-fleet-reporting/\">https://dep.nj.gov/stopthesoot/advanced-clean-trucks-rule-fleet-reporting/</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-7",
+                  "type": "text",
+                  "props": {
+                    "text": "We ask that you join us in relaying the dire impact of implementing the ACT rule on January 1, 2025. Please voice your concern to the NJ Legislature at <a href=\"https://www.njleg.state.nj.us/legislative-roster\">https://www.njleg.state.nj.us/legislative-roster</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-8",
+                  "type": "text",
+                  "props": {
+                    "text": "To learn more about the CARB ruling and its impact to trucking, please review ATD’s fact sheet and its Hurdle to <a href=\"https://www.nada.org/media/9315/download?inline\">Adoption Chart</a>.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-9",
+                  "type": "text",
+                  "props": {
+                    "text": "If you would like to learn more about EV trucks, please contact our sales department at Hudson County Motors.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "article-aside",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "more-press",
+                  "type": "more-press",
+                  "props": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

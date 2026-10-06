@@ -76,6 +76,25 @@
     }
   },
   {
+    "slug": "press-releases",
+    "dir": "press-releases",
+    "title": "Press Releases",
+    "description": "Press releases from Hudson County Motors, a family-owned heavy truck dealer in Secaucus, NJ.",
+    "path": "/press-releases",
+    "out": "press-releases/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
     "slug": "map-hours",
     "dir": "map-hours",
     "title": "Map & Hours",
