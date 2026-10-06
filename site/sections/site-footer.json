@@ -2,7 +2,7 @@
   "version": 2,
   "id": "site-footer",
   "name": "Site footer",
-  "css": "[data-bz-node=\"footer\"] { background: var(--accent); color: var(--hcm-on-navy-2); padding-block: clamp(28px, 5vw, 48px); }\n[data-bz-node=\"footer-logo\"] .bz-logo__img { height: 52px; margin-bottom: 16px; }\n[data-bz-node=\"footer-about\"] p { font-size: 13px; line-height: 1.6; color: var(--hcm-on-navy-2); max-width: 300px; }\n[data-bz-node=\"footer\"] .bz-block h4 { margin: 0 0 14px; font: 700 16px/1.2 var(--font-heading); letter-spacing: .1em; text-transform: uppercase; color: #fff; }\n[data-bz-node=\"footer\"] .bz-menu--vertical .bz-nav { gap: 9px; }\n[data-bz-node=\"footer\"] .bz-navitem > a, [data-bz-node=\"footer\"] .bz-navlabel { font: 400 14px/1.4 var(--font-body); padding: 0; color: var(--hcm-on-navy-2); }\n[data-bz-node=\"footer\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-node=\"footer-cols-row\"] { display: flex; flex-wrap: wrap; gap: 40px; justify-content: flex-end; }\n[data-bz-node=\"footer-cols-row\"] > .bz-col { flex: 0 1 auto; min-width: 140px; }\n@media (max-width: 1100px) { [data-bz-node=\"footer-cols-row\"] { justify-content: flex-start; } }\n[data-bz-node=\"footer-bar\"] { background: var(--ink-dark); color: var(--hcm-on-navy-3); font-size: 12px; padding-block: 16px; }\n[data-bz-node=\"footer-bar-row\"] { align-items: center; row-gap: 8px; }\n[data-bz-node=\"footer-bar\"] .bz-block p { margin: 0; font-size: 12px; line-height: 1.5; }\n[data-bz-node=\"footer-copy\"] { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; }\n[data-bz-node=\"footer-copy\"] > .bz-block { margin: 0; }\n[data-bz-node=\"legal-nav\"] .bz-nav { gap: 0; }\n[data-bz-node=\"legal-nav\"] .bz-navitem::before { content: \"·\"; padding-inline: 6px; }\n[data-bz-node=\"legal-nav\"] .bz-navitem > a { font: 400 12px/1.5 var(--font-body); padding: 0; color: var(--hcm-on-navy-3); }\n[data-bz-node=\"legal-nav\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-node=\"footer-powered\"] p { text-align: right; }\n@media (max-width: 640px) { [data-bz-node=\"footer-powered\"] p { text-align: left; } }\n[data-bz-node=\"footer-about\"]:not(:has(p)) { display: none; }",
+  "css": "[data-bz-node=\"footer\"] { background: var(--accent); color: var(--hcm-on-navy-2); padding-block: clamp(28px, 5vw, 48px); }\n[data-bz-node=\"footer-logo\"] .bz-logo__img { height: 52px; margin-bottom: 16px; }\n[data-bz-node=\"footer-about\"] p { font-size: 13px; line-height: 1.6; color: var(--hcm-on-navy-2); max-width: 300px; }\n[data-bz-node=\"footer\"] .bz-block h4 { margin: 0 0 14px; font: 700 16px/1.2 var(--font-heading); letter-spacing: .1em; text-transform: uppercase; color: #fff; }\n[data-bz-node=\"footer\"] .bz-menu--vertical .bz-nav { gap: 9px; }\n[data-bz-node=\"footer\"] .bz-navitem > a, [data-bz-node=\"footer\"] .bz-navlabel { font: 400 14px/1.4 var(--font-body); padding: 0; color: var(--hcm-on-navy-2); }\n[data-bz-node=\"footer\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-node=\"footer-cols-row\"] { display: flex; flex-wrap: wrap; gap: 40px; justify-content: flex-end; }\n[data-bz-node=\"footer-cols-row\"] > .bz-col { flex: 0 1 auto; min-width: 140px; }\n@media (max-width: 1100px) { [data-bz-node=\"footer-cols-row\"] { justify-content: flex-start; } }\n[data-bz-node=\"footer-bar\"] { background: var(--ink-dark); color: var(--hcm-on-navy-3); font-size: 12px; padding-block: 16px; }\n[data-bz-node=\"footer-bar-row\"] { align-items: center; row-gap: 8px; }\n[data-bz-node=\"footer-bar\"] .bz-block p { margin: 0; font-size: 12px; line-height: 1.5; }\n[data-bz-node=\"footer-copy\"] { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; }\n[data-bz-node=\"footer-copy\"] > .bz-block { margin: 0; }\n[data-bz-node=\"legal-nav\"] .bz-nav { gap: 0; }\n[data-bz-node=\"legal-nav\"] .bz-navitem::before { content: \"·\"; padding-inline: 6px; }\n[data-bz-node=\"legal-nav\"] .bz-navitem > a { font: 400 12px/1.5 var(--font-body); padding: 0; color: var(--hcm-on-navy-3); }\n[data-bz-node=\"legal-nav\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-node=\"footer-powered\"] p { text-align: right; }\n@media (max-width: 640px) { [data-bz-node=\"footer-powered\"] p { text-align: left; } }\n[data-bz-node=\"footer-about\"]:not(:has(p)) { display: none; }\n[data-bz-node=\"footer-social\"] { display: flex; justify-content: flex-end; }\n@media (max-width: 900px) { [data-bz-node=\"footer-social\"] { justify-content: flex-start; } }",
   "props": [
     {
       "key": "logo",
@@ -19,7 +19,7 @@
       "key": "tagline",
       "type": "textarea",
       "label": "About line",
-      "default": ""
+      "default": "A heavy truck dealership in Secaucus, NJ with a parts store, rentals, service and financing."
     },
     {
       "key": "linkColumns",
@@ -39,18 +39,54 @@
       ],
       "default": [
         {
-          "heading": "Quick Links",
-          "menuId": "footer"
+          "heading": "Quick links",
+          "menuId": "home-quick"
         },
         {
           "heading": "Brands",
-          "menuId": "brands"
+          "menuId": "home-brands"
         },
         {
-          "heading": "Dealerships",
-          "menuId": "dealerships"
+          "heading": "Contact",
+          "menuId": "contact"
         }
       ]
+    },
+    {
+      "key": "facebook",
+      "type": "url",
+      "label": "Facebook link",
+      "default": "https://www.facebook.com/"
+    },
+    {
+      "key": "instagram",
+      "type": "url",
+      "label": "Instagram link",
+      "default": "https://www.instagram.com/"
+    },
+    {
+      "key": "x",
+      "type": "url",
+      "label": "X link",
+      "default": "https://www.x.com/"
+    },
+    {
+      "key": "linkedin",
+      "type": "url",
+      "label": "LinkedIn link",
+      "default": "https://www.linkedin.com/"
+    },
+    {
+      "key": "tiktok",
+      "type": "url",
+      "label": "TikTok link",
+      "default": "https://www.tiktok.com/"
+    },
+    {
+      "key": "youtube",
+      "type": "url",
+      "label": "YouTube link",
+      "default": "https://www.youtube.com/"
     }
   ],
   "nodes": [
@@ -76,7 +112,7 @@
               "id": "footer-brand",
               "type": "column",
               "props": {
-                "span": 5
+                "span": 4
               },
               "children": [
                 {
@@ -140,6 +176,27 @@
                       ]
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "id": "footer-social",
+              "type": "column",
+              "props": {
+                "span": 1
+              },
+              "children": [
+                {
+                  "id": "footer-social-links",
+                  "type": "social-links",
+                  "props": {
+                    "facebook": "{{facebook}}",
+                    "instagram": "{{instagram}}",
+                    "x": "{{x}}",
+                    "linkedin": "{{linkedin}}",
+                    "tiktok": "{{tiktok}}",
+                    "youtube": "{{youtube}}"
+                  }
                 }
               ]
             }
