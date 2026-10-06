@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "title",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-title",
+        "values": {
+          "heading": "Heavy Truck Service Specials!"
+        }
+      }
+    },
+    {
+      "id": "specials",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "flyer-grid",
+        "values": {
+          "flyerSpan": 4,
+          "flyers": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/09/Service-Specials-683x1024.png",
+                "alt": "Service Specials"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/09/Service-Specials-683x1024.png"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/09/SEASONAL-PARTS-•-LIMITED-TIME-PRICING-READY-FOR-FALL.-FALL-PARTS-SPECIALS-1.png",
+                "alt": "SEASONAL PARTS • LIMITED-TIME PRICING READY FOR FALL. FALL PARTS SPECIALS (1)"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/09/SEASONAL-PARTS-•-LIMITED-TIME-PRICING-READY-FOR-FALL.-FALL-PARTS-SPECIALS-1.png"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "service-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "card",
+          "note": "Hudson County Motors in Secaucus is your one-stop shop for any and all of your truck service needs. Whether you are in need of engine swings, tire service, maintenance, or click to request service on your truck, our technicians can do it all! For fleet service, we offer advanced diagnostics and maintenance to keep your whole fleet running smoothly.",
+          "ctaLabel": "Request Service Appointment",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "version": 2,
+  "id": "page-banner",
+  "name": "Page banner",
+  "css": "[data-bz-node=\"banner\"] { background: var(--paper); }\n[data-bz-node=\"banner-copy\"] { display: flex; flex-direction: column; justify-content: center; gap: 20px; padding: var(--hcm-pad-y) var(--hcm-gutter) var(--hcm-pad-y) 0; }\n[data-bz-node=\"banner-copy\"] > .bz-block, [data-bz-node=\"banner-copy\"] > .bz-row { margin: 0; }\n[data-bz-node=\"banner-h\"] .bz-eyebrow { margin-bottom: 20px; }\n[data-bz-node=\"banner-h\"] h1 { font-size: clamp(36px, 5.4vw, 68px); line-height: 1; }\n[data-bz-node=\"banner-sub\"] p { font: 700 26px/1.2 var(--font-heading); color: var(--hcm-navy); margin: 0; }\n[data-bz-node=\"banner-kicker\"] p { font: 600 17px/1.3 var(--font-heading); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0; }\n[data-bz-node=\"banner-chips\"] { display: flex; flex-wrap: wrap; gap: 8px; }\n[data-bz-node=\"banner-chips\"]:not(:has(p)) { display: none; }\n[data-bz-node^=\"bannerchip\"] { flex: none; }\n[data-bz-node^=\"banner-chip-t\"] p { margin: 0; padding: 6px 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-input); font: 700 16px/1.2 var(--font-heading); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }\n[data-bz-node=\"banner-body\"] p { font-size: 17px; line-height: 1.65; margin: 0 0 12px; max-width: 560px; }\n[data-bz-node=\"banner-body\"] p:last-child { margin-bottom: 0; }\n[data-bz-node=\"banner-cta\"] .bz-btns, [data-bz-node=\"banner-note-cta\"] .bz-btns { margin: 0; gap: 10px; }\n[data-bz-node=\"banner-cta\"] .bz-btn--secondary, [data-bz-node=\"banner-note-cta\"] .bz-btn--secondary { background: var(--card); }\n[data-bz-node=\"banner-cta\"] .bz-btn--secondary:hover, [data-bz-node=\"banner-note-cta\"] .bz-btn--secondary:hover { background: var(--accent); }\n[data-bz-node=\"banner-foot\"]:not(:has(p, a)) { display: none; }\n[data-bz-node=\"banner-foot-c\"] { display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--line); padding-top: 16px; }\n[data-bz-node=\"banner-note\"] p { font-weight: 600; font-size: 16px; line-height: 1.5; color: var(--hcm-navy); margin: 0; }\n[data-bz-node=\"banner-note-cta\"] .bz-btn { font-size: 17px; padding: 14px 26px; }\n[data-bz-node=\"banner-media\"] { position: relative; min-height: 340px; }\n[data-bz-node=\"banner-media\"] > .bz-block { position: absolute; inset: 0; }\n[data-bz-node=\"banner-media\"] .bz-container, [data-bz-node=\"banner-media\"] .bz-figure, [data-bz-node=\"banner-media\"] .bz-figure > a { height: 100%; margin: 0; display: block; }\n[data-bz-node=\"banner-img\"] img { width: 100%; height: 100%; object-fit: cover; border-radius: 0; }\n[data-bz-node=\"banner-media\"].bz-col--bg-ink img { object-fit: contain; }\n[data-bz-node=\"banner-media\"]:not(:has(img)) { display: none; }\n[data-bz-node=\"banner-row\"]:not(:has([data-bz-node=\"banner-media\"] img)) > [data-bz-node=\"banner-copy\"] { grid-column: 1 / -1; }\n@media (max-width: 760px) {\n  [data-bz-node=\"banner\"] > .bz-container.bz-container--bleed-right { padding-inline: 0; }\n  [data-bz-node=\"banner-row\"] > .bz-col { grid-column: 1 / -1; }\n  [data-bz-node=\"banner-copy\"] { padding-inline: var(--hcm-gutter); }\n}",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Section label",
+      "default": ""
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading (H1)",
+      "default": ""
+    },
+    {
+      "key": "subhead",
+      "type": "text",
+      "label": "Tagline (large)",
+      "default": ""
+    },
+    {
+      "key": "kicker",
+      "type": "text",
+      "label": "Tagline (small caps)",
+      "default": ""
+    },
+    {
+      "key": "chips",
+      "type": "list",
+      "label": "Tags",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Tag"
+        }
+      ]
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Intro",
+      "default": ""
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link",
+      "default": ""
+    },
+    {
+      "key": "cta2Label",
+      "type": "text",
+      "label": "Second button",
+      "default": ""
+    },
+    {
+      "key": "cta2Url",
+      "type": "url",
+      "label": "Second button link",
+      "default": ""
+    },
+    {
+      "key": "note",
+      "type": "textarea",
+      "label": "Contact line",
+      "default": ""
+    },
+    {
+      "key": "noteCtaLabel",
+      "type": "text",
+      "label": "Contact button",
+      "default": ""
+    },
+    {
+      "key": "noteCtaUrl",
+      "type": "url",
+      "label": "Contact button link",
+      "default": ""
+    },
+    {
+      "key": "noteCta2Label",
+      "type": "text",
+      "label": "Second contact button",
+      "default": ""
+    },
+    {
+      "key": "noteCta2Url",
+      "type": "url",
+      "label": "Second contact button link",
+      "default": ""
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Photo",
+      "default": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    {
+      "key": "imageUrl",
+      "type": "url",
+      "label": "Photo links to (optional)",
+      "default": ""
+    },
+    {
+      "key": "photoBackground",
+      "type": "select",
+      "label": "Photo fit",
+      "options": [
+        {
+          "value": "none",
+          "label": "Fill the panel"
+        },
+        {
+          "value": "ink",
+          "label": "Show whole, on blue (for artwork with text)"
+        }
+      ],
+      "default": "none"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "section",
+      "props": {
+        "width": "bleed-right",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "banner-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "banner-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "banner-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 1,
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "banner-sub",
+                  "type": "text",
+                  "props": {
+                    "text": "{{subhead}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "banner-kicker",
+                  "type": "text",
+                  "props": {
+                    "text": "{{kicker}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "banner-chips",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "bannerchip",
+                      "type": "column",
+                      "props": {
+                        "span": 3,
+                        "repeat": "chips"
+                      },
+                      "children": [
+                        {
+                          "id": "banner-chip-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{label}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "banner-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "banner-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary"
+                      },
+                      {
+                        "label": "{{cta2Label}}",
+                        "url": "{{cta2Url}}",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "banner-foot",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "banner-foot-c",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "banner-note",
+                          "type": "text",
+                          "props": {
+                            "text": "{{note}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "banner-note-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{noteCtaLabel}}",
+                                "url": "{{noteCtaUrl}}",
+                                "style": "primary"
+                              },
+                              {
+                                "label": "{{noteCta2Label}}",
+                                "url": "{{noteCta2Url}}",
+                                "style": "secondary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "banner-media",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "{{photoBackground}}"
+              },
+              "children": [
+                {
+                  "id": "banner-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full",
+                    "url": "{{imageUrl}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

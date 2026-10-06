@@ -1,0 +1,173 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Financing",
+          "heading": "Engine Overhaul Financing",
+          "subhead": "Financing Up To 100% of Certified Engine Overhauls",
+          "chips": [
+            {
+              "label": "Volvo – Cummins"
+            }
+          ],
+          "note": "<strong>Call: Kim Mason, Finance Manager at Hudson County Motors in Secaucus, NJ</strong>",
+          "noteCtaLabel": "201-866-5570 ext: 122",
+          "noteCtaUrl": "tel:+12018665570",
+          "noteCta2Label": "Send Mail",
+          "noteCta2Url": "mailto:kmason@hudsoncountymotors.com",
+          "body": "Certified Engine Overhaul Financing Made Easy",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/05/Volvo-0099-OVERHAUL-SERV-WEB-1024x768.jpg",
+            "alt": "Volvo 0099 OVERHAUL SERV WEB"
+          },
+          "imageUrl": "/contact-us"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "none",
+          "heading": "Commercial Truck Financing at Hudson County Motors",
+          "lead": "Financing Up To 100% of Certified Engine Overhauls",
+          "body": "At <a href=\"/\">Hudson County Motors</a>, we understand the importance of keeping your trucks in peak condition. That’s why we offer engine overhaul financing for semi-trucks and <a href=\"/store/inventory\">commercial trucks</a>. Our goal is to help you manage the costs of major repairs and keep your business running smoothly."
+        }
+      }
+    },
+    {
+      "id": "what-is",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "accent",
+          "heading": "What is Engine Overhaul Financing?",
+          "body": "Engine overhaul financing is a solution designed to help truck owners cover the costs of significant engine repairs. This type of financing allows you to spread the expense over time, making it more manageable. Whether you need semi-truck repair financing or commercial truck loans, we have you covered."
+        }
+      }
+    },
+    {
+      "id": "signs",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "card",
+          "heading": "Signs Your Truck Needs an Overhaul",
+          "body": "Recognizing when your truck needs an engine overhaul can save you from unexpected breakdowns and costly repairs. Heavy truck financing can help to assess these issues timely and smartly. Here are some common signs to watch for:",
+          "cards": [
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Increased Oil Consumption:</strong> Worn valve guides or seals can cause excessive oil use."
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Excessive Exhaust:</strong> Thick, dark smoke from the tailpipe indicates engine issues."
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Colored Exhaust:</strong> Blue, black, or white smoke can signal different engine problems."
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Water in the Oil:</strong> Foam or sludge on the oil cap or dipstick means water contamination."
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Engine Knocking:</strong> Unusual knocking sounds suggest internal engine damage."
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Oil Pressure Gauge Issues:</strong> Significant changes in oil pressure readings can indicate problems."
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Sludge:</strong> Sludge on the oil pin signifies inefficient oil or coolant usage."
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Overheating Oil:</strong> The burning oil smell points to overheating issues."
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Reduced Acceleration:</strong> Loss of power indicates cylinder compression loss."
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Low Fuel Economy:</strong> Poor engine performance leads to higher fuel consumption."
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "<strong>Low Oil Pressure:</strong> Worn bearings or a faulty oil pump can cause low pressure."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "why-choose",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Why Choose Hudson County Motors for Commercial Truck Financing?",
+          "cards": [
+            {
+              "num": "01",
+              "title": "Expertise and Experience:",
+              "text": "Our team includes certified diesel technicians and truck experts who guide you through every step of the overhaul process. Our comprehensive solutions include new and used commercial truck financing."
+            },
+            {
+              "num": "02",
+              "title": "Trusted Partners:",
+              "text": "We work with reputable service centers and manufacturers like <a href=\"/store/search?q=Volvo\">Volvo</a> and Cummins."
+            },
+            {
+              "num": "03",
+              "title": "Quick and Easy Approvals:",
+              "text": "Get back on the road fast with our streamlined approval process, whether you are looking for heavy-duty or semi-truck loans."
+            },
+            {
+              "num": "04",
+              "title": "Comprehensive Support:",
+              "text": "From application to repair, we provide full support to ensure a smooth experience."
+            }
+          ],
+          "cardSpan": 3
+        }
+      }
+    },
+    {
+      "id": "contact-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-card",
+        "values": {
+          "heading": "Contact us Today for Commercial Truck Loans",
+          "bodyRight": "Are you looking for commercial truck financing near me? Let us help you find the right financing solution to keep your truck running smoothly. We are one of the trusted finance companies for trucking with a proven track record of providing reliable and customer-centric financial solutions. Our dedicated team is committed to helping you achieve your business goals.\n\n<strong><a href=\"/contact-us\">Contact</a> Hudson County Motors today to learn more about our financing options and get a quote.</strong>"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "id": "contact-form",
+  "name": "Contact form with map",
+  "css": "[data-bz-node=\"cf-row\"] { gap: 48px; align-items: stretch; }\n[data-bz-node=\"cf-form\"] .bz-form { padding: 32px; }\n[data-bz-node=\"contact-mapcol\"] { min-height: 420px; display: flex; }\n[data-bz-node=\"contact-map\"], [data-bz-node=\"contact-map\"] .bz-widget { flex: 1; display: flex; flex-direction: column; margin: 0; }\n[data-bz-node=\"contact-map\"] .bz-map { flex: 1; min-height: 420px; border: 1px solid var(--line); border-radius: var(--radius-card); overflow: hidden; background: var(--hcm-tint); }\n[data-bz-node=\"contact-map\"] .bz-loclist, [data-bz-node=\"contact-map\"] .bz-widget__empty { display: none; }\n@media (max-width: 900px) { [data-bz-node=\"cf-row\"] > .bz-col { grid-column: 1 / -1; } }",
+  "props": [
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "cf-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cf-formcol",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "cf-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "contact-us"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "contact-mapcol",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "contact-map",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "mapProvider": "google",
+                      "showMap": true
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

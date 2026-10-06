@@ -1,0 +1,81 @@
+{
+  "id": "contact-us",
+  "name": "Contact us",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "request-info",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks for getting in touch — someone from Hudson County Motors will reply shortly.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "cu-first",
+      "type": "first_name",
+      "label": "First Name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cu-last",
+      "type": "last_name",
+      "label": "Last Name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cu-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cu-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cu-company",
+      "type": "single_line",
+      "label": "Company Name",
+      "required": true
+    },
+    {
+      "id": "cu-comments",
+      "type": "paragraph",
+      "label": "Comments/Questions",
+      "required": false
+    },
+    {
+      "id": "cu-newsletter",
+      "type": "checkboxes",
+      "label": "Newsletter",
+      "required": false,
+      "options": [
+        {
+          "value": "subscribe",
+          "label": "Subscribe to Newsletter"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "cu-default",
+      "name": "Sales team",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

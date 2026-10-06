@@ -5,62 +5,502 @@
       "id": "main",
       "name": "Main menu",
       "items": [
-        { "id": "inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        { "id": "financing", "label": "Financing", "type": "page", "ref": "financing" },
-        { "id": "leasing", "label": "Leasing", "type": "page", "ref": "leasing" },
-        { "id": "parts", "label": "Parts", "type": "inventory", "ref": "parts" },
-        { "id": "service", "label": "Service", "type": "page", "ref": "service" },
-        { "id": "about", "label": "About", "type": "page", "ref": "about" }
+        {
+          "id": "inventory",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory",
+          "children": [
+            {
+              "id": "m-new",
+              "label": "New Inventory",
+              "type": "inventory",
+              "ref": "inventory?condition=new"
+            },
+            {
+              "id": "m-used",
+              "label": "Pre-Owned Inventory",
+              "type": "page",
+              "ref": "pre-owned-inventory"
+            },
+            {
+              "id": "m-ev",
+              "label": "Electric Trucks",
+              "type": "page",
+              "ref": "electric-trucks"
+            },
+            {
+              "id": "m-muni",
+              "label": "Municipal Trucks",
+              "type": "page",
+              "ref": "municipal-trucks"
+            }
+          ]
+        },
+        {
+          "id": "financing",
+          "label": "Financing",
+          "type": "page",
+          "ref": "financing",
+          "children": [
+            {
+              "id": "m-fin",
+              "label": "Finance Department",
+              "type": "page",
+              "ref": "financing"
+            },
+            {
+              "id": "m-engine",
+              "label": "Engine Overhaul Financing",
+              "type": "page",
+              "ref": "engine-overhaul-financing"
+            },
+            {
+              "id": "m-warranty",
+              "label": "Extended Warranty",
+              "type": "page",
+              "ref": "extended-warranty"
+            },
+            {
+              "id": "m-apply",
+              "label": "Finance Application",
+              "type": "page",
+              "ref": "finance-application"
+            }
+          ]
+        },
+        {
+          "id": "leasing",
+          "label": "Leasing",
+          "type": "page",
+          "ref": "leasing",
+          "children": [
+            {
+              "id": "m-lease",
+              "label": "Leasing & Rentals",
+              "type": "page",
+              "ref": "leasing"
+            },
+            {
+              "id": "m-contract",
+              "label": "Contract Maintenance",
+              "type": "page",
+              "ref": "contract-maintenance"
+            }
+          ]
+        },
+        {
+          "id": "parts",
+          "label": "Parts",
+          "type": "page",
+          "ref": "oem-parts-department",
+          "children": [
+            {
+              "id": "m-oem",
+              "label": "OEM Parts Department",
+              "type": "page",
+              "ref": "oem-parts-department"
+            },
+            {
+              "id": "m-superstore",
+              "label": "Authorized Parts Superstore",
+              "type": "page",
+              "ref": "authorized-parts-superstore"
+            },
+            {
+              "id": "m-partspecials",
+              "label": "Part Specials",
+              "type": "page",
+              "ref": "part-specials"
+            },
+            {
+              "id": "m-shop",
+              "label": "Shop Parts Online",
+              "type": "inventory",
+              "ref": "parts"
+            }
+          ]
+        },
+        {
+          "id": "service",
+          "label": "Service",
+          "type": "page",
+          "ref": "truck-repair-service",
+          "children": [
+            {
+              "id": "m-repair",
+              "label": "Truck Repair Service",
+              "type": "page",
+              "ref": "truck-repair-service"
+            },
+            {
+              "id": "m-pm",
+              "label": "Preventative Maintenance",
+              "type": "page",
+              "ref": "preventative-maintenance"
+            },
+            {
+              "id": "m-specialty",
+              "label": "Specialty Services",
+              "type": "page",
+              "ref": "specialty-services"
+            },
+            {
+              "id": "m-winfo",
+              "label": "Warranty Information",
+              "type": "page",
+              "ref": "warranty-information"
+            }
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Specials",
+          "type": "page",
+          "ref": "specials",
+          "children": [
+            {
+              "id": "m-sspecials",
+              "label": "Service Specials",
+              "type": "page",
+              "ref": "specials"
+            },
+            {
+              "id": "m-fleet",
+              "label": "Fleet Service Specials",
+              "type": "page",
+              "ref": "service-specials"
+            },
+            {
+              "id": "m-pspecials",
+              "label": "Part Specials",
+              "type": "page",
+              "ref": "part-specials"
+            }
+          ]
+        },
+        {
+          "id": "about",
+          "label": "About Us",
+          "type": "page",
+          "ref": "about",
+          "children": [
+            {
+              "id": "m-about",
+              "label": "About Hudson County Motors",
+              "type": "page",
+              "ref": "about"
+            },
+            {
+              "id": "m-careers",
+              "label": "Careers",
+              "type": "page",
+              "ref": "careers"
+            },
+            {
+              "id": "m-news",
+              "label": "News",
+              "type": "page",
+              "ref": "news"
+            },
+            {
+              "id": "m-blog",
+              "label": "Blog",
+              "type": "page",
+              "ref": "blog"
+            },
+            {
+              "id": "m-hours",
+              "label": "Map & Hours",
+              "type": "page",
+              "ref": "map-hours"
+            },
+            {
+              "id": "m-contact",
+              "label": "Contact Us",
+              "type": "page",
+              "ref": "contact-us"
+            }
+          ]
+        }
       ]
     },
     {
       "id": "utility",
       "name": "Utility bar",
       "items": [
-        { "id": "u-signup", "label": "news & specials sign-up", "type": "page", "ref": "news-signup" },
-        { "id": "u-phone", "label": "(201) 866-5570", "type": "url", "url": "tel:+12018665570" }
+        {
+          "id": "u-signup",
+          "label": "news & specials sign-up",
+          "type": "page",
+          "ref": "news-signup"
+        },
+        {
+          "id": "u-phone",
+          "label": "(201) 866-5570",
+          "type": "url",
+          "url": "tel:+12018665570"
+        }
+      ]
+    },
+    {
+      "id": "utility-inner",
+      "name": "Utility bar (inner pages)",
+      "items": [
+        {
+          "id": "ui-phone",
+          "label": "201-866-5570",
+          "type": "url",
+          "url": "tel:+12018665570"
+        }
       ]
     },
     {
       "id": "footer",
-      "name": "Footer — Quick links",
+      "name": "Footer — Quick Links",
       "items": [
-        { "id": "f-new", "label": "New Inventory", "type": "inventory", "ref": "inventory?condition=new" },
-        { "id": "f-used", "label": "Pre-Owned Inventory", "type": "inventory", "ref": "inventory?condition=used" },
-        { "id": "f-financing", "label": "Financing", "type": "page", "ref": "financing" },
-        { "id": "f-leasing", "label": "Leasing", "type": "page", "ref": "leasing" },
-        { "id": "f-parts", "label": "Parts", "type": "inventory", "ref": "parts" },
-        { "id": "f-service", "label": "Service", "type": "page", "ref": "service" }
+        {
+          "id": "f-new",
+          "label": "New Inventory",
+          "type": "inventory",
+          "ref": "inventory?condition=new"
+        },
+        {
+          "id": "f-used",
+          "label": "Pre-Owned Inventory",
+          "type": "page",
+          "ref": "pre-owned-inventory"
+        },
+        {
+          "id": "f-financing",
+          "label": "Financing",
+          "type": "page",
+          "ref": "financing"
+        },
+        {
+          "id": "f-about",
+          "label": "About Us",
+          "type": "page",
+          "ref": "about"
+        },
+        {
+          "id": "f-leasing",
+          "label": "Leasing",
+          "type": "page",
+          "ref": "leasing"
+        },
+        {
+          "id": "f-parts",
+          "label": "Parts",
+          "type": "page",
+          "ref": "oem-parts-department"
+        },
+        {
+          "id": "f-service",
+          "label": "Service",
+          "type": "page",
+          "ref": "truck-repair-service"
+        },
+        {
+          "id": "f-sitemap",
+          "label": "Sitemap",
+          "type": "url",
+          "url": "/sitemap.xml"
+        }
       ]
     },
     {
       "id": "brands",
       "name": "Footer — Brands",
       "items": [
-        { "id": "b-volvo", "label": "Volvo", "type": "inventory", "ref": "search?q=Volvo" },
-        { "id": "b-western-star", "label": "Western Star", "type": "inventory", "ref": "search?q=Western+Star" },
-        { "id": "b-autocar", "label": "Autocar", "type": "inventory", "ref": "search?q=Autocar" },
-        { "id": "b-byd", "label": "BYD", "type": "inventory", "ref": "search?q=BYD" },
-        { "id": "b-motiv", "label": "Motiv", "type": "inventory", "ref": "search?q=Motiv" }
+        {
+          "id": "b-volvo",
+          "label": "Volvo",
+          "type": "inventory",
+          "ref": "search?q=Volvo"
+        },
+        {
+          "id": "b-western-star",
+          "label": "Western Star",
+          "type": "inventory",
+          "ref": "search?q=Western+Star"
+        },
+        {
+          "id": "b-autocar",
+          "label": "AutoCar",
+          "type": "inventory",
+          "ref": "search?q=AutoCar"
+        },
+        {
+          "id": "b-byd",
+          "label": "BYD",
+          "type": "inventory",
+          "ref": "search?q=BYD"
+        },
+        {
+          "id": "b-united",
+          "label": "United",
+          "type": "inventory",
+          "ref": "search?q=United"
+        },
+        {
+          "id": "b-ford",
+          "label": "Ford",
+          "type": "inventory",
+          "ref": "search?q=Ford"
+        },
+        {
+          "id": "b-fuso",
+          "label": "Fuso",
+          "type": "inventory",
+          "ref": "search?q=Fuso"
+        }
+      ]
+    },
+    {
+      "id": "dealerships",
+      "name": "Footer — Dealerships",
+      "items": [
+        {
+          "id": "d-united-ford",
+          "label": "United Ford",
+          "type": "label"
+        },
+        {
+          "id": "d-united-cdjr",
+          "label": "United CDJR",
+          "type": "label"
+        }
+      ]
+    },
+    {
+      "id": "home-quick",
+      "name": "Footer (homepage) — Quick links",
+      "items": [
+        {
+          "id": "hf-new",
+          "label": "New Inventory",
+          "type": "inventory",
+          "ref": "inventory?condition=new"
+        },
+        {
+          "id": "hf-used",
+          "label": "Pre-Owned Inventory",
+          "type": "inventory",
+          "ref": "inventory?condition=used"
+        },
+        {
+          "id": "hf-financing",
+          "label": "Financing",
+          "type": "page",
+          "ref": "financing"
+        },
+        {
+          "id": "hf-leasing",
+          "label": "Leasing",
+          "type": "page",
+          "ref": "leasing"
+        },
+        {
+          "id": "hf-parts",
+          "label": "Parts",
+          "type": "inventory",
+          "ref": "parts"
+        },
+        {
+          "id": "hf-service",
+          "label": "Service",
+          "type": "page",
+          "ref": "truck-repair-service"
+        }
+      ]
+    },
+    {
+      "id": "home-brands",
+      "name": "Footer (homepage) — Brands",
+      "items": [
+        {
+          "id": "hb-volvo",
+          "label": "Volvo",
+          "type": "inventory",
+          "ref": "search?q=Volvo"
+        },
+        {
+          "id": "hb-western-star",
+          "label": "Western Star",
+          "type": "inventory",
+          "ref": "search?q=Western+Star"
+        },
+        {
+          "id": "hb-autocar",
+          "label": "Autocar",
+          "type": "inventory",
+          "ref": "search?q=Autocar"
+        },
+        {
+          "id": "hb-byd",
+          "label": "BYD",
+          "type": "inventory",
+          "ref": "search?q=BYD"
+        },
+        {
+          "id": "hb-motiv",
+          "label": "Motiv",
+          "type": "inventory",
+          "ref": "search?q=Motiv"
+        }
       ]
     },
     {
       "id": "contact",
       "name": "Footer — Contact",
       "items": [
-        { "id": "c-street", "label": "290 Secaucus Road", "type": "label" },
-        { "id": "c-city", "label": "Secaucus, NJ 07094", "type": "label" },
-        { "id": "c-phone", "label": "(201) 866-5570", "type": "url", "url": "tel:+12018665570" },
-        { "id": "c-email", "label": "sales@hudsoncountymotors.com", "type": "url", "url": "mailto:sales@hudsoncountymotors.com" }
+        {
+          "id": "c-street",
+          "label": "290 Secaucus Road",
+          "type": "label"
+        },
+        {
+          "id": "c-city",
+          "label": "Secaucus, NJ 07094",
+          "type": "label"
+        },
+        {
+          "id": "c-phone",
+          "label": "(201) 866-5570",
+          "type": "url",
+          "url": "tel:+12018665570"
+        },
+        {
+          "id": "c-email",
+          "label": "sales@hudsoncountymotors.com",
+          "type": "url",
+          "url": "mailto:sales@hudsoncountymotors.com"
+        }
       ]
     },
     {
       "id": "legal",
       "name": "Legal",
       "items": [
-        { "id": "accessibility", "label": "Accessibility", "type": "url", "url": "/accessibility" },
-        { "id": "terms", "label": "Terms & Conditions", "type": "url", "url": "/terms" },
-        { "id": "privacy", "label": "Privacy", "type": "url", "url": "/privacy" }
+        {
+          "id": "accessibility",
+          "label": "Accessibility",
+          "type": "url",
+          "url": "/accessibility"
+        },
+        {
+          "id": "terms",
+          "label": "Terms & Conditions",
+          "type": "url",
+          "url": "/terms"
+        },
+        {
+          "id": "privacy",
+          "label": "Privacy",
+          "type": "url",
+          "url": "/privacy"
+        }
       ]
     }
   ]

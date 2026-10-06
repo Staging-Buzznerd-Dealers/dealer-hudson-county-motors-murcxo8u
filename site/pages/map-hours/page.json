@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "title",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-title",
+        "values": {
+          "eyebrow": "About Us",
+          "heading": "Map & Hours"
+        }
+      }
+    },
+    {
+      "id": "departments",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "department-contacts",
+        "values": {
+          "rooftops": {
+            "source": "locations",
+            "config": {}
+          }
+        }
+      }
+    },
+    {
+      "id": "store-map",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "store-map",
+        "values": {
+          "rooftops": {
+            "source": "locations",
+            "config": {}
+          },
+          "tollFree": "(201) 866-5570",
+          "tollFreeUrl": "tel:+12018665570",
+          "fax": "(201) 866-5757"
+        }
+      }
+    }
+  ]
+}

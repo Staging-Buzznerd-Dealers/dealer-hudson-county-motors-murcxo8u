@@ -1,0 +1,212 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Specials",
+          "heading": "Commercial Truck Service Specials & Fleet Maintenance Incentives",
+          "body": "Targeted Cost Reduction. Seasonal Fleet Maintenance Campaigns. High-Uptime Value.",
+          "ctaLabel": "Schedule Service Appointment",
+          "ctaUrl": "/commercial-truck-repair-service",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/VNR660_2.jpg",
+            "alt": "Volvo Trucks VNR 660 VNR+660_2"
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "body": "Managing operational overhead across highly competitive Northeast freight corridors, regional intermodal hubs, and demanding port drayage routes requires a strategic approach to preventative maintenance budgeting. Hudson County Motors designs targeted commercial truck service specials and parts incentives engineered specifically to minimize the total cost of ownership (TCO) for independent owner-operators and enterprise logistics fleets. Operating out of our premier <strong>100,000 square-foot complex</strong> located right off Exit 15X on the New Jersey Turnpike, our active incentive programs shield your transportation business from sudden roadside breakdown expenses while actively extending the operating lifecycle of your critical Class 8 haulage assets.",
+          "body2": "Our promotional campaigns provide substantial, practical savings on the exact precision services that drive immediate vehicle uptime. This comprehensive framework includes high-demand discounts on heavy-duty battery replacements, laser wheel alignments, and thorough preventative maintenance (PM) cycles. By delivering direct financial relief on high-frequency maintenance events, we help regional transport networks resolve lingering electrical variables and avoid catastrophic off-highway failures. Every special is fully executed by our 26 on-site technicians inside our high-capacity 32-bay service facility, ensuring your vehicles get back on the road rapidly without sacrificing mechanical quality, cutting diagnostic corners, or voiding factory warranty coverage.",
+          "callouts": [
+            {
+              "text": "Explore our active, real-time availability of over-the-road sleepers and specialized vocational chassis lines through our New Truck Inventory.",
+              "ctaLabel": "Browse New Commercial Trucks",
+              "ctaUrl": "/store/inventory?condition=new"
+            },
+            {
+              "text": "Review our standard fleet leasing structures, full-service maintenance options, and rapid-deployment rental replacement programs.",
+              "ctaLabel": "Explore Fleet Leasing Solutions",
+              "ctaUrl": "/leasing-2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pain-points",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "card",
+          "heading": "Resolving Critical Fleet Pain Points and Unexpected Electrical Failures",
+          "ctaLabel": "Schedule Service Appointment",
+          "ctaUrl": "/commercial-truck-repair-service",
+          "body": "Relying on old, degraded components to save on short-term maintenance costs forces your business to absorb expensive highway towing bills, steep emergency repair fees, and critical cargo delivery failures. Our targeted service specials focus explicitly on high-vulnerability mechanical and electrical assemblies, delivering predictable maintenance tracking that addresses major operational pain points. Real-world fleet statistics confirm that weak, unverified, or corroded battery banks represent one of the primary causes of winter roadside failure patterns throughout the NY/NJ/CT metropolitan shipping lanes.\n\nNeglecting minor battery maintenance issues or bypassing connection checkups routinely triggers severe electrical drop-outs, sensor transmission faults, and eventual electronic control module (ECM) damage across advanced diesel platforms. Our routine battery incentives help owner-operators replace aging power units affordably, restoring cold cranking amps (CCA) performance before sub-zero winter temperatures arrive. This proactive care ensures reliable start-ups and supplies stable voltage parameters to your advanced vehicle telematics, safety systems, and emissions tracking modules.\n\n<strong>Schedule your next discount inspection or full-service PM cycle directly with our service coordinators to maintain your destination deadlines.</strong>",
+          "photoRight": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/VAH300_2.jpg",
+            "alt": "Volvo Trucks VAH 300 VAH300_2"
+          }
+        }
+      }
+    },
+    {
+      "id": "multi-franchise",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "accent",
+          "heading": "Multi-Franchise Tooling and Factory-Certified Repair Execution",
+          "body": "Bypassing factory service cycles because of rigid retail parts pricing can lead to premature wear-and-tear and compromised efficiency metrics across your entire truck fleet. Our service specials offer factory-authorized, multi-brand diagnostics at highly competitive price tiers, giving you direct access to institutional shop capabilities without corporate premium pricing or long bureaucratic delays. Our technicians utilize specialized software architectures, including Premium Tech Tool (PTT), Detroit DiagnosticLink, and Cummins INSITE, to track mechanical and electrical health parameters completely.",
+          "cards": [
+            {
+              "num": "",
+              "title": "Line-Haul Fleet Logistics",
+              "text": "High-efficiency day cabs and premium over-the-road sleeper models optimized for cross-country routes and maximum aerodynamics."
+            },
+            {
+              "num": "",
+              "title": "Severe Vocational Equipment:",
+              "text": "Heavy construction dumps, municipal sanitation vehicles, aggregate roll-offs, concrete mixers, hook lifts, and specialized crane integrations."
+            }
+          ],
+          "cardSpan": 6,
+          "note": "Discover our full operational footprint, 115-person employee capacity, and our 80-year family-owned legacy supporting tri-state freight routes.",
+          "ctaLabel": "About Hudson County Motors",
+          "ctaUrl": "/about-hudson-county-motors-commercial-truck-dealership",
+          "cardsIntro": "<strong>Our maintenance division integrates these specialized discount campaigns across all major commercial transportation and vocational applications:</strong>",
+          "after": "To accelerate shop throughput and get assets rolling without delay, our service bays pull parts directly from our massive on-site warehouse. Our parts division maintains an outstanding 90% first-pass fill ratio, utilizing automated stock replenishment channels to ensure promotional parts, filters, and high-wear components are always available for immediate installation."
+        }
+      }
+    },
+    {
+      "id": "analytical-breakdown",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Analytical Prose Breakdown: Financial Impact of Preventative Specials",
+          "body": "To assist corporate accounting teams, fleet controllers, and operations managers in tracking maintenance expenditures, the following section outlines the financial and operational impact of taking advantage of specialized dealership incentives versus running unmaintained equipment.",
+          "cards": [
+            {
+              "num": "01",
+              "title": "Heavy-Duty Commercial Battery and Electrical System Specials",
+              "text": "Executing a commercial battery incentive allows fleet operators to replace aging, high-resistance battery cells before they leave a truck stranded at a terminal or highway rest stop. A standard Class 8 electrical overhaul at normal retail pricing can create significant cost friction. By utilizing our targeted battery specials, fleets can upgrade to high-CCA Alliance or premium OEM batteries at reduced rates. This proactive investment stabilizes voltage baselines across the truck’s J1939 CAN-bus network. Maintaining a clean voltage profile eliminates ghost diagnostic trouble codes (DTCs), protects expensive starter motors from low-voltage overheating, and prevents emergency roadside towing bills that easily surpass alternative shop maintenance costs."
+            },
+            {
+              "num": "02",
+              "title": "Precision Laser Wheel Alignment and Steering Incentives",
+              "text": "Irregular tire wear driven by the rough potholes, harsh roadway conditions, and uneven industrial tracks of the tri-state area represents a hidden drain on fleet profitability. Taking advantage of our precision laser wheel alignment coupons directly controls this variable by bringing front steer axles, tandem drives, and trailer configurations back into exact factory tolerances. Correcting axle parallelism and thrust angles significantly reduces parasitic rolling resistance, maximizing fuel efficiency metrics. Furthermore, regular wheel alignments can extend commercial tire lifespans by up to 20% to 30%, saving massive amounts of capital on premature tire replacement cycles."
+            },
+            {
+              "num": "03",
+              "title": "Bundled Full-Service PM and Exhaust Aftertreatment Specials",
+              "text": "Our comprehensive preventive maintenance specials provide deep, multi-point machine auditing by combining standard oil and filter flushes with detailed sensor checking. Passing up scheduled PM care to save on immediate cash flow exposes the vehicle to soot-clogging within the EGR cooler and rapid particulate restriction inside the DPF block. Our promotional PM packages include exhaustive exhaust system pressure tests, allowing our mechanics to clean filters or catch minor sensor variances early. This specialized service maintains optimal engine backpressure, prevents fuel economy drops, and stops the powertrain from entering an unexpected, highly disruptive highway derate loop."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "card",
+          "heading": "Explore Our Fleet Repair & Authority Resources",
+          "body": "Review our deep technical and regulatory materials to master complex diagnostic parameters and optimize your equipment investments.",
+          "cards": [
+            {
+              "num": "",
+              "title": "Volvo VNL 860 Technical Maintenance Guide",
+              "text": "Analyze detailed diagnostic codes, filter replacement frequencies, and electrical system specifications written for high-mileage line-haul fleets.",
+              "linkUrl": "https://www.hudsoncountymotors.com/authority-hub-volvo-vnl-860-technical-maintenance-guide-page/",
+              "linkLabel": "Explore Technical Maintenance Guide →"
+            },
+            {
+              "num": "",
+              "title": "NJ Zero-Emission Grant Navigator & Regulatory Guide",
+              "text": "Examine local New Jersey compliance deadlines, smoke inspection parameters, and clean-energy incentive frameworks.",
+              "linkUrl": "https://www.hudsoncountymotors.com/authority-hub-nj-zero-emission-grant-navigator-page/",
+              "linkLabel": "View Emissions Compliance Resources →"
+            },
+            {
+              "num": "",
+              "title": "Northeast Fleet Winterization Guide",
+              "text": "Examine specialized tactics for protecting commercial electrical systems, checking cold cranking amps (CCA), and blocking undercarriage rust.",
+              "linkUrl": "https://www.hudsoncountymotors.com/authority-hub-northeast-fleet-winterization-guide-page/",
+              "linkLabel": "Explore Winterization Strategies →"
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-map",
+        "values": {
+          "background": "none",
+          "heading": "Contact Our Service Coordination and Specials Desk",
+          "body": "If your transport logistics firm, construction operation, or municipal agency requires a wholesale fleet service quote or information on active battery promotions, our team is ready to execute.",
+          "note": "<strong>Contact our service writers today to secure promotional booking slots, verify part number availability, or request an enterprise maintenance analysis.</strong>",
+          "phone": "(201) 866-7666",
+          "phoneUrl": "tel:+12018667666",
+          "place": "Secaucus, NJ",
+          "ctaLabel": "Contact Hudson County Motors",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "background": "card",
+          "heading": "Expert FAQ Stack",
+          "faqs": [
+            {
+              "q": "What types of service specials generate the strongest response from your fleet customers?",
+              "a": "Our heavy-duty commercial clients respond most consistently to our specialized battery replacement promotions and our bundled full-service PM preventative maintenance campaigns, as these address high-vulnerability systems directly."
+            },
+            {
+              "q": "How do your maintenance promotions help fleets lower their total cost of ownership?",
+              "a": "By lowering the cost barrier on critical preventative care items like batteries and fluid/filter service, our specials ensure operators don’t delay vital maintenance. This blocks progressive component failures and lowers long-term roadside breakdown expenses."
+            },
+            {
+              "q": "Do you participate in OEM-backed parts and service incentive programs?",
+              "a": "Yes. Through our direct manufacturing franchise partnerships, our sales and service departments pass factory-backed incentives, warranty campaign discounts, and national fleet modernization program savings directly to our clients."
+            },
+            {
+              "q": "Can fleet buyers access online parts catalogs to check promotional components?",
+              "a": "Yes. Fleet operators can easily look up parts, verify pricing, and order factory components online by logging into the Volvo Parts Asist catalog or utilizing the Daimler Excelerator portal for Western Star models."
+            },
+            {
+              "q": "How often does Hudson County Motors update its commercial truck service specials?",
+              "a": "Our service and parts divisions roll out recurring seasonal maintenance campaigns throughout the year, adjusting promotional parameters to protect fleets against predictable climate challenges like winter battery failures or summer cooling stress."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

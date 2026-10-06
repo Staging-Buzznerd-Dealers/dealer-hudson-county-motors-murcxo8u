@@ -1,0 +1,129 @@
+{
+  "version": 2,
+  "id": "brand-logos",
+  "name": "Brand logo wall",
+  "css": "[data-bz-node=\"bl-logos\"] .bz-logos { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; border: 0; padding: 0; }\n[data-bz-node=\"bl-logos\"] .bz-logo { height: 92px; justify-content: center; padding: 12px 18px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); }\n[data-bz-node=\"band\"].bz-section--bg-card [data-bz-node=\"bl-logos\"] .bz-logo { background: var(--paper); }\n[data-bz-node=\"bl-logos\"] .bz-logo img { max-height: 60px; width: auto; max-width: 100%; object-fit: contain; }",
+  "props": [
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "none",
+          "label": "Page (light grey)"
+        },
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "accent",
+          "label": "Blue band"
+        }
+      ],
+      "default": "card"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading (optional)",
+      "default": ""
+    },
+    {
+      "key": "logos",
+      "type": "list",
+      "label": "Logos",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Brand"
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Logo"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to (optional)"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "{{background}}",
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "hcm-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "hcm-headcol",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hcm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bl-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "bl-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bl-logos",
+                  "type": "logoStrip",
+                  "props": {
+                    "logos": "{{logos}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

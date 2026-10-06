@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Financing",
+          "heading": "Finance Application",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/VNR660_1.jpg",
+            "alt": "Finance Application"
+          }
+        }
+      }
+    },
+    {
+      "id": "application-form",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "application-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "application-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "finance-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "finance-application"
+                  }
+                },
+                {
+                  "id": "application-note",
+                  "type": "text",
+                  "props": {
+                    "width": "full",
+                    "text": "<strong>Please submit this application along with:</strong> a copy of a valid driver license for all borrowers/guarantors; company documents (only if the borrower is a company), e.g. formation documents, articles of organization (LLC), operating agreement (LLC), articles of incorporation (corporation); and proof of Corpcode (NJ based companies only)."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

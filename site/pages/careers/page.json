@@ -1,0 +1,192 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Careers at Hudson County Motors",
+          "heading": "Real work. Strong team. Long-term opportunity.",
+          "body": "Hudson County Motors is a family-owned, full-service heavy-duty truck dealership serving the Tri-state for decades. We’re built on hard work, reliability, and a team that takes pride in what they do.\n\nWhether you’re in the shop, parts, service, or operations, this is a place where your work matters and your growth is supported.",
+          "ctaLabel": "See Current Openings",
+          "ctaUrl": "https://www.indeed.com/cmp/Hudson-County-Motors",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/04/IMG_0386-1-1024x768.jpg",
+            "alt": "Hudson County Motors team"
+          }
+        }
+      }
+    },
+    {
+      "id": "why-work-here",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "none",
+          "heading": "Why Work at Hudson County Motors?",
+          "body": "We’re a hands-on, team-oriented dealership where people show up, do the work, and support each other. If you’re looking for a place to build a career—not just pass time—this is it.",
+          "cards": [
+            {
+              "num": "01",
+              "title": "Family-Owned, Team-Focused",
+              "text": "We’re not a corporate chain. We’re a family-owned business where people are known, valued, and part of a team that works together every day."
+            },
+            {
+              "num": "02",
+              "title": "Opportunities to Grow",
+              "text": "We believe in developing our people. Whether you’re experienced or just getting started, there’s room to learn, take on more responsibility, and grow within the company."
+            },
+            {
+              "num": "03",
+              "title": "Work That Matters",
+              "text": "Heavy-duty trucks keep industries moving. The work we do is essential, and every role here contributes to keeping our customers on the road."
+            },
+            {
+              "num": "04",
+              "title": "Supportive, Straightforward Environment",
+              "text": "We value accountability, reliability, and people who take pride in doing their job well. It’s a professional environment where expectations are clear and effort is recognized."
+            }
+          ],
+          "cardSpan": 3
+        }
+      }
+    },
+    {
+      "id": "offer-and-roles",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "careers-offer",
+        "values": {
+          "offerHeading": "What We Offer",
+          "offers": [
+            {
+              "text": "Competitive pay"
+            },
+            {
+              "text": "Health benefits"
+            },
+            {
+              "text": "Dental and vision coverage"
+            },
+            {
+              "text": "401(k) options"
+            },
+            {
+              "text": "Paid time off"
+            },
+            {
+              "text": "Opportunities for advancement"
+            },
+            {
+              "text": "Stable, long-term career paths"
+            },
+            {
+              "text": "Team-oriented work environment"
+            }
+          ],
+          "joinHeading": "Join Our Team",
+          "joinBody": "We’re hiring across multiple departments and are always looking for motivated, dependable individuals to join our team.",
+          "rolesLabel": "Common roles include:",
+          "roles": [
+            {
+              "label": "Diesel Technicians"
+            },
+            {
+              "label": "Service Advisors"
+            },
+            {
+              "label": "Parts Counter / Parts Support"
+            },
+            {
+              "label": "Drivers"
+            },
+            {
+              "label": "Porters / Maintenance"
+            },
+            {
+              "label": "Administrative Support"
+            },
+            {
+              "label": "Sales Support"
+            }
+          ],
+          "ctaLabel": "See Current Openings",
+          "ctaUrl": "https://www.indeed.com/cmp/Hudson-County-Motors",
+          "footnote": "<strong>Note:</strong> Don’t see the exact role you’re looking for? We still encourage you to apply—we’re always interested in connecting with strong candidates."
+        }
+      }
+    },
+    {
+      "id": "gallery",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "photo-grid",
+        "values": {
+          "heading": "Take a Look Inside Hudson County Motors",
+          "photos": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/04/IMG_1871-1024x768.jpg",
+                "alt": "Inside Hudson County Motors"
+              },
+              "span": 6
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/04/service-dept-768x1024.jpg",
+                "alt": "Service department"
+              },
+              "span": 3
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/04/IMG_0706-1-1-1024x768.jpg",
+                "alt": "Inside Hudson County Motors"
+              },
+              "span": 3
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/04/IMG_0988-1-1024x768.jpg",
+                "alt": "Inside Hudson County Motors"
+              },
+              "span": 3
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/04/icecream.jpg",
+                "alt": "Team ice cream event"
+              },
+              "span": 3
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/04/Tom-Paul-Sr-AC.jpg",
+                "alt": "Tom Paul Sr"
+              },
+              "span": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "apply-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-card",
+        "values": {
+          "heading": "Build Your Career With Hudson County Motors",
+          "bodyLeft": "If you’re looking for a place where your work matters, where you can grow, and where you’re part of a strong, reliable team—Hudson County Motors is the place to be.",
+          "ctaLabel": "Apply Today",
+          "ctaUrl": "https://www.indeed.com/cmp/Hudson-County-Motors",
+          "cta2Label": "View Open Positions",
+          "cta2Url": "https://www.indeed.com/cmp/Hudson-County-Motors"
+        }
+      }
+    }
+  ]
+}

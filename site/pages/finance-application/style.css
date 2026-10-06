@@ -1,0 +1,9 @@
+/* Finance Application: the long applicant form, three fields to a row like the design. */
+[data-bz-node="application-form"] { padding-block: var(--hcm-pad-y); }
+[data-bz-node="finance-form"] .bz-form { padding: clamp(24px, 4vw, 44px); border-top: 3px solid var(--accent); gap: 20px 22px; }
+[data-bz-node="finance-form"] .bz-field--half { flex: 1 1 calc(33.333% - 15px); }
+[data-bz-node="finance-form"] .bz-choices { flex-direction: row; flex-wrap: wrap; gap: 8px 22px; }
+[data-bz-node="finance-form"] .bz-field--consent .bz-choice { font-size: 13px; line-height: 1.6; color: var(--muted); }
+[data-bz-node="application-note"] { margin-top: 24px; }
+[data-bz-node="application-note"] p { font-size: 15px; line-height: 1.65; color: var(--hcm-body); max-width: 880px; }
+@media (max-width: 760px) { [data-bz-node="finance-form"] .bz-field--half { flex-basis: 100%; } }

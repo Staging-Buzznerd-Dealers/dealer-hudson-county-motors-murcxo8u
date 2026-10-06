@@ -19,11 +19,165 @@
     "pageType": "Home"
   },
   {
-    "slug": "test",
-    "dir": "test",
-    "title": "test",
-    "path": "/test",
-    "out": "test/index.html",
+    "slug": "about",
+    "dir": "about",
+    "title": "About Us",
+    "description": "Sustaining modern fleet operations across dense tri-state freight corridors requires a business partner that combines industrial-scale infrastructure with…",
+    "path": "/about-hudson-county-motors-commercial-truck-dealership",
+    "out": "about-hudson-county-motors-commercial-truck-dealership/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "careers",
+    "dir": "careers",
+    "title": "Careers",
+    "description": "Hudson County Motors is a family-owned, full-service heavy-duty truck dealership serving the Tri-state for decades. We’re built on hard work, reliability,…",
+    "path": "/careers",
+    "out": "careers/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "news",
+    "dir": "news",
+    "title": "News",
+    "description": "News, press releases and events from Hudson County Motors, a family-owned heavy truck dealer in Secaucus, NJ.",
+    "path": "/news",
+    "out": "news/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "map-hours",
+    "dir": "map-hours",
+    "title": "Map & Hours",
+    "description": "Department hours, phone numbers and directions for Hudson County Motors at 290 Secaucus Road, Secaucus, NJ.",
+    "path": "/map-hours",
+    "out": "map-hours/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "blog",
+    "dir": "blog",
+    "title": "Blog",
+    "description": "Articles from Hudson County Motors on fleet replacement, maintenance schedules, truck warranties and genuine parts.",
+    "path": "/blog",
+    "out": "blog/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "contact-us",
+    "dir": "contact-us",
+    "title": "Contact Us",
+    "description": "Contact Hudson County Motors in Secaucus, NJ about sales, parts, service, financing and leasing.",
+    "path": "/contact-us",
+    "out": "contact-us/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "pre-owned-inventory",
+    "dir": "pre-owned-inventory",
+    "title": "Pre-Owned Commercial Trucks for Sale",
+    "description": "Sourced Corporate Fleet Inventory. 150-Point Inspection Protocols. Full Post-Sale Support.",
+    "path": "/pre-owned-inventory-2",
+    "out": "pre-owned-inventory-2/index.html",
+    "group": "inventory",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "electric-trucks",
+    "dir": "electric-trucks",
+    "title": "Electric Commercial Trucks for Sale",
+    "description": "Certified EV Franchise Authority. Commercial Infrastructure Consulting. Factory-Trained Support.",
+    "path": "/electric-commercial-trucks-for-sale",
+    "out": "electric-commercial-trucks-for-sale/index.html",
+    "group": "inventory",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "municipal-trucks",
+    "dir": "municipal-trucks",
+    "title": "Municipal Trucks",
+    "description": "Municipal trucks for sale play a vital role in keeping communities safe and functioning efficiently. With a robust selection of high-performance trucks…",
+    "path": "/municipal-trucks",
+    "out": "municipal-trucks/index.html",
+    "group": "inventory",
     "status": "published",
     "seo": {
       "ogImage": null,
@@ -38,10 +192,68 @@
   {
     "slug": "financing",
     "dir": "financing",
-    "title": "Financing",
-    "description": "Truck financing for new and pre-owned Volvo, Western Star, Autocar, BYD and Motiv trucks at Hudson County Motors in Secaucus, NJ.",
-    "path": "/financing",
-    "out": "financing/index.html",
+    "title": "Commercial Truck Financing",
+    "description": "Flexible Transport Capital. Core OEM Finance Partnerships. Transparent Risk Management.",
+    "path": "/finance-department-2",
+    "out": "finance-department-2/index.html",
+    "group": "financing",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "engine-overhaul-financing",
+    "dir": "engine-overhaul-financing",
+    "title": "Engine Overhaul Financing",
+    "description": "Certified Engine Overhaul Financing Made Easy",
+    "path": "/engine-overhaul-financing",
+    "out": "engine-overhaul-financing/index.html",
+    "group": "financing",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "extended-warranty",
+    "dir": "extended-warranty",
+    "title": "Extended Warranty",
+    "description": "Buy An Extended Warranty For Your Semi Truck",
+    "path": "/extended-warranty",
+    "out": "extended-warranty/index.html",
+    "group": "financing",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "finance-application",
+    "dir": "finance-application",
+    "title": "Finance Application",
+    "description": "Apply for commercial truck financing with Hudson County Motors in Secaucus, NJ.",
+    "path": "/finance-application",
+    "out": "finance-application/index.html",
+    "group": "financing",
     "status": "published",
     "seo": {
       "ogImage": null,
@@ -56,10 +268,11 @@
   {
     "slug": "leasing",
     "dir": "leasing",
-    "title": "Leasing & Rental",
-    "description": "Truck leasing and rental from Hudson Truck Leasing, LLC — no down payment, deductible payments and predictable costs.",
-    "path": "/leasing",
-    "out": "leasing/index.html",
+    "title": "Commercial Truck Leasing & Fleet Rentals",
+    "description": "Flexible Asset Acquisition. Full-Service Uptime Protection. Off-Balance-Sheet Capital Efficiency.",
+    "path": "/leasing-2",
+    "out": "leasing-2/index.html",
+    "group": "leasing",
     "status": "published",
     "seo": {
       "ogImage": null,
@@ -72,12 +285,13 @@
     }
   },
   {
-    "slug": "service",
-    "dir": "service",
-    "title": "Service",
-    "description": "Heavy truck service from OEM-trained technicians at Hudson County Motors in Secaucus, NJ.",
-    "path": "/service",
-    "out": "service/index.html",
+    "slug": "contract-maintenance",
+    "dir": "contract-maintenance",
+    "title": "Contract Maintenance",
+    "description": "Our contract maintenance program provides truck owners with predictable maintenance costs for operating their trucks. Plans are extremely flexible,…",
+    "path": "/contract-maintenance",
+    "out": "contract-maintenance/index.html",
+    "group": "leasing",
     "status": "published",
     "seo": {
       "ogImage": null,
@@ -90,12 +304,201 @@
     }
   },
   {
-    "slug": "about",
-    "dir": "about",
-    "title": "About",
-    "description": "Family-owned since 1945: four generations serving the trucking industry from Secaucus, NJ.",
-    "path": "/about",
-    "out": "about/index.html",
+    "slug": "oem-parts-department",
+    "dir": "oem-parts-department",
+    "title": "OEM Commercial Truck Parts Department",
+    "description": "Factory-Authorized OEM Components. 90% On-Site First-Pass Fill Ratio. Tri-State Fleet Delivery.",
+    "path": "/oem-commercial-truck-parts-department",
+    "out": "oem-commercial-truck-parts-department/index.html",
+    "group": "parts",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "authorized-parts-superstore",
+    "dir": "authorized-parts-superstore",
+    "title": "Authorized Parts Superstore",
+    "description": "Get All Your Truck Parts Needs Delivered Quickly and Easily",
+    "path": "/authorized-parts-superstore",
+    "out": "authorized-parts-superstore/index.html",
+    "group": "parts",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "part-specials",
+    "dir": "part-specials",
+    "title": "Part Specials",
+    "description": "Current heavy truck parts specials and downloadable flyers from Hudson County Motors.",
+    "path": "/part-specials",
+    "out": "part-specials/index.html",
+    "group": "parts",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "warranty-information",
+    "dir": "warranty-information",
+    "title": "Warranty Information",
+    "description": "As a heavy truck owner, it is especially important to protect your operating budget from the rising costs of repairs after your factory warranty expires.…",
+    "path": "/warranty-information",
+    "out": "warranty-information/index.html",
+    "group": "service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "preventative-maintenance",
+    "dir": "preventative-maintenance",
+    "title": "Preventative Maintenance",
+    "description": "Elite Fleet Maintenance Programs. Advanced System Diagnostics. Proven Tri-State Uptime Protection.",
+    "path": "/preventative-maintenance",
+    "out": "preventative-maintenance/index.html",
+    "group": "service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "truck-repair-service",
+    "dir": "truck-repair-service",
+    "title": "Truck Repair Service",
+    "description": "At Hudson County Motors, we understand that running trucks smoothly is crucial to business success. That’s why we offer comprehensive truck repair…",
+    "path": "/commercial-truck-repair-service",
+    "out": "commercial-truck-repair-service/index.html",
+    "group": "service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "specialty-services",
+    "dir": "specialty-services",
+    "title": "Specialty Services",
+    "description": "Proof of insurance",
+    "path": "/specialty-services",
+    "out": "specialty-services/index.html",
+    "group": "service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "specials",
+    "dir": "specials",
+    "title": "Heavy Truck Service Specials",
+    "description": "Heavy truck service and parts specials from Hudson County Motors in Secaucus, NJ.",
+    "path": "/specials",
+    "out": "specials/index.html",
+    "group": "specials",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "service-specials",
+    "dir": "service-specials",
+    "title": "Commercial Truck Service Specials & Fleet Programs",
+    "description": "Targeted Cost Reduction. Seasonal Fleet Maintenance Campaigns. High-Uptime Value.",
+    "path": "/specials-3",
+    "out": "specials-3/index.html",
+    "group": "specials",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "get-a-quote",
+    "dir": "get-a-quote",
+    "title": "Get a Quote",
+    "description": "Request a quote on new and pre-owned trucks from Hudson County Motors in Secaucus, NJ.",
+    "path": "/get-a-quote",
+    "out": "get-a-quote/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "test",
+    "dir": "test",
+    "title": "test",
+    "path": "/test",
+    "out": "test/index.html",
     "status": "published",
     "seo": {
       "ogImage": null,

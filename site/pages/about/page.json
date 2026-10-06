@@ -2,859 +2,207 @@
   "version": 2,
   "nodes": [
     {
-      "id": "page-head",
+      "id": "banner",
       "type": "sharedSection",
       "props": {
-        "sectionId": "page-header",
+        "sectionId": "page-banner",
         "values": {
-          "eyebrow": "Family-owned since 1945",
-          "heading": "About Hudson County Motors",
-          "intro": "A heavy truck dealership in Secaucus, NJ with a parts store, rentals, service and financing."
+          "eyebrow": "About Hudson County Motors",
+          "heading": "Multi-Franchise Industrial Capacity. Over 80 Years of Family-Owned Accountability.",
+          "body": "Sustaining modern fleet operations across dense tri-state freight corridors requires a business partner that combines industrial-scale infrastructure with personal accessibility. Established in 1945, Hudson County Motors has dedicated over eight decades to supporting line-haul carriers, intermodal port logistics, construction companies, and municipal fleets. Operating out of our cutting-edge complex in Secaucus, New Jersey, our enterprise bridges the gap between top-tier manufacturing capabilities and dedicated, client-first communication.",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/About-Us.jpg",
+            "alt": "About Us"
+          }
         }
       }
     },
     {
-      "id": "heritage-band",
+      "id": "media",
       "type": "sharedSection",
       "props": {
-        "sectionId": "heritage-band",
-        "values": {}
+        "sectionId": "media-band",
+        "values": {
+          "background": "none",
+          "callouts": [
+            {
+              "text": "Explore our real-time availability of over-the-road sleepers and vocational platforms via our New Truck Inventory.",
+              "ctaLabel": "Browse New Commercial Trucks",
+              "ctaUrl": "/store/inventory?condition=new"
+            },
+            {
+              "text": "Review our preventative maintenance guidelines, VMRS system mapping, and on-site tool suites engineered to prevent expensive highway downtime.",
+              "ctaLabel": "Explore Fleet Maintenance Programs",
+              "ctaUrl": "/commercial-truck-repair-service"
+            }
+          ],
+          "body": "Our operational structure delivers the scale of a massive distributor while maintaining the responsive flexibility that only a multi-generational, family-owned business can provide. We host a massive fleet-support network featuring specialized staff and technical experts working within an elite, high-capacity shop footprint. Sourcing your equipment through our commercial truck dealership New Jersey division secures your network access to premier multi-franchise assets, custom upfitting layouts, and institutional parts pipelines engineered to maximize vehicle lifecycle values.",
+          "photoLeft": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/09/47x-1024x768.webp",
+            "alt": "About Image"
+          }
+        }
       }
     },
     {
-      "id": "department-contacts",
+      "id": "logistics-support",
       "type": "sharedSection",
       "props": {
-        "sectionId": "department-contacts",
+        "sectionId": "content-split",
         "values": {
-          "rooftops": {
-            "source": "locations",
-            "config": {}
+          "background": "accent",
+          "eyebrow": "NJ/NY Metro",
+          "heading": "Decades of Specialized Logistics Support in the NJ/NY Metro Area",
+          "body": "Positioned off Exit 15X on the New Jersey Turnpike, our facility handles critical drayage truck operations moving cargo between the Port Newark and Port Elizabeth marine terminals and regional distribution nodes. For over three generations, our management team has rejected the rigid, slow communication loops seen in large corporate dealership chains. We build direct, long-lasting partnerships with our clients, adapting our credit programs, parts delivery frequencies, and service priorities to match your individual business needs.\n\nOur specialized solutions cater to all regional sectors, including line-haul and LTL logistics by providing aerodynamic day cabs and sleeper tractors optimized for cross-country routes. For severe vocational industries, our engineering division facilitates custom upfitting and chassis integration for construction dumps, roll-offs, mixers, and sanitation machinery, while our municipal operations group structures tailored fleet maintenance and authorized state compliance testing built around local government budgets. This localized industry expertise ensures your commercial assets operate safely, efficiently, and with maximum uptime across the high-stress shipping lanes of the tri-state area."
+        }
+      }
+    },
+    {
+      "id": "supply-chain",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "none",
+          "heading": "How Our Supply Chain Advantage Accelerates Local Deliveries",
+          "ctaLabel": "Schedule Emergency Mobile Support",
+          "ctaUrl": "/commercial-truck-repair-service",
+          "body": "We utilize advanced automated inventory tracking logic to continuously check, log, and fill our local warehouse shelves. By integrating factory-connected LPA/Rim Pro (Automatic Stock Replenishment) software architectures, our dealership bypasses typical distribution delays. This allows us to source critical parts and specific part numbers faster than independent repair competitors.\n\nTo get your trucks back on line quickly, we run a dedicated parts delivery fleet of 16 delivery vehicles electronically dispatched with real-time tracking and delivery updates. Our logistics network provides same-day parts delivery for breakdown situations, running daily and twice-daily delivery routes straight to your fleet maintenance yards or active highway breakdown locations.\n\nOur logistics division features 5 Outside Parts Sales Staff members who work directly with corporate fleet managers to structure wholesale parts contracts and coordinate delivery programs. For immediate off-highway mechanical failures, our dispatch counter can coordinate with our mobile repair division, deploying one of our 4 mobile field service trucks to combine rapid parts fulfillment with expert on-site technical care.",
+          "photoRight": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/09/truck-line-up-1024x683-1.webp",
+            "alt": "Truck line-up"
           }
-        },
-        "data": {
-          "rooftops": [
+        }
+      }
+    },
+    {
+      "id": "parts-tier",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Analytical Prose Breakdown: Financial Impact of Parts Tier Selection",
+          "body": "To assist corporate accounting teams, fleet controllers, and operations managers in verifying parts lifecycle costs, the following section outlines the financial and operational impact of balancing OEM components, remanufactured options, and aftermarket alternatives.",
+          "cards": [
             {
-              "id": "2",
-              "name": "hudson county motors",
-              "subtitle": "",
-              "slug": "main",
               "num": "01",
-              "href": null,
-              "streetAddress": "290 Secaucus Road Secaucus, NJ 07094",
-              "city": null,
-              "region": null,
-              "postalCode": null,
-              "country": null,
-              "latitude": null,
-              "longitude": null,
-              "phone": null,
-              "phoneUrl": null,
-              "mapUrl": "https://www.google.com/maps/search/?api=1&query=290%20Secaucus%20Road%20Secaucus%2C%20NJ%2007094",
-              "email": null,
-              "brands": "",
-              "services": "",
-              "perks": "",
-              "brandKeys": "",
-              "perkKeys": "",
-              "perk1": null,
-              "perk2": null,
-              "perk3": null,
-              "departments": "Sales · Used Sales · Service · Parts · Body Shop · Tire · Rental · Leasing · Finance · Ecommerce Ops · Office · Warehouse",
-              "hours": "",
-              "phone2": null,
-              "phone2Url": null,
-              "phone3": null,
-              "phone3Url": null,
-              "group": "Secaucus",
-              "groupKey": "secaucus",
-              "photo": {
-                "src": "",
-                "alt": ""
-              },
-              "banner": {
-                "src": "",
-                "alt": ""
-              },
-              "brandRows": [],
-              "serviceRows": [],
-              "perkRows": [],
-              "departmentRows": [
-                {
-                  "name": "Sales",
-                  "key": "sales",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Used Sales",
-                  "key": "used_sales",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Service",
-                  "key": "service",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Parts",
-                  "key": "parts",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Body Shop",
-                  "key": "body",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Tire",
-                  "key": "tire",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Rental",
-                  "key": "rental",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Leasing",
-                  "key": "leasing",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Finance",
-                  "key": "finance",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Ecommerce Ops",
-                  "key": "ecommerce_ops",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Office",
-                  "key": "office",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                },
-                {
-                  "name": "Warehouse",
-                  "key": "warehouse",
-                  "phone": null,
-                  "phoneUrl": null,
-                  "email": null,
-                  "hours": ""
-                }
-              ],
-              "hoursRows": [
-                {
-                  "department": "Sales",
-                  "key": "sales",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Used Sales",
-                  "key": "used_sales",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Service",
-                  "key": "service",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Parts",
-                  "key": "parts",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Body Shop",
-                  "key": "body",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Tire",
-                  "key": "tire",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Rental",
-                  "key": "rental",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Leasing",
-                  "key": "leasing",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Finance",
-                  "key": "finance",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Ecommerce Ops",
-                  "key": "ecommerce_ops",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Office",
-                  "key": "office",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                },
-                {
-                  "department": "Warehouse",
-                  "key": "warehouse",
-                  "summary": "",
-                  "days": [
-                    {
-                      "day": "Sunday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Monday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Tuesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Wednesday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Thursday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Friday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    },
-                    {
-                      "day": "Saturday",
-                      "hours": "Closed",
-                      "opensAt": null,
-                      "closesAt": null,
-                      "closed": true
-                    }
-                  ]
-                }
-              ]
+              "title": "Factory-Authorized OEM Components",
+              "text": "Sourcing original equipment manufacturer (OEM) parts represents the baseline choice for preserving factory warranties and maximizing the resale value of your vehicles. These parts match the exact engineering tolerances used during vehicle production, providing predictable lifecycles and seamless compatibility with active onboard software. While OEM parts require a higher initial capital investment, their long-term value is proven through reduced premature component failures, low defect rates, and optimal vehicle fuel economy. This reliability makes them ideal for mission-critical engine assemblies and complex exhaust aftertreatment networks."
+            },
+            {
+              "num": "02",
+              "title": "Integrated Maintenance Facilities and Dwell Mitigation",
+              "text": "Vehicle dwell times inside independent repair garages are frequently extended by minimal tooling pools, lack of factory training, and separate parts procurement delays. Our flagship facility eliminates this operational friction by uniting advanced technical capabilities under one roof, running 32 fully equipped service bays staffed by factory-certified specialists. This high-capacity shop workspace processes mandatory DOT compliance checks, precision alignments, and complex diesel emissions overhauls with high-throughput efficiency, delivering same-day turnaround on standard fleet maintenance tasks."
+            },
+            {
+              "num": "03",
+              "title": "Localized Logistics and Parts Superstore Pipelines",
+              "text": "Sustaining rapid fleet repairs requires an on-site parts warehouse capable of bypassing standard factory back-order blockages. Our parts distribution center maintains millions of dollars in component inventory from elite lines like Alliance, CAT, Cummins, Detroit Diesel, Fleetguard, Meritor, and Dex to supply immediate fulfillment. Backed by automated replenishment software and an electronically tracked fleet of 16 delivery vehicles, our counter staff coordinates daily and twice-daily drop-offs to regional carrier yards, ensuring active breakdown emergencies receive parts without long logistics delays."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "green-energy",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "accent",
+          "heading": "Pioneering Shifting Green Energy Regulations",
+          "note": "Analyze state tax incentives, utility infrastructure credits, and emission rule baselines.",
+          "ctaLabel": "View Zero-Emission Grant Navigator",
+          "ctaUrl": "https://www.hudsoncountymotors.com/authority-hub-nj-zero-emission-grant-navigator-page/",
+          "body": "As a forward-looking fleet leader, Hudson County Motors has adapted to changing environmental mandates, becoming the first certified Volvo Trucks Electric Vehicle (EV) Dealer in New Jersey. We support next-generation green logistics by providing fully authorized technical teams, specialized high-voltage diagnostic tools, and infrastructure consultations for battery-electric truck platforms. Our advanced clean-energy lineup focuses on field-verified heavy machinery, featuring the BYD-8TT Heavy-Duty Tractor and the BYD-8Y Terminal Tractor, alongside flexible Motiv-Workhorse configurations built for municipal transit buses and urban box truck routes.\n\nWe provide thorough guidance to assist fleet directors in navigating initial capital equipment investments, charging logistics, grid capability audits, and regional grant funding structures. Our financial specialists work directly with your corporate underwriters to map public funding programs like the New Jersey Zero-Emission Incentive Program (NJ-ZIP) alongside federal tax credits, helping to lower upfront acquisition costs. If your operation requires absolute billing predictability, our commercial leasing division can roll your alternative fuel equipment straight into a capital-efficient <a href=\"/leasing-2\">commercial truck leasing</a> agreement backed by full-service maintenance support.",
+          "photoLeft": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/09/WS_57X_72HR_49X_Dump_47X_Mixer_new-image-for-website-landing-page-scaled-1-1024x683.webp",
+            "alt": "Western Star 57X, 49X dump and 47X mixer"
+          }
+        }
+      }
+    },
+    {
+      "id": "technical-resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Strategic Fleet Sourcing & Technical Resource Access",
+          "body": "Review our centralized authority databases, maintenance matrices, and specialized procurement guides:",
+          "cards": [
+            {
+              "num": "",
+              "title": "Volvo VNL 860 Component Maintenance Matrix",
+              "text": "Review specifications, fluid schedules, and electronic diagnostic codes written for high-mileage line-haul networks."
+            },
+            {
+              "num": "",
+              "title": "Northeast Fleet Winterization Matrix",
+              "text": "Examine specialized tactics for protecting commercial electrical systems, checking cold cranking amps (CCA), and blocking undercarriage rust."
+            },
+            {
+              "num": "",
+              "title": "Pre-Owned Asset Inspection & Core Reconditioning Manual",
+              "text": "Analyze our 150-point technical validation parameters and component grading thresholds used for road-ready pre-owned trucks."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-map",
+        "values": {
+          "background": "none",
+          "heading": "Contact Our Enterprise Fleet Management Team",
+          "body": "Whether your transport company requires advanced multi-brand truck sourcing, emergency parts fulfillment, or a structured preventative maintenance contract, our team is ready to execute.",
+          "note": "Contact our professionals today to request detailed vehicle specifications, verify component availability, or arrange an on-site asset consultation.",
+          "phone": "(201) 866-5088",
+          "phoneUrl": "tel:+12018665088",
+          "place": "Secaucus, NJ",
+          "ctaLabel": "Request Fleet Capital Consultation",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "background": "none",
+          "heading": "Expert FAQ Stack",
+          "faqs": [
+            {
+              "q": "What defines the core advantage of a multi-franchise commercial truck dealer?",
+              "a": "A multi-franchise footprint permits our dealership to provide neutral, application-specific vehicle evaluations, drawing matching equipment directly from premier brands like Volvo, Western Star, Autocar, and BYD to suit your precise corporate needs."
+            },
+            {
+              "q": "How does family-owned management impact post-sale service delivery?",
+              "a": "Family ownership ensures client accounts retain immediate access to executive decision-makers, bypassing the rigid, multi-layered approvals common in corporate groups to provide flexible financing, service scheduling, and emergency logistics tracking."
+            },
+            {
+              "q": "What total capacity does the Secaucus complex maintain?",
+              "a": "Our 100,000 square-foot facility accommodates 32 advanced service bays, a multi-million dollar parts store, 26 service technicians, 16 tracked parts delivery vehicles, and a dedicated field staff managing 4 mobile emergency service trucks."
+            },
+            {
+              "q": "How does Hudson County Motors support green-energy fleet transitions?",
+              "a": "As the state’s first certified Volvo EV truck center, we supply complete vehicle procurement, charging layout mapping, and factory-certified high-voltage diagnostic and repair support for electric models like the BYD-8TT."
+            },
+            {
+              "q": "What vocational sectors does your customized upfitting department support?",
+              "a": "We collaborate with premium body upfitters to deliver custom severe-duty trucks, including construction dump vehicles, garbage rear/side loaders, industrial hook lifts, concrete mixers, and specialized crane equipment."
             }
           ]
-        },
-        "snapshots": {}
+        }
       }
     }
   ]

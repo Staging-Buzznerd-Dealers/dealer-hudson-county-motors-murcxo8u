@@ -2,88 +2,189 @@
   "version": 2,
   "nodes": [
     {
-      "id": "page-head",
+      "id": "banner",
       "type": "sharedSection",
       "props": {
-        "sectionId": "page-header",
+        "sectionId": "page-banner",
         "values": {
           "eyebrow": "Financing",
-          "heading": "Truck financing",
-          "intro": "Financing for new and pre-owned trucks from Volvo, Western Star, Autocar, BYD and Motiv. Tell us about the truck and your operation and our team will come back with options."
+          "heading": "Commercial Truck Financing & Capital Solutions",
+          "body": "Flexible Transport Capital. Core OEM Finance Partnerships. Transparent Risk Management.",
+          "ctaLabel": "Contact Hudson County Motors",
+          "ctaUrl": "/contact-us",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/VNR660_1.jpg",
+            "alt": "Volvo Trucks VNR 660 VNR+660_1"
+          }
         }
       }
     },
     {
-      "id": "apply",
-      "type": "section",
+      "id": "intro",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 7
-      },
-      "children": [
-        {
-          "id": "apply-row",
-          "type": "row",
-          "props": {
-            "gap": 7,
-            "align": "start",
-            "stackOn": "tablet"
-          },
-          "children": [
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "body": "Navigating capital expenditures in the modern commercial trucking landscape requires a financial partner with deep, industry-specific underwriting expertise. Hudson County Motors designs flexible transportation equipment financing structures engineered explicitly for large logistics fleets, mid-sized vocational construction entities, and independent owner-operators across the New Jersey, New York, and Connecticut metropolitan areas. Operating out of our advanced <strong>100,000 square-foot complex</strong> directly off Exit 15X on the New Jersey Turnpike, our dedicated finance division streamlines the commercial underwriting loop, enabling your company to minimize long credit review timelines and acquire high-uptime vehicle assets without friction.",
+          "body2": "Our strategic lending model provides highly tailored capital configurations, including traditional equipment financing, structured lease-purchase agreements, and market-optimized Fair Market Value (FMV) or Terminal Rental Adjustment Clause (TRAC) leases. We maintain deep, direct lending relationships with approximately 25 transportation-focused commercial lenders and commercial banking houses, prioritizing core factory captive partnerships with Volvo Financial Services and Daimler Truck Financial Services to capture competitive interest rates. This robust capitalization framework helps your business control upfront down payment commitments, project predictable monthly operating costs, and shield vital company cash flow from unnecessary capital drawdowns.",
+          "callouts": [
             {
-              "id": "apply-copy",
-              "type": "column",
-              "props": {
-                "span": 5
-              },
-              "children": [
-                {
-                  "id": "apply-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Start your application",
-                    "headingLevel": 2
-                  }
-                },
-                {
-                  "id": "apply-text",
-                  "type": "text",
-                  "props": {
-                    "text": "Share a few details and the sales team will be in touch. Prefer to talk it through? Call <a href=\"tel:+12018665088\">(201) 866-5088</a>."
-                  }
-                },
-                {
-                  "id": "apply-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "browse-inventory"
-                      }
-                    ]
-                  }
-                }
-              ]
+              "text": "Explore our active, real-time commercial vehicle availability through our New Truck Inventory.",
+              "ctaLabel": "Browse New Commercial Trucks",
+              "ctaUrl": "/store/inventory?condition=new"
             },
             {
-              "id": "apply-form",
-              "type": "column",
-              "props": {
-                "span": 7
-              },
-              "children": [
-                {
-                  "id": "apply-form-block",
-                  "type": "form",
-                  "props": {
-                    "formId": "financing"
-                  }
-                }
-              ]
+              "text": "Review our full corporate capacity, multi-generational family-owned background, and our 80-year journey supporting tri-state freight networks.",
+              "ctaLabel": "About Hudson County Motors",
+              "ctaUrl": "/about-hudson-county-motors-commercial-truck-dealership"
             }
           ]
         }
-      ]
+      }
+    },
+    {
+      "id": "financing-challenges",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "card",
+          "heading": "Overcoming Modern Financing Challenges for Regional Fleets",
+          "body": "Acquiring heavy over-the-road sleepers or specialized vocational rigs presents real balance sheet variables, particularly when macro variables like shifting interest rates, regional haul tariffs, and fluctuating fuel bills intersect. For newly formed transport entities or independent owner-operators with less than two years of documented operating history, securing credit approval through a conventional retail bank can produce restrictive down payment requirements and elevated interest thresholds. Our experienced staff directly analyzes individual asset profiles and company projections to build custom funding alternatives that fit your exact business lifecycle stage.\n\nTo accelerate credit underwriting and tracking, our credit managers require a specific set of target documentation to initiate a formal review. This documentation loop includes a completed corporate credit application, multi-year business tax records, audited financial sheets, recent corporate bank statements, and a verifiable equipment application outline from our sales team. Securing a structured capital arrangement through our desk helps mitigate total cost of ownership variations, matching your equipment cash outflows directly against your seasonal operational revenue beats to maintain fluid liquidity. Furthermore, we provide comprehensive guidance on specialized risk tracking by matching your newly financed vehicle assets with commercial truck insurance profiles, protecting your transportation investments against unexpected highway liabilities.",
+          "photoRight": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/VNX300.jpg",
+            "alt": "Volvo Trucks VNX 300 VNX300"
+          },
+          "photoRight2": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/01/VNR300_3.jpg",
+            "alt": "Volvo Trucks VNR 300 VNR300_3"
+          }
+        }
+      }
+    },
+    {
+      "id": "sourcing-structures",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "none",
+          "heading": "Technical Allocation of Sourcing Structures to Balance Sheet Specifications",
+          "intro": "Every commercial transport entity maintains distinct capital parameters, prompting our finance division to move away from rigid, single-tier loan templates. Shifting your asset procurement into structured, application-specific financial instruments alters how your company balances long-term depreciation, equipment obsolescence, and asset equity.",
+          "body": "When a fleet prioritizes outright equipment ownership and long-term asset equity, a traditional commercial vehicle loan represents the most straightforward mechanism. This structure permits the business to retain standard tax depreciation benefits and list the physical truck asset directly on its corporate balance sheet, making it ideal for established operations utilizing long-lasting vocational assets. Conversely, a Fair Market Value (FMV) Lease operates as an off-balance-sheet financing alternative that protects the fleet from vehicle residual depreciation risks. The carrier simply utilizes the machinery over a fixed cycle and walks away at lease expiration, which perfectly isolates regional delivery operations from aging asset liabilities. For maximum flexibility in heavy-duty shipping networks, our tailored Terminal Rental Adjustment Clause (TRAC) Lease allows the carrier to establish a pre-agreed residual value at contract inception. This arrangement optimizes monthly operating outlays, satisfies specific accounting guidelines, and grants the fleet multiple paths to either purchase the truck core or return the equipment to our facility at contract end."
+        }
+      }
+    },
+    {
+      "id": "clean-energy-financing",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "accent",
+          "heading": "Capital Financing Adaptability for Clean-Energy Deployments",
+          "body": "Transitioning into zero-emission battery-electric vehicle (BEV) platforms represents a massive, multi-tiered investment that changes typical corporate lifecycle planning. Sourcing an electric vehicle such as the heavy-duty Class 8 BYD-8TT tandem tractor or the agile BYD-8Y terminal yard jockey demands evaluating not only higher upfront vehicle costs but also the industrial capital required to construct depot charging infrastructure grids. Our financing division works side by side with fleet managers to compile state-specific grant systems, federal utility clean-air tax credits, and specialized sustainable funding plans to lower the barriers to fleet electrification.",
+          "cards": [
+            {
+              "num": "",
+              "title": "Line-Haul Fleet Logistics",
+              "text": "Highly efficient day cabs and luxury sleeper models optimized for cross-country routes."
+            },
+            {
+              "num": "",
+              "title": "Severe Vocational Equipment",
+              "text": "Heavy construction dumps, municipal sanitation vehicles, aggregate roll-offs, concrete mixers, and crane integrations."
+            }
+          ],
+          "cardSpan": 6,
+          "note": "To keep your fleet running at maximum efficiency post-acquisition, our facility pairs these financial solutions with our <strong>32-bay service floor</strong> and automated <strong>VIS-Check</strong> undercarriage safety diagnostics. Coordinate with our factory-trained mechanics to execute structured asset care and verify immediate component availability through our on-site parts superstore, which maintains an outstanding <strong>90% first-pass parts fill ratio</strong>.",
+          "ctaLabel": "View Truck Parts Department",
+          "ctaUrl": "/contact-us",
+          "cardsIntro": "<strong>Our multi-brand product focus ensures your equipment financing maps seamlessly across all major vocational or line-haul applications:</strong>"
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Technical Support Manuals & Regional Sourcing Programs",
+          "body": "Review our engineering resources, maintenance blueprints, and specialized fleet procurement catalogs:",
+          "cards": [
+            {
+              "num": "",
+              "title": "NJ Zero-Emission Grant Navigator & Regulatory Guide",
+              "text": "Examine local New Jersey compliance deadlines, clean-energy grant opportunities, and state smoke testing parameters."
+            },
+            {
+              "num": "",
+              "title": "Volvo VNL 860 Component Maintenance Matrix",
+              "text": "Review specifications, fluid schedules, and electronic diagnostic codes written for high-mileage line-haul networks."
+            },
+            {
+              "num": "",
+              "title": "Pre-Owned Asset Inspection & Core Reconditioning Manual",
+              "text": "Analyze our 150-point technical validation parameters and component grading thresholds used for road-ready pre-owned trucks."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-map",
+        "values": {
+          "background": "none",
+          "heading": "Contact Our Commercial Finance Program Managers",
+          "body": "If your logistics organization, municipal agency, or independent owner-operator business requires an authorized commercial credit quote or an equipment financing consultation, our department is ready to execute.",
+          "note": "<strong>Contact our finance director, Kim Mason, today to submit a corporate credit profile, analyze TRAC lease options, or review customized insurance risk management solutions.</strong>",
+          "phone": "(201) 866-5570 ext: 122",
+          "phoneUrl": "tel:+12018665570",
+          "place": "Secaucus, NJ",
+          "ctaLabel": "Contact Hudson County Motors",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "background": "card",
+          "heading": "Expert FAQ Stack",
+          "faqs": [
+            {
+              "q": "What are the primary financing structures available for heavy-duty truck acquisitions?",
+              "a": "Most commercial clients select traditional equipment loans to build long-term asset equity. However, an increasing segment of fleets utilize Fair Market Value (FMV) or Terminal Rental Adjustment Clause (TRAC) lease structures for tax optimization benefits and lower monthly expenses."
+            },
+            {
+              "q": "What underwriting challenges do newly formed transport entities face in the current market?",
+              "a": "Financers with less than two years of documented history often encounter strict credit reviews, resulting in higher initial down payments and elevated interest rates. Our department leverages 25 lending relationships to deliver competitive options for these entities."
+            },
+            {
+              "q": "What core documentation is required to initiate a commercial truck credit review?",
+              "a": "To establish an active credit review, businesses must submit a signed commercial credit application accompanied by corporate tax histories, verified business banking records, and full specifications of the target truck equipment being acquired."
+            },
+            {
+              "q": "Does your finance department provide capital funding solutions for electric trucks?",
+              "a": "Yes. We guide operators through specialized sustainable financing programs, balancing higher capital equipment expenses against state grant frameworks, clean-energy tax incentives, and local utility charging infrastructure credits."
+            },
+            {
+              "q": "Can vocational body upfitting and customization costs be rolled into the primary equipment loan?",
+              "a": "Yes. Our finance specialists coordinate with body builders to integrate custom upfitting components including construction dump beds, hook lifts, mixers, and sanitation loaders directly into a single, comprehensive financing contract."
+            }
+          ]
+        }
+      }
     }
   ]
 }

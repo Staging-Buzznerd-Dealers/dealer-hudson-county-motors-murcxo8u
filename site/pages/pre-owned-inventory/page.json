@@ -1,0 +1,214 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Inventory",
+          "heading": "Pre-Owned Commercial Trucks for Sale",
+          "body": "Sourced Corporate Fleet Inventory. 150-Point Inspection Protocols. Full Post-Sale Support.",
+          "ctaLabel": "Contact Hudson County Motors",
+          "ctaUrl": "/contact-us",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/09/47x-1024x768.webp",
+            "alt": "About Image"
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "body": "Acquiring a pre-owned heavy-duty truck demands a rigorous verification process to protect your capital and shield your operations from catastrophic roadside failures. Operating from our advanced 100,000 square-foot complex in Secaucus, New Jersey, Hudson County Motors delivers a premium pipeline of inspected used commercial trucks across the NJ, NY, and CT transport corridors.",
+          "body2": "Our strategic pre-owned procurement program provides extensive cost-saving benefits over buying brand-new equipment, shielding your balance sheet from sharp initial vehicle depreciation. Choosing a verified used asset from our inventory dramatically lowers your lifetime insurance overhead while offering diverse equipment configurations that fit tight operational budgets. Every vehicle is fully prepared by factory-trained specialists to handle the high stress of stop-and-go metro drayage, regional freight delivery, and grueling vocational applications.",
+          "callouts": [
+            {
+              "text": "Explore our active, real-time availability of factory-ordered day cabs, sleepers, and vocational assets through our New Truck Inventory.",
+              "ctaLabel": "Browse New Commercial Trucks",
+              "ctaUrl": "/store/inventory?condition=new"
+            },
+            {
+              "text": "Review our preventative maintenance guidelines, VMRS asset tracking, and on-site tool suites engineered to prevent expensive highway downtime.",
+              "ctaLabel": "Explore Fleet Maintenance Programs",
+              "ctaUrl": "/commercial-truck-repair-service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategic-sourcing",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "card",
+          "heading": "Why Strategic Asset Sourcing Deflects Unpredictable Auction Risks",
+          "body": "Purchasing a used commercial truck from an unverified third party or public auction introduces severe capital risk into your logistics deployment loop. Public auction houses routinely disguise deep-seated mechanical issues, leaving buyers vulnerable to early component failures, hidden frame damage, and electrical system glitches.\n\nHudson County Motors completely rejects unpredictable wholesale auction pipelines. We isolate our sourcing strictly to high-quality assets obtained through structured corporate fleet trade-ins, documented replacement cycles, and local equipment maintained directly under our internal contract maintenance programs.\n\nSourcing from verified corporate operations ensures that every asset arriving at our facility brings a complete, paper-backed historical footprint. Our asset managers verify past preventative maintenance frequencies, component replacement intervals, and real-world duty cycles before any vehicle is approved for entry into our active sales catalog.\n\n<strong>This strict approach protects your transport network from hidden liabilities, ensuring your investment is backed by a visible maintenance history that traditional used-truck wholesalers cannot deliver.</strong>",
+          "photoRight": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/About-Us.jpg",
+            "alt": "About Us"
+          }
+        }
+      }
+    },
+    {
+      "id": "reconditioning",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "accent",
+          "heading": "Technical Standards Defining Our Road-Ready Reconditioning Process",
+          "body": "Before any pre-owned truck earns a space in our inventory, it must pass an exhaustive <strong>150-point bumper-to-bumper mechanical evaluation</strong> and complete reconditioning protocol. Our factory-certified staff conducts deep <strong>Department of Transportation (DOT) compliance audits</strong>, structural frame checks, and complete wheel-end friction thickness indexing.",
+          "body2": "Our facility utilizes state-of-the-art diagnostic machinery to scan active electronic modules, analyze historical fault-code registries, and verify real-time sensor tolerances.",
+          "cards": [
+            {
+              "num": "",
+              "title": "Premium Tech Tool (PTT)",
+              "text": "Full electronic module tracing, sensor health tracking, and aftertreatment efficiency checking for all Volvo and Mack trucks."
+            },
+            {
+              "num": "",
+              "title": "Detroit DiagnosticLink",
+              "text": "Intensive powertrain evaluations, parameter verification, and controller software checking for Western Star and Freightliner models."
+            },
+            {
+              "num": "",
+              "title": "Cummins INSITE",
+              "text": "Live engine performance monitoring, step-by-step diagnostic fault-code clearance, and turbocharger sub-system auditing."
+            }
+          ],
+          "cardSpan": 4,
+          "cardsIntro": "<strong>Our specialized technical teams deploy factory-licensed software platforms to execute precise sub-system diagnostics:</strong>",
+          "after": "Our reconditioning parameters mandate thorough undercarriage checks, comprehensive tire inspections, and full diesel emissions aftertreatment auditing. Technicians carefully verify the health of the Exhaust Gas Recirculation (EGR) cooler, Diesel Particulate Filter (DPF), and Selective Catalytic Reduction (SCR) networks to prevent early derate triggers. This deep engineering scrutiny removes hidden mechanical variables, delivering true performance verification."
+        }
+      }
+    },
+    {
+      "id": "models-and-brands",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "none",
+          "heading": "Sourcing the Most Requested Pre-Owned Models and Brands",
+          "body": "Our local inventory is continually adjusted to supply the exact commercial makes and models most requested by regional intermodal, logistics, and construction operations. We maintain a reliable selection of over-the-road sleepers, led by late-model Volvo VNL series tractors (including the VNL 400, 640, 760, and 860 lines), which are highly prized by regional operators for their exceptional aerodynamics, fuel economy, and outstanding driver safety.\n\nAdditionally, we stock highly popular Freightliner Cascadia 126 day cabs for intermodal port logistics, alongside rugged Western Star X-Series vocational rigs engineered for severe site applications.\n\nTo support fleets managing diverse equipment demands, our inventory also incorporates advanced clean-energy solutions like BYD battery-electric tractors and yard jockeys, alongside Motiv-Workhorse zero-emission chassis configurations. Sourcing these specialized assets from an authorized dealer guarantees your fleet retains access to verified maintenance tracking records and factory protection plans. Every pre-owned vehicle that has outgrown its original manufacturer warranty receives our standard 3-month dealership warranty, with flexible extended protection packages available to protect your long-term capital investment.",
+          "photoLeft": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/09/WS_57X_72HR_49X_Dump_47X_Mixer_new-image-for-website-landing-page-scaled-1-1024x683.webp",
+            "alt": "WS_57X_72HR_49X_Dump_47X_Mixer_new-image-for-website-landing-page-scaled"
+          }
+        }
+      }
+    },
+    {
+      "id": "lifecycle-protection",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "card",
+          "heading": "Full Lifecycle Protection via On-Site Parts and Service Infrastructure",
+          "note": "Discover our full operational footprint, multi-generational history, and our 80-year commitment to supporting Northeast transportation networks.",
+          "ctaLabel": "About Hudson County Motors",
+          "ctaUrl": "/about-hudson-county-motors-commercial-truck-dealership",
+          "body": "The core advantage of partnering with Hudson County Motors for used equipment acquisition lies in our extensive, 115-person operational support infrastructure. Buyers are never left stranded post-acquisition; your vehicles are fully supported by our 32-bay maintenance division and our on-site parts superstore, which maintains an outstanding 90% first-pass parts fill ratio. Our counter teams hold millions of dollars in premium components from top-tier brands like Alliance, CAT, Cummins, Detroit Diesel, Fleetguard, Meritor, and Dex, backed by automated stock replenishment software to eliminate supply delays.\n\nIf an off-highway asset failure occurs within our local footprint, our facility deploys 4 mobile field service trucks to provide 24-hour emergency roadside assistance directly to your vehicle’s location. Our parts distribution network adds further protection by operating 16 delivery vehicles electronically dispatched with real-time tracking, running daily and twice-daily delivery routes across the tri-state area to handle breakdown emergencies.\n\nOur staff includes 26 on-site technicians, highlighting 5 Volvo Master Certified and 3 Daimler (Western Star) Master Certified mechanics equipped with the factory tooling needed to accelerate turnaround."
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "card",
+          "heading": "Explore Our Fleet Sourcing & Authority Resources",
+          "body": "Review our deep technical and regulatory materials to master complex diagnostic parameters and optimize your equipment investments.",
+          "cards": [
+            {
+              "num": "",
+              "title": "Volvo VNL 860 Technical Maintenance Guide",
+              "text": "Analyze detailed diagnostic codes, filter replacement frequencies, and electrical system specifications written for high-mileage line-haul fleets.",
+              "linkUrl": "https://www.hudsoncountymotors.com/authority-hub-volvo-vnl-860-technical-maintenance-guide-page/",
+              "linkLabel": "Explore Technical Maintenance Guide →"
+            },
+            {
+              "num": "",
+              "title": "NJ Zero-Emission Grant Navigator & Regulatory Guide",
+              "text": "Examine local New Jersey compliance deadlines, smoke inspection parameters, and clean-energy incentive frameworks.",
+              "linkUrl": "https://www.hudsoncountymotors.com/authority-hub-nj-zero-emission-grant-navigator-page/",
+              "linkLabel": "View Emissions Compliance Resources →"
+            },
+            {
+              "num": "",
+              "title": "Northeast Fleet Winterization Guide",
+              "text": "Examine specialized tactics for protecting commercial electrical systems, checking cold cranking amps (CCA), and blocking undercarriage rust.",
+              "linkUrl": "https://www.hudsoncountymotors.com/authority-hub-northeast-fleet-winterization-guide-page/",
+              "linkLabel": "Explore Winterization Strategies →"
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-map",
+        "values": {
+          "background": "none",
+          "heading": "Contact Our Pre-Owned Vehicle Sales Division",
+          "body": "If your logistics firm, municipal procurement office, or vocational operation requires a comprehensive technical equipment proposal, our team is ready to execute. If your logistics firm, municipal procurement office, or independent owner-operator business requires an authorized pre-owned commercial truck proposal, our sales team is standing by to assist.",
+          "note": "<strong>Contact our professionals today to request detailed vehicle service records, analyze flexible fleet financing programs, or initiate a trade-in evaluation.</strong>",
+          "phone": "(201) 866-7666",
+          "phoneUrl": "tel:+12018667666",
+          "place": "Secaucus, NJ",
+          "ctaLabel": "Contact Hudson County Motors",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "background": "card",
+          "heading": "Expert FAQ Stack",
+          "faqs": [
+            {
+              "q": "How does Hudson County Motors source its pre-owned commercial truck inventory?",
+              "a": "We do not rely on unpredictable auction equipment. The vast majority of our pre-owned inventory is sourced directly from trusted regional fleet trade-ins, corporate replacement cycles, and local trucks managed under our contract maintenance programs."
+            },
+            {
+              "q": "What specific warranty protections are provided with your used heavy-duty trucks?",
+              "a": "Many trucks still carry remaining manufacturer warranties. For units no longer covered by the original manufacturer warranty, we provide a standard 3-month warranty along with extended warranty options for added protection and peace of mind."
+            },
+            {
+              "q": "How are the aftertreatment and emissions systems verified during your used truck inspections?",
+              "a": "Our factory-trained technicians use advanced diagnostic platforms like Premium Tech Tool to execute complete emissions system evaluations, checking the performance, regeneration history, and component integrity of the EGR, DPF, and SCR assemblies."
+            },
+            {
+              "q": "Can fleet buyers access online parts catalogs for pre-owned inventory models?",
+              "a": "Yes. Fleet operators can look up parts, verify pricing, and order factory components online by logging into the Volvo Parts Asist catalog or utilizing the Daimler Excelerator portal for Western Star models."
+            },
+            {
+              "q": "How does your trade-in evaluation program assist fleets with vehicle replacement cycles?",
+              "a": "Our sales specialists perform fair, transparent equipment evaluations to help fleets rotate older assets out of service. This strategy lowers upfront capital requirements and creates flexible financing terms when upgrading to newer vehicles."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

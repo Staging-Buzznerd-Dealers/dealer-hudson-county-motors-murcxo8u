@@ -1,0 +1,140 @@
+{
+  "version": 2,
+  "id": "cta-card",
+  "name": "Call-to-action card",
+  "css": "[data-bz-node=\"ctacard\"] { background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius-card); padding: clamp(28px, 4vw, 44px); }\n[data-bz-node=\"ctacard-a\"], [data-bz-node=\"ctacard-b\"] { display: flex; flex-direction: column; gap: 14px; }\n[data-bz-node=\"ctacard-btns\"] .bz-btns { margin: 0; gap: 14px; }",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "bodyLeft",
+      "type": "textarea",
+      "label": "Text under the heading",
+      "default": ""
+    },
+    {
+      "key": "bodyRight",
+      "type": "textarea",
+      "label": "Text beside the heading",
+      "default": ""
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link",
+      "default": ""
+    },
+    {
+      "key": "cta2Label",
+      "type": "text",
+      "label": "Second button",
+      "default": ""
+    },
+    {
+      "key": "cta2Url",
+      "type": "url",
+      "label": "Second button link",
+      "default": ""
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "ctacard",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "ctacard-a",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "hcm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ctacard-l",
+                  "type": "text",
+                  "props": {
+                    "text": "{{bodyLeft}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ctacard-b",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ctacard-r",
+                  "type": "text",
+                  "props": {
+                    "text": "{{bodyRight}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ctacard-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary"
+                      },
+                      {
+                        "label": "{{cta2Label}}",
+                        "url": "{{cta2Url}}",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

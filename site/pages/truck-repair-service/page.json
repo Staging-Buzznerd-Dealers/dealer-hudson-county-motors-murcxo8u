@@ -1,0 +1,126 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Service",
+          "heading": "Truck Repair Service",
+          "ctaLabel": "Schedule an Appointment",
+          "ctaUrl": "/contact-us",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/service.jpg",
+            "alt": "service"
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "none",
+          "heading": "Keep Trucks on the Road with Commercial Truck Services",
+          "body": "At Hudson County Motors, we understand that running trucks smoothly is crucial to business success. That’s why we offer comprehensive truck repair services to get vehicles back on the road quickly and efficiently. Whether it’s a diesel or electric truck, the team of experienced and certified technicians is here to diagnose and repair any issue, big or small. Our ASE-certified specialists possess the expertise and experience to ensure your truck operates smoothly and efficiently."
+        }
+      }
+    },
+    {
+      "id": "repair-services",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "card",
+          "heading": "Professional Truck Repair Services You Can Count On",
+          "cards": [
+            {
+              "num": "01",
+              "title": "Body and Frame Work:",
+              "text": "Specializing in frame straightening, fiberglass, and sheet metal repairs, restoring the truck’s body to its original condition and ensuring optimal performance."
+            },
+            {
+              "num": "02",
+              "title": "Preventive Maintenance:",
+              "text": "Regular maintenance services, including oil changes and tune-ups, are essential to keeping trucks in shape. They help avoid unexpected breakdowns and extend vehicle life."
+            },
+            {
+              "num": "03",
+              "title": "Hydraulic System Repairs:",
+              "text": "We provide maintenance and repair for hydraulic systems, ensuring the efficient performance of the truck’s hydraulic components."
+            },
+            {
+              "num": "04",
+              "title": "Wheel and Tire Services:",
+              "text": "Precision wheel alignment and other tire-related services enhance truck safety and performance. Advanced technology ensures accurate alignment."
+            }
+          ],
+          "cardSpan": 3
+        }
+      }
+    },
+    {
+      "id": "why-choose",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "accent",
+          "heading": "Why Choose Hudson County Motors for Truck Repair Services?",
+          "cards": [
+            {
+              "num": "",
+              "title": "Comprehensive Collision Repair and Body Work",
+              "text": "At Hudson County Motors, we provide top-notch collision repair and bodywork services. Our expertise includes frame straightening, fiberglass repairs, and sheet metal work. Using quality equipment, we ensure that your truck is restored to its original condition, maintaining its appearance and performance. Our skilled technicians are experienced in heavy-duty truck services and collision damage, ensuring the vehicle looks great and functions perfectly after an accident."
+            },
+            {
+              "num": "",
+              "title": "Emergency Roadside Assistance and Towing Services",
+              "text": "We understand that truck breakdowns can happen anytime, often in inconvenient places. That’s why we offer 24/7 emergency roadside assistance and towing services. Our dedicated mobile repair units are equipped to handle various issues on the spot, minimizing downtime and getting the truck back on the road as quickly as possible. Whether it’s a flat tire, mechanical failure, or any other roadside emergency, our skilled technicians are ready to provide prompt and reliable heavy-duty truck repair services."
+            },
+            {
+              "num": "",
+              "title": "Advanced Diagnostic and Repair Technology",
+              "text": "Investing in the latest diagnostic tools and repair technology is at the core of Hudson County Motors’ service philosophy. Our advanced equipment allows us to quickly and accurately diagnose issues, ensuring efficient and effective repairs. This technological edge speeds up heavy-duty truck repair and ensures we can precisely handle even the most complex problems. Trust us to use the best tools to keep the truck running smoothly."
+            },
+            {
+              "num": "",
+              "title": "OEM Parts and Quality Assurance",
+              "text": "We pride ourselves on using only Original Equipment Manufacturer (OEM) parts in all our repairs. This commitment to quality ensures that every part used in commercial truck services meets the highest standards of reliability and performance. At Hudson County Motors, we back our services with a quality assurance guarantee, giving you peace of mind that your truck will be repaired correctly and remain dependable on the road."
+            },
+            {
+              "num": "",
+              "title": "EV Expertise",
+              "text": "As New Jersey’s first certified electric vehicle (EV) dealer, Hudson County Motors is at the forefront of transitioning to sustainable trucking solutions. Our technicians are specially trained in EV maintenance and heavy-duty truck services, ensuring the electric trucks receive the best care possible. We are committed to environmental sustainability, offering services that help reduce the carbon footprint while maintaining the highest levels of efficiency and performance."
+            },
+            {
+              "num": "",
+              "title": "Customer-Centric Services with Flexible Scheduling",
+              "text": "At Hudson County Motors, customer satisfaction is our top priority. We offer flexible scheduling options to accommodate your schedule, including 24/7 online appointment booking. We cover all the needs, whether it’s for heavy-duty trucks, commercial trucks, or semi-truck repair services. By prioritizing your needs and preferences, we ensure that your trucks are serviced efficiently, minimizing disruption to your operations."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "maximum-uptime",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Ensure Maximum Uptime with Commercial Truck Repair Services",
+          "body": "As a family-owned business, we have strived to provide exceptional commercial truck repair services to the NY, NJ, and CT metro areas for over three generations. Moreover, we take pride in getting to know customers and understanding their unique needs. As a one-stop solution, we offer a wide range of services under one roof, making it the go-to destination for all truck repair needs. Everything from used and new truck sales, repairs, and maintenance to parts and rentals is covered.",
+          "body2": "Understanding that downtime can be costly, flexible scheduling options are offered, and we are working hard to get trucks back on the road as quickly as possible. You can schedule an appointment online 24/7 for convenience for commercial truck services.",
+          "infoText": "Don’t let truck trouble slow things down! Schedule an appointment today!"
+        }
+      }
+    }
+  ]
+}

@@ -2,77 +2,206 @@
   "version": 2,
   "nodes": [
     {
-      "id": "page-head",
+      "id": "banner",
       "type": "sharedSection",
       "props": {
-        "sectionId": "page-header",
+        "sectionId": "page-banner",
         "values": {
-          "eyebrow": "Hudson Truck Leasing, LLC",
-          "heading": "Lease it. Rent it. Keep it working.",
-          "intro": "No down payment, 100% deductible payments, more working capital and predictable transportation costs — packages built around your operation."
+          "eyebrow": "Leasing & Rentals",
+          "heading": "Commercial Truck Leasing & Fleet Rentals",
+          "body": "Flexible Asset Acquisition. Full-Service Uptime Protection. Off-Balance-Sheet Capital Efficiency.",
+          "ctaLabel": "Contact Hudson County Motors",
+          "ctaUrl": "/contact-us",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/VNR660_1.jpg",
+            "alt": "Volvo Trucks VNR 660 VNR+660_1"
+          }
         }
       }
     },
     {
-      "id": "request",
-      "type": "section",
+      "id": "intro",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 7
-      },
-      "children": [
-        {
-          "id": "request-row",
-          "type": "row",
-          "props": {
-            "gap": 7,
-            "align": "start",
-            "stackOn": "tablet"
-          },
-          "children": [
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "body": "Managing logistics scaling, capacity surges, and vocational operations across high-congestion Northeast freight corridors demands flexible, capital-efficient equipment strategies. Hudson County Motors provides customized commercial truck leasing and rapid-deployment fleet rental frameworks engineered for single owner-operators, commercial construction fleets, intermodal port haulers, and municipal enterprises. Operating out of our premier <strong>100,000 square-foot complex</strong> directly off Exit 15X on the New Jersey Turnpike, our leasing division preserves your business borrowing capacity while providing immediate access to premium over-the-road sleepers, day cabs, and severe-duty vocational platforms.",
+          "body2": "Our strategic procurement model provides capital-optimized lease structures, including full-service, net, and terminal rental adjustment clause (TRAC) options precisely tailored to protect operational cash flow. Sourcing your commercial vehicles through our corporate programs ensures your assets are backed by a robust on-site service infrastructure. Our team features <strong>26 on-site certified technicians</strong> and <strong>32 fully equipped service bays</strong> to manage vehicle preparation, ongoing preventative care, and emergency repairs under precise OEM parameters. Combined with rapid-replacement protections via our active membership in the <strong>North American Truck Leasing Group (NATLEASE)</strong> network, our infrastructure ensures seamless asset scalability with minimized shop downtime.",
+          "callouts": [
             {
-              "id": "request-copy",
-              "type": "column",
-              "props": {
-                "span": 5
-              },
-              "children": [
-                {
-                  "id": "request-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Request a lease or rental",
-                    "headingLevel": 2
-                  }
-                },
-                {
-                  "id": "request-text",
-                  "type": "text",
-                  "props": {
-                    "text": "Tell us what you need to move and for how long, and we will put a package together around your operation."
-                  }
-                }
-              ]
+              "text": "Explore our active, real-time vehicle availability through our New Truck Inventory.",
+              "ctaLabel": "Browse New Commercial Trucks",
+              "ctaUrl": "/store/inventory?condition=new"
             },
             {
-              "id": "request-form",
-              "type": "column",
-              "props": {
-                "span": 7
-              },
-              "children": [
-                {
-                  "id": "request-form-block",
-                  "type": "form",
-                  "props": {
-                    "formId": "rental-request"
-                  }
-                }
-              ]
+              "text": "Review our preventative maintenance protocols, VMRS code systems, and advanced shop tooling built to reduce long-term fleet costs.",
+              "ctaLabel": "Explore Fleet Maintenance Programs",
+              "ctaUrl": "/commercial-truck-repair-service"
             }
           ]
         }
-      ]
+      }
+    },
+    {
+      "id": "lease-frameworks",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "card",
+          "heading": "Technical Allocation of Corporate Capital Across Specialized Lease Frameworks",
+          "body": "Purchasing heavy line-haul tractors or specialized vocational machinery outright presents severe balance sheet challenges, including massive cash down payments and upfront sales tax burdens that drain immediate working capital. Selecting a structured asset program through Hudson County Motors allows companies to negotiate optimized monthly operating costs, lower initial outlays, and adapt fluidly to shifting business demands. Our financial and equipment specialists configure enterprise acquisition packages to match precise balance sheet requirements and corporate tax strategies. These advanced lease structures allow modern transport networks to maintain absolute off-balance-sheet financing visibility, ensuring fleet owners keep debt-to-equity ratios low and insulate core bank credit lines for active business expansion.\n\nWhen fleet managers evaluate specific deployment profiles, a Full-Service Lease represents the most inclusive option because it bundles the raw equipment costs with total mechanical service. This program covers scheduled filter intervals, preventative inspections, tire programs, and absolute diagnostic protection to eradicate unexpected repair pricing variables and completely stabilize your monthly operating metrics. Alternatively, a Net Lease focuses entirely on delivering the asset at an aggressive monthly payment, transferring all daily preventative maintenance, component testing, electronic module diagnostics, and long-term wear-and-tear obligations straight to your internal garage network. For maximum flexibility in high-mileage line-haul operations, our structured Terminal Rental Adjustment Clause (TRAC) Lease establishes a pre-agreed residual value at inception, offering significant corporate tax deductions while granting multiple flexible acquisition or equipment return paths at the natural expiration of the contract term.",
+          "photoRight": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/VNX300.jpg",
+            "alt": "Volvo Trucks VNX 300 VNX300"
+          },
+          "photoRight2": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/01/VNR300_3.jpg",
+            "alt": "Volvo Trucks VNR 300 VNR300_3"
+          }
+        }
+      }
+    },
+    {
+      "id": "maintenance-integration",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "accent",
+          "heading": "Direct Fleet Maintenance Integration & Automated Roadside Safety",
+          "body": "Unplanned mechanical failures on regional expressways instantly erode transport profit margins and damage vital shipper relationships. When you select a full-service option through our dealership, your leased assets are immediately backed by our high-capacity service floor and advanced automated diagnostic machinery. Our factory-trained technical staff including <strong>5 Volvo Master Certified</strong> and <strong>3 Daimler (Western Star) Master Certified</strong> mechanics utilizes dedicated diagnostic software platforms like Premium Tech Tool (PTT) and Cummins INSITE to track system health, execute emissions aftertreatment audits, and complete critical software updates with same-day turnaround.",
+          "body2": "Furthermore, all full-service vehicles gain immediate coverage under <strong>Volvo Uptime (Assist) protocols</strong>, supplying 24-hour emergency roadside assistance at any authorized Volvo dealership across North America. If an off-highway asset failure occurs within our local footprint, our facility deploys 4 mobile field service trucks to resolve mechanical or electrical issues directly at the breakdown site. We completely eliminate parts procurement delays by drawing replacements straight from our on-site parts superstore. Our parts division maintains an outstanding <strong>90% first-pass parts fill ratio</strong> backed by advanced automated stock replenishment software, ensuring that high-wear items, brake kits, filters, and major powertrain assemblies are always on the shelf.",
+          "ctaLabel": "View Truck Parts Department",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    },
+    {
+      "id": "analytical-breakdown",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Analytical Prose Breakdown: Financial Impact of Fleet Sourcing Strategies",
+          "body": "To assist corporate accounting teams, CFOs, and fleet controllers in analyzing seasonal equipment expenditures, the following section outlines the financial and operational attributes of varying asset acquisition methods under real-world freight stress.",
+          "cards": [
+            {
+              "num": "01",
+              "title": "Outright Equipment Sourcing and Capital Purchase",
+              "text": "Purchasing heavy-duty Class 8 trucks outright demands a heavy, upfront deployment of liquid capital, frequently restricting vital company cash flow that could otherwise back immediate lane expansions. While cash procurement creates immediate asset equity and removes continuous interest expenses, it forces the business to absorb rapid initial equipment depreciation on its balance sheet. Furthermore, the carrier assumes total responsibility for escalating repair costs, parts procurement logistics, and eventual asset disposal risks, making it a high-liability strategy for operations requiring maximum capital flexibility."
+            },
+            {
+              "num": "02",
+              "title": "Full-Service Operating Leases and Capital Preservation",
+              "text": "Enrolling your transport assets in an all-inclusive full-service operating lease turns variable, volatile mechanical liabilities into a highly predictable, flat monthly operational expense. Because preventative maintenance, advanced telemetry diagnostics, emergency mobile support, and replacement vehicles are bundled together, the fleet avoids sudden, unmapped repair spikes. This off-balance-sheet financing strategy preserves corporate credit lines, significantly lowers upfront acquisition costs, and eliminates tech-obsolescence risks, as the company can rotate into next-generation trucks fluidly at lease expiration."
+            },
+            {
+              "num": "03",
+              "title": "Short-Term Fleet Rentals and Staging Solutions",
+              "text": "Short-term commercial truck rentals deliver a high-velocity solution for logistics companies facing temporary shipping spikes, seasonal municipal contracts, or unexpected equipment downtime. While rentals carry a higher monthly cost tier compared to long-term leases, they provide complete operational agility, allowing dispatchers to scale equipment counts up or down to match real-time capacity demands. Backed by factory-certified breakdown support and immediate vehicle replacements, rentals ensure that short-term contracts are fulfilled without requiring long-term capital depth or multi-year financial underwriting reviews."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "specialized-assets",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "card",
+          "heading": "Engineering Structural Capabilities into Specialized Transport Assets",
+          "ctaLabel": "About Hudson County Motors",
+          "ctaUrl": "/about-hudson-county-motors-commercial-truck-dealership",
+          "body": "Equipment deployment timelines vary based on real-time component pipelines and body configurations. If your company selects an active, in-stock truck asset from our yard, our logistics managers can finalize credit clearance, complete documentation, and deploy the vehicle to your staging yard in under one week. For complex, specialized vocational projects requiring exact body customizations, our team manages ordering schedules and upfitting pipelines directly with premier regional body builders and upfitters to mount heavy construction dump boxes, municipal sanitation units, aggregate roll-offs, hook lifts, and concrete mixers built to severe jobsite parameters.\n\nOur customizable leasing and rental programs are structured precisely around the distinct machinery configurations required to withstand grueling tri-state transport cycles. For Line-Haul Distribution, we deploy highly efficient day cabs and luxury over-the-road sleeper tractors, such as the Volvo VNL 400, 640, 760, and 860 lines, built for maximum aerodynamics, premium driver comfort, and optimized fuel economy across regional corridors. For operations undergoing Clean-Energy Transitions, our division guides enterprise networks through complex green-energy shifts, supplying advanced technical consulting for battery-electric vehicle (BEV) acquisitions, depot charging infrastructure layouts, utility grid capability audits, and local grant funding rules.\n\n<strong>Discover our full operational capacity, family-owned history, and our multi-generational dedication to regional freight tracking.</strong>",
+          "photoLeft": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/01/VNR300_3.jpg",
+            "alt": "Volvo Trucks VNR 300 VNR300_3"
+          }
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Technical Support Manuals & Regional Sourcing Programs",
+          "body": "Review our engineering resources, maintenance blueprints, and specialized fleet procurement catalogs:",
+          "cards": [
+            {
+              "num": "",
+              "title": "Volvo VNL 860 Component Maintenance Matrix",
+              "text": "Review specifications, fluid schedules, and electronic diagnostic codes written for high-mileage line-haul networks."
+            },
+            {
+              "num": "",
+              "title": "NJ Emissions Compliance & Regulatory Sourcing Navigator",
+              "text": "Examine updated New Jersey diesel emission compliance benchmarks, annual smoke testing details, and zero-emission vehicle replacement frameworks."
+            },
+            {
+              "num": "",
+              "title": "Pre-Owned Asset Inspection & Core Reconditioning Manual",
+              "text": "Analyze our 150-point technical validation parameters and component grading thresholds used for road-ready pre-owned trucks."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-map",
+        "values": {
+          "background": "none",
+          "heading": "Contact Our Commercial Fleet Leasing Department",
+          "body": "If your transport logistics firm, construction operation, or municipal agency requires a flexible vehicle lease quote or an emergency equipment rental, our team is ready to execute.",
+          "note": "<strong>Contact our professionals today to verify in-stock asset status, request a TRAC lease comparison, or complete an enterprise credit application.</strong>",
+          "phone": "(201) 866-2585",
+          "phoneUrl": "tel:+12018662585",
+          "place": "Secaucus, NJ",
+          "ctaLabel": "Contact Hudson County Motors",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "background": "card",
+          "heading": "Expert FAQ Stack",
+          "faqs": [
+            {
+              "q": "What is the core difference between full-service and net leasing programs?",
+              "a": "Full-service leasing bundles the equipment cost with total mechanical service, preventative care, and emergency road support into a single monthly payment, while net leasing provides the equipment only, leaving repair duties to the operator."
+            },
+            {
+              "q": "How does a TRAC lease structure assist regional transport fleets?",
+              "a": "A Terminal Rental Adjustment Clause (TRAC) lease establishes an agreed residual value at the start of the contract. This structure lowers monthly outlays and offers key tax deduction advantages while giving you the option to buy the truck at lease end."
+            },
+            {
+              "q": "What is the standard turnaround time for deploying a leased or rental truck?",
+              "a": "In-stock commercial assets can be processed, verified for DOT compliance, and deployed to your staging yard within one week. Specialized vocational builds requiring custom body upfitting carry extended lead times based on factory logistics."
+            },
+            {
+              "q": "Can mixed-fleet operations lease vocational trucks through your program?",
+              "a": "Yes. We coordinate with premier upfitters to provide flexible leasing programs across varied configurations, including construction dump trucks, roll-offs, intermodal day cabs, mixers, and municipal sanitation equipment."
+            }
+          ]
+        }
+      }
     }
   ]
 }

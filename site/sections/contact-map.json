@@ -1,0 +1,216 @@
+{
+  "version": 2,
+  "id": "contact-map",
+  "name": "Contact with map",
+  "css": "[data-bz-node=\"contact-copy\"] { display: flex; flex-direction: column; gap: 16px; }\n[data-bz-node=\"contact-copy\"] > * { margin: 0; }\n[data-bz-node=\"contact-chips\"] { display: flex; flex-wrap: wrap; gap: 10px; }\n[data-bz-node=\"contact-chips\"] > .bz-col { flex: none; }\n[data-bz-node=\"contact-chips\"] p { margin: 0; }\n[data-bz-node=\"contact-chips\"] :is(a, [data-bz-node=\"contact-place\"] p) { display: inline-block; padding: 12px 18px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-input); font: 700 20px/1.2 var(--font-heading); color: var(--hcm-navy); }\n[data-bz-node=\"contact-chips\"] a { color: var(--accent); }\n[data-bz-node=\"contact-chips\"] a:empty, [data-bz-node=\"contact-chip-b\"]:not(:has(p)) { display: none; }\n[data-bz-node=\"contact-note\"] p { font-weight: 600; color: var(--hcm-navy); margin: 0; }\n[data-bz-node=\"contact-cta\"] .bz-btns { margin: 0; }\n[data-bz-node=\"contact-cta\"] .bz-btn { font-size: 16px; padding: 13px 24px; letter-spacing: .08em; }\n[data-bz-node=\"contact-mapcol\"] { min-height: 360px; display: flex; }\n[data-bz-node=\"contact-map\"], [data-bz-node=\"contact-map\"] .bz-widget { flex: 1; display: flex; flex-direction: column; margin: 0; }\n[data-bz-node=\"contact-map\"] .bz-map { flex: 1; min-height: 360px; border: 1px solid var(--line); border-radius: var(--radius-card); overflow: hidden; background: var(--hcm-tint); }\n[data-bz-node=\"contact-map\"] .bz-loclist, [data-bz-node=\"contact-map\"] .bz-widget__empty, [data-bz-node=\"contact-map\"] .bz-widget__h { display: none; }",
+  "props": [
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "none",
+          "label": "Page (light grey)"
+        },
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "accent",
+          "label": "Blue band"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Text",
+      "default": ""
+    },
+    {
+      "key": "phone",
+      "type": "text",
+      "label": "Phone (as shown)",
+      "default": ""
+    },
+    {
+      "key": "phoneUrl",
+      "type": "url",
+      "label": "Phone link (tel:…)",
+      "default": ""
+    },
+    {
+      "key": "place",
+      "type": "text",
+      "label": "Place",
+      "default": ""
+    },
+    {
+      "key": "note",
+      "type": "textarea",
+      "label": "Closing line",
+      "default": ""
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link",
+      "default": ""
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "{{background}}",
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "contact-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "contact-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "hcm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "hcm-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "contact-chips",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "contact-chip-a",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "contact-phone",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "contact-chip-b",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "contact-place",
+                          "type": "text",
+                          "props": {
+                            "text": "{{place}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "contact-note",
+                  "type": "text",
+                  "props": {
+                    "text": "{{note}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "contact-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "contact-mapcol",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "contact-map",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "mapProvider": "google",
+                      "showMap": true
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

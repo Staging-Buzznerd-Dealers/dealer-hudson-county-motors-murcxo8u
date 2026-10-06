@@ -1,0 +1,245 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Service",
+          "heading": "Preventative Maintenance for Heavy-Duty Trucks",
+          "body": "Elite Fleet Maintenance Programs. Advanced System Diagnostics. Proven Tri-State Uptime Protection.",
+          "ctaLabel": "Schedule Service Appointment",
+          "ctaUrl": "/commercial-truck-repair-service",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/service.jpg",
+            "alt": "service"
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "body": "Executing a structured preventative maintenance strategy is the single most critical factor in reducing unexpected highway breakdowns, protecting vehicle operating life, maintaining high Department of Transportation (DOT) safety scores, and controlling long-term total cost of ownership (TCO). At Hudson County Motors, we design data-driven fleet preventative maintenance (PM) programs specifically to minimize financial risk and maximize equipment availability for owner-operators and enterprise logistics fleets navigating the demanding corridors of the NJ/NY/CT metropolitan market. Operating from our advanced 100,000 square-foot complex in Secaucus, NJ, our factory-certified technical teams utilize deep diagnostic protocols and premier shop tooling to ensure your Class 8 transport assets operate at peak mechanical efficiency.",
+          "body2": "Our lifecycle maintenance frameworks combine universal Vehicle Maintenance Reporting Standards (VMRS) tracking codes with complete physical inspections to deliver true operational transparency. From our multi-million dollar parts distribution warehouse to our dedicated service floor, we manage asset care through a proactive engineering loop rather than a reactive repair process. This elite approach eliminates the costly bay latency common at independent repair garages, protecting your transit timelines and insulating your balance sheet from compounding vehicle depreciation.",
+          "callouts": [
+            {
+              "text": "Explore our available inventory of brand-new over-the-road and vocational trucks through our New Truck Inventory.",
+              "ctaLabel": "Browse New Commercial Trucks",
+              "ctaUrl": "/store/inventory?condition=new"
+            },
+            {
+              "text": "Learn how proactive winterization maintenance safeguards commercial batteries, cooling chemistry, and high-voltage vehicle electrical networks.",
+              "ctaLabel": "Explore Northeast Winterization Guide",
+              "ctaUrl": "https://www.hudsoncountymotors.com/authority-hub-northeast-fleet-winterization-guide-page/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "planned-vs-unplanned",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "card",
+          "heading": "Planned Maintenance vs. Unplanned Breakdown Events",
+          "ctaLabel": "Schedule Service Appointment",
+          "ctaUrl": "/commercial-truck-repair-service",
+          "body": "Relying on reactive, unplanned maintenance events forces your transport operation to absorb astronomical highway breakdown bills, high towing costs, and critical cargo delivery failures. Waiting for a component to break before sending an asset to the shop leads to high roadside labor fees and unpredictable logistics disruptions. Shifting your asset care to a structured, planned preventative maintenance schedule creates a predictable operational cadence and eliminates mechanical vulnerabilities across high-volume transit lanes.\n\nOur data-driven fleet maintenance programs leverage exact manufacturer parameters including routine fluid spectroscopy, valve lash adjustments, and detailed component inspections to extend overall equipment life and safeguard the engine’s structural B10 design life. Investing in precise PM intervals substantially reduces unexpected shop visits, lowers your long-term unplanned maintenance costs, and ensures you maintain strict destination deadlines.\n\n<strong>Schedule a professional inspection cycle with our scheduling team today to protect your powertrain.</strong>",
+          "photoRight": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/09/truck-line-up-1024x683-1.webp",
+            "alt": "truck-line-up-1024x683"
+          },
+          "photoRight2": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/IMG_4470-1024x768.jpeg",
+            "alt": "IMG_4470"
+          }
+        }
+      }
+    },
+    {
+      "id": "vmrs",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "accent",
+          "heading": "Standardizing Asset Care with VMRS Technical Code Mapping",
+          "intro": "We utilize Vehicle Maintenance Reporting Standards (VMRS) code protocols to track, diagnose, and document every preventative maintenance action. Standardizing your asset care with VMRS coding allows fleet managers to analyze precise maintenance trends, track system-level failure rates, and streamline corporate parts inventory pipelines.\n\nOur <strong>26 on-site technicians</strong> leverage these structured frameworks to maximize total truck longevity. Review how common driver habits and excessive engine idling metrics directly accelerate aftertreatment component failures on major local fleet units.",
+          "ctaLabel": "Explore Volvo VNL 860 Maintenance Guide",
+          "ctaUrl": "https://www.hudsoncountymotors.com/authority-hub-volvo-vnl-860-technical-maintenance-guide-page/"
+        }
+      }
+    },
+    {
+      "id": "analytical-breakdown",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "Analytical Prose Breakdown: The Operational Impact of Proactive PM Care",
+          "body": "To assist corporate accounting teams and fleet directors in tracking life cycle costs, the following section details the explicit operational and mechanical advantages of structured preventive maintenance versus reactive asset operations.",
+          "cards": [
+            {
+              "num": "01",
+              "title": "Advanced Diesel Engines and Powertrain Management",
+              "text": "Executing regular preventative maintenance cycles prevents the premature degradation of internal engine configurations. A standard preventative check combines high-efficiency oil and filter changes matching exact fuel-economy classifications with precise valve adjustments. Neglecting these maintenance baselines allows contaminants to compromise engine lubrication, increasing friction and accelerating wear on critical assemblies like camshafts and bearings. Proactive oil analysis acts as an early warning network, spotting trace metal wear or fuel dilution patterns before they result in a catastrophic block failure."
+            },
+            {
+              "num": "02",
+              "title": "Emissions Aftertreatment Hardware and Derate Mitigation",
+              "text": "Northeast freight corridors subject emission architectures to severe stop-and-go thermal stress. Our proactive maintenance programs mandate clear tracking of EGR coolers, DPF soot loading, and SCR dosing networks. Passing up scheduled cleaning or ignoring minor sensor variances results in rapid particulate accumulation, restricting exhaust flow and dropping fuel efficiency. Left untreated, these imbalances trigger sudden vehicle derate codes that limit engine speed to crawl thresholds, turning minor filter tracking into a severe highway breakdown emergency."
+            },
+            {
+              "num": "03",
+              "title": "Air Braking, Suspension, and Safety Compliance",
+              "text": "Preserving structural stopping power requires a systematic approach to air brake lines, brake chambers, shoes, linings, drums, and electronic ABS connections. Our technicians leverage the automated VIS-Check undercarriage diagnostic floor to execute dynamic physical evaluations under simulated road weights. This process identifies subtle deviations in brake chamber pushrod travel and absolute braking forces that visual inspections overlook. Proactive adjustment and friction block replacement insulate your vehicles from uncommanded brake dragging, premature tire wear, and severe DOT safety out-of-service violations."
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "dot-compliance",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "card",
+          "heading": "Rapid DOT Compliance Audits & Emergency Parts Integration",
+          "ctaLabel": "View Truck Parts Department",
+          "ctaUrl": "/contact-us",
+          "body": "Our <strong>32-bay workspace</strong> processes preventative inspections with high throughput, ensuring standard PM cycles, air brake work, and DOT compliance inspections exit with <strong>same-day turnaround</strong>. We mitigate unexpected component failures by drawing directly from our on-site parts warehouse, which maintains an outstanding <strong>90% first-pass parts fill ratio</strong>.\n\nIf a catastrophic component drop-out occurs on the highway, our team deploys <strong>4 mobile service trucks</strong> providing <strong>24-hour emergency roadside assistance</strong> across Northern New Jersey.\n\n<strong>Examine our on-site parts inventory tracking and automated replenishment frameworks.</strong>",
+          "photoLeft": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/05/6x4Tractor_1.jpg",
+            "alt": "Volvo Trucks 6x4 Tractor 6x4+Tractor_1"
+          }
+        }
+      }
+    },
+    {
+      "id": "advantage",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "heading": "The Hudson County Motors Fleet Maintenance Advantage",
+          "cards": [
+            {
+              "num": "",
+              "title": "Decades of Family-Owned Accountability",
+              "text": "With over 80 years of family-owned experience, we prioritize direct communication and operational accessibility over the rigid, slow management processes common in corporate groups."
+            },
+            {
+              "num": "",
+              "title": "Unmatched Operational Scale",
+              "text": "Our 100,000 square-foot complex accommodates 32 bays, 28 service support experts, and 16 tracking parts delivery vehicles to ensure high fleet throughput."
+            }
+          ],
+          "cardSpan": 6,
+          "note": "Explore our background and see how our enterprise has supported transport routes across New York and New Jersey for generations.",
+          "ctaLabel": "About Hudson County Motors",
+          "ctaUrl": "/about-hudson-county-motors-commercial-truck-dealership"
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "card",
+          "heading": "Explore Our Fleet Repair & Authority Resources",
+          "body": "Review our deep technical materials to optimize your fleet uptime and secure regulatory compliance guidelines.",
+          "cards": [
+            {
+              "num": "",
+              "title": "Volvo VNL 860 Technical Maintenance Guide",
+              "text": "Analyze exact DPF cleaning thresholds, electrical system preservation tips, and oil analysis rules configured for Northeast shipping corridors.",
+              "linkUrl": "https://www.hudsoncountymotors.com/authority-hub-volvo-vnl-860-technical-maintenance-guide-page/",
+              "linkLabel": "Explore Technical Maintenance Guide →"
+            },
+            {
+              "num": "",
+              "title": "NJ Zero-Emission Grant Navigator & Regulatory Guide",
+              "text": "Examine updated New Jersey diesel emission compliance benchmarks, annual smoke testing details, and enforcement procedures.",
+              "linkUrl": "https://www.hudsoncountymotors.com/authority-hub-nj-zero-emission-grant-navigator-page/",
+              "linkLabel": "View Emissions Compliance Resources →"
+            },
+            {
+              "num": "",
+              "title": "Northeast Fleet Winterization Guide",
+              "text": "Review specialized tactics for preventing diesel fuel gelling, testing battery cold cranking amps (CCA), and blocking undercarriage rust.",
+              "linkUrl": "https://www.hudsoncountymotors.com/authority-hub-northeast-fleet-winterization-guide-page/",
+              "linkLabel": "Explore Winterization Strategies →"
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-map",
+        "values": {
+          "background": "none",
+          "heading": "Contact Our PM Program Management Specialists",
+          "body": "If your logistics company or vocational operation requires a comprehensive fleet maintenance program, our technical service advisers are prepared to draft an optimization plan.",
+          "note": "<strong>Contact our professionals today to protect your equipment investment and keep your trucks rolling.</strong>",
+          "phone": "(201) 866-7666",
+          "phoneUrl": "tel:+12018667666",
+          "place": "Secaucus, NJ",
+          "ctaLabel": "Contact Hudson County Motors",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "background": "card",
+          "heading": "Expert FAQ Stack",
+          "faqs": [
+            {
+              "q": "What are the primary benefits of transitioning from reactive to planned PM care?",
+              "a": "Planned preventative maintenance minimizes overall operational cost profiles by blocking catastrophic roadside failure patterns, minimizing towing expenses, maximizing asset fuel efficiency, and helping your business meet critical delivery deadlines."
+            },
+            {
+              "q": "How does VMRS coding improve fleet maintenance management?",
+              "a": "Vehicle Maintenance Reporting Standards (VMRS) supply a universal coding language to track specific parts failure patterns, compute precise labor durations, and organize equipment expenses down to distinct mechanical sub-systems."
+            },
+            {
+              "q": "How often should an over-the-road commercial diesel truck undergo general PM service?",
+              "a": "Service frequencies depend heavily on your specific duty cycle and manufacturer suggestions. Standard fleet assets typically execute routine PM steps every 10,000 to 25,000 miles, balancing heavy local usage against extended line-haul freight assignments."
+            },
+            {
+              "q": "What systems are checked during a heavy-duty commercial truck brake audit?",
+              "a": "Our master technicians review air lines, brake chambers, shoes, linings, drums, and electronic ABS connections, leveraging VIS-Check systems to verify real-world stopping forces under automated road stress simulations."
+            },
+            {
+              "q": "Can your facility handle preventative service tasks for multi-brand vocational fleets?",
+              "a": "Yes. Our 26 technicians possess deep multi-brand certifications and master credentials spanning Volvo, Western Star, Autocar, BYD, and Fuso, backed by dedicated multi-platform diagnostic suites."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
