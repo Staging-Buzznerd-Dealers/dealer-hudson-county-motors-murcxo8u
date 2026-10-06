@@ -1,0 +1,28 @@
+{
+  "id": "get-a-quote",
+  "name": "Get a quote",
+  "status": "live",
+  "surfaces": ["page"],
+  "intent": "get-quote",
+  "submitLabel": "Submit",
+  "successMessage": "Thank you. Your quote request has been submitted.",
+  "consent": { "enabled": false, "required": false, "text": "" },
+  "fields": [
+    { "id": "gq-first", "type": "first_name", "label": "First Name", "required": true },
+    { "id": "gq-last", "type": "last_name", "label": "Last Name", "required": true },
+    { "id": "gq-email", "type": "email", "label": "Email", "required": true },
+    { "id": "gq-phone", "type": "phone", "label": "Phone", "required": true },
+    { "id": "gq-company", "type": "single_line", "label": "Company", "required": false },
+    { "id": "gq-cell", "type": "phone", "label": "Cell Phone", "required": false },
+    { "id": "gq-work", "type": "phone", "label": "Work Phone", "required": false },
+    { "id": "gq-make", "type": "single_line", "label": "Make", "required": false },
+    { "id": "gq-model", "type": "single_line", "label": "Model", "required": false },
+    { "id": "gq-year", "type": "single_line", "label": "Year", "required": false },
+    { "id": "gq-accessories", "type": "single_line", "label": "Added Accessories", "required": false },
+    { "id": "gq-comments", "type": "paragraph", "label": "Comments/Questions", "required": false },
+    { "id": "gq-newsletter", "type": "checkboxes", "label": "Newsletter", "required": false, "options": [{ "value": "subscribe", "label": "Subscribe to Newsletter" }] }
+  ],
+  "notifications": [
+    { "id": "gq-default", "name": "Sales team", "logic": "AND", "rules": [], "targetType": "role", "roleId": "sales-manager", "scopeMode": "dynamic" }
+  ]
+}

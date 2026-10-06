@@ -475,6 +475,25 @@
     }
   },
   {
+    "slug": "get-a-quote",
+    "dir": "get-a-quote",
+    "title": "Get a Quote",
+    "description": "Request a quote on new and pre-owned trucks from Hudson County Motors in Secaucus, NJ.",
+    "path": "/get-a-quote",
+    "out": "get-a-quote/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
     "slug": "test",
     "dir": "test",
     "title": "test",

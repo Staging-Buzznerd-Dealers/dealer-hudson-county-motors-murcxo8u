@@ -11,8 +11,7 @@
   {
     "id": "request-quote",
     "label": "Get a Quote",
-    "url": null,
-    "formId": "request-a-quote",
+    "url": "/get-a-quote",
     "style": "primary",
     "intent": "get-quote",
     "newTab": false,
