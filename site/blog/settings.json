@@ -1,6 +1,6 @@
 {
-  "enabled": false,
-  "basePath": "/blog",
-  "title": "News & updates",
-  "description": "Dealership news, service tips and new arrivals."
+  "enabled": true,
+  "basePath": "/blog/posts",
+  "title": "Blog",
+  "description": "Articles from Hudson County Motors on fleet replacement, maintenance schedules, truck warranties and genuine parts."
 }

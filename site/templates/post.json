@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "id": "post",
+  "name": "Blog post template",
+  "conditions": [
+    {
+      "type": "allPosts",
+      "ref": null
+    }
+  ],
+  "css": "/* Blog post pages: masthead (date + title, composed by the build) above a white article card and the Recent Posts rail. */\narticle > .bz-block:first-child > .bz-container { padding-top: clamp(40px, 7vw, 64px); max-width: none; padding-inline: var(--hcm-gutter); }\narticle > .bz-block:first-child .bz-prose { max-width: 1200px; margin: 0; }\narticle > .bz-block:first-child h1 { font-size: clamp(36px, 5.6vw, 68px); color: var(--accent); }\n[data-bz-node=\"article\"] { padding: clamp(28px, 5vw, 40px) 0 clamp(48px, 8vw, 80px); }\n[data-bz-node=\"article-row\"] { gap: clamp(28px, 4vw, 48px); align-items: start; }\n[data-bz-node=\"article-main\"] { background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius-card); overflow: hidden; display: flex; flex-direction: column; gap: 18px; padding-bottom: clamp(22px, 4vw, 44px); }\n[data-bz-node=\"article-main\"] > .bz-block { margin: 0; }\n[data-bz-node=\"article-main\"] > .bz-block:not(.bz-block--image) { padding-inline: clamp(22px, 4vw, 44px); }\n[data-bz-node=\"article-main\"] > .bz-block .bz-container { padding-inline: 0; max-width: none; }\n[data-bz-node=\"article-main\"] .bz-block--image img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 0; }\n[data-bz-node=\"article-main\"] .bz-block--image:not(:first-of-type) { padding-inline: clamp(22px, 4vw, 44px); }\n[data-bz-node=\"article-main\"] .bz-block--image:not(:first-of-type) img { max-height: none; object-fit: contain; border-radius: 4px; }\n[data-bz-node=\"article-meta\"] p { margin: 0; font-size: 14px; color: var(--muted); }\n[data-bz-node=\"article-meta\"] p:first-child { font: 600 clamp(13px, 1.6vw, 16px)/1.2 var(--font-heading); letter-spacing: .22em; text-transform: uppercase; }\n[data-bz-node=\"article-meta\"] a { color: var(--muted); text-decoration: none; }\n[data-bz-node=\"article-meta\"] strong { color: var(--hcm-navy); font-weight: 600; }\n[data-bz-node=\"article-main\"] .bz-block--text p { font-size: 17px; line-height: 1.65; margin: 0 0 18px; text-wrap: pretty; }\n[data-bz-node=\"article-main\"] .bz-block--text p:last-child { margin-bottom: 0; }\n[data-bz-node=\"article-main\"] .bz-block--text strong { color: var(--hcm-navy); }\n[data-bz-node=\"article-main\"] .bz-block--text a { font-weight: 600; text-underline-offset: 2px; color: var(--accent); }\n[data-bz-node=\"article-main\"] .bz-headingblock h2 { margin: 14px 0 0; font-size: clamp(26px, 3.4vw, 34px); line-height: 1.05; color: var(--accent); text-wrap: balance; }\n[data-bz-node=\"article-main\"] .bz-block--list ul { display: flex; flex-direction: column; gap: 18px; margin: -4px 0 0; padding: 0 0 0 4px; list-style: none; }\n[data-bz-node=\"article-main\"] .bz-feature { display: flex; flex-wrap: wrap; gap: 0 6px; font-size: 17px; line-height: 1.65; padding: 0; background: none; border: 0; }\n[data-bz-node=\"article-main\"] .bz-feature::before { content: \"\"; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin: 12px 6px 0 0; }\n[data-bz-node=\"article-main\"] .bz-feature__t { font: 700 17px/1.65 var(--font-body); text-transform: none; color: var(--hcm-navy); margin: 0; }\n[data-bz-node=\"article-main\"] .bz-feature__d { flex: 1 1 0; min-width: 0; margin: 0; font-size: 17px; line-height: 1.65; }\n[data-bz-node=\"article-aside\"] { position: sticky; top: 24px; }\n@media (max-width: 900px) { [data-bz-node=\"article-row\"] > .bz-col { grid-column: 1 / -1; } [data-bz-node=\"article-aside\"] { position: static; } }\n",
+  "nodes": [
+    {
+      "id": "utility-bar",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "utility-bar",
+        "values": {
+          "hours": "<a href=\"mailto:sales@hudsoncountymotors.com\">sales@hudsoncountymotors.com</a>",
+          "menuId": "utility-inner"
+        }
+      }
+    },
+    {
+      "id": "site-header",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-header",
+        "values": {}
+      }
+    },
+    {
+      "id": "content",
+      "type": "contentArea",
+      "props": {
+        "label": "Page content"
+      }
+    },
+    {
+      "id": "site-footer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-footer",
+        "values": {}
+      }
+    }
+  ]
+}
