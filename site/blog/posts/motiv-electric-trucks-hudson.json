@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "slug": "motiv-electric-trucks-hudson",
   "title": "Motiv Electric Trucks and Hudson County Motors Bring Clean, Electric Transportation to Woodbridge, New Jersey",
   "date": "2024-11-19",
@@ -7,6 +8,7 @@
   "status": "published",
   "category": "Press Release",
   "author": "Abhinandan Vashist",
+  "css": ".rp__i[href$=\"/blog/posts/motiv-electric-trucks-hudson\"] { display: none; }",
   "nodes": [
     {
       "id": "article",
@@ -35,18 +37,7 @@
                   "id": "article-meta",
                   "type": "text",
                   "props": {
-                    "text": "<a href=\"/blog\">← Blog</a>\n\nPress Release · Written by <strong>Abhinandan Vashist</strong> · 4 minutes read",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "article-img",
-                  "type": "image",
-                  "props": {
-                    "image": {
-                      "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/Press-Release-Photo-1.jpg",
-                      "alt": "Motiv Electric Trucks and Hudson County Motors Bring Clean, Electric Transportation to Woodbridge, New Jersey"
-                    },
+                    "text": "<a href=\"/news\">← News</a>\n\nPress Release · Written by <strong>Abhinandan Vashist</strong> · 4 minutes read",
                     "width": "full"
                   }
                 },
@@ -212,8 +203,8 @@
               },
               "children": [
                 {
-                  "id": "recent-posts",
-                  "type": "recent-posts",
+                  "id": "more-news",
+                  "type": "more-news",
                   "props": {}
                 }
               ]
@@ -222,6 +213,5 @@
         }
       ]
     }
-  ],
-  "version": 2
+  ]
 }

@@ -1,0 +1,129 @@
+{
+  "version": 2,
+  "slug": "nj-funding-clean-energy-2023",
+  "title": "NJ Funding Strengthens Investment Climate Change Clean Energy 2023",
+  "date": "2023-07-27",
+  "description": "NEW GRANTS FOR ELECTRIC TRUCKS AVAILABLE IN NJ",
+  "coverImage": null,
+  "status": "published",
+  "category": "News",
+  "author": "Krylov Dennis",
+  "css": ".rp__i[href$=\"/blog/posts/nj-funding-clean-energy-2023\"] { display: none; }",
+  "nodes": [
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "article-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "article-main",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "article-meta",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/news\">← News</a>\n\nNews · Written by <strong>Krylov Dennis</strong> · 2 minutes read",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>NEW GRANTS FOR ELECTRIC TRUCKS AVAILABLE IN NJ</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Solutions for municipalities for a cleaner, greener New Jersey! Continuing its commitment to mitigate climate change and reduce diesel emissions, the <a href=\"https://www.nj.gov/dep/newsrel/2023/23_00721.htm\">New Jersey Dept. of Environmental Protection (DEP) is taking the lead by offering another round of funding</a>. This funding is targeted towards replacing medium and heavy-duty diesel vehicles with their electric counterparts.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The DEP’s vision for a cleaner environment is generously backed by <a href=\"https://dep.nj.gov/stopthesoot/vehicle-electrification-projects/\">a $13 million fund for electric trucks.</a> This substantial financial support leverages proceeds from New Jersey’s participation in the Regional Greenhouse Gas Initiative (RGGI). The RGGI is a cooperative effort among nine Northeast and Mid-Atlantic states to cap and reduce power sector CO2 emissions. This initiative is a testament to the relevance and urgency of the environmental challenges we face, and the commitment of these states to address them. The DEP’s electrification projects are not just about reducing emissions. They also have a profound social impact. The projects are consciously targeted towards local government vehicle electrification, with a primary focus on overburdened communities.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Our team at Hudson County Motors is experienced on consulting to transition fleets to electric. We’ve sold over seventy electric trucks, and recently have a lot of interest in electric shuttle buses, step vans and trolleys for efficient and sustainable transport. Our partnership with <a href=\"https://www.hudsoncountymotors.com/showroom/motiv-power-systems/\">Motiv PS Shuttles, Buses, & Trolleys</a> has supported the increased demand for electric vehicles. The journey to a greener future is not only possible but is already underway! The shift towards electric public transportation not only helps reduce pollution and emissions but also improves the overall air quality in densely populated areas.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Another favorable Hudson County Motors can assist with are battery electric trucks and <a href=\"https://www.hudsoncountymotors.com/showroom/byd/\">BYD Battery Electric Trucks (BYD)</a> Companies like BYD have refuse trucks and vocational trucks for municipalities offering the same capacity and performance as diesel vehicles but with drastically reduced fuel consumption and emissions. This is an important step in transitioning to more sustainable modes of transport since these types of vehicles often account for a huge part of road traffic.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-6",
+                  "type": "text",
+                  "props": {
+                    "text": "The DEP’s initiative to invest in electric freight transport solutions is an important step towards reducing emissions and mitigating climate change. As more states join the effort, we can move closer towards a greener future with cleaner air and healthier communities.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Contact Tom Del Gaudio, Sales Manager, Hudson County Motors: 201-866-5570 ext: 109",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-8",
+                  "type": "text",
+                  "props": {
+                    "text": "For more information and to apply for funding, visit <a href=\"http://dep.nj.gov/stopthesoot/vehicle-electrification-projects\">dep.nj.gov/stopthesoot/vehicle-electrification-projects</a>",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "article-aside",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "more-news",
+                  "type": "more-news",
+                  "props": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

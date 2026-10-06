@@ -1,0 +1,137 @@
+{
+  "version": 2,
+  "slug": "blower-motor-air-cylinder-water-pump",
+  "title": "Great Prices Blower Motor – Air Cylinder – Water Pump",
+  "date": "2023-01-30",
+  "description": "Volvo Truck Parts and More",
+  "coverImage": null,
+  "status": "published",
+  "category": "News",
+  "author": "Krylov Dennis",
+  "css": ".rp__i[href$=\"/blog/posts/blower-motor-air-cylinder-water-pump\"] { display: none; }",
+  "nodes": [
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "article-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "article-main",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "article-meta",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/news\">← News</a>\n\nNews · Written by <strong>Krylov Dennis</strong> · 1 minute read",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Volvo Truck Parts and More</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-2",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to keeping your rig on the road and running smoothly, you want quality parts at a fair price. That’s why we’ve opened our online store with all the essential truck components for purchase – brakes, hoses, valves, switches, belts, floor mats and more! Whether you’re looking for a Volvo truck part or aftermarket part, just give us a <a href=\"http://www.jpost.com/promocontent/10-best-call-tracking-software-apps-731530\">call</a> we strive to make sure that all customers leave our store feeling satisfied with their purchase!",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-3",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"https://www.hudsoncountymotors.com/product/85120276-new-blower-motor/\">Blower Motor $144</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Don’t be left out in the cold this winter – make sure your truck is properly heated with a Volvo Blower Motor. It installs easily and quickly into your dashboard vents and can be set to either push out hot air or cool air depending on the climate system settings and your fan speed selection. Adjusting the fan speed sends a signal through a resistor to either pick up the pace or slow it down, so you can always maintain the perfect temperature inside your truck.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-5",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"https://www.hudsoncountymotors.com/product/pk-12057-new-air-cylinder-kit/\">Air Cylinder Kit $150</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-6",
+                  "type": "text",
+                  "props": {
+                    "text": "This kit is needed for the 5th wheel in order to stabilize it. A 5th wheel connects the semi-truck to the trailer to allow for the transportation of product. The included parts are made from durable materials that will withstand the wear and tear of use. assembly is easy, and no special tools are required. The kit also includes a limited lifetime warranty.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Just listed an aftermarket <a href=\"https://www.hudsoncountymotors.com/product/apl-101203-new-water-pump/\">Water Pump $170</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-8",
+                  "type": "text",
+                  "props": {
+                    "text": "A gasket designed specifically for Volvo D11s, D13s & D16 engines (OE equivalent part numbers 85151109; 20744939; 85109694 & 85124623). The water pump gasket is an integral component the engine’s cooling system. If the seal becomes compromised, it could lead to serious damage from coolant leaks and overheating; thus, a timely replacement must be made if signs of leakage present themselves. Poor installation or long periods without use can make these seals susceptible to failure due to corrosion in the cooler fluid.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-9",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you’re looking for a new exhaust system or some new tires, we’ve got you covered! Our team of experts is always here to help you find the right parts for your truck. Hudson County Motors stocks genuine Volvo parts inventories and is here to meet all your aftermarket truck parts needs.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "article-aside",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "more-news",
+                  "type": "more-news",
+                  "props": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
