@@ -37,7 +37,7 @@
                   "id": "article-meta",
                   "type": "text",
                   "props": {
-                    "text": "<a href=\"/press-releases\">← Press Releases</a>\n\nPress Release · Written by <strong>Abhinandan Vashist</strong> · 2 minutes read",
+                    "text": "<a href=\"/news\">← News</a>\n\nPress Release · Written by <strong>Abhinandan Vashist</strong> · 2 minutes read",
                     "width": "full"
                   }
                 },
@@ -123,8 +123,8 @@
               },
               "children": [
                 {
-                  "id": "more-press",
-                  "type": "more-press",
+                  "id": "more-news",
+                  "type": "more-news",
                   "props": {}
                 }
               ]
