@@ -2,7 +2,7 @@
   "version": 2,
   "id": "blog-index",
   "name": "Blog index (filterable)",
-  "css": "[data-bz-node=\"blog\"] { padding-block: 64px var(--hcm-pad-y); }\n[data-bz-node=\"blog-h\"] .bz-eyebrow { margin-bottom: 14px; }\n[data-bz-node=\"blog-h\"] h1 { font-size: clamp(44px, 6.6vw, 84px); line-height: .95; }\n[data-bz-node=\"blog-filter\"] { display: flex; justify-content: flex-end; }\n[data-bz-node=\"blog-body\"] { margin-top: 40px; gap: 48px; align-items: start; }\n[data-bz-node=\"blog-grid\"] { gap: 20px; }\n[data-bz-node=\"blog-aside\"] { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); padding: 24px; }\n[data-bz-node=\"blog-aside-h\"] h2 { font-size: 22px; margin: 0 0 8px; }\n[data-bz-node^=\"blogrecent\"] { border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 64px 1fr; column-gap: 12px; padding: 12px 0; }\n[data-bz-node^=\"blogrecent\"] > .bz-block { margin: 0; grid-column: 2; }\n[data-bz-node^=\"blog-recent-img\"] { grid-column: 1 !important; grid-row: 1 / span 3; }\n[data-bz-node^=\"blog-recent-img\"] img { width: 64px; height: 64px; object-fit: cover; border-radius: var(--radius-input); }\n[data-bz-node^=\"blog-recent-c\"] p { margin: 0; font: 700 11px/1.3 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }\n[data-bz-node^=\"blog-recent-m\"] p { margin: 0; font: 700 14px/1.3 var(--font-heading); letter-spacing: .04em; text-transform: uppercase; }\n[data-bz-node^=\"blog-recent-m\"] a { color: var(--accent); }\n[data-bz-node^=\"blogrecent\"]:last-child { border-bottom: 0; }\n[data-bz-node^=\"blog-recent-t\"] p { margin: 2px 0 4px; font: 700 15px/1.25 var(--font-heading); }\n[data-bz-node^=\"blog-recent-t\"] a { color: var(--hcm-navy); }\n[data-bz-node^=\"blog-recent-t\"] a:hover { color: var(--accent); }\n[data-bz-node^=\"blogitem\"][data-bz-match=\"0\"], [data-bz-node^=\"blogitem\"]:has([data-bz-match=\"0\"]) { display: none; }\n@media (max-width: 900px) { [data-bz-node=\"blog-body\"] > .bz-col, [data-bz-node=\"blog-head\"] > .bz-col { grid-column: 1 / -1; } [data-bz-node=\"blog-filter\"] { justify-content: flex-start; } }\n@media (max-width: 640px) { [data-bz-node^=\"blogitem\"] { grid-column: 1 / -1; } }",
+  "css": "[data-bz-node=\"blog\"] { padding-block: 64px var(--hcm-pad-y); }\n[data-bz-node=\"blog-h\"] .bz-eyebrow { margin-bottom: 14px; }\n[data-bz-node=\"blog-h\"] h1 { font-size: clamp(44px, 6.6vw, 84px); line-height: .95; }\n[data-bz-node=\"blog-filter\"] { display: flex; justify-content: flex-end; }\n[data-bz-node=\"blog-body\"] { margin-top: 40px; gap: 48px; align-items: start; }\n[data-bz-node=\"blog-aside\"] { position: sticky; top: 24px; }\n[data-bz-node=\"blog-grid\"] { gap: 20px; }\n[data-bz-node^=\"blogitem\"][data-bz-match=\"0\"], [data-bz-node^=\"blogitem\"]:has([data-bz-match=\"0\"]) { display: none; }\n@media (max-width: 900px) { [data-bz-node=\"blog-body\"] > .bz-col, [data-bz-node=\"blog-head\"] > .bz-col { grid-column: 1 / -1; } [data-bz-node=\"blog-filter\"] { justify-content: flex-start; } }\n@media (max-width: 640px) { [data-bz-node^=\"blogitem\"] { grid-column: 1 / -1; } }",
   "props": [
     {
       "key": "eyebrow",
@@ -72,39 +72,6 @@
           "key": "author",
           "type": "text",
           "label": "Author"
-        },
-        {
-          "key": "url",
-          "type": "url",
-          "label": "Links to"
-        }
-      ]
-    },
-    {
-      "key": "recentHeading",
-      "type": "text",
-      "label": "Sidebar heading",
-      "default": "Recent Posts"
-    },
-    {
-      "key": "recent",
-      "type": "list",
-      "label": "Recent posts (sidebar)",
-      "fields": [
-        {
-          "key": "image",
-          "type": "image",
-          "label": "Thumbnail"
-        },
-        {
-          "key": "category",
-          "type": "text",
-          "label": "Category"
-        },
-        {
-          "key": "title",
-          "type": "text",
-          "label": "Title"
         },
         {
           "key": "url",
@@ -243,65 +210,9 @@
               },
               "children": [
                 {
-                  "id": "blog-aside-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "{{recentHeading}}",
-                    "headingLevel": 2
-                  }
-                },
-                {
                   "id": "blog-recent",
-                  "type": "row",
-                  "props": {
-                    "gap": 0,
-                    "stackOn": "never"
-                  },
-                  "children": [
-                    {
-                      "id": "blogrecent",
-                      "type": "column",
-                      "props": {
-                        "span": 12,
-                        "repeat": "recent"
-                      },
-                      "children": [
-                        {
-                          "id": "blog-recent-img",
-                          "type": "image",
-                          "props": {
-                            "image": "{{image}}",
-                            "width": "full",
-                            "url": "{{url}}"
-                          }
-                        },
-                        {
-                          "id": "blog-recent-c",
-                          "type": "text",
-                          "props": {
-                            "text": "{{category}}",
-                            "width": "full"
-                          }
-                        },
-                        {
-                          "id": "blog-recent-t",
-                          "type": "text",
-                          "props": {
-                            "text": "<a href=\"{{url}}\">{{title}}</a>",
-                            "width": "full"
-                          }
-                        },
-                        {
-                          "id": "blog-recent-m",
-                          "type": "text",
-                          "props": {
-                            "text": "<a href=\"{{url}}\">Read More →</a>",
-                            "width": "full"
-                          }
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "recent-posts",
+                  "props": {}
                 }
               ]
             }
