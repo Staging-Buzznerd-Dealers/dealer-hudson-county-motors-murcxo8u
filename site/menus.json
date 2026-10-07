@@ -10,30 +10,44 @@
           "label": "Inventory",
           "type": "inventory",
           "ref": "inventory",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "m-new",
               "label": "New Inventory",
               "type": "inventory",
-              "ref": "inventory?condition=new"
+              "ref": "inventory?condition=new",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-used",
               "label": "Pre-Owned Inventory",
               "type": "page",
-              "ref": "pre-owned-inventory"
+              "ref": "pre-owned-inventory",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-ev",
               "label": "Electric Trucks",
               "type": "page",
-              "ref": "electric-trucks"
+              "ref": "electric-trucks",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-muni",
               "label": "Municipal Trucks",
               "type": "page",
-              "ref": "municipal-trucks"
+              "ref": "municipal-trucks",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -42,30 +56,44 @@
           "label": "Financing",
           "type": "page",
           "ref": "financing",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "m-fin",
               "label": "Finance Department",
               "type": "page",
-              "ref": "financing"
+              "ref": "financing",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-engine",
               "label": "Engine Overhaul Financing",
               "type": "page",
-              "ref": "engine-overhaul-financing"
+              "ref": "engine-overhaul-financing",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-warranty",
               "label": "Extended Warranty",
               "type": "page",
-              "ref": "extended-warranty"
+              "ref": "extended-warranty",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-apply",
               "label": "Finance Application",
               "type": "page",
-              "ref": "finance-application"
+              "ref": "finance-application",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -74,18 +102,26 @@
           "label": "Leasing",
           "type": "page",
           "ref": "leasing",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "m-lease",
               "label": "Leasing & Rentals",
               "type": "page",
-              "ref": "leasing"
+              "ref": "leasing",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-contract",
               "label": "Contract Maintenance",
               "type": "page",
-              "ref": "contract-maintenance"
+              "ref": "contract-maintenance",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -94,30 +130,44 @@
           "label": "Parts",
           "type": "page",
           "ref": "oem-parts-department",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "m-oem",
               "label": "OEM Parts Department",
               "type": "page",
-              "ref": "oem-parts-department"
+              "ref": "oem-parts-department",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-superstore",
               "label": "Authorized Parts Superstore",
               "type": "page",
-              "ref": "authorized-parts-superstore"
+              "ref": "authorized-parts-superstore",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-partspecials",
               "label": "Part Specials",
               "type": "page",
-              "ref": "part-specials"
+              "ref": "part-specials",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-shop",
               "label": "Shop Parts Online",
               "type": "inventory",
-              "ref": "parts"
+              "ref": "parts",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -126,30 +176,44 @@
           "label": "Service",
           "type": "page",
           "ref": "truck-repair-service",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "m-repair",
               "label": "Truck Repair Service",
               "type": "page",
-              "ref": "truck-repair-service"
+              "ref": "truck-repair-service",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-pm",
-              "label": "Preventative Maintenance",
+              "label": "Service Department",
               "type": "page",
-              "ref": "preventative-maintenance"
+              "ref": "preventative-maintenance",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-specialty",
               "label": "Specialty Services",
               "type": "page",
-              "ref": "specialty-services"
+              "ref": "specialty-services",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-winfo",
               "label": "Warranty Information",
               "type": "page",
-              "ref": "warranty-information"
+              "ref": "warranty-information",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -158,24 +222,26 @@
           "label": "Specials",
           "type": "page",
           "ref": "specials",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "m-sspecials",
               "label": "Service Specials",
               "type": "page",
-              "ref": "specials"
+              "ref": "specials",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-fleet",
               "label": "Fleet Service Specials",
               "type": "page",
-              "ref": "service-specials"
-            },
-            {
-              "id": "m-pspecials",
-              "label": "Part Specials",
-              "type": "page",
-              "ref": "part-specials"
+              "ref": "service-specials",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -184,42 +250,62 @@
           "label": "About Us",
           "type": "page",
           "ref": "about",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "m-about",
               "label": "About Hudson County Motors",
               "type": "page",
-              "ref": "about"
+              "ref": "about",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-careers",
               "label": "Careers",
               "type": "page",
-              "ref": "careers"
+              "ref": "careers",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-news",
               "label": "News",
               "type": "page",
-              "ref": "news"
+              "ref": "news",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-blog",
               "label": "Blog",
               "type": "page",
-              "ref": "blog"
+              "ref": "blog",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-hours",
               "label": "Map & Hours",
               "type": "page",
-              "ref": "map-hours"
+              "ref": "map-hours",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "m-contact",
               "label": "Contact Us",
               "type": "page",
-              "ref": "contact-us"
+              "ref": "contact-us",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         }
@@ -233,13 +319,19 @@
           "id": "u-signup",
           "label": "news & specials sign-up",
           "type": "page",
-          "ref": "news-signup"
+          "ref": "news-signup",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "u-phone",
           "label": "(201) 866-5570",
           "type": "url",
-          "url": "tel:+12018665570"
+          "ref": null,
+          "url": "tel:+12018665570",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -251,7 +343,10 @@
           "id": "ui-phone",
           "label": "201-866-5570",
           "type": "url",
-          "url": "tel:+12018665570"
+          "ref": null,
+          "url": "tel:+12018665570",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -263,49 +358,73 @@
           "id": "f-new",
           "label": "New Inventory",
           "type": "inventory",
-          "ref": "inventory?condition=new"
+          "ref": "inventory?condition=new",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-used",
           "label": "Pre-Owned Inventory",
           "type": "page",
-          "ref": "pre-owned-inventory"
+          "ref": "pre-owned-inventory",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-financing",
           "label": "Financing",
           "type": "page",
-          "ref": "financing"
+          "ref": "financing",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-about",
           "label": "About Us",
           "type": "page",
-          "ref": "about"
+          "ref": "about",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-leasing",
           "label": "Leasing",
           "type": "page",
-          "ref": "leasing"
+          "ref": "leasing",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-parts",
           "label": "Parts",
           "type": "page",
-          "ref": "oem-parts-department"
+          "ref": "oem-parts-department",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-service",
           "label": "Service",
           "type": "page",
-          "ref": "truck-repair-service"
+          "ref": "truck-repair-service",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-sitemap",
           "label": "Sitemap",
           "type": "url",
-          "url": "/sitemap.xml"
+          "ref": null,
+          "url": "/sitemap.xml",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -317,43 +436,64 @@
           "id": "b-volvo",
           "label": "Volvo",
           "type": "inventory",
-          "ref": "search?q=Volvo"
+          "ref": "search?q=Volvo",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "b-western-star",
           "label": "Western Star",
           "type": "inventory",
-          "ref": "search?q=Western+Star"
+          "ref": "search?q=Western+Star",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "b-autocar",
           "label": "AutoCar",
           "type": "inventory",
-          "ref": "search?q=AutoCar"
+          "ref": "search?q=AutoCar",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "b-byd",
           "label": "BYD",
           "type": "inventory",
-          "ref": "search?q=BYD"
+          "ref": "search?q=BYD",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "b-united",
           "label": "United",
           "type": "inventory",
-          "ref": "search?q=United"
+          "ref": "search?q=United",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "b-ford",
           "label": "Ford",
           "type": "inventory",
-          "ref": "search?q=Ford"
+          "ref": "search?q=Ford",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "b-fuso",
           "label": "Fuso",
           "type": "inventory",
-          "ref": "search?q=Fuso"
+          "ref": "search?q=Fuso",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -364,12 +504,20 @@
         {
           "id": "d-united-ford",
           "label": "United Ford",
-          "type": "label"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "d-united-cdjr",
           "label": "United CDJR",
-          "type": "label"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -381,37 +529,55 @@
           "id": "hf-new",
           "label": "New Inventory",
           "type": "inventory",
-          "ref": "inventory?condition=new"
+          "ref": "inventory?condition=new",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hf-used",
           "label": "Pre-Owned Inventory",
           "type": "inventory",
-          "ref": "inventory?condition=used"
+          "ref": "inventory?condition=used",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hf-financing",
           "label": "Financing",
           "type": "page",
-          "ref": "financing"
+          "ref": "financing",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hf-leasing",
           "label": "Leasing",
           "type": "page",
-          "ref": "leasing"
+          "ref": "leasing",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hf-parts",
           "label": "Parts",
           "type": "inventory",
-          "ref": "parts"
+          "ref": "parts",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hf-service",
           "label": "Service",
           "type": "page",
-          "ref": "truck-repair-service"
+          "ref": "truck-repair-service",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -423,31 +589,46 @@
           "id": "hb-volvo",
           "label": "Volvo",
           "type": "inventory",
-          "ref": "search?q=Volvo"
+          "ref": "search?q=Volvo",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hb-western-star",
           "label": "Western Star",
           "type": "inventory",
-          "ref": "search?q=Western+Star"
+          "ref": "search?q=Western+Star",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hb-autocar",
           "label": "Autocar",
           "type": "inventory",
-          "ref": "search?q=Autocar"
+          "ref": "search?q=Autocar",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hb-byd",
           "label": "BYD",
           "type": "inventory",
-          "ref": "search?q=BYD"
+          "ref": "search?q=BYD",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hb-motiv",
           "label": "Motiv",
           "type": "inventory",
-          "ref": "search?q=Motiv"
+          "ref": "search?q=Motiv",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -458,24 +639,38 @@
         {
           "id": "c-street",
           "label": "290 Secaucus Road",
-          "type": "label"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "c-city",
           "label": "Secaucus, NJ 07094",
-          "type": "label"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "c-phone",
           "label": "(201) 866-5570",
           "type": "url",
-          "url": "tel:+12018665570"
+          "ref": null,
+          "url": "tel:+12018665570",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "c-email",
           "label": "sales@hudsoncountymotors.com",
           "type": "url",
-          "url": "mailto:sales@hudsoncountymotors.com"
+          "ref": null,
+          "url": "mailto:sales@hudsoncountymotors.com",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -487,19 +682,28 @@
           "id": "accessibility",
           "label": "Accessibility",
           "type": "url",
-          "url": "/accessibility"
+          "ref": null,
+          "url": "/accessibility",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "terms",
           "label": "Terms & Conditions",
           "type": "url",
-          "url": "/terms"
+          "ref": null,
+          "url": "/terms",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "privacy",
           "label": "Privacy",
           "type": "url",
-          "url": "/privacy"
+          "ref": null,
+          "url": "/privacy",
+          "newTab": false,
+          "children": []
         }
       ]
     }
