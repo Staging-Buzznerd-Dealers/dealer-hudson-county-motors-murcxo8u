@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "id": "pager",
+  "label": "Pagination",
+  "category": "content",
+  "origin": "ai",
+  "description": "Prev / numbered / Next links between pages of a listing. Leave a link empty to show it disabled.",
+  "props": [
+    {
+      "key": "links",
+      "type": "list",
+      "label": "Links",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to (empty = disabled)"
+        },
+        {
+          "key": "active",
+          "type": "text",
+          "label": "Current page (1 = yes)"
+        },
+        {
+          "key": "off",
+          "type": "text",
+          "label": "Disabled (1 = yes)"
+        }
+      ]
+    }
+  ],
+  "html": "<nav class=\"pg\" aria-label=\"Pagination\">{{#each links}}{{#if url}}<a class=\"pg__b{{#if active}} is-active{{/if}}\" href=\"{{url}}\" data-bz-el=\"link\" data-bz-intent=\"paginate\">{{label}}</a>{{/if}}{{#if off}}<span class=\"pg__b is-off\" aria-disabled=\"true\">{{label}}</span>{{/if}}{{/each}}</nav>",
+  "css": ".pg { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }\n.pg__b { min-width: 44px; padding: 10px 16px; text-align: center; border: 1px solid var(--line); border-radius: var(--radius-input); background: var(--card); font: 700 16px/1.2 var(--font-heading); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); text-decoration: none; transition: background var(--hcm-dur) var(--hcm-ease), color var(--hcm-dur) var(--hcm-ease); }\n.pg__b:hover { border-color: var(--accent); }\n.pg__b.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }\n.pg__b.is-off { opacity: .45; }"
+}

@@ -133,6 +133,63 @@
     }
   },
   {
+    "slug": "blog-page-2",
+    "dir": "blog-page-2",
+    "title": "Blog – Page 2",
+    "description": "Articles from Hudson County Motors on fleet replacement, maintenance schedules, truck warranties and genuine parts.",
+    "path": "/blog/page/2",
+    "out": "blog/page/2/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "blog-page-3",
+    "dir": "blog-page-3",
+    "title": "Blog – Page 3",
+    "description": "Articles from Hudson County Motors on fleet replacement, maintenance schedules, truck warranties and genuine parts.",
+    "path": "/blog/page/3",
+    "out": "blog/page/3/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "blog-page-4",
+    "dir": "blog-page-4",
+    "title": "Blog – Page 4",
+    "description": "Articles from Hudson County Motors on fleet replacement, maintenance schedules, truck warranties and genuine parts.",
+    "path": "/blog/page/4",
+    "out": "blog/page/4/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
     "slug": "contact-us",
     "dir": "contact-us",
     "title": "Contact Us",
