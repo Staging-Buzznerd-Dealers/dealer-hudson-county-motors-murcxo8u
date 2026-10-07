@@ -2,7 +2,7 @@
   "version": 2,
   "id": "blog-index",
   "name": "Blog index (filterable)",
-  "css": "[data-bz-node=\"blog\"] { padding-block: 64px var(--hcm-pad-y); }\n[data-bz-node=\"blog-h\"] .bz-eyebrow { margin-bottom: 14px; }\n[data-bz-node=\"blog-h\"] h1 { font-size: clamp(44px, 6.6vw, 84px); line-height: .95; }\n[data-bz-node=\"blog-filter\"] { display: flex; justify-content: flex-end; }\n[data-bz-node=\"blog-body\"] { margin-top: 40px; gap: 48px; align-items: start; }\n[data-bz-node=\"blog-aside\"] { position: sticky; top: 24px; }\n[data-bz-node=\"blog-grid\"] { gap: 20px; }\n[data-bz-node^=\"blogitem\"][data-bz-match=\"0\"], [data-bz-node^=\"blogitem\"]:has([data-bz-match=\"0\"]) { display: none; }\n@media (max-width: 900px) { [data-bz-node=\"blog-body\"] > .bz-col, [data-bz-node=\"blog-head\"] > .bz-col { grid-column: 1 / -1; } [data-bz-node=\"blog-filter\"] { justify-content: flex-start; } }\n@media (max-width: 640px) { [data-bz-node^=\"blogitem\"] { grid-column: 1 / -1; } }",
+  "css": "[data-bz-node=\"blog\"] { padding-block: 64px var(--hcm-pad-y); }\n[data-bz-node=\"blog-h\"] .bz-eyebrow { margin-bottom: 14px; }\n[data-bz-node=\"blog-h\"] h1 { font-size: clamp(44px, 6.6vw, 84px); line-height: .95; }\n[data-bz-node=\"blog-body\"] { margin-top: 40px; gap: 48px; align-items: start; }\n[data-bz-node=\"blog-aside\"] { position: sticky; top: 24px; }\n[data-bz-node=\"blog-grid\"] { gap: 20px; }\n@media (max-width: 900px) { [data-bz-node=\"blog-body\"] > .bz-col { grid-column: 1 / -1; } [data-bz-node=\"blog-aside\"] { position: static; } }\n@media (max-width: 640px) { [data-bz-node^=\"blogitem\"] { grid-column: 1 / -1; } }",
   "props": [
     {
       "key": "eyebrow",
@@ -17,9 +17,9 @@
       "default": "Blog"
     },
     {
-      "key": "categories",
+      "key": "pager",
       "type": "list",
-      "label": "Filter buttons",
+      "label": "Pagination links",
       "fields": [
         {
           "key": "label",
@@ -27,9 +27,19 @@
           "label": "Label"
         },
         {
-          "key": "value",
+          "key": "url",
+          "type": "url",
+          "label": "Links to (empty = disabled)"
+        },
+        {
+          "key": "active",
           "type": "text",
-          "label": "Category key (empty = All)"
+          "label": "Current page (1 = yes)"
+        },
+        {
+          "key": "off",
+          "type": "text",
+          "label": "Disabled (1 = yes)"
         }
       ]
     },
@@ -99,8 +109,7 @@
       "type": "section",
       "props": {
         "width": "boxed",
-        "paddingY": 0,
-        "behaviour": "filter"
+        "paddingY": 0
       },
       "children": [
         {
@@ -116,7 +125,7 @@
               "id": "blog-title",
               "type": "column",
               "props": {
-                "span": 6
+                "span": 12
               },
               "children": [
                 {
@@ -126,23 +135,6 @@
                     "text": "{{heading}}",
                     "headingLevel": 1,
                     "eyebrow": "{{eyebrow}}"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "blog-filter",
-              "type": "column",
-              "props": {
-                "span": 6
-              },
-              "children": [
-                {
-                  "id": "blog-chips",
-                  "type": "filter-chips",
-                  "props": {
-                    "chips": "{{categories}}",
-                    "facet": "cat"
                   }
                 }
               ]
@@ -199,6 +191,13 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "id": "blog-pager",
+                  "type": "pager",
+                  "props": {
+                    "links": "{{pager}}"
+                  }
                 }
               ]
             },
