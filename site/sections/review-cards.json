@@ -1,0 +1,207 @@
+{
+  "version": 2,
+  "id": "review-cards",
+  "name": "Customer reviews",
+  "css": "[data-bz-node=\"rv-band\"] { padding-top: 40px; padding-bottom: 80px; }\n[data-bz-node=\"rv-intro\"] { display: flex; flex-direction: column; gap: 8px; margin-bottom: 28px; }\n[data-bz-node=\"rv-intro\"] > * { margin: 0; }\n[data-bz-node=\"rv-h\"] h2 { font-size: clamp(28px, 4vw, 42px); line-height: 1; text-transform: uppercase; color: var(--ink-dark); }\n[data-bz-node=\"rv-sub\"] { font-size: 18px; color: var(--muted); }\n[data-bz-node=\"rv-sub\"] p, [data-bz-node=\"rv-stars\"] p, [data-bz-node=\"rv-star\"] p, [data-bz-node=\"rv-badge\"] p, [data-bz-node=\"rv-text\"] p, [data-bz-node=\"rv-av\"] p { margin: 0; }\n[data-bz-node=\"rv-stars\"], [data-bz-node=\"rv-star\"] { color: #F2A900; letter-spacing: .1em; }\n[data-bz-node=\"rv-stars\"] { font-size: 26px; letter-spacing: .12em; }\n[data-bz-node=\"rv-star\"] { font-size: 18px; }\n[data-bz-node=\"rv-grid\"] { gap: 16px; }\n[data-bz-node=\"rv-card\"] { background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius-card); padding: 26px; display: flex; flex-direction: column; gap: 18px; }\n[data-bz-node=\"rv-head\"] { display: flex; align-items: center; gap: 14px; }\n[data-bz-node=\"rv-head\"] > .bz-col { width: auto; flex: none; }\n[data-bz-node=\"rv-head\"] > [data-bz-node=\"rv-who\"] { flex: 1 1 auto; }\n[data-bz-node=\"rv-av\"] { width: 48px; height: 48px; border-radius: 50%; background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 700; font-size: 20px; letter-spacing: .04em; }\n[data-bz-node=\"rv-name\"] h3 { font-size: 22px; line-height: 1.1; text-transform: uppercase; color: var(--ink-dark); margin: 0; }\n[data-bz-node=\"rv-badge\"] { margin-top: 2px; font-size: 13px; font-weight: 600; color: var(--muted); }\n[data-bz-node=\"rv-badge\"]:not(:has(p:not(:empty))) { display: none; }\n[data-bz-node=\"rv-text\"] { font-size: 16px; line-height: 1.6; }\n@media (max-width: 900px) { [data-bz-node=\"rv-card\"] { grid-column: span 6; } }\n@media (max-width: 600px) { [data-bz-node=\"rv-card\"] { grid-column: 1 / -1; padding: 22px; } }",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Satisfied customers"
+    },
+    {
+      "key": "subheading",
+      "type": "text",
+      "label": "Line under the heading",
+      "default": ""
+    },
+    {
+      "key": "stars",
+      "type": "text",
+      "label": "Star row (under the heading)",
+      "default": "★★★★★"
+    },
+    {
+      "key": "cardSpan",
+      "type": "number",
+      "label": "Card width, in twelfths (4 = three per row, 6 = two)",
+      "default": 4
+    },
+    {
+      "key": "reviews",
+      "type": "list",
+      "label": "Reviews",
+      "fields": [
+        {
+          "key": "initials",
+          "type": "text",
+          "label": "Initials (avatar)"
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Customer name"
+        },
+        {
+          "key": "badge",
+          "type": "text",
+          "label": "Badge (e.g. Local Guide)"
+        },
+        {
+          "key": "stars",
+          "type": "text",
+          "label": "Stars"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Review"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rv-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "rv-intro-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "rv-intro",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "rv-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "rv-sub",
+                  "type": "text",
+                  "props": {
+                    "text": "{{subheading}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "rv-stars",
+                  "type": "text",
+                  "props": {
+                    "text": "{{stars}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rv-grid",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "rv-card",
+              "type": "column",
+              "props": {
+                "span": "{{cardSpan}}",
+                "repeat": "reviews"
+              },
+              "children": [
+                {
+                  "id": "rv-head",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "rv-av-col",
+                      "type": "column",
+                      "props": {
+                        "span": 2
+                      },
+                      "children": [
+                        {
+                          "id": "rv-av",
+                          "type": "text",
+                          "props": {
+                            "text": "{{initials}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "rv-who",
+                      "type": "column",
+                      "props": {
+                        "span": 10
+                      },
+                      "children": [
+                        {
+                          "id": "rv-name",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{name}}",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "rv-badge",
+                          "type": "text",
+                          "props": {
+                            "text": "{{badge}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "rv-star",
+                  "type": "text",
+                  "props": {
+                    "text": "{{stars}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "rv-text",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

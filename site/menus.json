@@ -299,6 +299,15 @@
               "children": []
             },
             {
+              "id": "m-reviews",
+              "label": "Customer Reviews",
+              "type": "page",
+              "ref": "read-customer-reviews",
+              "url": null,
+              "newTab": false,
+              "children": []
+            },
+            {
               "id": "m-contact",
               "label": "Contact Us",
               "type": "page",

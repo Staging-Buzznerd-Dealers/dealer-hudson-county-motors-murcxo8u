@@ -603,5 +603,24 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "read-customer-reviews",
+    "dir": "read-customer-reviews",
+    "title": "Read Customer Reviews",
+    "description": "See what customers say about Hudson County Motors parts, service and sales in Secaucus, NJ.",
+    "path": "/read-customer-reviews",
+    "out": "read-customer-reviews/index.html",
+    "group": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
