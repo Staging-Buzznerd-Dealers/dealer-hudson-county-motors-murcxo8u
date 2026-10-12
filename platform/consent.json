@@ -68,7 +68,7 @@
     {
       "id": "ck_6a6b1a00c18b4",
       "name": "PHPSESSID",
-      "domain": ".kenworthsalesco.com",
+      "domain": "",
       "duration": "session",
       "description": "This cookie is native to PHP applications. The cookie stores and identifies a user's unique session ID to manage user sessions on the website. The cookie is a session cookie and will be deleted when all the browser windows are closed.",
       "category": "essential",
@@ -244,7 +244,7 @@
     {
       "id": "ck_6a6b1bfbc895b",
       "name": "cookie-law-info",
-      "domain": ".kenworthsalesco.com",
+      "domain": "",
       "duration": "1 years",
       "description": "Stores the user's cookie consent preferences.",
       "category": "essential",
@@ -255,7 +255,7 @@
     {
       "id": "ck_6a6b1c1b4d174",
       "name": "_ckyGcm",
-      "domain": ".kenworthsalesco.com",
+      "domain": "",
       "duration": "1 years",
       "description": "Stores the Google Consent Mode state used by Buzznerd consent.",
       "category": "essential",
@@ -299,7 +299,7 @@
     {
       "id": "ck_6a6b1cc8593be",
       "name": "WooCommerce Cart Fragments",
-      "domain": ".kenworthsalesco.com",
+      "domain": "",
       "duration": "Session",
       "description": "Loads WooCommerce cart fragments to refresh cart contents and update the mini cart using AJAX.",
       "category": "functional",
@@ -310,7 +310,7 @@
     {
       "id": "ck_6a6b1cec2994b",
       "name": "woocommerce-menu-cart",
-      "domain": ".kenworthsalesco.com",
+      "domain": "",
       "duration": "Session",
       "description": "Used by the WooCommerce Menu Cart functionality to update the cart via AJAX. This website does not use cart or checkout functionality, so this script is manually blocked before user consent.",
       "category": "functional",
@@ -332,7 +332,7 @@
     {
       "id": "ck_6a6b1e5b2416c",
       "name": "_ga_*",
-      "domain": ".kenworthsalesco.com",
+      "domain": "",
       "duration": "",
       "description": "Google Analytics sets this cookie to store and count page views.",
       "category": "analytics",
@@ -343,7 +343,7 @@
     {
       "id": "ck_6a6b1e7899ac4",
       "name": "_ga",
-      "domain": ".kenworthsalesco.com",
+      "domain": "",
       "duration": "",
       "description": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report. The cookie stores information anonymously and assigns a randomly generated number to recognise unique visitors.",
       "category": "analytics",
