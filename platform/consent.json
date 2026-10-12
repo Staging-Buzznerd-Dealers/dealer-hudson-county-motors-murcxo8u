@@ -1,4 +1,5 @@
 {
   "mode": "opt-out",
-  "version": 1
+  "version": 1,
+  "position": "bottom"
 }
