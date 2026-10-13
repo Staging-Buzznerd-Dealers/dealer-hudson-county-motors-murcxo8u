@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "id": "promo-split",
+  "name": "Promo card (copy + photo)",
+  "css": "[data-bz-section=\"promo-split\"] { padding-top: var(--hcm-section-gap); }\n[data-bz-node=\"promo-row\"] { gap: 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); overflow: hidden; }\n[data-bz-node=\"promo-copy\"] { padding: clamp(28px, 5vw, 48px); }\n[data-bz-node=\"promo-h\"] .bz-eyebrow { margin-bottom: 10px; }\n[data-bz-node=\"promo-h\"] .bz-eyebrow::before { display: none; }\n[data-bz-node=\"promo-h\"] h2 { font-size: clamp(28px, 4vw, 42px); line-height: 1; margin-bottom: 14px; }\n[data-bz-node=\"promo-body\"] p { font-size: 16px; line-height: 1.6; max-width: 520px; }\n[data-bz-node=\"promo-body\"] { margin-bottom: 24px; }\n[data-bz-node=\"promo-cta\"] .bz-btns { margin: 0; }\n[data-bz-node=\"promo-cta\"] .bz-btn { font-size: 18px; padding: 14px 30px; }\n[data-bz-node=\"promo-media\"] { min-height: 260px; }",
+  "props": [
+    {
+      "key": "label",
+      "type": "text",
+      "label": "Label",
+      "default": "Hudson Truck Leasing, LLC"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Lease it. Rent it. Keep it working."
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Body",
+      "default": "No down payment, 100% deductible payments, more working capital and predictable transportation costs — packages built around your operation."
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Photo",
+      "default": {
+        "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/10/3-1024x308.webp",
+        "alt": "Hudson Truck Leasing fleet"
+      }
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor",
+      "default": "leasing"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "promo",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "promo-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "promo-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "promo-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "{{label}}",
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "promo-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}"
+                  }
+                },
+                {
+                  "id": "promo-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "explore-leasing"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "promo-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "promo-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

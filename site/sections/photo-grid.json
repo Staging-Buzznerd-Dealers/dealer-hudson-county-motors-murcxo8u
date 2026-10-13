@@ -1,0 +1,132 @@
+{
+  "version": 2,
+  "id": "photo-grid",
+  "name": "Photo grid",
+  "css": "[data-bz-node=\"pg-grid\"] { gap: 14px; grid-auto-flow: dense; }\n[data-bz-node^=\"pgitem\"] img { width: 100%; height: 220px; object-fit: cover; border-radius: var(--radius-card); }\n[data-bz-node^=\"pgitem\"][style*=\"--bz-span:6\"] { grid-row: span 2; }\n[data-bz-node^=\"pgitem\"][style*=\"--bz-span:6\"] :is(.bz-block, .bz-container, .bz-figure, a) { height: 100%; display: block; margin: 0; }\n[data-bz-node^=\"pgitem\"][style*=\"--bz-span:6\"] img { height: 100%; min-height: 454px; }\n@media (max-width: 900px) { [data-bz-node^=\"pgitem\"] { grid-column: span 6; } [data-bz-node^=\"pgitem\"][style*=\"--bz-span:6\"] { grid-column: 1 / -1; } }",
+  "props": [
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "none",
+          "label": "Page (light grey)"
+        },
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "accent",
+          "label": "Blue band"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "photos",
+      "type": "list",
+      "label": "Photos",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to (optional)"
+        },
+        {
+          "key": "span",
+          "type": "number",
+          "label": "Width in twelfths (3 = quarter; 6 = large, two rows tall)"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "{{background}}",
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "hcm-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "hcm-headcol",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hcm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pg-grid",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "pgitem",
+              "type": "column",
+              "props": {
+                "span": "{{span}}",
+                "repeat": "photos"
+              },
+              "children": [
+                {
+                  "id": "pg-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full",
+                    "url": "{{url}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "version": 2,
+  "slug": "what-sets-hudson-county-motors-apart-in-the",
+  "title": "What Sets Hudson County Motors Apart in the NJ Commercial Truck Market?",
+  "date": "2024-11-26",
+  "description": "For over 7 decades, Hudson County Motors has been a mainstay of the trucking industry in New Jersey. From its roots as a family-owned business to its position as a reliable commercial truck…",
+  "coverImage": null,
+  "status": "published",
+  "category": "Blog",
+  "author": "webdev",
+  "nodes": [
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "article-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "article-main",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "article-meta",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/blog\">← Blog</a>\n\nBlog · Written by <strong>webdev</strong> · 2 minutes read",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "article-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/what-sets-hudson-county-motors-apart-in-the-nj-commercial-truck-market.jpg",
+                      "alt": "What Sets Hudson County Motors Apart in the NJ Commercial Truck Market?"
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For over 7 decades, Hudson County Motors has been a mainstay of the trucking industry in New Jersey. From its roots as a family-owned business to its position as a reliable commercial truck dealership, the company has consistently prioritized the needs of businesses in the region. Situated in Secaucus, NJ, Hudson County Motors specializes in a diverse range of trucks, including commercial trucks for sale from brands like Volvo, Western Star, BYD, Autocar, and Motiv.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-2",
+                  "type": "text",
+                  "props": {
+                    "text": "From financing to maintenance, Hudson County Motors delivers solutions tailored to businesses’ needs, establishing its reputation as a leading semi truck dealer in New Jersey.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-3",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Legacy of Trust and Dedication",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "t-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Established in 1945, Hudson County Motors has built its reputation on consistent service and reliable truck solutions. Unlike newer dealerships, its decades-long history ensures businesses receive knowledgeable guidance and dependable products, making it a leader among commercial truck dealerships in New Jersey.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-5",
+                  "type": "text",
+                  "props": {
+                    "text": "This long-standing history is complemented by its family-owned approach, which makes sure every customer interaction feels personalized.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-6",
+                  "type": "text",
+                  "props": {
+                    "text": "As a family-owned business, Hudson County Motors emphasizes personalized services, understanding that no two businesses have the same needs. Whether serving small businesses or large fleets, its customer-centric philosophy has helped foster lasting partnerships.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-7",
+                  "type": "heading",
+                  "props": {
+                    "text": "Comprehensive Inventory at a Leading Commercial Truck Dealership",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "t-8",
+                  "type": "text",
+                  "props": {
+                    "text": "Hudson County Motors provides an extensive selection of commercial trucks for sale, ranging from brand-new models to cost-effective pre-owned options. This service ensures businesses can find vehicles suited to their operational and budgetary needs.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-9",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>The company represents top industry brands:</strong> The dealership partners with renowned manufacturers such as Volvo, Western Star, BYD, Autocar, and Motiv. These manufacturers are recognized for producing durable, high-performing vehicles, offering businesses long-term reliability.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-10",
+                  "type": "heading",
+                  "props": {
+                    "text": "Business-Focused Solutions",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "t-11",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Flexible Financing and Leasing:</strong> Hudson County Motors offers flexible financing and leasing options to simplify the process of acquiring trucks.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-12",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Short-Term Rentals:</strong> Whether businesses seek long-term fleet growth or short-term operational flexibility, Hudson County Motors provides tailored solutions, including flexible financing, leasing options, and rental services.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-13",
+                  "type": "heading",
+                  "props": {
+                    "text": "Exceptional Services and Support",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "t-14",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Expert Maintenance and Repairs</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-15",
+                  "type": "text",
+                  "props": {
+                    "text": "To ensure trucks remain operational, Hudson County Motors offers a range of maintenance services, including:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "l-16",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Comprehensive diagnostics and repairs."
+                      },
+                      {
+                        "label": "Tailored preventive maintenance plans to reduce unexpected breakdowns."
+                      },
+                      {
+                        "label": "Easy-to-access online parts catalog."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "t-17",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Convenient Access to Parts:</strong> As a reliable commercial truck dealership, Hudson County Motors ensures businesses can quickly locate and order the parts they need through its online store, reducing delays and keeping trucks road-ready.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-18",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Choose Hudson County Motors?",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "t-19",
+                  "type": "text",
+                  "props": {
+                    "text": "Beyond offering a diverse inventory of trucks, Hudson County Motors takes a business-first approach, providing customized services as a leading semi truck dealer in New Jersey. Businesses benefit from:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "l-20",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "A wide selection of trucks from top brands."
+                      },
+                      {
+                        "label": "Flexible financing, leasing, and rental options."
+                      },
+                      {
+                        "label": "Comprehensive maintenance and parts services."
+                      },
+                      {
+                        "label": "A focus on long-term partnerships with businesses."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-21",
+                  "type": "heading",
+                  "props": {
+                    "text": "Driving Business Success",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "t-22",
+                  "type": "text",
+                  "props": {
+                    "text": "Located in Secaucus, NJ, Hudson County Motors is strategically positioned to serve businesses across the tri-state area. Its commitment to timely services, robust inventory, and dependable support ensures it remains a reliable partner in the commercial trucking industry.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-23",
+                  "type": "text",
+                  "props": {
+                    "text": "Businesses seeking a semi truck dealer or exploring commercial trucks for sale will find comprehensive solutions at Hudson County Motors, designed to meet operational needs. Visit<a href=\"https://www.hudsoncountymotors.com/\">Hudson County Motors</a> to learn more about how they can help keep your operations moving forward.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "article-aside",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "recent-posts",
+                  "type": "recent-posts",
+                  "props": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

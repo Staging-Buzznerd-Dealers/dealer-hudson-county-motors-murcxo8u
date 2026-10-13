@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "title",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-title",
+        "values": {
+          "eyebrow": "Service",
+          "heading": "Warranty Information"
+        }
+      }
+    },
+    {
+      "id": "warranty",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "flyer-grid",
+        "values": {
+          "flyerSpan": 6,
+          "heading": "Buying a warranty is a game changer – A Volvo Certified Warranty.",
+          "body": "As a heavy truck owner, it is especially important to protect your operating budget from the rising costs of repairs after your factory warranty expires. Considering the cost and limited number of new trucks available, many owners are investing in their current truck for 2023 -2024.\n\nIt is factory backed and once you calculate the costs, it is worth the added protection for those troublesome, unexpected events. The Volvo Certified Warranty will cover intricacies that wouldn’t be covered by a third-party warranty.\n\n<strong>We can explain all costs and help you evaluate if the Volvo Certified Warranty is right for you!</strong>",
+          "infoText": "Find out what options are available to protect your investment, bring your truck in for an inspection prior to purchasing a warranty. The sooner you purchase a plan, the more coverage you may be able to obtain. The warranty can be financed through Hudson County Motors.\n\nCall to schedule your appointment: <a href=\"tel:+12018667666\">201-866-7666</a>",
+          "ctaLabel": "Contact us",
+          "ctaUrl": "/contact-us",
+          "flyers": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/12/Volvo-CertifiedWarranty-Rates_compressed_page-0001.jpg",
+                "alt": "Volvo CertifiedWarranty Rates_compressed_page-0001"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/12/Volvo-CertifiedWarranty-Rates_compressed_page-0001.jpg"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/12/Volvo-CertifiedWarranty-Rates_compressed_page-0002.jpg",
+                "alt": "Volvo CertifiedWarranty Rates_compressed_page-0002"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/12/Volvo-CertifiedWarranty-Rates_compressed_page-0002.jpg"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

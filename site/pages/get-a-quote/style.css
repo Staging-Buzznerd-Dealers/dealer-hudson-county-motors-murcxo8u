@@ -1,0 +1,22 @@
+/* Get a Quote: the form card from the design — 3px navy top rule, 960px wide,
+   fields on an auto-fit grid of 220px columns (four across on desktop, one on a phone). */
+[data-bz-node="quote"] { padding-block: clamp(28px, 5vw, 40px) clamp(48px, 8vw, 80px); }
+[data-bz-node="quote-form"] .bz-form {
+  max-width: 960px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 18px 20px; align-content: start; padding: clamp(20px, 3vw, 32px);
+  border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius-card);
+}
+[data-bz-node="quote-form"] .bz-form > * { grid-column: 1 / -1; }
+[data-bz-node="quote-form"] .bz-form > .bz-field:not(.bz-field--consent):not([data-bz-field="gq-work"]):not([data-bz-field="gq-comments"]):not([data-bz-field="gq-newsletter"]) { grid-column: auto; }
+[data-bz-node="quote-form"] .bz-form > .bz-field--hp { position: absolute; }
+[data-bz-node="quote-form"] .bz-form__t { display: none; }
+[data-bz-node="quote-form"] .bz-field { gap: 6px; }
+[data-bz-node="quote-form"] .bz-input { min-height: 46px; padding: 0 14px; font-size: 15px; background: #fff; border-color: #C9D2DE; }
+[data-bz-node="quote-form"] textarea.bz-input { min-height: 0; padding: 12px 14px; }
+[data-bz-node="quote-form"] .bz-input:focus { outline: 2px solid var(--accent); outline-offset: 0; box-shadow: none; }
+/* A single checkbox needs no group label: its option already says "Subscribe to Newsletter". */
+[data-bz-node="quote-form"] [data-bz-field="gq-newsletter"] > .bz-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+[data-bz-node="quote-form"] [data-bz-field="gq-newsletter"] .bz-choice { font-size: 15px; color: var(--hcm-navy); align-items: center; }
+[data-bz-node="quote-form"] .bz-choice input { accent-color: var(--accent); }
+[data-bz-node="quote-form"] .bz-btn[type="submit"] { justify-self: start; padding: 16px 40px; letter-spacing: .08em; }
+@media (max-width: 600px) { [data-bz-node="quote-form"] .bz-btn[type="submit"] { width: 100%; justify-self: stretch; } }

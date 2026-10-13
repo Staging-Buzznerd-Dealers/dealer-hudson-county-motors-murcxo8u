@@ -1,0 +1,200 @@
+{
+  "version": 2,
+  "id": "news-index",
+  "name": "News index (filterable)",
+  "css": "[data-bz-node=\"news\"] { padding-block: 64px var(--hcm-pad-y); }\n[data-bz-node=\"news-h\"] .bz-eyebrow { margin-bottom: 14px; }\n[data-bz-node=\"news-h\"] h1 { font-size: clamp(44px, 6.6vw, 84px); line-height: .95; }\n[data-bz-node=\"news-filter\"] { margin-top: 32px; }\n[data-bz-node=\"news-grid\"] { margin-top: 24px; gap: var(--hcm-grid-gap); }\n[data-bz-node^=\"newsitem\"][data-bz-match=\"0\"], [data-bz-node^=\"newsitem\"]:has([data-bz-match=\"0\"]) { display: none; }\n@media (max-width: 1100px) { [data-bz-node^=\"newsitem\"] { grid-column: span 6; } }\n@media (max-width: 640px) { [data-bz-node^=\"newsitem\"] { grid-column: 1 / -1; } }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Section label",
+      "default": "About Us"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading (H1)",
+      "default": "News"
+    },
+    {
+      "key": "categories",
+      "type": "list",
+      "label": "Filter buttons",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Category key (empty = All)"
+        }
+      ]
+    },
+    {
+      "key": "posts",
+      "type": "list",
+      "label": "Posts",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Image"
+        },
+        {
+          "key": "category",
+          "type": "text",
+          "label": "Category"
+        },
+        {
+          "key": "catKey",
+          "type": "text",
+          "label": "Category key (for the filter)"
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "excerpt",
+          "type": "textarea",
+          "label": "Excerpt"
+        },
+        {
+          "key": "author",
+          "type": "text",
+          "label": "Author"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to"
+        }
+      ]
+    },
+    {
+      "key": "layout",
+      "type": "text",
+      "label": "Card style (card)",
+      "default": "card"
+    },
+    {
+      "key": "readMore",
+      "type": "text",
+      "label": "Read more label",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "news",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "behaviour": "filter"
+      },
+      "children": [
+        {
+          "id": "news-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "news-title",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "news-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 1,
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "news-filterrow",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "news-filter",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "news-chips",
+                  "type": "filter-chips",
+                  "props": {
+                    "chips": "{{categories}}",
+                    "facet": "cat"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "news-grid",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "newsitem",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "posts"
+              },
+              "children": [
+                {
+                  "id": "news-card",
+                  "type": "post-card",
+                  "props": {
+                    "image": "{{image}}",
+                    "category": "{{category}}",
+                    "catKey": "{{catKey}}",
+                    "date": "{{date}}",
+                    "title": "{{title}}",
+                    "excerpt": "{{excerpt}}",
+                    "author": "{{author}}",
+                    "url": "{{url}}",
+                    "layout": "{{layout}}",
+                    "readMore": "{{readMore}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Service",
+          "heading": "Contract Maintenance",
+          "ctaLabel": "Contact Us",
+          "ctaUrl": "/contact-us",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hudson.jpg",
+            "alt": "hudson"
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "body": "Our contract maintenance program provides truck owners with predictable maintenance costs for operating their trucks. Plans are extremely flexible, providing owners with just the right amount of service they need to operate worry-free. For fleet service, we offer advanced diagnostics and maintenance to keep your whole fleet running smoothly. With regular inspections and repairs, you can count on reliable performance from each truck in your fleet. Get the most out of your investment with our superior services. All services are completed in our state-of-the-art repair facilities with OEM components for optimal performance. We offer a variety of service packages to fit all budgets. Our specialized ASE-certified technicians have the know-how and experience to keep your truck running smoothly and efficiently."
+        }
+      }
+    },
+    {
+      "id": "includes",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "card",
+          "heading": "Maintenance of Our Vehicles Include",
+          "cards": [
+            {
+              "num": "",
+              "title": "",
+              "text": "Preventive maintenance program"
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "Licensing and Permitting"
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "Fuel tax reporting"
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "Scheduled inspections and follow-up repairs"
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "Replacement vehicles and discounted rental program"
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "Skilled, factory-trained technicians"
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "Authorized engine and transmission service"
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "Comprehensive parts inventory"
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "Warranty coverage"
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "24/7 emergency road service throughout North America"
+            },
+            {
+              "num": "",
+              "title": "",
+              "text": "More predictable transportation costs"
+            }
+          ],
+          "cardSpan": 4,
+          "ctaLabel": "Contact Us",
+          "ctaUrl": "/contact-us"
+        }
+      }
+    }
+  ]
+}

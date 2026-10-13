@@ -1,0 +1,160 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "blog-index",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "blog-index",
+        "values": {
+          "eyebrow": "About Us",
+          "heading": "Blog",
+          "posts": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/09/volvo-parts-1024x683.jpg",
+                "alt": "The Importance of Genuine Parts for Your Volvo Truck’s Performance"
+              },
+              "category": "Uncategorized",
+              "catKey": "uncategorized",
+              "date": "April 27, 2025 · 3 minutes",
+              "title": "The Importance of Genuine Parts for Your Volvo Truck’s Performance",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/the-importance-of-genuine-parts-for-your-volvo"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/12/what-to-inspect-before-purchasing-a-pre-owned-commercial-truck.jpg",
+                "alt": "Why Buying Certified Pre-Owned Trucks is Better for Fleet Expansion"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "April 21, 2025 · 3 minutes",
+              "title": "Why Buying Certified Pre-Owned Trucks is Better for Fleet Expansion",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/why-buying-certified-pre-owned-trucks-is-better"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/08/2024-Volvo-VNL-64T-400.jpg",
+                "alt": "Driver Comfort and Ergonomics in the Volvo VNL 400"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "April 15, 2025 · 3 minutes",
+              "title": "Driver Comfort and Ergonomics in the Volvo VNL 400",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/driver-comfort-and-ergonomics-in-the-volvo-vnl"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/10/vnr-electric-studio-4x2-straight-1.jpg",
+                "alt": "Training Drivers for Electric Semi Trucks: What’s Different?"
+              },
+              "category": "Uncategorized",
+              "catKey": "uncategorized",
+              "date": "April 12, 2025 · 4 minutes",
+              "title": "Training Drivers for Electric Semi Trucks: What’s Different?",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/training-drivers-for-electric-semi-trucks-whats-different"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/12/shutterstock_2545472047-1-min-1024x683.jpg",
+                "alt": "Futureproofing Your Business: How to Choose a New Heavy-Duty Truck That Will Still Be Relevant in 2035"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "March 30, 2025 · 3 minutes",
+              "title": "Futureproofing Your Business: How to Choose a New Heavy-Duty Truck That Will Still Be Relevant in 2035",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/futureproofing-your-business-how-to-choose-a-new"
+            },
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "March 21, 2025 · 3 minutes",
+              "title": "The Battle of the Brands: Volvo vs. Western Star vs. Autocar Trucks",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/the-battle-of-the-brands-volvo-vs-western"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/08/2024-Volvo-VNL-64T-400.jpg",
+                "alt": "5 Maintenance Hacks Every Volvo VNL 400 Owner Should Know"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "March 15, 2025 · 3 minutes",
+              "title": "5 Maintenance Hacks Every Volvo VNL 400 Owner Should Know",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/5-maintenance-hacks-every-volvo-vnl-400-owner"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/01/IMG_2125-1024x768.jpeg",
+                "alt": "Smart Buying: 5 Questions to Ask About Any Used Commercial Truck"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "March 9, 2025 · 3 minutes",
+              "title": "Smart Buying: 5 Questions to Ask About Any Used Commercial Truck",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/smart-buying-5-questions-to-ask-about-any"
+            }
+          ],
+          "pager": [
+            {
+              "label": "Prev",
+              "url": "/blog",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "1",
+              "url": "/blog",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "2",
+              "url": "/blog/page/2",
+              "active": "1",
+              "off": ""
+            },
+            {
+              "label": "3",
+              "url": "/blog/page/3",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "4",
+              "url": "/blog/page/4",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "Next",
+              "url": "/blog/page/3",
+              "active": "",
+              "off": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

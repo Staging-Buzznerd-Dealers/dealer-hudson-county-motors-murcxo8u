@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Parts",
+          "heading": "OEM Commercial Truck Parts Department",
+          "body": "Factory-Authorized OEM Components. 90% On-Site First-Pass Fill Ratio. Tri-State Fleet Delivery.",
+          "ctaLabel": "View Truck Parts Department",
+          "ctaUrl": "/contact-us",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/11/part-website-image.jpg",
+            "alt": "Parts"
+          },
+          "photoBackground": "ink"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "none",
+          "body": "Sustaining consistent vehicle uptime across the demanding freight corridors of the Northeast requires instantaneous, friction-free access to precision-engineered heavy-duty components. Hudson County Motors operates a massive, fully integrated parts superstore from our 100,000 square-foot complex in Secaucus, NJ. We supply a continuous pipeline of commercial vehicle components to logistics networks, severe vocational operations, and regional transit systems across New Jersey, the New York metro region, and Connecticut. Backed by a dedicated division of 115 total employees, our parts infrastructure turns component sourcing into a strategic defense against fleet latency.",
+          "body2": "Leveraging a combined institutional knowledge pool of over 100 years of parts staff expertise, our procurement advisors eliminate the errors common at multi-brand independent auto parts counters. We operate with a dependable 90% on-site first-pass parts fill ratio, meaning nine out of ten requested parts are pulled straight from our shelves without manufacturing delays. Whether you manage regional drayage day cabs or severe vocational assets, our industrial distribution pipeline isolates your fleet from supply chain disruptions, keeping your wheels turning and your destination deadlines secure.",
+          "callouts": [
+            {
+              "text": "Explore our real-time availability of over-the-road sleepers and vocational configurations through our New Truck Inventory.",
+              "ctaLabel": "Browse New Commercial Trucks",
+              "ctaUrl": "/store/inventory?condition=new"
+            },
+            {
+              "text": "Learn how proactive winterization component swaps shield commercial battery banks, wiring networks, and exhaust components from sub-zero failures.",
+              "ctaLabel": "Explore Northeast Winterization Guide",
+              "ctaUrl": "https://www.hudsoncountymotors.com/authority-hub-northeast-fleet-winterization-guide-page/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "systems-stocked",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "card",
+          "heading": "What Class 8 Truck Systems Do We Stock On-Site?",
+          "body": "Our parts warehouse holds millions of dollars in component inventory to insulate local transportation networks from extended freight lines and manufacturing backorders. We specialize in stocking heavy-duty components designed to handle the high stress of local stop-and-go metro traffic, variable payload weights, and harsh weather conditions.",
+          "cards": [
+            {
+              "num": "01",
+              "title": "Braking and Friction Assemblies",
+              "text": "Complete pneumatic air brake kits, brake drums, shoes, premium relined linings, s-cam shafts, slack adjusters, modulator valves, and advanced Bendix active safety radar components."
+            },
+            {
+              "num": "02",
+              "title": "Clutches and Drivetrain Componentry",
+              "text": "Heavy-duty manual and automated manual transmission (AMT) clutches, universal joints, carrier bearings, planetary gear sets, and complete Meritor differential axle gear sets."
+            },
+            {
+              "num": "03",
+              "title": "Suspension and Steering Hardware",
+              "text": "Heavy-duty leaf spring packs, air springs, severe-duty shock absorbers, torque arms, tie-rod ends, and kingpin kits configured for Northeast road surfaces."
+            },
+            {
+              "num": "04",
+              "title": "Engine and Emissions Aftertreatment Units",
+              "text": "Critical replacement EGR coolers, DPF filtration blocks, SCR dosing valves, DEF pumps, turbochargers, water pumps, and internal engine components."
+            }
+          ],
+          "cardSpan": 3,
+          "note": "By keeping these complex systems immediately available, we dramatically shorten standard fleet repair intervals. If your maintenance department requires advanced technical help or factory-certified software coding, you can seamlessly route your asset into our physical service center. Our shop houses <strong>32 fully equipped service bays</strong> and <strong>26 on-site technicians</strong>, including 5 Volvo Master Certified and 3 Daimler (Western Star) Master Certified mechanics.",
+          "ctaLabel": "View Truck Service Department",
+          "ctaUrl": "/commercial-truck-repair-service",
+          "cardsIntro": "<strong>Our core on-site inventory infrastructure covers:</strong>"
+        }
+      }
+    },
+    {
+      "id": "infrastructure",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "background": "accent",
+          "heading": "First-Class Fleet Maintenance Infrastructure & Parts Capacity",
+          "ctaLabel": "View Truck Parts Department",
+          "ctaUrl": "/contact-us",
+          "body": "To keep your trucks rolling past your initial purchase, our complex houses millions of dollars in dedicated component inventory alongside an advanced maintenance floor. Our parts division maintains an outstanding <strong>90% first-pass parts fill ratio</strong>, reducing client backorder delays through factory-connected <strong>LPA/Rim Pro (Automatic Stock Replenishment)</strong> software. We also run a dedicated on-site parts hotline staffed by industry specialists with over a century of combined technical knowledge, routing components through an electronically dispatched fleet of <strong>16 delivery vehicles</strong> running daily and twice-daily delivery schedules directly to fleet maintenance yards.\n\nOur maintenance division incorporates 32 advanced service bays and leverages factory diagnostic platforms like Premium Tech Tool (PTT) and Cummins INSITE to execute precise repairs. Our facility is a fully certified Volvo Uptime Center and an authorized NJMVC diesel emissions testing station, enabling our team to deliver rapid turnaround on complex tasks. If an off-highway asset failure occurs, our 4 mobile field service trucks supply 24-hour emergency roadside assistance directly to your vehicle’s location, ensuring your transit lines suffer minimized dwell latency.\n\n<strong>Source replacement components instantly through our digital superstore, featuring daily and twice-daily shipping routes.</strong>",
+          "photoRight": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/09/truck-line-up-1024x683-1.webp",
+            "alt": "truck-line-up-1024x683"
+          }
+        }
+      }
+    }
+  ]
+}

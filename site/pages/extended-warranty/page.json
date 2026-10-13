@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Financing",
+          "heading": "Extended Warranty",
+          "subhead": "Buy An Extended Warranty For Your Semi Truck",
+          "kicker": "Drive With Confidence, We've Got You Covered",
+          "ctaLabel": "Contact Us",
+          "ctaUrl": "/contact-us",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/extended-warranty-banner-for-website-1024x341.jpg",
+            "alt": "extended warranty banner for website"
+          },
+          "imageUrl": "/contact-us",
+          "photoBackground": "ink"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "none",
+          "intro": "Why wait, talk to us about extended warranty for your truck with NTP National Truck Protection! We’re an authorized NTP service center in New Jersey with exceptional customer service.\n\nKim in our finance department will explain the options for extended warranties for commercial trucks, trailers, and other vehicles. There are many options available to truck owners and it is important to compare the coverage offered and find the right protection for your truck.\n\n<strong>We offer a $250 inspection fee credit with the extended warranty purchase on Class 8 model truck year 2010 and newer.</strong>\n\nNTP is the leading truck warranty provider in the USA.",
+          "asideImage": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/ntp-logo.jpg",
+            "alt": "NTP Logo"
+          }
+        }
+      }
+    },
+    {
+      "id": "coverage",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-stack",
+        "values": {
+          "background": "accent",
+          "cards": [
+            {
+              "num": "01",
+              "title": "Benefits:",
+              "text": "Better value and more critical equipment coverage vs. competitive warranties, reduced downtime, work with claims professionals"
+            },
+            {
+              "num": "02",
+              "title": "What’s Covered:",
+              "text": "Engine, Critical Components, Aftertreatment, & Comfort Package"
+            },
+            {
+              "num": "03",
+              "title": "Eligibility:",
+              "text": "CLASS 8 Model Years 2010 & Newer; Start miles <900K miles"
+            }
+          ],
+          "cardSpan": 4
+        }
+      }
+    },
+    {
+      "id": "pricing",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "none",
+          "heading": "Hudson County Motors will waive the inspection fee for all extended warranty purchases.",
+          "intro": "<strong>Call for more details on how to SAVE $$$$</strong>",
+          "infoText": "<strong>In house, Finance Manager: Kim Mason</strong>\n\n<a href=\"tel:+12018665570\">201-866-5570 ext: 122</a>",
+          "ctaLabel": "Contact Us",
+          "ctaUrl": "/contact-us",
+          "asideImage": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/01/NTP-WARRANTY-details-pricing-flyer_compressed-1.jpg",
+            "alt": "NTP WARRANTY details pricing flyer_compressed-1"
+          }
+        }
+      }
+    }
+  ]
+}

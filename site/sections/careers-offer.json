@@ -1,0 +1,231 @@
+{
+  "version": 2,
+  "id": "careers-offer",
+  "name": "Careers — what we offer",
+  "css": "[data-bz-node=\"co-row\"] { gap: 72px; }\n[data-bz-node=\"co-offer\"] { display: flex; flex-direction: column; gap: 22px; }\n[data-bz-node=\"co-join\"] { display: flex; flex-direction: column; gap: 18px; }\n[data-bz-node=\"co-join\"] > * { margin: 0; }\n[data-bz-node=\"co-list\"] { column-gap: 24px; }\n[data-bz-node^=\"cooffer\"] { border-bottom: 1px solid rgb(255 255 255 / 15%); padding: 14px 0; }\n[data-bz-node^=\"co-offer-t\"] p { display: flex; gap: 12px; margin: 0; font-weight: 600; font-size: 16px; line-height: 1.4; color: #fff; }\n[data-bz-node^=\"co-offer-t\"] p::before { content: \"\"; flex: none; width: 9px; height: 15px; margin: 0 6px 0 4px; border: solid #fff; border-width: 0 3px 3px 0; transform: rotate(45deg); }\n[data-bz-node=\"co-roles-l\"] p { font: 600 16px/1.2 var(--font-heading); letter-spacing: .18em; text-transform: uppercase; color: var(--hcm-on-navy-2); margin: 0; }\n[data-bz-node=\"co-roles\"] { display: flex; flex-wrap: wrap; gap: 8px; }\n[data-bz-node^=\"corole\"] { flex: none; }\n[data-bz-node^=\"co-role-t\"] p { margin: 0; padding: 9px 14px; border: 1px solid rgb(255 255 255 / 35%); border-radius: var(--radius-input); font: 600 17px/1.2 var(--font-heading); letter-spacing: .04em; text-transform: uppercase; color: #fff; }\n[data-bz-node=\"co-cta\"] .bz-btns { margin: 0; }\n[data-bz-node=\"co-note\"] p { font-size: 14px; color: var(--hcm-on-navy-2); margin: 0; }\n@media (max-width: 900px) { [data-bz-node=\"co-row\"] > .bz-col { grid-column: 1 / -1; } }\n@media (max-width: 640px) { [data-bz-node^=\"cooffer\"] { grid-column: 1 / -1; } }",
+  "props": [
+    {
+      "key": "offerHeading",
+      "type": "text",
+      "label": "Left heading",
+      "default": "What We Offer"
+    },
+    {
+      "key": "offers",
+      "type": "list",
+      "label": "What we offer",
+      "fields": [
+        {
+          "key": "text",
+          "type": "text",
+          "label": "Item"
+        }
+      ]
+    },
+    {
+      "key": "joinHeading",
+      "type": "text",
+      "label": "Right heading",
+      "default": "Join Our Team"
+    },
+    {
+      "key": "joinBody",
+      "type": "textarea",
+      "label": "Text",
+      "default": ""
+    },
+    {
+      "key": "rolesLabel",
+      "type": "text",
+      "label": "Roles label",
+      "default": ""
+    },
+    {
+      "key": "roles",
+      "type": "list",
+      "label": "Roles",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Role"
+        }
+      ]
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link",
+      "default": ""
+    },
+    {
+      "key": "footnote",
+      "type": "textarea",
+      "label": "Small print",
+      "default": ""
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "accent",
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "co-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "co-offer",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "co-offer-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{offerHeading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "co-list",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "cooffer",
+                      "type": "column",
+                      "props": {
+                        "span": 6,
+                        "repeat": "offers"
+                      },
+                      "children": [
+                        {
+                          "id": "co-offer-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{text}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "co-join",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "co-join-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{joinHeading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "co-join-t",
+                  "type": "text",
+                  "props": {
+                    "text": "{{joinBody}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-roles-l",
+                  "type": "text",
+                  "props": {
+                    "text": "{{rolesLabel}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-roles",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "corole",
+                      "type": "column",
+                      "props": {
+                        "span": 3,
+                        "repeat": "roles"
+                      },
+                      "children": [
+                        {
+                          "id": "co-role-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{label}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "co-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "co-note",
+                  "type": "text",
+                  "props": {
+                    "text": "{{footnote}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "id": "post-card",
+  "label": "Post card",
+  "category": "content",
+  "origin": "ai",
+  "description": "One news or blog post as a whole-card link: image, category badge, date, title, excerpt. Carries its category for a filter.",
+  "props": [
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Image"
+    },
+    {
+      "key": "category",
+      "type": "text",
+      "label": "Category"
+    },
+    {
+      "key": "catKey",
+      "type": "text",
+      "label": "Category key (for a filter)"
+    },
+    {
+      "key": "date",
+      "type": "text",
+      "label": "Date"
+    },
+    {
+      "key": "title",
+      "type": "text",
+      "label": "Title"
+    },
+    {
+      "key": "excerpt",
+      "type": "textarea",
+      "label": "Excerpt"
+    },
+    {
+      "key": "author",
+      "type": "text",
+      "label": "Author"
+    },
+    {
+      "key": "url",
+      "type": "url",
+      "label": "Links to"
+    },
+    {
+      "key": "layout",
+      "type": "select",
+      "label": "Style",
+      "options": [
+        {
+          "value": "card",
+          "label": "Card"
+        },
+        {
+          "value": "wide",
+          "label": "Wide feature"
+        },
+        {
+          "value": "row",
+          "label": "Row (no image)"
+        }
+      ],
+      "default": "card"
+    },
+    {
+      "key": "readMore",
+      "type": "text",
+      "label": "Read more label",
+      "default": "Read More »"
+    }
+  ],
+  "html": "<a class=\"pc pc--{{layout}}\" href=\"{{url}}\" data-bz-part=\"item\" data-cat=\"{{catKey}}\" data-bz-el=\"link\" data-bz-intent=\"read-post\">{{#if image.src}}<span class=\"pc__media\">{{img image}}</span>{{/if}}<span class=\"pc__body\"><span class=\"pc__meta\"><span class=\"pc__cat\">{{category}}</span>{{#if date}}<span class=\"pc__date\">{{date}}</span>{{/if}}</span><span class=\"pc__t\">{{title}}</span>{{#if excerpt}}<span class=\"pc__x\">{{excerpt}}</span>{{/if}}{{#if author}}<span class=\"pc__by\">Written by <strong>{{author}}</strong></span>{{/if}}{{#if readMore}}<span class=\"pc__more\">{{readMore}}</span>{{/if}}</span></a>",
+  "css": ".pc { display: flex; flex-direction: column; height: 100%; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); overflow: hidden; color: inherit; text-decoration: none; transition: box-shadow var(--hcm-dur) var(--hcm-ease), transform var(--hcm-dur) var(--hcm-ease); }\n.pc:hover { box-shadow: var(--hcm-shadow); transform: translateY(-3px); color: inherit; }\n.pc__media { display: block; overflow: hidden; }\n.pc__media img { display: block; width: 100%; height: 190px; object-fit: cover; transition: transform 380ms var(--hcm-ease); }\n.pc:hover .pc__media img { transform: scale(1.04); }\n.pc__body { display: flex; flex-direction: column; gap: 10px; padding: 20px; flex: 1; }\n.pc__meta { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 10px; }\n.pc__cat { font: 700 11px/1.2 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 3px 8px; border-radius: var(--radius-chip); }\n.pc__date { font-size: 13px; color: var(--muted); }\n.pc__t { font: 700 22px/1.12 var(--font-heading); color: var(--accent); }\n.pc__x { font-size: 14px; line-height: 1.6; color: var(--hcm-body); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }\n.pc__by { font-size: 13px; color: var(--muted); margin-top: auto; }\n.pc__by strong { color: var(--hcm-navy); }\n.pc__more { margin-top: auto; font: 700 16px/1.2 var(--font-heading); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }\n.pc--wide { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }\n.pc--wide .pc__media { padding: 24px; display: flex; align-items: center; justify-content: center; }\n.pc--wide .pc__media img { height: auto; max-height: 420px; object-fit: contain; }\n.pc--wide .pc__body { padding: clamp(28px, 4vw, 48px); gap: 14px; justify-content: center; }\n.pc--wide .pc__t { font-size: clamp(28px, 3.4vw, 40px); line-height: 1.05; text-transform: uppercase; }\n.pc--wide .pc__x { font-size: 16px; -webkit-line-clamp: 4; }\n.pc--row { display: block; background: none; border: 0; border-bottom: 1px solid rgb(255 255 255 / 20%); border-radius: 0; }\n.pc--row:hover { box-shadow: none; transform: none; }\n.pc--row .pc__body { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 12px 40px; padding: 26px 0; }\n.pc--row .pc__meta { grid-column: 1; }\n.pc--row .pc__t { grid-column: 1; font-size: 26px; color: #fff; }\n.pc--row .pc__x { grid-column: 2; grid-row: 1 / span 2; font-size: 15px; color: var(--hcm-on-navy); }\n.pc--row .pc__more { grid-column: 2; color: #fff; }\n.pc--row .pc__cat { background: #fff; color: var(--accent); }\n.pc--row .pc__date { color: var(--hcm-on-navy-2); }\n@media (max-width: 760px) { .pc--row .pc__x, .pc--row .pc__more { grid-column: 1; grid-row: auto; } }"
+}
