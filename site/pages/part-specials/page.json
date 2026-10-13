@@ -1,0 +1,135 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "title",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-title",
+        "values": {
+          "heading": "Part Specials"
+        }
+      }
+    },
+    {
+      "id": "specials",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "flyer-grid",
+        "values": {
+          "flyerSpan": 3,
+          "flyers": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/06/NJ-summer.png",
+                "alt": "NJ summer"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/06/partstire-HCM.pdf",
+              "linkLabel": "Download",
+              "linkUrl": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/06/partstire-HCM.pdf"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/06/Summer-service.png",
+                "alt": "Summer service"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/06/FINAL-summer-service-specials.pdf",
+              "linkLabel": "Download",
+              "linkUrl": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/06/FINAL-summer-service-specials.pdf"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/06/Call-for-Pricing.png",
+                "alt": "Call for Pricing"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/06/Call-for-Pricing-on-Freon-7.pdf",
+              "linkLabel": "Download",
+              "linkUrl": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/06/Call-for-Pricing-on-Freon-7.pdf"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/01/specials-B.pdf.jpg",
+                "alt": "specials-B.pdf"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/01/specials-B.pdf.jpg",
+              "linkLabel": "Download",
+              "linkUrl": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/11/Parts-Winter-Flyer-2022.pdf"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/01/101.png",
+                "alt": "101"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/01/101.png",
+              "linkLabel": "Download",
+              "linkUrl": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/01/specials-B-3.pdf"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/07/parts-specials-HCM-723x1024.png",
+                "alt": "parts specials HCM"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/07/parts-specials-HCM-723x1024.png",
+              "linkLabel": "Download",
+              "linkUrl": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2026/07/parts-specials-HCM.pdf"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/image-4.png",
+                "alt": "image (4)"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/specials_jan2022-CAT-1.pdf",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/fjc1.png",
+                "alt": "fjc1"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/mem-day_compressed.pdf",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/Road-Choice-HVAC-Spring-Special-1-791x1024.png",
+                "alt": "Road Choice HVAC Spring Special-1"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/Road-Choice-HVAC-Spring-Special.pdf",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/Tire-promo-update-May-pdf-specials-page.jpg",
+                "alt": "Tire promo update - May pdf specials page"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/Tire-promo-update-May-pdf-specials-page.pdf",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/seat-special-new-791x1024.jpg",
+                "alt": "Seat Special"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/seat-special.pdf",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/HVAC-updated-spec-page-001-791x1024.jpg",
+                "alt": "HVAC updated spec"
+              },
+              "href": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/havc-updated_compressed.pdf",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

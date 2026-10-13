@@ -1,0 +1,273 @@
+{
+  "version": 2,
+  "id": "flyer-grid",
+  "name": "Flyers and documents",
+  "css": "[data-bz-node=\"fg-text\"] { display: flex; flex-direction: column; gap: 18px; }\n[data-bz-node=\"fg-text\"] > * { margin: 0; }\n[data-bz-node=\"fg-row\"]:not(:has([data-bz-node=\"fg-text\"] :is(h2, p, a))) > [data-bz-node=\"fg-text\"] { display: none; }\n[data-bz-node=\"fg-row\"]:not(:has([data-bz-node=\"fg-text\"] :is(h2, p, a))) > [data-bz-node=\"fg-grid-col\"] { grid-column: 1 / -1; }\n[data-bz-node=\"fg-grid\"] { gap: 16px; }\n[data-bz-node^=\"fgitem\"] { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); padding: 10px; display: flex; flex-direction: column; gap: 10px; transition: box-shadow var(--hcm-dur) var(--hcm-ease); }\n[data-bz-node^=\"fgitem\"]:hover { box-shadow: var(--hcm-shadow); }\n[data-bz-node^=\"fg-img\"] img { width: 100%; height: auto; border-radius: var(--radius-input); }\n[data-bz-node^=\"fg-img\"] a { display: block; cursor: zoom-in; }\n[data-bz-node^=\"fg-img\"] a[href$=\".pdf\"] { cursor: pointer; }\n[data-bz-node^=\"fg-dl\"] .bz-btns { margin: 0; }\n[data-bz-node^=\"fg-dl\"] .bz-btn { width: 100%; font-size: 15px; padding: 10px 16px; letter-spacing: .08em; }\n[data-bz-node^=\"fgitem\"] { justify-content: space-between; }\n[data-bz-node=\"fg-cta\"] .bz-btns { margin: 0; }\n@media (max-width: 900px) { [data-bz-node=\"fg-row\"] > .bz-col { grid-column: 1 / -1; } [data-bz-node^=\"fgitem\"] { grid-column: span 6; } }\n.hcm-lightbox { position: fixed; inset: 0; z-index: 90; background: rgb(16 32 67 / 88%); display: flex; align-items: center; justify-content: center; padding: clamp(16px, 4vw, 48px); cursor: zoom-out; }\n.hcm-lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; box-shadow: 0 20px 60px rgb(0 0 0 / 40%); }\n.hcm-lightbox button { all: unset; cursor: pointer; position: absolute; top: 16px; right: 20px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 32px; line-height: 1; }\n.hcm-lightbox button:focus-visible { outline: 2px solid var(--hcm-focus); }",
+  "js": "// Lightbox for flyers. Each flyer is an ordinary link to its full-size image, so\n// without this script (and on the editing canvas) clicking still opens the image.\n(function () {\n  function open(link) {\n    var img = link.querySelector('img');\n    var box = document.createElement('div');\n    box.className = 'hcm-lightbox';\n    box.setAttribute('role', 'dialog');\n    box.setAttribute('aria-modal', 'true');\n    box.setAttribute('aria-label', img && img.alt ? img.alt : 'Flyer');\n    var big = document.createElement('img');\n    big.src = link.href;\n    big.alt = img ? img.alt : '';\n    var close = document.createElement('button');\n    close.type = 'button';\n    close.setAttribute('aria-label', 'Close');\n    close.textContent = '\\u00d7';\n    box.appendChild(big);\n    box.appendChild(close);\n    function shut() { box.remove(); document.removeEventListener('keydown', onKey); link.focus(); }\n    function onKey(e) { if (e.key === 'Escape') shut(); }\n    box.addEventListener('click', shut);\n    document.addEventListener('keydown', onKey);\n    document.body.appendChild(box);\n    close.focus();\n  }\n  document.addEventListener('click', function (e) {\n    var link = e.target.closest('[data-bz-section=\"flyer-grid\"] [data-bz-node^=\"fg-img\"] a');\n    if (!link || !/\\.(png|jpe?g|webp|gif)(\\?|$)/i.test(link.getAttribute('href') || '')) return;\n    e.preventDefault();\n    open(link);\n  });\n})();",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading (optional)",
+      "default": ""
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Text beside the flyers (optional)",
+      "default": ""
+    },
+    {
+      "key": "infoTitle",
+      "type": "text",
+      "label": "Info card — heading",
+      "default": ""
+    },
+    {
+      "key": "infoText",
+      "type": "textarea",
+      "label": "Info card — text",
+      "default": ""
+    },
+    {
+      "key": "infoCtaLabel",
+      "type": "text",
+      "label": "Info card — button",
+      "default": ""
+    },
+    {
+      "key": "infoCtaUrl",
+      "type": "url",
+      "label": "Info card — button link",
+      "default": ""
+    },
+    {
+      "key": "infoCta2Label",
+      "type": "text",
+      "label": "Info card — second button",
+      "default": ""
+    },
+    {
+      "key": "infoCta2Url",
+      "type": "url",
+      "label": "Info card — second button link",
+      "default": ""
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link",
+      "default": ""
+    },
+    {
+      "key": "flyerSpan",
+      "type": "number",
+      "label": "Flyer width, in twelfths (4 = three per row, 3 = four, 6 = two)",
+      "default": 4
+    },
+    {
+      "key": "flyers",
+      "type": "list",
+      "label": "Flyers",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Flyer image"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Opens (full image or PDF)"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link label (e.g. Download)"
+        },
+        {
+          "key": "linkUrl",
+          "type": "url",
+          "label": "Link"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "fg-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "fg-text",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "hcm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "hcm-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hcm-inforow",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "mobile"
+                  },
+                  "children": [
+                    {
+                      "id": "hcm-info",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "hcm-info-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{infoTitle}}",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "hcm-info-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{infoText}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "hcm-info-b",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{infoCtaLabel}}",
+                                "url": "{{infoCtaUrl}}",
+                                "style": "primary"
+                              },
+                              {
+                                "label": "{{infoCta2Label}}",
+                                "url": "{{infoCta2Url}}",
+                                "style": "secondary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fg-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fg-grid-col",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "fg-grid",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "fgitem",
+                      "type": "column",
+                      "props": {
+                        "span": "{{flyerSpan}}",
+                        "repeat": "flyers"
+                      },
+                      "children": [
+                        {
+                          "id": "fg-img",
+                          "type": "image",
+                          "props": {
+                            "image": "{{image}}",
+                            "width": "full",
+                            "url": "{{href}}"
+                          }
+                        },
+                        {
+                          "id": "fg-dl",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{linkLabel}}",
+                                "url": "{{linkUrl}}",
+                                "style": "primary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

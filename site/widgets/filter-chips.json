@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "id": "filter-chips",
+  "label": "Filter buttons",
+  "category": "content",
+  "origin": "ai",
+  "description": "A row of buttons that drive a filter behaviour on the section around them. An empty value is the \"All\" button.",
+  "props": [
+    {
+      "key": "chips",
+      "type": "list",
+      "label": "Buttons",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Value (empty = All)"
+        }
+      ]
+    },
+    {
+      "key": "facet",
+      "type": "text",
+      "label": "Facet (the data- attribute the items carry)",
+      "default": "cat"
+    }
+  ],
+  "html": "<div class=\"fc\" role=\"group\" aria-label=\"Filter\">{{#each chips}}<button type=\"button\" class=\"fc__b\" data-bz-part=\"control\" data-bz-facet=\"{{facet}}\" data-bz-value=\"{{value}}\" data-bz-el=\"filter\" data-bz-intent=\"filter-posts\">{{label}}</button>{{/each}}</div>",
+  "css": ".fc { display: flex; flex-wrap: wrap; gap: 8px; }\n.fc__b { cursor: pointer; padding: 10px 18px; border: 1px solid var(--line); border-radius: var(--radius-input); background: var(--card); font: 700 16px/1.2 var(--font-heading); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); transition: background var(--hcm-dur) var(--hcm-ease), color var(--hcm-dur) var(--hcm-ease); }\n.fc__b:hover { border-color: var(--accent); }\n.fc__b[data-bz-active], .fc__b[aria-pressed=\"true\"] { background: var(--accent); border-color: var(--accent); color: #fff; }"
+}

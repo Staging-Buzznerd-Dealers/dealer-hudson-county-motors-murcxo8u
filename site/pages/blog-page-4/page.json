@@ -1,0 +1,160 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "blog-index",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "blog-index",
+        "values": {
+          "eyebrow": "About Us",
+          "heading": "Blog",
+          "posts": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/12/a-step-by-step-guide-to-financing-a-semi-truck-through-dealers.jpg",
+                "alt": "A Step-by-Step Guide to Financing a Semi Truck Through Dealers"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "December 24, 2024 · 3 minutes",
+              "title": "A Step-by-Step Guide to Financing a Semi Truck Through Dealers",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/a-step-by-step-guide-to-financing-a"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/understanding-the-engine-options-for-the-volvo-vnl-400.jpg",
+                "alt": "How the New Volvo VNL 400 Redefines Efficiency for Long-Haul Trucking"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "December 16, 2024 · 2 minutes",
+              "title": "How the New Volvo VNL 400 Redefines Efficiency for Long-Haul Trucking",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/how-the-new-volvo-vnl-400-redefines-efficiency"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/12/what-to-inspect-before-purchasing-a-pre-owned-commercial-truck.jpg",
+                "alt": "What to Inspect Before Purchasing a Pre-Owned Commercial Truck"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "December 8, 2024 · 3 minutes",
+              "title": "What to Inspect Before Purchasing a Pre-Owned Commercial Truck",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/what-to-inspect-before-purchasing-a-pre-owned"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/12/exploring-the-benefits-of-volvo-trucks-and-how-dealerships-support-fleet-owners.jpg",
+                "alt": "Exploring the Benefits of Volvo Trucks and How Dealerships Support Fleet Owners"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "December 1, 2024 · 3 minutes",
+              "title": "Exploring the Benefits of Volvo Trucks and How Dealerships Support Fleet Owners",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/exploring-the-benefits-of-volvo-trucks-and-how"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/what-sets-hudson-county-motors-apart-in-the-nj-commercial-truck-market.jpg",
+                "alt": "What Sets Hudson County Motors Apart in the NJ Commercial Truck Market?"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "November 26, 2024 · 2 minutes",
+              "title": "What Sets Hudson County Motors Apart in the NJ Commercial Truck Market?",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/what-sets-hudson-county-motors-apart-in-the"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/top-5-pre-owned-volvo-trucks-for-long-haul-transportation-in-2024.jpg",
+                "alt": "Top 5 Pre-Owned Volvo Trucks for Long-Haul Transportation in 2024"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "November 18, 2024 · 4 minutes",
+              "title": "Top 5 Pre-Owned Volvo Trucks for Long-Haul Transportation in 2024",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/top-5-pre-owned-volvo-trucks-for-long"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/understanding-the-engine-options-for-the-volvo-vnl-400.jpg",
+                "alt": "Understanding the Engine Options for the Volvo VNL 400"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "November 7, 2024 · 2 minutes",
+              "title": "Understanding the Engine Options for the Volvo VNL 400",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/understanding-the-engine-options-for-the-volvo-vnl"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/how-electric-trucks-are-reshaping-the-logistics-industry.jpg",
+                "alt": "How Electric Trucks Are Reshaping the Logistics Industry"
+              },
+              "category": "Uncategorized",
+              "catKey": "uncategorized",
+              "date": "November 1, 2024 · 3 minutes",
+              "title": "How Electric Trucks Are Reshaping the Logistics Industry",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/how-electric-trucks-are-reshaping-the-logistics-industry"
+            }
+          ],
+          "pager": [
+            {
+              "label": "Prev",
+              "url": "/blog/page/3",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "1",
+              "url": "/blog",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "2",
+              "url": "/blog/page/2",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "3",
+              "url": "/blog/page/3",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "4",
+              "url": "/blog/page/4",
+              "active": "1",
+              "off": ""
+            },
+            {
+              "label": "Next",
+              "url": "",
+              "active": "",
+              "off": "1"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

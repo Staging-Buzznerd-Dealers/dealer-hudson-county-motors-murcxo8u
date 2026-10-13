@@ -1,0 +1,43 @@
+{
+  "id": "news-specials",
+  "name": "News & specials sign-up",
+  "status": "live",
+  "surfaces": ["page"],
+  "intent": "newsletter-signup",
+  "submitLabel": "Sign me up",
+  "successMessage": "Thanks — you're on the list for Hudson County Motors news and specials.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to receive news and special offers from Hudson County Motors by email. I can unsubscribe at any time."
+  },
+  "fields": [
+    { "id": "ns-name", "type": "full_name", "label": "Full name", "required": true, "width": "half" },
+    { "id": "ns-company", "type": "single_line", "label": "Company", "required": false, "width": "half" },
+    { "id": "ns-email", "type": "email", "label": "Email", "required": true },
+    {
+      "id": "ns-interests",
+      "type": "checkboxes",
+      "label": "What would you like to hear about?",
+      "required": false,
+      "options": [
+        { "value": "new-trucks", "label": "New trucks" },
+        { "value": "pre-owned", "label": "Pre-owned trucks" },
+        { "value": "parts", "label": "Parts specials" },
+        { "value": "service", "label": "Service specials" },
+        { "value": "leasing", "label": "Leasing & rental" }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ns-default",
+      "name": "Marketing",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "marketing-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

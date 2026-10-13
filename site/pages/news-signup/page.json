@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "page-head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-header",
+        "values": {
+          "eyebrow": "News & specials",
+          "heading": "Sign up for news & specials",
+          "intro": "New arrivals, parts and service specials and leasing offers from Hudson County Motors, straight to your inbox."
+        }
+      }
+    },
+    {
+      "id": "signup",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "signup-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "signup-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "signup-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Join the list",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "signup-text",
+                  "type": "text",
+                  "props": {
+                    "text": "We send occasional updates — never more than a few a month."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "signup-form",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "signup-form-block",
+                  "type": "form",
+                  "props": {
+                    "formId": "news-specials"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

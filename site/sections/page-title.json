@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "id": "page-title",
+  "name": "Page title",
+  "css": "[data-bz-node=\"title\"] { padding-top: 64px; }\n[data-bz-node=\"title-h\"] .bz-eyebrow { margin-bottom: 14px; }\n[data-bz-node=\"title-h\"] .bz-headingblock:not(:has(.bz-eyebrow))::before { content: \"\"; display: block; width: 26px; height: 4px; background: var(--accent); margin-bottom: 14px; }\n[data-bz-node=\"title-h\"] h1 { font-size: clamp(44px, 6.6vw, 84px); line-height: .95; }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Section label",
+      "default": ""
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading (H1)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "title-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "title-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "title-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 1,
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

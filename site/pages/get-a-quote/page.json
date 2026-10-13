@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "nodes": [
+    { "id": "title", "type": "sharedSection", "props": { "sectionId": "page-title", "values": { "heading": "Get a Quote" } } },
+    {
+      "id": "quote",
+      "type": "section",
+      "props": { "width": "boxed", "paddingY": 0 },
+      "children": [
+        {
+          "id": "quote-row",
+          "type": "row",
+          "props": { "gap": 0 },
+          "children": [
+            { "id": "quote-col", "type": "column", "props": { "span": 12 }, "children": [
+              { "id": "quote-form", "type": "form", "props": { "formId": "get-a-quote" } }
+            ] }
+          ]
+        }
+      ]
+    }
+  ]
+}

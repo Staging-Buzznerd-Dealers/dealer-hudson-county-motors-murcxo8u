@@ -1,0 +1,319 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "eyebrow": "Parts",
+          "heading": "Authorized Parts Superstore",
+          "subhead": "Get All Your Truck Parts Needs Delivered Quickly and Easily",
+          "ctaLabel": "Order Online",
+          "ctaUrl": "/store/parts",
+          "cta2Label": "Email Us",
+          "cta2Url": "/contact-us",
+          "image": {
+            "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/A0002487-72-DPI.jpg",
+            "alt": "Authorized Parts Superstore"
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "background": "none",
+          "intro": "Are you a truck enthusiast looking for the best selection of parts and accessories? Look no further than our one-stop shop for heavy trucks. We stock popular brands: Alliance, CAT, Cummins, Detroit, Fleetguard, Meritor, Volvo, Dex and more. We have amazing prices on Volvo truck parts: fuel filters, oil filters, air cylinder kits, tires, truck seats, accessories and more!",
+          "infoTitle": "Parts Delivery Service & Store Location",
+          "infoText": "Our parts delivery service makes it easier than ever to get the parts you need. We deliver anywhere in the NY/NJ/CT area with same-day delivery available. If you want to pick up your order yourself, we also offer a convenient store location in Secaucus, NJ where you can come by anytime during <a href=\"/map-hours\">regular business hours</a>. Surrounding counties near our retail parts store: Hudson, Essex, Bergen, Union, and Middlesex in northern New Jersey. Our knowledgeable parts sales team is always available to answer any questions you may have. Email us on the link below or call: <a href=\"tel:+12018662716\">201-866-2716</a>",
+          "infoCtaLabel": "Email Us",
+          "infoCtaUrl": "/contact-us",
+          "infoCta2Label": "Order Online",
+          "infoCta2Url": "/store/parts"
+        }
+      }
+    },
+    {
+      "id": "brands",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "brand-logos",
+        "values": {
+          "logos": [
+            {
+              "name": "Alliance",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-alliance.png",
+                "alt": "Alliance"
+              }
+            },
+            {
+              "name": "Arvin Meritor",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-arvinmeritor.png",
+                "alt": "Arvin Meritor"
+              }
+            },
+            {
+              "name": "Autocar",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-autocar.png",
+                "alt": "Autocar"
+              }
+            },
+            {
+              "name": "Bendix",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-bendix-.png",
+                "alt": "Bendix"
+              }
+            },
+            {
+              "name": "CAT",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-cat.png",
+                "alt": "CAT"
+              }
+            },
+            {
+              "name": "Cummins",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-cummins.png",
+                "alt": "Cummins"
+              }
+            },
+            {
+              "name": "Detroit",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-detroit.png",
+                "alt": "Detroit"
+              }
+            },
+            {
+              "name": "Dex",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-dex.png",
+                "alt": "Dex"
+              }
+            },
+            {
+              "name": "Donaldson",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-donaldson.jpg",
+                "alt": "Donaldson"
+              }
+            },
+            {
+              "name": "Delco Remy",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-dr.png",
+                "alt": "Delco Remy"
+              }
+            },
+            {
+              "name": "Eaton",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-eaton.png",
+                "alt": "Eaton"
+              }
+            },
+            {
+              "name": "Exide",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-exide.png",
+                "alt": "Exide"
+              }
+            },
+            {
+              "name": "Fleetguard",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-fleetguard.png",
+                "alt": "Fleetguard"
+              }
+            },
+            {
+              "name": "Fontaine",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-fontaine.png",
+                "alt": "Fontaine"
+              }
+            },
+            {
+              "name": "fuso",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-fuso.png",
+                "alt": "fuso"
+              }
+            },
+            {
+              "name": "Gunite",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-gunite.png",
+                "alt": "Gunite"
+              }
+            },
+            {
+              "name": "haldex",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-haldex.png",
+                "alt": "haldex"
+              }
+            },
+            {
+              "name": "Hendrickson",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-hendrickson.png",
+                "alt": "Hendrickson"
+              }
+            },
+            {
+              "name": "Holland",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-holland.png",
+                "alt": "Holland"
+              }
+            },
+            {
+              "name": "Horton",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-horton.png",
+                "alt": "Horton"
+              }
+            },
+            {
+              "name": "Jost",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-jost.png",
+                "alt": "Jost"
+              }
+            },
+            {
+              "name": "Leecen",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-leecen.png",
+                "alt": "Leecen"
+              }
+            },
+            {
+              "name": "Link",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-link.png",
+                "alt": "Link"
+              }
+            },
+            {
+              "name": "Meritor",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-meritor.png",
+                "alt": "Meritor"
+              }
+            },
+            {
+              "name": "National Oil Seals",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-nat-oil.png",
+                "alt": "National Oil Seals"
+              }
+            },
+            {
+              "name": "Pana Pacific",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-panpac.png",
+                "alt": "Pana Pacific"
+              }
+            },
+            {
+              "name": "Parker",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-parker.png",
+                "alt": "Parker"
+              }
+            },
+            {
+              "name": "Phillips",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-phillips.png",
+                "alt": "Phillips"
+              }
+            },
+            {
+              "name": "Road Choice",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-roadchoice.png",
+                "alt": "Road Choice"
+              }
+            },
+            {
+              "name": "SKF",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-skf.png",
+                "alt": "SKF"
+              }
+            },
+            {
+              "name": "Spicer",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-spicer.png",
+                "alt": "Spicer"
+              }
+            },
+            {
+              "name": "Stemco",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-stemco.png",
+                "alt": "Stemco"
+              }
+            },
+            {
+              "name": "Timken",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-timken.png",
+                "alt": "Timken"
+              }
+            },
+            {
+              "name": "TruckLite",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-trucklite.png",
+                "alt": "TruckLite"
+              }
+            },
+            {
+              "name": "TRW",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-trw.png",
+                "alt": "TRW"
+              }
+            },
+            {
+              "name": "Volvo",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-volvo.png",
+                "alt": "Volvo"
+              }
+            },
+            {
+              "name": "WEEB",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-webb.png",
+                "alt": "WEEB"
+              }
+            },
+            {
+              "name": "Western Star",
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2022/09/hcm-line-westernstar.png",
+                "alt": "Western Star"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

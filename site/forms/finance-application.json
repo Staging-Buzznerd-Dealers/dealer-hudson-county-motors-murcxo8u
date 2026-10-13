@@ -1,0 +1,977 @@
+{
+  "id": "finance-application",
+  "name": "Finance application",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "financing",
+  "submitLabel": "Submit",
+  "successMessage": "Thank you — your finance application is with Kim Mason in our finance department, who will be in touch.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "The undersigned certifies that the information contained in this financing application is true and correct and authorizes Volvo Financial Services, A Division of VFS US LLC., its affiliates and subsidiaries or person to who this application is made and any credit bureau or investigative agency to investigate the information contained within this application and obtain information about the undersigned's accounts and credit experience. The undersigned authorizes all parties contacted to release credit and financial information requested as a part of said investigation. Volvo Financial Services, or person to whom this application is made, may also disclose information about the undersigned to other lenders and credit bureaus and other persons including entitles affiliated and associated with Volvo Financial Services. This shall be continuing authorization for all present and future inquiries and disclosures of account information and credit experience on the undersigned made by Volvo Financial Services its affiliates and subsidiaries or person to whom this application is made, or any person requested to release such information."
+  },
+  "fields": [
+    {
+      "id": "fa-name-of-borrower-company-or-individual",
+      "label": "Name of Borrower (Company Or Individual)",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-office-phone",
+      "label": "Office Phone #",
+      "required": true,
+      "type": "phone",
+      "width": "half"
+    },
+    {
+      "id": "fa-dba-if-applicable",
+      "label": "DBA (if applicable)",
+      "required": false,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-cell-phone",
+      "label": "Cell Phone #",
+      "required": true,
+      "type": "phone",
+      "width": "half"
+    },
+    {
+      "id": "fa-business-type",
+      "label": "Business type",
+      "required": true,
+      "type": "radio",
+      "options": [
+        {
+          "value": "individual",
+          "label": "Individual"
+        },
+        {
+          "value": "proprietorship",
+          "label": "Proprietorship"
+        },
+        {
+          "value": "llp",
+          "label": "LLP"
+        },
+        {
+          "value": "llc",
+          "label": "LLC"
+        },
+        {
+          "value": "partnership",
+          "label": "Partnership"
+        },
+        {
+          "value": "c-corp",
+          "label": "C-Corp"
+        },
+        {
+          "value": "s-corp",
+          "label": "S-Corp"
+        }
+      ]
+    },
+    {
+      "id": "fa-haul",
+      "label": "Haul",
+      "required": true,
+      "type": "radio",
+      "options": [
+        {
+          "value": "over-the-road",
+          "label": "Over The Road"
+        },
+        {
+          "value": "locally",
+          "label": "Locally"
+        }
+      ]
+    },
+    {
+      "id": "fa-fax",
+      "label": "Fax #",
+      "required": false,
+      "type": "phone",
+      "width": "half"
+    },
+    {
+      "id": "fa-federal-tax-i-d-if-a-company-or-ss-and-d",
+      "label": "Federal Tax I.D. # (if a company) Or SS # and Date of Birth (if an individual)",
+      "required": false,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-email",
+      "label": "Email",
+      "required": true,
+      "type": "email",
+      "width": "half"
+    },
+    {
+      "id": "fa-dot",
+      "label": "DOT #",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-gross-annual-revenue",
+      "label": "Gross Annual Revenue",
+      "required": true,
+      "type": "radio",
+      "options": [
+        {
+          "value": "under-1mm",
+          "label": "Under $1mm"
+        },
+        {
+          "value": "over-1mm",
+          "label": "Over $1mm"
+        }
+      ]
+    },
+    {
+      "id": "fa-year-incorporated",
+      "label": "Year Incorporated",
+      "required": false,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-state-incorporated",
+      "label": "State Incorporated",
+      "required": false,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-corpcode-for-nj-based-companies-only",
+      "label": "Corpcode (for NJ based companies only)",
+      "required": false,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-purpose-of-purchase",
+      "label": "Purpose Of Purchase",
+      "required": true,
+      "type": "radio",
+      "options": [
+        {
+          "value": "first",
+          "label": "First"
+        },
+        {
+          "value": "replacement",
+          "label": "Replacement"
+        },
+        {
+          "value": "expansion",
+          "label": "Expansion"
+        }
+      ]
+    },
+    {
+      "id": "fa-existing-fleet-size-of-trucks",
+      "label": "Existing Fleet Size of Trucks",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-existing-fleet-size-of-trailers",
+      "label": "Existing Fleet Size of Trailers",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-business-address-street-address",
+      "label": "Business address — Street Address",
+      "required": true,
+      "type": "single_line"
+    },
+    {
+      "id": "fa-business-address-city",
+      "label": "Business address — City",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-business-address-state-province-region",
+      "label": "Business address — State / Province / Region",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-business-address-zip-postal-code",
+      "label": "Business address — ZIP / Postal Code",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-business-address-years-at-this-address",
+      "label": "Business address — years at this address",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-additional-address-street-address",
+      "label": "Additional address — Street Address",
+      "required": true,
+      "type": "single_line"
+    },
+    {
+      "id": "fa-additional-address-city",
+      "label": "Additional address — City",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-additional-address-state-province-region",
+      "label": "Additional address — State / Province / Region",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-additional-address-zip-postal-code",
+      "label": "Additional address — ZIP / Postal Code",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-additional-address-years-at-this-address",
+      "label": "Additional address — years at this address",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-1-owner-guarantors-full-legal-name-may-b",
+      "label": "#1: Owner/Guarantor’s Full Legal Name (may be same as borrower if individual)",
+      "required": true,
+      "type": "single_line"
+    },
+    {
+      "id": "fa-owner-1-owned",
+      "label": "Owner #1 — % Owned",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-title",
+      "label": "Owner #1 — Title",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-ss",
+      "label": "Owner #1 — SS #",
+      "required": false,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-date-of-birth",
+      "label": "Owner #1 — Date Of Birth",
+      "required": true,
+      "type": "single_line",
+      "placeholder": "MM/DD/YYYY",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-home-address-street-address",
+      "label": "Owner #1 — Home address — Street Address",
+      "required": true,
+      "type": "single_line"
+    },
+    {
+      "id": "fa-owner-1-home-address-city",
+      "label": "Owner #1 — Home address — City",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-home-address-state-province-regi",
+      "label": "Owner #1 — Home address — State / Province / Region",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-home-address-zip-postal-code",
+      "label": "Owner #1 — Home address — ZIP / Postal Code",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-years-at-this-address",
+      "label": "Owner #1 — Years At This Address",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-home",
+      "label": "Owner #1 — Home",
+      "required": true,
+      "type": "radio",
+      "options": [
+        {
+          "value": "owns-home",
+          "label": "Owns Home"
+        },
+        {
+          "value": "rent-home",
+          "label": "Rent Home"
+        }
+      ]
+    },
+    {
+      "id": "fa-owner-1-driving-experience-years",
+      "label": "Owner #1 — Driving Experience — Years",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-driving-experience-months",
+      "label": "Owner #1 — Driving Experience — Months",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-how-long-as-an-owner-operator-ye",
+      "label": "Owner #1 — How Long As An Owner Operator — Years",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-how-long-as-an-owner-operator-mo",
+      "label": "Owner #1 — How Long As An Owner Operator — Months",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-industry-experience-years",
+      "label": "Owner #1 — Industry Experience — Years",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-1-industry-experience-months",
+      "label": "Owner #1 — Industry Experience — Months",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-2-owner-guarantors-full-legal-name",
+      "label": "#2: Owner/Guarantor’s Full Legal Name",
+      "required": true,
+      "type": "single_line"
+    },
+    {
+      "id": "fa-owner-2-phone",
+      "label": "Owner #2 — Phone #",
+      "required": true,
+      "type": "phone",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-2-owned",
+      "label": "Owner #2 — % Owned",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-2-title",
+      "label": "Owner #2 — Title",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-2-ss",
+      "label": "Owner #2 — SS #",
+      "required": false,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-2-date-of-birth",
+      "label": "Owner #2 — Date Of Birth",
+      "required": true,
+      "type": "single_line",
+      "placeholder": "MM/DD/YYYY",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-2-home-address-street-address",
+      "label": "Owner #2 — Home address — Street Address",
+      "required": true,
+      "type": "single_line"
+    },
+    {
+      "id": "fa-owner-2-home-address-city",
+      "label": "Owner #2 — Home address — City",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-2-home-address-state-province-regi",
+      "label": "Owner #2 — Home address — State / Province / Region",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-2-home-address-zip-postal-code",
+      "label": "Owner #2 — Home address — ZIP / Postal Code",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-owner-2-years-at-this-address",
+      "label": "Owner #2 — Years At This Address",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-nearest-relative-name-of-nearest-relativ",
+      "label": "Nearest relative — Name of Nearest Relative Not Residing With You",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-nearest-relative-relationship",
+      "label": "Nearest relative — Relationship",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-nearest-relative-home-address-street-add",
+      "label": "Nearest relative — Home address — Street Address",
+      "required": true,
+      "type": "single_line"
+    },
+    {
+      "id": "fa-nearest-relative-home-address-city",
+      "label": "Nearest relative — Home address — City",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-nearest-relative-home-address-state-prov",
+      "label": "Nearest relative — Home address — State / Province / Region",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-nearest-relative-home-address-zip-postal",
+      "label": "Nearest relative — Home address — ZIP / Postal Code",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-credit-reference-1-equipment-finance-ref",
+      "label": "Credit reference #1 — Equipment Finance Reference",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-credit-reference-1-phone",
+      "label": "Credit reference #1 — Phone #",
+      "required": true,
+      "type": "phone",
+      "width": "half"
+    },
+    {
+      "id": "fa-credit-reference-1-amount-financed",
+      "label": "Credit reference #1 — Amount Financed",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-credit-reference-1-account",
+      "label": "Credit reference #1 — Account #",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-credit-reference-2-equipment-finance-ref",
+      "label": "Credit reference #2 — Equipment Finance Reference",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-credit-reference-2-phone",
+      "label": "Credit reference #2 — Phone #",
+      "required": true,
+      "type": "phone",
+      "width": "half"
+    },
+    {
+      "id": "fa-credit-reference-2-amount-financed",
+      "label": "Credit reference #2 — Amount Financed",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-credit-reference-2-account",
+      "label": "Credit reference #2 — Account #",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-have-you-filed-bankruptcy-in-the-last-10",
+      "label": "Have You Filed Bankruptcy In The Last 10 Years?",
+      "required": true,
+      "type": "radio",
+      "options": [
+        {
+          "value": "y",
+          "label": "Yes"
+        },
+        {
+          "value": "n",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "fa-have-you-ever-had-equipment-repossessed",
+      "label": "Have You Ever Had Equipment Repossessed?",
+      "required": true,
+      "type": "radio",
+      "options": [
+        {
+          "value": "y",
+          "label": "Yes"
+        },
+        {
+          "value": "n",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "fa-if-yes-date-of-discharge",
+      "label": "If Yes: Date of Discharge",
+      "required": false,
+      "type": "single_line",
+      "placeholder": "MM/DD/YYYY",
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "fa-have-you-filed-bankruptcy-in-the-last-10",
+            "operator": "is",
+            "value": "y"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa-if-yes-what-was-repossessed-and-when",
+      "label": "If Yes: What Was Repossessed And When?",
+      "required": false,
+      "type": "single_line",
+      "placeholder": "MM/DD/YYYY",
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "fa-have-you-ever-had-equipment-repossessed",
+            "operator": "is",
+            "value": "y"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa-hauling-reference-1-company-hauling-for",
+      "label": "Hauling reference #1 — Company Hauling For",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-1-products-hauled",
+      "label": "Hauling reference #1 — Products Hauled",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-1-how-long-years",
+      "label": "Hauling reference #1 — How Long? — Years",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-1-how-long-months",
+      "label": "Hauling reference #1 — How Long? — Months",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-1-first-name",
+      "label": "Hauling reference #1 — First Name",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-1-last-name",
+      "label": "Hauling reference #1 — Last Name",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-1-phone",
+      "label": "Hauling reference #1 — Phone #",
+      "required": true,
+      "type": "phone",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-2-company-hauling-for",
+      "label": "Hauling reference #2 — Company Hauling For",
+      "required": false,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-2-products-hauled",
+      "label": "Hauling reference #2 — Products Hauled",
+      "required": false,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-2-how-long-years",
+      "label": "Hauling reference #2 — How Long? — Years",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-2-how-long-months",
+      "label": "Hauling reference #2 — How Long? — Months",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-2-first-name",
+      "label": "Hauling reference #2 — First Name",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-2-last-name",
+      "label": "Hauling reference #2 — Last Name",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-hauling-reference-2-phone",
+      "label": "Hauling reference #2 — Phone #",
+      "required": true,
+      "type": "phone",
+      "width": "half"
+    },
+    {
+      "id": "fa-what-do-you-want-to-purchase-year-make-m",
+      "label": "What Do You Want To Purchase (Year, Make, Model, Description, etc.)?",
+      "required": true,
+      "type": "paragraph"
+    },
+    {
+      "id": "fa-do-you-have-a-trade-in",
+      "label": "Do You Have A Trade-In?",
+      "required": true,
+      "type": "radio",
+      "options": [
+        {
+          "value": "y",
+          "label": "Yes"
+        },
+        {
+          "value": "n",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "fa-trade-in",
+      "label": "Trade In",
+      "required": true,
+      "type": "radio",
+      "options": [
+        {
+          "value": "trucks",
+          "label": "Trucks"
+        },
+        {
+          "value": "trailers",
+          "label": "Trailers"
+        }
+      ],
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "fa-do-you-have-a-trade-in",
+            "operator": "is",
+            "value": "y"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa-trade-in-what-are-the-specifications",
+      "label": "Trade-in — What Are The Specifications?",
+      "required": true,
+      "type": "single_line",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "fa-do-you-have-a-trade-in",
+            "operator": "is",
+            "value": "y"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa-trade-in-year",
+      "label": "Trade-in — Year",
+      "required": true,
+      "type": "single_line",
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "fa-do-you-have-a-trade-in",
+            "operator": "is",
+            "value": "y"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa-trade-in-make",
+      "label": "Trade-in — Make",
+      "required": true,
+      "type": "single_line",
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "fa-do-you-have-a-trade-in",
+            "operator": "is",
+            "value": "y"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa-trade-in-model",
+      "label": "Trade-in — Model",
+      "required": true,
+      "type": "single_line",
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "fa-do-you-have-a-trade-in",
+            "operator": "is",
+            "value": "y"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa-trade-in-mileage",
+      "label": "Trade-in — Mileage",
+      "required": true,
+      "type": "single_line",
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "fa-do-you-have-a-trade-in",
+            "operator": "is",
+            "value": "y"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa-is-there-an-existing-lien",
+      "label": "Is There An Existing Lien?",
+      "required": true,
+      "type": "radio",
+      "options": [
+        {
+          "value": "y",
+          "label": "Yes"
+        },
+        {
+          "value": "n",
+          "label": "No"
+        }
+      ],
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "fa-do-you-have-a-trade-in",
+            "operator": "is",
+            "value": "y"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa-trade-in-what-is-the-amount-still-owed",
+      "label": "Trade-in — What Is The Amount Still Owed?",
+      "required": true,
+      "type": "single_line",
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "fa-is-there-an-existing-lien",
+            "operator": "is",
+            "value": "y"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fa-name-of-sales-representative-assisting-y",
+      "label": "Name of Sales Representative Assisting You",
+      "required": true,
+      "type": "single_line"
+    },
+    {
+      "id": "fa-borrower-signature",
+      "label": "Borrower Signature",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-borrower-title",
+      "label": "Borrower — Title",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-borrower-date",
+      "label": "Borrower — Date",
+      "required": true,
+      "type": "single_line",
+      "placeholder": "MM/DD/YYYY",
+      "width": "half"
+    },
+    {
+      "id": "fa-co-borrower-signature",
+      "label": "Co-Borrower Signature",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-co-borrower-title",
+      "label": "Co-borrower — Title",
+      "required": true,
+      "type": "single_line",
+      "width": "half"
+    },
+    {
+      "id": "fa-co-borrower-date",
+      "label": "Co-borrower — Date",
+      "required": true,
+      "type": "single_line",
+      "placeholder": "MM/DD/YYYY",
+      "width": "half"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "fa-default",
+      "name": "Finance manager",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "finance-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}
