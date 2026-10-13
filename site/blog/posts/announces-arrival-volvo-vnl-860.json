@@ -1,0 +1,113 @@
+{
+  "version": 2,
+  "slug": "announces-arrival-volvo-vnl-860",
+  "title": "Hudson County Motors Announces Arrival of the All-New Volvo VNL 860: A Game-Changer for the Future of Heavy-Duty Trucking",
+  "date": "2024-10-18",
+  "description": "Secaucus, NJ, 10/3/24 — Hudson County Motors is excited to announce the arrival of the all-new Volvo VNL 860, now available at our dealership. This next-generation heavy-duty truck is designed to…",
+  "coverImage": null,
+  "status": "published",
+  "category": "News",
+  "author": "Abhinandan Vashist",
+  "css": ".rp__i[href$=\"/blog/posts/announces-arrival-volvo-vnl-860\"] { display: none; }",
+  "nodes": [
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "article-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "article-main",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "article-meta",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/news\">← News</a>\n\nNews · Written by <strong>Abhinandan Vashist</strong> · 1 minute read",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Secaucus, NJ, 10/3/24 — Hudson County Motors is excited to announce the arrival of the all-new Volvo VNL 860, now available at our dealership. This next-generation heavy-duty truck is designed to set new standards in efficiency, safety, and driver comfort, offering unmatched performance for today’s demanding transportation needs.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-2",
+                  "type": "text",
+                  "props": {
+                    "text": "“The all-new Volvo VNL was designed to change everything. However, change doesn’t only come with a redesigned truck — this product introduction is the start of a new era for Volvo Trucks, our customers, and their drivers — a quantum leap forward,” said <strong>Peter Voorhoeve</strong>, President of Volvo Trucks North America. “As we bring the all-new Volvo VNL to market, we are excited to once again introduce innovations that will shape the future of the transportation industry for years to come.”",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Now available at <strong>Hudson County Motors</strong>, the Volvo VNL 860 offers up to a 10% improvement in fuel efficiency thanks to its streamlined wedge-shaped cab and advanced aerodynamics. Safety remains a top priority, with the introduction of Volvo Active Driver Assist Plus, side-curtain airbags—an industry first—and enhanced maneuverability features like Volvo Dynamic Steering.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-4",
+                  "type": "text",
+                  "props": {
+                    "text": "The driver-centric design of the VNL 860 includes improved insulation, an ultra-quiet Volvo Parking Cooler, and increased cabin storage, creating a true “home away from home” for drivers on long hauls.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-5",
+                  "type": "text",
+                  "props": {
+                    "text": "“We’re thrilled to introduce the all-new Volvo VNL here at Hudson County Motors. This truck sets a new standard in the Class 8 category, delivering 10 percent better fuel efficiency, a smoother, more comfortable ride, and unmatched safety features,” said Tom DelGaudio, sales manager for Hudson County Motors.” It’s a driver’s dream with its advanced technology and ergonomic design. Volvo has truly raised the bar, and we invite everyone to visit us in Secaucus, NJ, to see firsthand how Volvo is staying years ahead of the competition.”",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "t-6",
+                  "type": "text",
+                  "props": {
+                    "text": "Be among the first to experience the cutting-edge technology of the Volvo VNL 860 at Hudson County Motors. Contact us today at [Phone Number] or visit [Website] to schedule a test drive and learn more about how this groundbreaking truck can enhance your fleet.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "article-aside",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "more-news",
+                  "type": "more-news",
+                  "props": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

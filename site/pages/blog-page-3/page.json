@@ -1,0 +1,160 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "blog-index",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "blog-index",
+        "values": {
+          "eyebrow": "About Us",
+          "heading": "Blog",
+          "posts": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/02/IMG_2350-1024x661.jpeg",
+                "alt": "The Science Behind Volvo VNL 860’s Aerodynamics and Fuel Savings"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "February 24, 2025 · 3 minutes",
+              "title": "The Science Behind Volvo VNL 860’s Aerodynamics and Fuel Savings",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/the-science-behind-volvo-vnl-860s-aerodynamics-and"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/02/IMG_2328-1024x768.jpeg",
+                "alt": "How to Find a Western Star Truck Dealer That Offers the Best Service Support"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "February 19, 2025 · 3 minutes",
+              "title": "How to Find a Western Star Truck Dealer That Offers the Best Service Support",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/how-to-find-a-western-star-truck-dealer"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/02/IMG_2410-1024x768.jpeg",
+                "alt": "What Makes the Volvo VNL 400 the Ideal Truck for Small Fleet Owners?"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "February 14, 2025 · 2 minutes",
+              "title": "What Makes the Volvo VNL 400 the Ideal Truck for Small Fleet Owners?",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/what-makes-the-volvo-vnl-400-the-ideal"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/02/IMG_2381-1024x768.jpeg",
+                "alt": "The Evolution of Volvo Semi Trucks: From Classic to Cutting-Edge"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "February 6, 2025 · 3 minutes",
+              "title": "The Evolution of Volvo Semi Trucks: From Classic to Cutting-Edge",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/the-evolution-of-volvo-semi-trucks-from-classic"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/02/Blog-3-Volvo-VNL-760.jpg",
+                "alt": "The Road to Recovery: Financing Repairs for Semi-Trucks"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "January 20, 2025 · 3 minutes",
+              "title": "The Road to Recovery: Financing Repairs for Semi-Trucks",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/the-road-to-recovery-financing-repairs-for-semi"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/02/IMG_2305-1024x768.jpeg",
+                "alt": "Customization Options for the New Volvo VNL 860"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "January 15, 2025 · 3 minutes",
+              "title": "Customization Options for the New Volvo VNL 860",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/customization-options-for-the-new-volvo-vnl-860"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/02/Blog-3-Volvo-VNL-760.jpg",
+                "alt": "Why Servicing Your Municipal Trucks with Hudson County Motors Is a Smart Investment"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "January 10, 2025 · 3 minutes",
+              "title": "Why Servicing Your Municipal Trucks with Hudson County Motors Is a Smart Investment",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/why-servicing-your-municipal-trucks-with-hudson-county"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/02/Blog-3-Volvo-VNL-760.jpg",
+                "alt": "The Life Cycle of a Volvo VNL 760: From New to Pre-Owned"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "January 5, 2025 · 3 minutes",
+              "title": "The Life Cycle of a Volvo VNL 760: From New to Pre-Owned",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/the-life-cycle-of-a-volvo-vnl-760"
+            }
+          ],
+          "pager": [
+            {
+              "label": "Prev",
+              "url": "/blog/page/2",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "1",
+              "url": "/blog",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "2",
+              "url": "/blog/page/2",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "3",
+              "url": "/blog/page/3",
+              "active": "1",
+              "off": ""
+            },
+            {
+              "label": "4",
+              "url": "/blog/page/4",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "Next",
+              "url": "/blog/page/4",
+              "active": "",
+              "off": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

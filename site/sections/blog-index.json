@@ -1,0 +1,223 @@
+{
+  "version": 2,
+  "id": "blog-index",
+  "name": "Blog index (filterable)",
+  "css": "[data-bz-node=\"blog\"] { padding-block: 64px var(--hcm-pad-y); }\n[data-bz-node=\"blog-h\"] .bz-eyebrow { margin-bottom: 14px; }\n[data-bz-node=\"blog-h\"] h1 { font-size: clamp(44px, 6.6vw, 84px); line-height: .95; }\n[data-bz-node=\"blog-body\"] { margin-top: 40px; gap: 48px; align-items: start; }\n[data-bz-node=\"blog-aside\"] { position: sticky; top: 24px; }\n[data-bz-node=\"blog-grid\"] { gap: 20px; }\n@media (max-width: 900px) { [data-bz-node=\"blog-body\"] > .bz-col { grid-column: 1 / -1; } [data-bz-node=\"blog-aside\"] { position: static; } }\n@media (max-width: 640px) { [data-bz-node^=\"blogitem\"] { grid-column: 1 / -1; } }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Section label",
+      "default": "About Us"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading (H1)",
+      "default": "Blog"
+    },
+    {
+      "key": "pager",
+      "type": "list",
+      "label": "Pagination links",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to (empty = disabled)"
+        },
+        {
+          "key": "active",
+          "type": "text",
+          "label": "Current page (1 = yes)"
+        },
+        {
+          "key": "off",
+          "type": "text",
+          "label": "Disabled (1 = yes)"
+        }
+      ]
+    },
+    {
+      "key": "posts",
+      "type": "list",
+      "label": "Posts",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Image"
+        },
+        {
+          "key": "category",
+          "type": "text",
+          "label": "Category"
+        },
+        {
+          "key": "catKey",
+          "type": "text",
+          "label": "Category key (for the filter)"
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "excerpt",
+          "type": "textarea",
+          "label": "Excerpt"
+        },
+        {
+          "key": "author",
+          "type": "text",
+          "label": "Author"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to"
+        }
+      ]
+    },
+    {
+      "key": "layout",
+      "type": "text",
+      "label": "Card style (card)",
+      "default": "card"
+    },
+    {
+      "key": "readMore",
+      "type": "text",
+      "label": "Read more label",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "blog",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "blog-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never",
+            "align": "end"
+          },
+          "children": [
+            {
+              "id": "blog-title",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "blog-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 1,
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blog-body",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "blog-posts",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "blog-grid",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "blogitem",
+                      "type": "column",
+                      "props": {
+                        "span": 6,
+                        "repeat": "posts"
+                      },
+                      "children": [
+                        {
+                          "id": "blog-card",
+                          "type": "post-card",
+                          "props": {
+                            "image": "{{image}}",
+                            "category": "{{category}}",
+                            "catKey": "{{catKey}}",
+                            "date": "{{date}}",
+                            "title": "{{title}}",
+                            "excerpt": "{{excerpt}}",
+                            "author": "{{author}}",
+                            "url": "{{url}}",
+                            "layout": "{{layout}}",
+                            "readMore": "{{readMore}}"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "blog-pager",
+                  "type": "pager",
+                  "props": {
+                    "links": "{{pager}}"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "blog-aside",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "blog-recent",
+                  "type": "recent-posts",
+                  "props": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

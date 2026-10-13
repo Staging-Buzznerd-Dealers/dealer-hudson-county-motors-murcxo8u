@@ -1,0 +1,160 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "blog-index",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "blog-index",
+        "values": {
+          "eyebrow": "About Us",
+          "heading": "Blog",
+          "posts": [
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "October 7, 2026 · 7 minutes",
+              "title": "Volvo VNL 860 Technical Maintenance Guide",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/volvo-vnl-860-technical-maintenance-guide"
+            },
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "October 7, 2026 · 8 minutes",
+              "title": "Northeast Fleet Winterization Guide",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/northeast-fleet-winterization-guide"
+            },
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "October 7, 2026 · 9 minutes",
+              "title": "New Jersey Zero-Emission Commercial Truck Grant Navigator",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/new-jersey-zero-emission-commercial-truck-grant-navigator"
+            },
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "October 7, 2026 · 8 minutes",
+              "title": "Commercial EV Charging Infrastructure Guide",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/commercial-ev-charging-infrastructure-guide"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/09/spark-plugs-truck.jpg",
+                "alt": "Signs It’s Time to Replace Your Fleet’s Heavy Duty Trucks"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "May 30, 2025 · 4 minutes",
+              "title": "Signs It’s Time to Replace Your Fleet’s Heavy Duty Trucks",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/signs-its-time-to-replace-your-fleets-heavy"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2025/05/IMG_2882-1024x768.jpeg",
+                "alt": "New Commercial Truck Maintenance Schedules: What to Expect"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "May 24, 2025 · 4 minutes",
+              "title": "New Commercial Truck Maintenance Schedules: What to Expect",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/new-commercial-truck-maintenance-schedules-what-to-expect"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/top-5-pre-owned-volvo-trucks-for-long-haul-transportation-in-2024.jpg",
+                "alt": "Why Your Business Should Consider Buying a Fleet of Used Trucks"
+              },
+              "category": "Blog",
+              "catKey": "blog",
+              "date": "May 18, 2025 · 3 minutes",
+              "title": "Why Your Business Should Consider Buying a Fleet of Used Trucks",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/why-your-business-should-consider-buying-a-fleet"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/01/Blue-Volvo-HCM-store-banner-1024x768.jpg",
+                "alt": "Understanding Truck Warranties When Buying from a Commercial Truck Dealer"
+              },
+              "category": "Uncategorized",
+              "catKey": "uncategorized",
+              "date": "May 12, 2025 · 3 minutes",
+              "title": "Understanding Truck Warranties When Buying from a Commercial Truck Dealer",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/understanding-truck-warranties-when-buying-from-a-commercial"
+            }
+          ],
+          "pager": [
+            {
+              "label": "Prev",
+              "url": "",
+              "active": "",
+              "off": "1"
+            },
+            {
+              "label": "1",
+              "url": "/blog",
+              "active": "1",
+              "off": ""
+            },
+            {
+              "label": "2",
+              "url": "/blog/page/2",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "3",
+              "url": "/blog/page/3",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "4",
+              "url": "/blog/page/4",
+              "active": "",
+              "off": ""
+            },
+            {
+              "label": "Next",
+              "url": "/blog/page/2",
+              "active": "",
+              "off": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

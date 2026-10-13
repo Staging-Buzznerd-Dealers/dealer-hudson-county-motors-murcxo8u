@@ -1,0 +1,1040 @@
+{
+  "version": 2,
+  "id": "contact-map",
+  "name": "Contact with map",
+  "css": "[data-bz-node=\"contact-copy\"] { display: flex; flex-direction: column; gap: 16px; }\n[data-bz-node=\"contact-copy\"] > * { margin: 0; }\n[data-bz-node=\"contact-chips\"] { display: flex; flex-wrap: wrap; gap: 10px; }\n[data-bz-node=\"contact-chips\"] > .bz-col { flex: none; }\n[data-bz-node=\"contact-chips\"] p { margin: 0; }\n[data-bz-node=\"contact-chips\"] :is(a, [data-bz-node=\"contact-place\"] p) { display: inline-block; padding: 12px 18px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-input); font: 700 20px/1.2 var(--font-heading); color: var(--hcm-navy); }\n[data-bz-node=\"contact-chips\"] a { color: var(--accent); }\n[data-bz-node=\"contact-chips\"] a:empty, [data-bz-node=\"contact-chip-b\"]:not(:has(p)) { display: none; }\n[data-bz-node=\"contact-note\"] p { font-weight: 600; color: var(--hcm-navy); margin: 0; }\n[data-bz-node=\"contact-cta\"] .bz-btns { margin: 0; }\n[data-bz-node=\"contact-cta\"] .bz-btn { font-size: 16px; padding: 13px 24px; letter-spacing: .08em; }\n[data-bz-node=\"contact-mapcol\"] { min-height: 360px; display: flex; }\n[data-bz-node=\"contact-map\"], [data-bz-node=\"contact-map\"] .bz-widget { flex: 1; display: flex; flex-direction: column; margin: 0; }\n[data-bz-node=\"contact-map\"] .bz-map { flex: 1; min-height: 360px; border: 1px solid var(--line); border-radius: var(--radius-card); overflow: hidden; background: var(--hcm-tint); }\n[data-bz-node=\"contact-map\"] .bz-loclist, [data-bz-node=\"contact-map\"] .bz-widget__empty, [data-bz-node=\"contact-map\"] .bz-widget__h { display: none; }",
+  "props": [
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "none",
+          "label": "Page (light grey)"
+        },
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "accent",
+          "label": "Blue band"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Text",
+      "default": ""
+    },
+    {
+      "key": "phone",
+      "type": "text",
+      "label": "Phone (as shown)",
+      "default": ""
+    },
+    {
+      "key": "phoneUrl",
+      "type": "url",
+      "label": "Phone link (tel:…)",
+      "default": ""
+    },
+    {
+      "key": "place",
+      "type": "text",
+      "label": "Place",
+      "default": ""
+    },
+    {
+      "key": "note",
+      "type": "textarea",
+      "label": "Closing line",
+      "default": ""
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link",
+      "default": ""
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor (for #links)",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "{{background}}",
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "contact-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "contact-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "hcm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "hcm-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "contact-chips",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "contact-chip-a",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "contact-phone",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "contact-chip-b",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "contact-place",
+                          "type": "text",
+                          "props": {
+                            "text": "{{place}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "contact-note",
+                  "type": "text",
+                  "props": {
+                    "text": "{{note}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "contact-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "contact-mapcol",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "contact-map",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "mapProvider": "google",
+                      "showMap": true
+                    },
+                    "snapshot": {
+                      "locations": [
+                        {
+                          "id": "2",
+                          "name": "hudson county motors",
+                          "subtitle": "",
+                          "slug": "main",
+                          "num": "01",
+                          "href": null,
+                          "streetAddress": "290 Secaucus Road Secaucus, NJ 07094",
+                          "city": null,
+                          "region": null,
+                          "postalCode": null,
+                          "country": null,
+                          "latitude": null,
+                          "longitude": null,
+                          "phone": null,
+                          "phoneUrl": null,
+                          "mapUrl": "https://www.google.com/maps/search/?api=1&query=290%20Secaucus%20Road%20Secaucus%2C%20NJ%2007094",
+                          "email": null,
+                          "brands": "",
+                          "services": "",
+                          "perks": "",
+                          "brandKeys": "",
+                          "perkKeys": "",
+                          "perk1": null,
+                          "perk2": null,
+                          "perk3": null,
+                          "departments": "Sales · Used Sales · Service · Parts · Body Shop · Tire · Rental · Leasing · Finance · Ecommerce Ops · Office · Warehouse",
+                          "hours": "",
+                          "phone2": null,
+                          "phone2Url": null,
+                          "phone3": null,
+                          "phone3Url": null,
+                          "group": "Secaucus",
+                          "groupKey": "secaucus",
+                          "photo": {
+                            "src": "",
+                            "alt": ""
+                          },
+                          "banner": {
+                            "src": "",
+                            "alt": ""
+                          },
+                          "brandRows": [],
+                          "serviceRows": [],
+                          "perkRows": [],
+                          "departmentRows": [
+                            {
+                              "name": "Sales",
+                              "key": "sales",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Used Sales",
+                              "key": "used_sales",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Service",
+                              "key": "service",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Parts",
+                              "key": "parts",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Body Shop",
+                              "key": "body",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Tire",
+                              "key": "tire",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Rental",
+                              "key": "rental",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Leasing",
+                              "key": "leasing",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Finance",
+                              "key": "finance",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Ecommerce Ops",
+                              "key": "ecommerce_ops",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Office",
+                              "key": "office",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            },
+                            {
+                              "name": "Warehouse",
+                              "key": "warehouse",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": ""
+                            }
+                          ],
+                          "hoursRows": [
+                            {
+                              "department": "Sales",
+                              "key": "sales",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Used Sales",
+                              "key": "used_sales",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Service",
+                              "key": "service",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Parts",
+                              "key": "parts",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Body Shop",
+                              "key": "body",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Tire",
+                              "key": "tire",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Rental",
+                              "key": "rental",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Leasing",
+                              "key": "leasing",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Finance",
+                              "key": "finance",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Ecommerce Ops",
+                              "key": "ecommerce_ops",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Office",
+                              "key": "office",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Warehouse",
+                              "key": "warehouse",
+                              "summary": "",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "brandFacets": [],
+                      "perkFacets": []
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

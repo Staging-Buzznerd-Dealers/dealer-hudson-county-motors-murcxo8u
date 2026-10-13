@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "title",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-title",
+        "values": {
+          "eyebrow": "About Us",
+          "heading": "Read Customer Reviews"
+        }
+      }
+    },
+    {
+      "id": "reviews",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "review-cards",
+        "values": {
+          "heading": "Satisfied customers",
+          "subheading": "See the comments of our customers",
+          "stars": "★★★★★",
+          "cardSpan": 4,
+          "reviews": [
+            {
+              "initials": "JK",
+              "name": "Joseph Kuykendall",
+              "badge": "Local Guide",
+              "stars": "★★★★★",
+              "text": "We dealt with Phil in the Parts Department and he went above and beyond to help us find the parts we needed to get our truck back on the road. Excellent customer service and fast shipping. We will definitely be purchasing another truck from Hudson County Motors."
+            },
+            {
+              "initials": "VS",
+              "name": "VEE S",
+              "badge": "Local Guide",
+              "stars": "★★★★★",
+              "text": "Very helpful sales service. Nick was great! Very informative, knowledgeable and polite. There's an inventory shortage but Hudson County is worth calling to see if they can assist you."
+            },
+            {
+              "initials": "DB",
+              "name": "duby bello",
+              "badge": "",
+              "stars": "★★★★★",
+              "text": "I bring my truck here whenever I have any issues. You have to set an appointment ahead of time to bring your truck but Moe one of the Volvo tech helps me by getting me in and out and makes the process easier for me. Great guy and knowledgeable."
+            },
+            {
+              "initials": "SH",
+              "name": "Samer Hablawi",
+              "badge": "",
+              "stars": "★★★★★",
+              "text": "I come into Hudson for parts and service on my trucks frequently and I can’t see myself going anywhere else for my work, big thanks to moe in service for always taking care of me right away and keeping me updated. 5 star facility"
+            },
+            {
+              "initials": "CR",
+              "name": "CJ Ratlo",
+              "badge": "",
+              "stars": "★★★★★",
+              "text": "Fantastic dealer for truck repairs and parts, always have a great experience there, you won’t be disappointed."
+            },
+            {
+              "initials": "AC",
+              "name": "Abraham Carrasquillo",
+              "badge": "",
+              "stars": "★★★★★",
+              "text": "I give this company a 5 star review because of their exceptional dedication to excellence. From their parts department, account receivables to everyone in the service ( Samantha, Jayson, Hugo and Steve). Also the entire sales and management team. You guys are great and you always find ways to make my visits very pleasant. Thank you!"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "news-index",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "news-index",
+        "values": {
+          "eyebrow": "About Us",
+          "heading": "News",
+          "categories": [
+            {
+              "label": "All",
+              "value": ""
+            },
+            {
+              "label": "News",
+              "value": "news"
+            },
+            {
+              "label": "Press Release",
+              "value": "press-release"
+            }
+          ],
+          "posts": [
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/12/1-official-TFT-Logo-.png.png",
+                "alt": "Hudson County Motors Joins Forces with Toys for Tots to Spread Holiday Cheer"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "December 6, 2024 · 1 minute",
+              "title": "Hudson County Motors Joins Forces with Toys for Tots to Spread Holiday Cheer",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/hudson-county-motors-joins"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/11/Press-Release-Photo-1.jpg",
+                "alt": "Motiv Electric Trucks and Hudson County Motors Bring Clean, Electric Transportation to Woodbridge, New Jersey"
+              },
+              "category": "Press Release",
+              "catKey": "press-release",
+              "date": "November 19, 2024 · 4 minutes",
+              "title": "Motiv Electric Trucks and Hudson County Motors Bring Clean, Electric Transportation to Woodbridge, New Jersey",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/motiv-electric-trucks-hudson"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/10/DSC_0379.jpg",
+                "alt": "Hudson County Motors Announces Arrival of the All-New Volvo VNL 860: A Game-Changer for the Future of Heavy-Duty Trucking"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "October 18, 2024 · 1 minute",
+              "title": "Hudson County Motors Announces Arrival of the All-New Volvo VNL 860: A Game-Changer for the Future of Heavy-Duty Trucking",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/announces-arrival-volvo-vnl-860"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2024/10/Screenshot-2024-10-16-at-9.28.03-PM.png",
+                "alt": "IMPORTANT CARB/ACT CHANGES COMING TO NEW JERSEY"
+              },
+              "category": "Press Release",
+              "catKey": "press-release",
+              "date": "October 16, 2024 · 2 minutes",
+              "title": "IMPORTANT CARB/ACT CHANGES COMING TO NEW JERSEY",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/carb-act-changes-new-jersey"
+            },
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "Press Release",
+              "catKey": "press-release",
+              "date": "May 14, 2024 · Less than a minute",
+              "title": "Join Us For the 2nd Annual Christopher R. Friedauer Memorial Truck Show",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/friedauer-memorial-truck-show"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/07/363331775_764342589029351_5632226579091956303_n.jpg",
+                "alt": "NJ Funding Strengthens Investment Climate Change Clean Energy 2023"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "July 27, 2023 · 2 minutes",
+              "title": "NJ Funding Strengthens Investment Climate Change Clean Energy 2023",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/nj-funding-clean-energy-2023"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/05/collage-1024x683.jpg",
+                "alt": "Hudson County Motors Hosts Bring Your Child to Work Day"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "May 2, 2023 · Less than a minute",
+              "title": "Hudson County Motors Hosts Bring Your Child to Work Day",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/bring-your-child-to-work-day"
+            },
+            {
+              "image": {
+                "src": "https://www.hudsoncountymotors.com/efs/wp/domains/www.hudsoncountymotors.com/wp-content/uploads/2023/01/Screenshot-2023-02-06-at-9.25.53-PM.png",
+                "alt": "Great Prices Blower Motor – Air Cylinder – Water Pump"
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "January 30, 2023 · 1 minute",
+              "title": "Great Prices Blower Motor – Air Cylinder – Water Pump",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/blower-motor-air-cylinder-water-pump"
+            },
+            {
+              "image": {
+                "src": "",
+                "alt": ""
+              },
+              "category": "News",
+              "catKey": "news",
+              "date": "November 8, 2022 · 3 minutes",
+              "title": "Hudson County Motors Becomes First Volvo Trucks Certified EV Dealer in New Jersey",
+              "excerpt": "",
+              "author": "",
+              "url": "/blog/posts/first-volvo-certified-ev-dealer"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

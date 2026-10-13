@@ -1,0 +1,155 @@
+{
+  "version": 2,
+  "id": "press-index",
+  "name": "Press releases index",
+  "css": "[data-bz-node=\"press\"] { padding-block: 64px var(--hcm-pad-y); }\n[data-bz-node=\"press-h\"] .bz-eyebrow { margin-bottom: 14px; }\n[data-bz-node=\"press-h\"] h1 { font-size: clamp(44px, 6.6vw, 84px); line-height: .95; }\n[data-bz-node=\"press-grid\"] { margin-top: 24px; gap: var(--hcm-grid-gap); }\n@media (max-width: 1100px) { [data-bz-node^=\"pressitem\"] { grid-column: span 6; } }\n@media (max-width: 640px) { [data-bz-node^=\"pressitem\"] { grid-column: 1 / -1; } }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Section label",
+      "default": "About Us"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading (H1)",
+      "default": "Press Releases"
+    },
+    {
+      "key": "posts",
+      "type": "list",
+      "label": "Posts",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Image"
+        },
+        {
+          "key": "category",
+          "type": "text",
+          "label": "Category"
+        },
+        {
+          "key": "catKey",
+          "type": "text",
+          "label": "Category key (for the filter)"
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "excerpt",
+          "type": "textarea",
+          "label": "Excerpt"
+        },
+        {
+          "key": "author",
+          "type": "text",
+          "label": "Author"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to"
+        }
+      ]
+    },
+    {
+      "key": "layout",
+      "type": "text",
+      "label": "Card style (card)",
+      "default": "card"
+    },
+    {
+      "key": "readMore",
+      "type": "text",
+      "label": "Read more label",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "press",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "press-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "press-title",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "press-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 1,
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "press-grid",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "pressitem",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "posts"
+              },
+              "children": [
+                {
+                  "id": "press-card",
+                  "type": "post-card",
+                  "props": {
+                    "image": "{{image}}",
+                    "category": "{{category}}",
+                    "catKey": "{{catKey}}",
+                    "date": "{{date}}",
+                    "title": "{{title}}",
+                    "excerpt": "{{excerpt}}",
+                    "author": "{{author}}",
+                    "url": "{{url}}",
+                    "layout": "{{layout}}",
+                    "readMore": "{{readMore}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
